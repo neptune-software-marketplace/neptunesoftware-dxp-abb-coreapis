@@ -1,0 +1,5635 @@
+{
+	"id": "506f5a69-7f26-43f8-98a9-41ad1ddf5d34",
+	"createdAt": "2022-02-04T15:44:50.720Z",
+	"createdBy": "lloyd",
+	"auth": [],
+	"endpoints": [],
+	"paths": [
+		{
+			"id": "98BE6CBF-434C-481B-85A3-4804E9B1D60E",
+			"method": "POST",
+			"path": "/List",
+			"description": "Get the list of tiles",
+			"parameters": [],
+			"headers": [],
+			"responses": [
+				{
+					"status": "200",
+					"description": "OK",
+					"headers": [],
+					"body": [],
+					"content": [
+						{
+							"id": "074e1c8e-8a40-46cc-c226-83b4deb6a928",
+							"name": "List",
+							"objectType": "array"
+						}
+					]
+				}
+			],
+			"summary": "Get the list of tiles",
+			"example": [
+				"==OBJECT STRING==",
+				"{",
+				"    \"tile\": [{",
+				"        \"id\": \"37dcd424-41ca-4a03-9e09-882870288db9\",",
+				"        \"updatedAt\": \"2018-11-21T21:13:23.000Z\",",
+				"        \"changedBy\": \"helder\",",
+				"        \"title\": \"One Step Ahead\",",
+				"        \"subTitle\": \"\",",
+				"        \"description\": null,",
+				"        \"actionApplication\": null,",
+				"        \"actionURL\": null,",
+				"        \"type\": \"sub\",",
+				"        \"icon\": \"\",",
+				"        \"tags\": \"\",",
+				"        \"footer\": null,",
+				"        \"blackoutEnabled\": false,",
+				"        \"ver\": null",
+				"    }, {",
+				"        \"id\": \"64d1e481-0bdc-4425-a703-d5bfaa7ca2a2\",",
+				"        \"updatedAt\": \"2018-12-06T09:29:46.000Z\",",
+				"        \"changedBy\": \"helder\",",
+				"        \"title\": \"Community\",",
+				"        \"subTitle\": \"Analytics - 30 Days\",",
+				"        \"description\": null,",
+				"        \"actionApplication\": \"communitygamification2\",",
+				"        \"actionURL\": null,",
+				"        \"type\": \"application\",",
+				"        \"icon\": \"sap-icon://group\",",
+				"        \"tags\": \"\",",
+				"        \"footer\": null,",
+				"        \"blackoutEnabled\": false,",
+				"        \"ver\": null",
+				"    }]",
+				"}",
+				"    "
+			]
+		},
+		{
+			"id": "27F8C361-410B-4E4F-C4EA-A2686D884F07",
+			"method": "POST",
+			"path": "/Get",
+			"description": "Get selected tile details",
+			"parameters": [],
+			"headers": [],
+			"responses": [
+				{
+					"status": "200",
+					"description": "OK",
+					"headers": [],
+					"body": [],
+					"content": [
+						{
+							"id": "d1b93f7f-23ff-4d68-ea7a-b4ded06f993e",
+							"name": "Get",
+							"objectType": "object"
+						}
+					]
+				},
+				{
+					"status": "500",
+					"description": "ERROR",
+					"headers": [],
+					"body": [],
+					"content": [
+						{
+							"id": "bf294ca1-a3c8-405f-fb00-6c99b2f0a6b2",
+							"name": "Error",
+							"objectType": "object"
+						}
+					]
+				}
+			],
+			"summary": "Get selected tile details",
+			"content": [
+				{
+					"name": "ID",
+					"objectType": "object"
+				}
+			],
+			"example": [
+				"==OBJECT STRING==",
+				"{",
+				"    \"tile\": {",
+				"        \"id\": \"37dcd424-41ca-4a03-9e09-882870288db9\",",
+				"        \"createdAt\": \"2018-11-04T13:08:36.000Z\",",
+				"        \"updatedAt\": \"2018-11-21T21:13:23.000Z\",",
+				"        \"createdBy\": \"oah\",",
+				"        \"changedBy\": \"helder\",",
+				"        \"translation\": [],",
+				"        \"storeItem\": null,",
+				"        \"title\": \"One Step Ahead\",",
+				"        \"subTitle\": \"\",",
+				"        \"description\": null,",
+				"        \"categoryID\": \"\",",
+				"        \"sort\": null,",
+				"        \"urlApplication\": null,",
+				"        \"actionApplication\": null,",
+				"        \"actionParameters\": null,",
+				"        \"actionURL\": null,",
+				"        \"openDialog\": false,",
+				"        \"openWindow\": false,",
+				"        \"openFullscreen\": false,",
+				"        \"forceRow\": true,",
+				"        \"frameType\": \"20\",",
+				"        \"type\": \"sub\",",
+				"        \"image\": \"/media/root/DemoMedia/Fiori-UX-orange-2.jpg\",",
+				"        \"icon\": \"\",",
+				"        \"backgroundType\": null,",
+				"        \"backgroundColor\": \"ColorSet10\",",
+				"        \"backgroundShade\": \"ShadeA\",",
+				"        \"tileApplication\": null,",
+				"        \"hideHeaderL\": false,",
+				"        \"hideHeaderM\": false,",
+				"        \"hideHeaderS\": false,",
+				"        \"hideTileDesktop\": false,",
+				"        \"hideTileMobile\": false,",
+				"        \"hideTileTablet\": false,",
+				"        \"enableDocumentation\": false,",
+				"        \"navObject\": null,",
+				"        \"navAction\": null,",
+				"        \"dialogWidth\": null,",
+				"        \"dialogHeight\": null,",
+				"        \"tileApplicationStyleClass\": null,",
+				"        \"sidepanelApp\": null,",
+				"        \"sidepanelTitle\": null,",
+				"        \"tags\": \"\",",
+				"        \"actiongroup\": null,",
+				"        \"styleClass\": null,",
+				"        \"titleAlignment\": null,",
+				"        \"titleLevel\": null,",
+				"        \"dataUrl\": null,",
+				"        \"dataInterval\": null,",
+				"        \"footer\": null,",
+				"        \"browserBlockWin\": null,",
+				"        \"browserBlockMac\": null,",
+				"        \"blackoutEnabled\": false,",
+				"        \"blackoutText\": null,",
+				"        \"blackoutDescription\": null,",
+				"        \"helpText\": null,",
+				"        \"helpEnabled\": false,",
+				"        \"openClickTile\": false,",
+				"        \"ver\": null,",
+				"        \"actionWebApp\": null,",
+				"        \"roles\": [],",
+				"        \"tilegroups\": []",
+				"    },",
+				"    \"category\": [{",
+				"        \"id\": \"ecc4cfa4-e149-414c-86bd-e24411ea7aa2\",",
+				"        \"createdAt\": \"2018-11-04T12:40:58.000Z\",",
+				"        \"updatedAt\": \"2019-08-12T15:37:20.000Z\",",
+				"        \"createdBy\": \"oah\",",
+				"        \"changedBy\": \"oah\",",
+				"        \"translation\": [{",
+				"            \"language\": \"ES\",",
+				"            \"title\": \"Grupo de demostración ColorSet3\",",
+				"            \"subTitle\": \"ColorSet3\"",
+				"        }],",
+				"        \"tilesOrder\": [\"5d301565-c5c1-44c7-8d92-5e2d4488ae74\", \"74724714-1e69-434e-a3bd-626e013a9c4f\", \"bee019fc-c3ec-446c-9a68-4c6395c2dbca\", \"59287a50-5abc-4d0b-80ad-bd6ca30df465\", \"07f416c6-58e7-47be-b8cf-b6afaa3237f3\",",
+				"            \"29d3bfb7-c824-4861-997f-c44a6dbf509a\", \"fdde0468-ea4e-4aec-8a6c-257dd3d43632\", \"1b91d55a-fd84-45ea-97cb-9f0d58badf71\", \"ff8a6ac4-4875-4ae4-91c1-05c5a22e16cd\", \"dcf2f1d7-2169-4826-aef6-4e3f88e8405d\"",
+				"        ],",
+				"        \"tilegroupsOrder\": [],",
+				"        \"configMessage\": null,",
+				"        \"title\": \"Demo Group ColorSet3\",",
+				"        \"subTitle\": \"ColorSet3\",",
+				"        \"description\": null,",
+				"        \"titleAlignment\": null,",
+				"        \"enableFullScreen\": false,",
+				"        \"hideHeader\": false,",
+				"        \"backgroundType\": \"Default\",",
+				"        \"backgroundColor\": \"ColorSet3\",",
+				"        \"backgroundShade\": \"ShadeA\",",
+				"        \"type\": null,",
+				"        \"image\": null,",
+				"        \"icon\": null,",
+				"        \"sort\": null,",
+				"        \"inclFav\": null,",
+				"        \"styleClass\": null,",
+				"        \"enableScroll\": null,",
+				"        \"enableShadeCalc\": true,",
+				"        \"numTiles\": \"5\",",
+				"        \"enableMessage\": false,",
+				"        \"ver\": null,",
+				"        \"headColor\": null,",
+				"        \"headTxtClr\": null,",
+				"        \"subheadTxtClr\": null,",
+				"        \"headBorderClr\": null,",
+				"        \"headBorderWidth\": null,",
+				"        \"imageTablet\": null,",
+				"        \"imageMobile\": null,",
+				"        \"imageCover\": true,",
+				"        \"imageTabletCover\": true,",
+				"        \"imageMobileCover\": true,",
+				"        \"imageMobileHeight\": null,",
+				"        \"imageTabletHeight\": null,",
+				"        \"imageHeight\": null",
+				"    }]",
+				"}"
+			]
+		},
+		{
+			"id": "692763E1-ADB2-4317-DC38-10223775B4F0",
+			"method": "POST",
+			"path": "/Save",
+			"description": "",
+			"parameters": [],
+			"headers": [],
+			"responses": [
+				{
+					"status": "200",
+					"description": "OK",
+					"headers": [],
+					"body": [],
+					"content": []
+				}
+			],
+			"summary": "Add a tile",
+			"content": [
+				{
+					"name": "Save",
+					"objectType": "object"
+				}
+			],
+			"example": [
+				"==OBJECT STRING==",
+				"{",
+				"    \"id\": \"720539e5-282c-4d4e-9b14-7f1af2c44427\",",
+				"    \"createdAt\": \"2019-09-19T20:07:26.000Z\",",
+				"    \"updatedAt\": \"2020-05-04T12:43:04.677Z\",",
+				"    \"createdBy\": \"priyanka\",",
+				"    \"changedBy\": \"priyanka\",",
+				"    \"translation\": [{",
+				"        \"language\": \"DE\",",
+				"        \"title\": \"firstappsampletile\"",
+				"    }, {",
+				"        \"language\": \"DE\",",
+				"        \"title\": \"firstappsampletile\"",
+				"    }, {",
+				"        \"language\": \"DE\",",
+				"        \"title\": \"firstappsampletile\"",
+				"    }, {",
+				"        \"language\": \"EN\",",
+				"        \"title\": \"firstappsampletile\"",
+				"    }, {",
+				"        \"language\": \"EN\",",
+				"        \"title\": \"firstappsampletile\"",
+				"    }, {",
+				"        \"language\": \"EN\",",
+				"        \"title\": \"firstappsampletile\"",
+				"    }],",
+				"    \"storeItem\": {",
+				"        \"mobileClient\": \"4d53de60-6d43-4944-9fb9-ccb8f6e870d6\"",
+				"    },",
+				"    \"title\": \"firstappsampletile\",",
+				"    \"subTitle\": null,",
+				"    \"description\": null,",
+				"    \"categoryID\": null,",
+				"    \"sort\": null,",
+				"    \"urlApplication\": null,",
+				"    \"actionApplication\": \"firstapp\",",
+				"    \"actionParameters\": null,",
+				"    \"actionURL\": null,",
+				"    \"openDialog\": false,",
+				"    \"openWindow\": false,",
+				"    \"openFullscreen\": false,",
+				"    \"forceRow\": false,",
+				"    \"frameType\": null,",
+				"    \"type\": \"\",",
+				"    \"image\": null,",
+				"    \"icon\": null,",
+				"    \"backgroundType\": null,",
+				"    \"backgroundColor\": null,",
+				"    \"backgroundShade\": null,",
+				"    \"tileApplication\": null,",
+				"    \"hideHeaderL\": null,",
+				"    \"hideHeaderM\": false,",
+				"    \"hideHeaderS\": false,",
+				"    \"hideTileDesktop\": false,",
+				"    \"hideTileMobile\": false,",
+				"    \"hideTileTablet\": false,",
+				"    \"enableDocumentation\": true,",
+				"    \"navObject\": null,",
+				"    \"navAction\": null,",
+				"    \"dialogWidth\": null,",
+				"    \"dialogHeight\": null,",
+				"    \"tileApplicationStyleClass\": null,",
+				"    \"sidepanelApp\": null,",
+				"    \"sidepanelTitle\": null,",
+				"    \"tags\": \"\",",
+				"    \"actiongroup\": null,",
+				"    \"styleClass\": null,",
+				"    \"titleAlignment\": null,",
+				"    \"titleLevel\": null,",
+				"    \"dataUrl\": null,",
+				"    \"dataInterval\": null,",
+				"    \"footer\": null,",
+				"    \"browserBlockWin\": null,",
+				"    \"browserBlockMac\": null,",
+				"    \"blackoutEnabled\": false,",
+				"    \"blackoutText\": \"Blackout Tile\",",
+				"    \"blackoutDescription\": null,",
+				"    \"helpText\": null,",
+				"    \"helpEnabled\": false,",
+				"    \"openClickTile\": false,",
+				"    \"ver\": \"20.5.15.1346\",",
+				"    \"actionWebApp\": null,",
+				"    \"roles\": []",
+				"}",
+				"",
+				""
+			]
+		},
+		{
+			"id": "18D399ED-194C-4D64-8032-BAC7F62FB0C2",
+			"method": "POST",
+			"path": "/Delete",
+			"description": "",
+			"parameters": [],
+			"headers": [],
+			"responses": [
+				{
+					"status": "200",
+					"description": "OK",
+					"headers": [],
+					"body": []
+				}
+			],
+			"summary": "Delete the tile",
+			"content": [
+				{
+					"name": "ID",
+					"objectType": "object"
+				}
+			]
+		}
+	],
+	"definitions": [
+		{
+			"id": "167a36cf-d0b7-41a6-974a-5f9abfee79f4",
+			"name": "List",
+			"description": "List of tiles",
+			"isInclude": false,
+			"properties": [
+				{
+					"id": "c999f2b0-b9c8-4e6e-eee9-2d9a9f9c3e06",
+					"name": "id",
+					"parent": "710ceba4-4e86-4600-c532-2f93f765237a",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "a3b2746a-316b-4d6a-9a0e-ff181c89529d",
+					"name": "updatedAt",
+					"parent": "710ceba4-4e86-4600-c532-2f93f765237a",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "53f58214-18b2-4f99-aa86-605ab8a114e8",
+					"name": "changedBy",
+					"parent": "710ceba4-4e86-4600-c532-2f93f765237a",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "1966f688-366f-40a6-f95a-944ffe00098a",
+					"name": "title",
+					"parent": "710ceba4-4e86-4600-c532-2f93f765237a",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "31d2f600-f9fd-45e6-de94-fc5157965a5b",
+					"name": "subTitle",
+					"parent": "710ceba4-4e86-4600-c532-2f93f765237a",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "f917768a-dcd0-46e4-808e-1b840c89deb8",
+					"name": "description",
+					"parent": "710ceba4-4e86-4600-c532-2f93f765237a",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "3b998591-7da0-4874-dd2c-721db7583426",
+					"name": "actionApplication",
+					"parent": "710ceba4-4e86-4600-c532-2f93f765237a",
+					"description": "",
+					"objectType": "object",
+					"objectName": "actionApplication",
+					"isParent": true,
+					"children": []
+				},
+				{
+					"id": "75f341bd-013f-4f93-d02e-ac25eb8425f9",
+					"name": "actionURL",
+					"parent": "710ceba4-4e86-4600-c532-2f93f765237a",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "5b4b5cd1-7dee-4c20-e1f2-6f91bead6ba8",
+					"name": "type",
+					"parent": "710ceba4-4e86-4600-c532-2f93f765237a",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "7397d360-1382-4e6d-cdff-aefe2403f096",
+					"name": "icon",
+					"parent": "710ceba4-4e86-4600-c532-2f93f765237a",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "115ed1a1-e520-4c75-872d-fc068cfe9cb3",
+					"name": "tags",
+					"parent": "710ceba4-4e86-4600-c532-2f93f765237a",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "07911d60-1bb6-4635-d026-e96395656ef3",
+					"name": "footer",
+					"parent": "710ceba4-4e86-4600-c532-2f93f765237a",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "a818fc2b-a05d-4f40-ec74-99f1bee3d0b8",
+					"name": "blackoutEnabled",
+					"parent": "710ceba4-4e86-4600-c532-2f93f765237a",
+					"description": "",
+					"objectType": "boolean",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "b15aed83-3f4c-4b5d-f841-f1e7c7f88622",
+					"name": "ver",
+					"parent": "710ceba4-4e86-4600-c532-2f93f765237a",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "710ceba4-4e86-4600-c532-2f93f765237a",
+					"name": "tile",
+					"parent": "",
+					"description": "",
+					"objectType": "array",
+					"objectName": "tile",
+					"isParent": true,
+					"children": [
+						{
+							"id": "c999f2b0-b9c8-4e6e-eee9-2d9a9f9c3e06",
+							"name": "id",
+							"parent": "710ceba4-4e86-4600-c532-2f93f765237a",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "a3b2746a-316b-4d6a-9a0e-ff181c89529d",
+							"name": "updatedAt",
+							"parent": "710ceba4-4e86-4600-c532-2f93f765237a",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "53f58214-18b2-4f99-aa86-605ab8a114e8",
+							"name": "changedBy",
+							"parent": "710ceba4-4e86-4600-c532-2f93f765237a",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "1966f688-366f-40a6-f95a-944ffe00098a",
+							"name": "title",
+							"parent": "710ceba4-4e86-4600-c532-2f93f765237a",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "31d2f600-f9fd-45e6-de94-fc5157965a5b",
+							"name": "subTitle",
+							"parent": "710ceba4-4e86-4600-c532-2f93f765237a",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "f917768a-dcd0-46e4-808e-1b840c89deb8",
+							"name": "description",
+							"parent": "710ceba4-4e86-4600-c532-2f93f765237a",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "3b998591-7da0-4874-dd2c-721db7583426",
+							"name": "actionApplication",
+							"parent": "710ceba4-4e86-4600-c532-2f93f765237a",
+							"description": "",
+							"objectType": "object",
+							"objectName": "actionApplication",
+							"isParent": true,
+							"children": []
+						},
+						{
+							"id": "75f341bd-013f-4f93-d02e-ac25eb8425f9",
+							"name": "actionURL",
+							"parent": "710ceba4-4e86-4600-c532-2f93f765237a",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "5b4b5cd1-7dee-4c20-e1f2-6f91bead6ba8",
+							"name": "type",
+							"parent": "710ceba4-4e86-4600-c532-2f93f765237a",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "7397d360-1382-4e6d-cdff-aefe2403f096",
+							"name": "icon",
+							"parent": "710ceba4-4e86-4600-c532-2f93f765237a",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "115ed1a1-e520-4c75-872d-fc068cfe9cb3",
+							"name": "tags",
+							"parent": "710ceba4-4e86-4600-c532-2f93f765237a",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "07911d60-1bb6-4635-d026-e96395656ef3",
+							"name": "footer",
+							"parent": "710ceba4-4e86-4600-c532-2f93f765237a",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "a818fc2b-a05d-4f40-ec74-99f1bee3d0b8",
+							"name": "blackoutEnabled",
+							"parent": "710ceba4-4e86-4600-c532-2f93f765237a",
+							"description": "",
+							"objectType": "boolean",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "b15aed83-3f4c-4b5d-f841-f1e7c7f88622",
+							"name": "ver",
+							"parent": "710ceba4-4e86-4600-c532-2f93f765237a",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						}
+					]
+				},
+				{
+					"id": "e14dd083-36b6-4288-99ce-a0ac23459c33",
+					"name": "id",
+					"parent": "372a40b9-2525-4922-d43a-6d22cf78ea49",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "92a923e9-db75-4fbd-f392-5f463fe0ae02",
+					"name": "title",
+					"parent": "372a40b9-2525-4922-d43a-6d22cf78ea49",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "0011a383-103a-4ab3-d506-0c27a766df4d",
+					"name": "subTitle",
+					"parent": "372a40b9-2525-4922-d43a-6d22cf78ea49",
+					"description": "",
+					"objectType": "object",
+					"objectName": "subTitle",
+					"isParent": true,
+					"children": []
+				},
+				{
+					"id": "52bd4513-c1a6-4193-b95b-6f791797949a",
+					"name": "description",
+					"parent": "372a40b9-2525-4922-d43a-6d22cf78ea49",
+					"description": "",
+					"objectType": "object",
+					"objectName": "description",
+					"isParent": true,
+					"children": []
+				},
+				{
+					"id": "0905949c-f408-4e78-ef89-9d945660e46b",
+					"name": "icon",
+					"parent": "372a40b9-2525-4922-d43a-6d22cf78ea49",
+					"description": "",
+					"objectType": "object",
+					"objectName": "icon",
+					"isParent": true,
+					"children": []
+				},
+				{
+					"id": "26bed3d9-9213-485a-f510-84cb0e7250db",
+					"name": "sort",
+					"parent": "372a40b9-2525-4922-d43a-6d22cf78ea49",
+					"description": "",
+					"objectType": "object",
+					"objectName": "sort",
+					"isParent": true,
+					"children": []
+				},
+				{
+					"id": "372a40b9-2525-4922-d43a-6d22cf78ea49",
+					"name": "tilegroup",
+					"parent": "",
+					"description": "",
+					"objectType": "array",
+					"objectName": "tilegroup",
+					"isParent": true,
+					"children": [
+						{
+							"id": "e14dd083-36b6-4288-99ce-a0ac23459c33",
+							"name": "id",
+							"parent": "372a40b9-2525-4922-d43a-6d22cf78ea49",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "92a923e9-db75-4fbd-f392-5f463fe0ae02",
+							"name": "title",
+							"parent": "372a40b9-2525-4922-d43a-6d22cf78ea49",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "0011a383-103a-4ab3-d506-0c27a766df4d",
+							"name": "subTitle",
+							"parent": "372a40b9-2525-4922-d43a-6d22cf78ea49",
+							"description": "",
+							"objectType": "object",
+							"objectName": "subTitle",
+							"isParent": true,
+							"children": []
+						},
+						{
+							"id": "52bd4513-c1a6-4193-b95b-6f791797949a",
+							"name": "description",
+							"parent": "372a40b9-2525-4922-d43a-6d22cf78ea49",
+							"description": "",
+							"objectType": "object",
+							"objectName": "description",
+							"isParent": true,
+							"children": []
+						},
+						{
+							"id": "0905949c-f408-4e78-ef89-9d945660e46b",
+							"name": "icon",
+							"parent": "372a40b9-2525-4922-d43a-6d22cf78ea49",
+							"description": "",
+							"objectType": "object",
+							"objectName": "icon",
+							"isParent": true,
+							"children": []
+						},
+						{
+							"id": "26bed3d9-9213-485a-f510-84cb0e7250db",
+							"name": "sort",
+							"parent": "372a40b9-2525-4922-d43a-6d22cf78ea49",
+							"description": "",
+							"objectType": "object",
+							"objectName": "sort",
+							"isParent": true,
+							"children": []
+						}
+					]
+				},
+				{
+					"id": "505d9f47-5545-4a84-9711-0a1781e07e21",
+					"name": "id",
+					"parent": "81baa0a3-ce10-4780-d152-898806746e73",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "bb3f1f07-3294-43d5-ba02-24e01ebc6473",
+					"name": "updatedAt",
+					"parent": "81baa0a3-ce10-4780-d152-898806746e73",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "dd2c14d4-4149-4ba2-8b5f-9339eaa3eb67",
+					"name": "changedBy",
+					"parent": "81baa0a3-ce10-4780-d152-898806746e73",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "a077dcd4-1b26-4601-a4ec-3d715a3d1fcf",
+					"name": "name",
+					"parent": "81baa0a3-ce10-4780-d152-898806746e73",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "b56c3606-a24d-4a76-a2f1-8474dc73a63d",
+					"name": "description",
+					"parent": "81baa0a3-ce10-4780-d152-898806746e73",
+					"description": "",
+					"objectType": "object",
+					"objectName": "description",
+					"isParent": true,
+					"children": []
+				},
+				{
+					"id": "81baa0a3-ce10-4780-d152-898806746e73",
+					"name": "role",
+					"parent": "",
+					"description": "",
+					"objectType": "array",
+					"objectName": "role",
+					"isParent": true,
+					"children": [
+						{
+							"id": "505d9f47-5545-4a84-9711-0a1781e07e21",
+							"name": "id",
+							"parent": "81baa0a3-ce10-4780-d152-898806746e73",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "bb3f1f07-3294-43d5-ba02-24e01ebc6473",
+							"name": "updatedAt",
+							"parent": "81baa0a3-ce10-4780-d152-898806746e73",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "dd2c14d4-4149-4ba2-8b5f-9339eaa3eb67",
+							"name": "changedBy",
+							"parent": "81baa0a3-ce10-4780-d152-898806746e73",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "a077dcd4-1b26-4601-a4ec-3d715a3d1fcf",
+							"name": "name",
+							"parent": "81baa0a3-ce10-4780-d152-898806746e73",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "b56c3606-a24d-4a76-a2f1-8474dc73a63d",
+							"name": "description",
+							"parent": "81baa0a3-ce10-4780-d152-898806746e73",
+							"description": "",
+							"objectType": "object",
+							"objectName": "description",
+							"isParent": true,
+							"children": []
+						}
+					]
+				},
+				{
+					"id": "2798ba1b-45a3-48df-ecbc-1e92997d37d8",
+					"name": "id",
+					"parent": "ce2a869f-7a08-4cc8-e4ab-ed6434b4fb71",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "d9ba3a14-f446-47ff-b988-4bbc0bd57aa1",
+					"name": "updatedAt",
+					"parent": "ce2a869f-7a08-4cc8-e4ab-ed6434b4fb71",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "1293e421-524d-4597-f02a-9fbe145c52d3",
+					"name": "changedBy",
+					"parent": "ce2a869f-7a08-4cc8-e4ab-ed6434b4fb71",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "ff31a2b1-48e4-47a5-cb8f-baafc7b429ec",
+					"name": "name",
+					"parent": "ce2a869f-7a08-4cc8-e4ab-ed6434b4fb71",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "0c055502-8102-4844-d2b6-30a583b8e315",
+					"name": "description",
+					"parent": "ce2a869f-7a08-4cc8-e4ab-ed6434b4fb71",
+					"description": "",
+					"objectType": "object",
+					"objectName": "description",
+					"isParent": true,
+					"children": []
+				},
+				{
+					"id": "ce2a869f-7a08-4cc8-e4ab-ed6434b4fb71",
+					"name": "mobileclient",
+					"parent": "",
+					"description": "",
+					"objectType": "array",
+					"objectName": "mobileclient",
+					"isParent": true,
+					"children": [
+						{
+							"id": "2798ba1b-45a3-48df-ecbc-1e92997d37d8",
+							"name": "id",
+							"parent": "ce2a869f-7a08-4cc8-e4ab-ed6434b4fb71",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "d9ba3a14-f446-47ff-b988-4bbc0bd57aa1",
+							"name": "updatedAt",
+							"parent": "ce2a869f-7a08-4cc8-e4ab-ed6434b4fb71",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "1293e421-524d-4597-f02a-9fbe145c52d3",
+							"name": "changedBy",
+							"parent": "ce2a869f-7a08-4cc8-e4ab-ed6434b4fb71",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "ff31a2b1-48e4-47a5-cb8f-baafc7b429ec",
+							"name": "name",
+							"parent": "ce2a869f-7a08-4cc8-e4ab-ed6434b4fb71",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "0c055502-8102-4844-d2b6-30a583b8e315",
+							"name": "description",
+							"parent": "ce2a869f-7a08-4cc8-e4ab-ed6434b4fb71",
+							"description": "",
+							"objectType": "object",
+							"objectName": "description",
+							"isParent": true,
+							"children": []
+						}
+					]
+				},
+				{
+					"id": "f8722844-b30e-40d6-9e2d-6c536b6b3be0",
+					"name": "id",
+					"parent": "cb34e222-0800-4094-be00-3fc914f2ef89",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "de2a66e4-ec1b-448b-fba6-a1918188b2d3",
+					"name": "createdAt",
+					"parent": "cb34e222-0800-4094-be00-3fc914f2ef89",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "731a91b0-9584-46e6-f7aa-44b23007d455",
+					"name": "updatedAt",
+					"parent": "cb34e222-0800-4094-be00-3fc914f2ef89",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "8912191b-5ccf-4368-f6c0-7991ad9ccc1f",
+					"name": "createdBy",
+					"parent": "cb34e222-0800-4094-be00-3fc914f2ef89",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "ae9ba742-d144-44fc-aaba-74b433e146af",
+					"name": "changedBy",
+					"parent": "cb34e222-0800-4094-be00-3fc914f2ef89",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "4bd1580b-b744-4a43-836a-b916a8cf0e2c",
+					"name": "url",
+					"parent": "cb34e222-0800-4094-be00-3fc914f2ef89",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "fd43a5cb-9b79-4087-b204-6a61b2aeb187",
+					"name": "name",
+					"parent": "cb34e222-0800-4094-be00-3fc914f2ef89",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "ca6f16bc-b619-43c7-bc5b-4dd5c5a525db",
+					"name": "description",
+					"parent": "cb34e222-0800-4094-be00-3fc914f2ef89",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "4bc74fed-1fb5-4126-b452-668123b6339f",
+					"name": "role",
+					"parent": "cb34e222-0800-4094-be00-3fc914f2ef89",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "9cc925fa-f152-4332-d380-37b4c33eed2e",
+					"name": "username",
+					"parent": "cb34e222-0800-4094-be00-3fc914f2ef89",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "79cdc863-d090-4430-dd54-e200b5b0455e",
+					"name": "password",
+					"parent": "cb34e222-0800-4094-be00-3fc914f2ef89",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "37ceee99-493a-422c-a188-f7e603a206dd",
+					"name": "type",
+					"parent": "cb34e222-0800-4094-be00-3fc914f2ef89",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "32d7ff44-1513-4389-b83c-417a73c758aa",
+					"name": "sapClient",
+					"parent": "cb34e222-0800-4094-be00-3fc914f2ef89",
+					"description": "",
+					"objectType": "object",
+					"objectName": "sapClient",
+					"isParent": true,
+					"children": []
+				},
+				{
+					"id": "868bbea8-957c-469c-c6c2-ac9a400d340d",
+					"name": "token",
+					"parent": "cb34e222-0800-4094-be00-3fc914f2ef89",
+					"description": "",
+					"objectType": "object",
+					"objectName": "token",
+					"isParent": true,
+					"children": []
+				},
+				{
+					"id": "966a8f4c-8a89-4833-d350-6a25c3a4f655",
+					"name": "monitoringName",
+					"parent": "cb34e222-0800-4094-be00-3fc914f2ef89",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "c72751c8-e0ee-44ca-b917-7de7d0237421",
+					"name": "monitoringEnabled",
+					"parent": "cb34e222-0800-4094-be00-3fc914f2ef89",
+					"description": "",
+					"objectType": "boolean",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "cb34e222-0800-4094-be00-3fc914f2ef89",
+					"name": "systems",
+					"parent": "",
+					"description": "",
+					"objectType": "array",
+					"objectName": "systems",
+					"isParent": true,
+					"children": [
+						{
+							"id": "f8722844-b30e-40d6-9e2d-6c536b6b3be0",
+							"name": "id",
+							"parent": "cb34e222-0800-4094-be00-3fc914f2ef89",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "de2a66e4-ec1b-448b-fba6-a1918188b2d3",
+							"name": "createdAt",
+							"parent": "cb34e222-0800-4094-be00-3fc914f2ef89",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "731a91b0-9584-46e6-f7aa-44b23007d455",
+							"name": "updatedAt",
+							"parent": "cb34e222-0800-4094-be00-3fc914f2ef89",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "8912191b-5ccf-4368-f6c0-7991ad9ccc1f",
+							"name": "createdBy",
+							"parent": "cb34e222-0800-4094-be00-3fc914f2ef89",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "ae9ba742-d144-44fc-aaba-74b433e146af",
+							"name": "changedBy",
+							"parent": "cb34e222-0800-4094-be00-3fc914f2ef89",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "4bd1580b-b744-4a43-836a-b916a8cf0e2c",
+							"name": "url",
+							"parent": "cb34e222-0800-4094-be00-3fc914f2ef89",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "fd43a5cb-9b79-4087-b204-6a61b2aeb187",
+							"name": "name",
+							"parent": "cb34e222-0800-4094-be00-3fc914f2ef89",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "ca6f16bc-b619-43c7-bc5b-4dd5c5a525db",
+							"name": "description",
+							"parent": "cb34e222-0800-4094-be00-3fc914f2ef89",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "4bc74fed-1fb5-4126-b452-668123b6339f",
+							"name": "role",
+							"parent": "cb34e222-0800-4094-be00-3fc914f2ef89",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "9cc925fa-f152-4332-d380-37b4c33eed2e",
+							"name": "username",
+							"parent": "cb34e222-0800-4094-be00-3fc914f2ef89",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "79cdc863-d090-4430-dd54-e200b5b0455e",
+							"name": "password",
+							"parent": "cb34e222-0800-4094-be00-3fc914f2ef89",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "37ceee99-493a-422c-a188-f7e603a206dd",
+							"name": "type",
+							"parent": "cb34e222-0800-4094-be00-3fc914f2ef89",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "32d7ff44-1513-4389-b83c-417a73c758aa",
+							"name": "sapClient",
+							"parent": "cb34e222-0800-4094-be00-3fc914f2ef89",
+							"description": "",
+							"objectType": "object",
+							"objectName": "sapClient",
+							"isParent": true,
+							"children": []
+						},
+						{
+							"id": "868bbea8-957c-469c-c6c2-ac9a400d340d",
+							"name": "token",
+							"parent": "cb34e222-0800-4094-be00-3fc914f2ef89",
+							"description": "",
+							"objectType": "object",
+							"objectName": "token",
+							"isParent": true,
+							"children": []
+						},
+						{
+							"id": "966a8f4c-8a89-4833-d350-6a25c3a4f655",
+							"name": "monitoringName",
+							"parent": "cb34e222-0800-4094-be00-3fc914f2ef89",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "c72751c8-e0ee-44ca-b917-7de7d0237421",
+							"name": "monitoringEnabled",
+							"parent": "cb34e222-0800-4094-be00-3fc914f2ef89",
+							"description": "",
+							"objectType": "boolean",
+							"isParent": false,
+							"children": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "dc5b3b69-d619-481e-d611-57c989ae5671",
+			"name": "Get",
+			"description": "Get tile details",
+			"isInclude": false,
+			"properties": [
+				{
+					"id": "379c9ef6-9ef3-4233-8ca3-b72778827d46",
+					"name": "id",
+					"parent": "1b7125a7-e371-45ab-f873-d0aa9af614d7",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "755c9f6f-7d97-4a44-b5fc-977b10eed61c",
+					"name": "createdAt",
+					"parent": "1b7125a7-e371-45ab-f873-d0aa9af614d7",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "74bb4f61-1932-424b-c699-7f48336c03d9",
+					"name": "updatedAt",
+					"parent": "1b7125a7-e371-45ab-f873-d0aa9af614d7",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "b2c11358-d66c-4165-ed68-6735b7cc6989",
+					"name": "createdBy",
+					"parent": "1b7125a7-e371-45ab-f873-d0aa9af614d7",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "23047b89-7f27-4a86-c2f4-3256a4854283",
+					"name": "changedBy",
+					"parent": "1b7125a7-e371-45ab-f873-d0aa9af614d7",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "7836d132-11aa-48bc-f779-ec74b13e1e34",
+					"name": "undefineditem",
+					"parent": "42584c97-7d6c-456f-9bf4-c246380ea823",
+					"description": "",
+					"objectType": "array",
+					"isParent": true,
+					"children": []
+				},
+				{
+					"id": "42584c97-7d6c-456f-9bf4-c246380ea823",
+					"name": "translation",
+					"parent": "1b7125a7-e371-45ab-f873-d0aa9af614d7",
+					"description": "",
+					"objectType": "array",
+					"objectName": "translation",
+					"isParent": true,
+					"children": [
+						{
+							"id": "7836d132-11aa-48bc-f779-ec74b13e1e34",
+							"name": "undefineditem",
+							"parent": "42584c97-7d6c-456f-9bf4-c246380ea823",
+							"description": "",
+							"objectType": "array",
+							"isParent": true,
+							"children": []
+						}
+					]
+				},
+				{
+					"id": "1d035ebd-c598-4066-a07e-3a3ed4ecd633",
+					"name": "storeItem",
+					"parent": "1b7125a7-e371-45ab-f873-d0aa9af614d7",
+					"description": "",
+					"objectType": "object",
+					"objectName": "storeItem",
+					"isParent": true,
+					"children": []
+				},
+				{
+					"id": "8e6c2a11-48ac-4c34-eb34-37d3d6afbd7d",
+					"name": "title",
+					"parent": "1b7125a7-e371-45ab-f873-d0aa9af614d7",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "68e7351c-186e-452e-da28-f4fc1a8e5923",
+					"name": "subTitle",
+					"parent": "1b7125a7-e371-45ab-f873-d0aa9af614d7",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "5707449f-bd22-4c8c-a4c0-e791760eaa9e",
+					"name": "description",
+					"parent": "1b7125a7-e371-45ab-f873-d0aa9af614d7",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "fb976f04-c7c0-428e-95f4-65ba94438078",
+					"name": "categoryID",
+					"parent": "1b7125a7-e371-45ab-f873-d0aa9af614d7",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "a0ded65d-68bb-489b-d2a6-1923586caae9",
+					"name": "sort",
+					"parent": "1b7125a7-e371-45ab-f873-d0aa9af614d7",
+					"description": "",
+					"objectType": "object",
+					"objectName": "sort",
+					"isParent": true,
+					"children": []
+				},
+				{
+					"id": "6086d1d5-c7e0-42dd-d292-e01489def71a",
+					"name": "urlApplication",
+					"parent": "1b7125a7-e371-45ab-f873-d0aa9af614d7",
+					"description": "",
+					"objectType": "object",
+					"objectName": "urlApplication",
+					"isParent": true,
+					"children": []
+				},
+				{
+					"id": "31fcc813-01a9-438f-d67e-5a65e9187a1f",
+					"name": "actionApplication",
+					"parent": "1b7125a7-e371-45ab-f873-d0aa9af614d7",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "f272dfab-f497-485d-9db2-84baf4f1fdb3",
+					"name": "actionParameters",
+					"parent": "1b7125a7-e371-45ab-f873-d0aa9af614d7",
+					"description": "",
+					"objectType": "object",
+					"objectName": "actionParameters",
+					"isParent": true,
+					"children": []
+				},
+				{
+					"id": "4f7fde84-8b14-48d1-df75-077452c13c0a",
+					"name": "actionURL",
+					"parent": "1b7125a7-e371-45ab-f873-d0aa9af614d7",
+					"description": "",
+					"objectType": "object",
+					"objectName": "actionURL",
+					"isParent": true,
+					"children": []
+				},
+				{
+					"id": "59798cbb-28b3-4ddd-f672-734a5fb94f8e",
+					"name": "openDialog",
+					"parent": "1b7125a7-e371-45ab-f873-d0aa9af614d7",
+					"description": "",
+					"objectType": "boolean",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "50f5e2f9-a19c-426c-8939-144dca60863c",
+					"name": "openWindow",
+					"parent": "1b7125a7-e371-45ab-f873-d0aa9af614d7",
+					"description": "",
+					"objectType": "boolean",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "2041123c-698b-4a66-822f-ff3484f98882",
+					"name": "openFullscreen",
+					"parent": "1b7125a7-e371-45ab-f873-d0aa9af614d7",
+					"description": "",
+					"objectType": "boolean",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "3fbca689-3b1f-46b2-8dd2-ca4504521876",
+					"name": "forceRow",
+					"parent": "1b7125a7-e371-45ab-f873-d0aa9af614d7",
+					"description": "",
+					"objectType": "boolean",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "486f8809-4ef1-4cfe-f03b-83a52ff23662",
+					"name": "frameType",
+					"parent": "1b7125a7-e371-45ab-f873-d0aa9af614d7",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "59263d23-40fe-4032-e64b-885043942cac",
+					"name": "type",
+					"parent": "1b7125a7-e371-45ab-f873-d0aa9af614d7",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "9e25ef8b-0693-472c-97c2-264a60e73ef3",
+					"name": "image",
+					"parent": "1b7125a7-e371-45ab-f873-d0aa9af614d7",
+					"description": "",
+					"objectType": "object",
+					"objectName": "image",
+					"isParent": true,
+					"children": []
+				},
+				{
+					"id": "8251492b-4b5b-4863-e2a4-a365ed05201e",
+					"name": "icon",
+					"parent": "1b7125a7-e371-45ab-f873-d0aa9af614d7",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "e42f8123-dce9-43be-d885-ef8d4535c5b5",
+					"name": "backgroundType",
+					"parent": "1b7125a7-e371-45ab-f873-d0aa9af614d7",
+					"description": "",
+					"objectType": "object",
+					"objectName": "backgroundType",
+					"isParent": true,
+					"children": []
+				},
+				{
+					"id": "87bc51c1-27c0-46c5-f7e8-54f46d3faa86",
+					"name": "backgroundColor",
+					"parent": "1b7125a7-e371-45ab-f873-d0aa9af614d7",
+					"description": "",
+					"objectType": "object",
+					"objectName": "backgroundColor",
+					"isParent": true,
+					"children": []
+				},
+				{
+					"id": "d7c88c06-18b2-452f-f4b2-31f9f77a57c5",
+					"name": "backgroundShade",
+					"parent": "1b7125a7-e371-45ab-f873-d0aa9af614d7",
+					"description": "",
+					"objectType": "object",
+					"objectName": "backgroundShade",
+					"isParent": true,
+					"children": []
+				},
+				{
+					"id": "c8d8ce88-e6dd-40e4-ac15-3395f940a0c0",
+					"name": "tileApplication",
+					"parent": "1b7125a7-e371-45ab-f873-d0aa9af614d7",
+					"description": "",
+					"objectType": "object",
+					"objectName": "tileApplication",
+					"isParent": true,
+					"children": []
+				},
+				{
+					"id": "cfb62799-71cd-49a2-8b7e-076b2f8eb27d",
+					"name": "hideHeaderL",
+					"parent": "1b7125a7-e371-45ab-f873-d0aa9af614d7",
+					"description": "",
+					"objectType": "boolean",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "38f74e7a-a5f0-43a8-eca6-30d2b7a65a1f",
+					"name": "hideHeaderM",
+					"parent": "1b7125a7-e371-45ab-f873-d0aa9af614d7",
+					"description": "",
+					"objectType": "boolean",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "f414aa7b-2915-4edd-f9eb-4ba73d05b028",
+					"name": "hideHeaderS",
+					"parent": "1b7125a7-e371-45ab-f873-d0aa9af614d7",
+					"description": "",
+					"objectType": "boolean",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "a461dc13-b177-460a-db5c-a019a557f320",
+					"name": "hideTileDesktop",
+					"parent": "1b7125a7-e371-45ab-f873-d0aa9af614d7",
+					"description": "",
+					"objectType": "boolean",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "db3b481d-b949-4c68-c849-68cf04ea62e8",
+					"name": "hideTileMobile",
+					"parent": "1b7125a7-e371-45ab-f873-d0aa9af614d7",
+					"description": "",
+					"objectType": "boolean",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "d39ea2d8-daca-42ba-bff6-0010c3341bad",
+					"name": "hideTileTablet",
+					"parent": "1b7125a7-e371-45ab-f873-d0aa9af614d7",
+					"description": "",
+					"objectType": "boolean",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "fd55a086-f7db-4f1f-8493-30c3ef97123a",
+					"name": "enableDocumentation",
+					"parent": "1b7125a7-e371-45ab-f873-d0aa9af614d7",
+					"description": "",
+					"objectType": "boolean",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "613c49c2-b8fc-4af3-bd70-084a5cebb61f",
+					"name": "navObject",
+					"parent": "1b7125a7-e371-45ab-f873-d0aa9af614d7",
+					"description": "",
+					"objectType": "object",
+					"objectName": "navObject",
+					"isParent": true,
+					"children": []
+				},
+				{
+					"id": "ea1c0e3b-8a60-42fd-8ba5-c56c992045e7",
+					"name": "navAction",
+					"parent": "1b7125a7-e371-45ab-f873-d0aa9af614d7",
+					"description": "",
+					"objectType": "object",
+					"objectName": "navAction",
+					"isParent": true,
+					"children": []
+				},
+				{
+					"id": "165aface-fcf0-4eb9-a94d-a48cb61677b3",
+					"name": "dialogWidth",
+					"parent": "1b7125a7-e371-45ab-f873-d0aa9af614d7",
+					"description": "",
+					"objectType": "object",
+					"objectName": "dialogWidth",
+					"isParent": true,
+					"children": []
+				},
+				{
+					"id": "c127d494-87af-48e8-e90c-1cffe0e7c20e",
+					"name": "dialogHeight",
+					"parent": "1b7125a7-e371-45ab-f873-d0aa9af614d7",
+					"description": "",
+					"objectType": "object",
+					"objectName": "dialogHeight",
+					"isParent": true,
+					"children": []
+				},
+				{
+					"id": "a7c9d6a4-1d43-4030-f22c-7579d18d7506",
+					"name": "tileApplicationStyleClass",
+					"parent": "1b7125a7-e371-45ab-f873-d0aa9af614d7",
+					"description": "",
+					"objectType": "object",
+					"objectName": "tileApplicationStyleClass",
+					"isParent": true,
+					"children": []
+				},
+				{
+					"id": "4691a935-299b-4a40-fa84-e1ba4ade3ea6",
+					"name": "sidepanelApp",
+					"parent": "1b7125a7-e371-45ab-f873-d0aa9af614d7",
+					"description": "",
+					"objectType": "object",
+					"objectName": "sidepanelApp",
+					"isParent": true,
+					"children": []
+				},
+				{
+					"id": "391fb725-f845-4184-a076-112022dcc465",
+					"name": "sidepanelTitle",
+					"parent": "1b7125a7-e371-45ab-f873-d0aa9af614d7",
+					"description": "",
+					"objectType": "object",
+					"objectName": "sidepanelTitle",
+					"isParent": true,
+					"children": []
+				},
+				{
+					"id": "4bf64e81-358e-4ac8-c33f-abe47715dcf9",
+					"name": "tags",
+					"parent": "1b7125a7-e371-45ab-f873-d0aa9af614d7",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "70faffcc-1417-49a5-fa22-18a936900370",
+					"name": "actiongroup",
+					"parent": "1b7125a7-e371-45ab-f873-d0aa9af614d7",
+					"description": "",
+					"objectType": "object",
+					"objectName": "actiongroup",
+					"isParent": true,
+					"children": []
+				},
+				{
+					"id": "e701be26-4d28-417d-d92c-445af81db826",
+					"name": "styleClass",
+					"parent": "1b7125a7-e371-45ab-f873-d0aa9af614d7",
+					"description": "",
+					"objectType": "object",
+					"objectName": "styleClass",
+					"isParent": true,
+					"children": []
+				},
+				{
+					"id": "73cc361d-045f-47c3-ef64-51465e106f26",
+					"name": "titleAlignment",
+					"parent": "1b7125a7-e371-45ab-f873-d0aa9af614d7",
+					"description": "",
+					"objectType": "object",
+					"objectName": "titleAlignment",
+					"isParent": true,
+					"children": []
+				},
+				{
+					"id": "9e9c5c04-558e-4cde-fd40-b4619fd9cda7",
+					"name": "titleLevel",
+					"parent": "1b7125a7-e371-45ab-f873-d0aa9af614d7",
+					"description": "",
+					"objectType": "object",
+					"objectName": "titleLevel",
+					"isParent": true,
+					"children": []
+				},
+				{
+					"id": "aeb7799d-ef4b-4e2d-93b3-715a2e2b87c5",
+					"name": "dataUrl",
+					"parent": "1b7125a7-e371-45ab-f873-d0aa9af614d7",
+					"description": "",
+					"objectType": "object",
+					"objectName": "dataUrl",
+					"isParent": true,
+					"children": []
+				},
+				{
+					"id": "c1dd3dd4-4c43-4279-f598-f215720989c8",
+					"name": "dataInterval",
+					"parent": "1b7125a7-e371-45ab-f873-d0aa9af614d7",
+					"description": "",
+					"objectType": "object",
+					"objectName": "dataInterval",
+					"isParent": true,
+					"children": []
+				},
+				{
+					"id": "8f9a6ff8-21e2-4b5d-9f10-9d29187af6e6",
+					"name": "footer",
+					"parent": "1b7125a7-e371-45ab-f873-d0aa9af614d7",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "4c0b13e0-932a-42bd-dd38-0feaae4c1168",
+					"name": "browserBlockWin",
+					"parent": "1b7125a7-e371-45ab-f873-d0aa9af614d7",
+					"description": "",
+					"objectType": "object",
+					"objectName": "browserBlockWin",
+					"isParent": true,
+					"children": []
+				},
+				{
+					"id": "fc5544eb-ed96-4605-a0e4-c07ec00f30a0",
+					"name": "browserBlockMac",
+					"parent": "1b7125a7-e371-45ab-f873-d0aa9af614d7",
+					"description": "",
+					"objectType": "object",
+					"objectName": "browserBlockMac",
+					"isParent": true,
+					"children": []
+				},
+				{
+					"id": "e1b6cbd1-7f8c-4dfc-be20-124c63062475",
+					"name": "blackoutEnabled",
+					"parent": "1b7125a7-e371-45ab-f873-d0aa9af614d7",
+					"description": "",
+					"objectType": "boolean",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "76b7361e-3324-4131-99e8-f8b5a7946b94",
+					"name": "blackoutText",
+					"parent": "1b7125a7-e371-45ab-f873-d0aa9af614d7",
+					"description": "",
+					"objectType": "object",
+					"objectName": "blackoutText",
+					"isParent": true,
+					"children": []
+				},
+				{
+					"id": "fbc23a55-dcf0-4bf2-8417-2f243531e8af",
+					"name": "blackoutDescription",
+					"parent": "1b7125a7-e371-45ab-f873-d0aa9af614d7",
+					"description": "",
+					"objectType": "object",
+					"objectName": "blackoutDescription",
+					"isParent": true,
+					"children": []
+				},
+				{
+					"id": "f6be6c00-956e-4eea-835b-416e097273d3",
+					"name": "helpText",
+					"parent": "1b7125a7-e371-45ab-f873-d0aa9af614d7",
+					"description": "",
+					"objectType": "object",
+					"objectName": "helpText",
+					"isParent": true,
+					"children": []
+				},
+				{
+					"id": "8d50012b-2ceb-4860-b678-171f9d7b3c7f",
+					"name": "helpEnabled",
+					"parent": "1b7125a7-e371-45ab-f873-d0aa9af614d7",
+					"description": "",
+					"objectType": "boolean",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "64f10968-ae09-4103-f218-4fc82ee56960",
+					"name": "openClickTile",
+					"parent": "1b7125a7-e371-45ab-f873-d0aa9af614d7",
+					"description": "",
+					"objectType": "boolean",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "b2e96b23-0f60-4d50-baf8-1ca82837d975",
+					"name": "ver",
+					"parent": "1b7125a7-e371-45ab-f873-d0aa9af614d7",
+					"description": "",
+					"objectType": "object",
+					"objectName": "ver",
+					"isParent": true,
+					"children": []
+				},
+				{
+					"id": "33e93519-198e-4acc-ae58-8ea32525efd1",
+					"name": "actionWebApp",
+					"parent": "1b7125a7-e371-45ab-f873-d0aa9af614d7",
+					"description": "",
+					"objectType": "object",
+					"objectName": "actionWebApp",
+					"isParent": true,
+					"children": []
+				},
+				{
+					"id": "c40c60c6-b6c7-4eca-f1a4-b5f2a247b4e9",
+					"name": "undefineditem",
+					"parent": "043fad66-135c-4b97-8396-ad000ba61993",
+					"description": "",
+					"objectType": "undefined",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "043fad66-135c-4b97-8396-ad000ba61993",
+					"name": "roles",
+					"parent": "1b7125a7-e371-45ab-f873-d0aa9af614d7",
+					"description": "",
+					"objectType": "array",
+					"objectName": "roles",
+					"isParent": true,
+					"children": [
+						{
+							"id": "c40c60c6-b6c7-4eca-f1a4-b5f2a247b4e9",
+							"name": "undefineditem",
+							"parent": "043fad66-135c-4b97-8396-ad000ba61993",
+							"description": "",
+							"objectType": "undefined",
+							"isParent": false,
+							"children": []
+						}
+					]
+				},
+				{
+					"id": "91053596-2574-4c4f-b69a-e7476dcff08b",
+					"name": "id",
+					"parent": "e3fbd5e8-3bfa-4e6e-b375-7b0bbf27dfdc",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "0dc213b0-6cb3-4e5d-9022-e7fea7e34409",
+					"name": "createdAt",
+					"parent": "e3fbd5e8-3bfa-4e6e-b375-7b0bbf27dfdc",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "6f2a2b72-79d3-4f10-bbcf-833e6043eb77",
+					"name": "updatedAt",
+					"parent": "e3fbd5e8-3bfa-4e6e-b375-7b0bbf27dfdc",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "2a430777-70b9-4a31-8be1-bec21147d491",
+					"name": "createdBy",
+					"parent": "e3fbd5e8-3bfa-4e6e-b375-7b0bbf27dfdc",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "a32bb7f2-527e-48e4-c0ca-052ca4b93356",
+					"name": "changedBy",
+					"parent": "e3fbd5e8-3bfa-4e6e-b375-7b0bbf27dfdc",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "c4e5552a-5f11-4e60-c1a1-92a72fa30b98",
+					"name": "undefineditem",
+					"parent": "f48e92a0-b32d-4ba4-a809-7ca143f8e534",
+					"description": "",
+					"objectType": "undefined",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "f48e92a0-b32d-4ba4-a809-7ca143f8e534",
+					"name": "translation",
+					"parent": "e3fbd5e8-3bfa-4e6e-b375-7b0bbf27dfdc",
+					"description": "",
+					"objectType": "array",
+					"objectName": "translation",
+					"isParent": true,
+					"children": [
+						{
+							"id": "c4e5552a-5f11-4e60-c1a1-92a72fa30b98",
+							"name": "undefineditem",
+							"parent": "f48e92a0-b32d-4ba4-a809-7ca143f8e534",
+							"description": "",
+							"objectType": "undefined",
+							"isParent": false,
+							"children": []
+						}
+					]
+				},
+				{
+					"id": "8f9929b8-3fac-47c1-8b9a-bb25f6861b0d",
+					"name": "stringitem",
+					"parent": "df78883c-e09d-4fa8-e395-da2320a75537",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "df78883c-e09d-4fa8-e395-da2320a75537",
+					"name": "tilesOrder",
+					"parent": "e3fbd5e8-3bfa-4e6e-b375-7b0bbf27dfdc",
+					"description": "",
+					"objectType": "array",
+					"objectName": "tilesOrder",
+					"isParent": true,
+					"children": [
+						{
+							"id": "8f9929b8-3fac-47c1-8b9a-bb25f6861b0d",
+							"name": "stringitem",
+							"parent": "df78883c-e09d-4fa8-e395-da2320a75537",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						}
+					]
+				},
+				{
+					"id": "630998da-de1e-4fa5-a6dd-65fe03bad6c4",
+					"name": "stringitem",
+					"parent": "d4035bf1-e69a-4d2d-d0c0-5169a51db94d",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "d4035bf1-e69a-4d2d-d0c0-5169a51db94d",
+					"name": "tilegroupsOrder",
+					"parent": "e3fbd5e8-3bfa-4e6e-b375-7b0bbf27dfdc",
+					"description": "",
+					"objectType": "array",
+					"objectName": "tilegroupsOrder",
+					"isParent": true,
+					"children": [
+						{
+							"id": "630998da-de1e-4fa5-a6dd-65fe03bad6c4",
+							"name": "stringitem",
+							"parent": "d4035bf1-e69a-4d2d-d0c0-5169a51db94d",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						}
+					]
+				},
+				{
+					"id": "fa5e2fbe-ae2b-47fa-c8c6-1c6ea3232306",
+					"name": "configMessage",
+					"parent": "e3fbd5e8-3bfa-4e6e-b375-7b0bbf27dfdc",
+					"description": "",
+					"objectType": "object",
+					"objectName": "configMessage",
+					"isParent": true,
+					"children": []
+				},
+				{
+					"id": "32b676fd-c2cb-4ad8-8f3f-b71219398577",
+					"name": "title",
+					"parent": "e3fbd5e8-3bfa-4e6e-b375-7b0bbf27dfdc",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "8975ee53-c90d-4a9b-d9d0-ad5cb809e352",
+					"name": "subTitle",
+					"parent": "e3fbd5e8-3bfa-4e6e-b375-7b0bbf27dfdc",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "d422f748-008f-4bc1-e348-bd839b8cbaaf",
+					"name": "description",
+					"parent": "e3fbd5e8-3bfa-4e6e-b375-7b0bbf27dfdc",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "7aeb4e74-1111-4fd7-aa22-368376a615f6",
+					"name": "titleAlignment",
+					"parent": "e3fbd5e8-3bfa-4e6e-b375-7b0bbf27dfdc",
+					"description": "",
+					"objectType": "object",
+					"objectName": "titleAlignment",
+					"isParent": true,
+					"children": []
+				},
+				{
+					"id": "3135cfc7-a695-4d3b-d469-b0eaaa24baa7",
+					"name": "enableFullScreen",
+					"parent": "e3fbd5e8-3bfa-4e6e-b375-7b0bbf27dfdc",
+					"description": "",
+					"objectType": "object",
+					"objectName": "enableFullScreen",
+					"isParent": true,
+					"children": []
+				},
+				{
+					"id": "e03322d0-7f68-45bd-991f-8094b6f5825b",
+					"name": "hideHeader",
+					"parent": "e3fbd5e8-3bfa-4e6e-b375-7b0bbf27dfdc",
+					"description": "",
+					"objectType": "object",
+					"objectName": "hideHeader",
+					"isParent": true,
+					"children": []
+				},
+				{
+					"id": "4fb9291a-7a2f-43c2-9b6d-71c2a44eca19",
+					"name": "backgroundType",
+					"parent": "e3fbd5e8-3bfa-4e6e-b375-7b0bbf27dfdc",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "8395b646-92aa-4f3e-992c-5319f41ad919",
+					"name": "backgroundColor",
+					"parent": "e3fbd5e8-3bfa-4e6e-b375-7b0bbf27dfdc",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "35ff6b2d-337c-43f5-a662-16380cfe69bb",
+					"name": "backgroundShade",
+					"parent": "e3fbd5e8-3bfa-4e6e-b375-7b0bbf27dfdc",
+					"description": "",
+					"objectType": "object",
+					"objectName": "backgroundShade",
+					"isParent": true,
+					"children": []
+				},
+				{
+					"id": "73678dd9-4454-41d6-d70d-d8318d4bf7cd",
+					"name": "type",
+					"parent": "e3fbd5e8-3bfa-4e6e-b375-7b0bbf27dfdc",
+					"description": "",
+					"objectType": "object",
+					"objectName": "type",
+					"isParent": true,
+					"children": []
+				},
+				{
+					"id": "59a67614-bad9-4115-e7ed-dc7765fe014f",
+					"name": "image",
+					"parent": "e3fbd5e8-3bfa-4e6e-b375-7b0bbf27dfdc",
+					"description": "",
+					"objectType": "object",
+					"objectName": "image",
+					"isParent": true,
+					"children": []
+				},
+				{
+					"id": "3afdfd7a-2957-4e75-95fa-fef17eeeb438",
+					"name": "icon",
+					"parent": "e3fbd5e8-3bfa-4e6e-b375-7b0bbf27dfdc",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "be5f2404-0c2c-4853-bea4-e06b64105f17",
+					"name": "sort",
+					"parent": "e3fbd5e8-3bfa-4e6e-b375-7b0bbf27dfdc",
+					"description": "",
+					"objectType": "object",
+					"objectName": "sort",
+					"isParent": true,
+					"children": []
+				},
+				{
+					"id": "01bc7702-1749-4106-a7a7-97398f429c1a",
+					"name": "inclFav",
+					"parent": "e3fbd5e8-3bfa-4e6e-b375-7b0bbf27dfdc",
+					"description": "",
+					"objectType": "boolean",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "b9e58f70-51f5-4224-b1f1-84bd86d478e6",
+					"name": "styleClass",
+					"parent": "e3fbd5e8-3bfa-4e6e-b375-7b0bbf27dfdc",
+					"description": "",
+					"objectType": "object",
+					"objectName": "styleClass",
+					"isParent": true,
+					"children": []
+				},
+				{
+					"id": "48a3ad38-887c-4b4d-945c-60238b4cd603",
+					"name": "enableScroll",
+					"parent": "e3fbd5e8-3bfa-4e6e-b375-7b0bbf27dfdc",
+					"description": "",
+					"objectType": "boolean",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "45e963d6-7595-497a-cf1c-58f9fa062f32",
+					"name": "enableShadeCalc",
+					"parent": "e3fbd5e8-3bfa-4e6e-b375-7b0bbf27dfdc",
+					"description": "",
+					"objectType": "boolean",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "e8450d45-9995-4d74-b957-212ad872d786",
+					"name": "numTiles",
+					"parent": "e3fbd5e8-3bfa-4e6e-b375-7b0bbf27dfdc",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "99ae5d8a-1a95-4eac-e11f-2f9198d5afc0",
+					"name": "enableMessage",
+					"parent": "e3fbd5e8-3bfa-4e6e-b375-7b0bbf27dfdc",
+					"description": "",
+					"objectType": "boolean",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "2bfc2aa9-882f-44dc-ef58-dff9a0e10bb8",
+					"name": "ver",
+					"parent": "e3fbd5e8-3bfa-4e6e-b375-7b0bbf27dfdc",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "403fe22f-529f-4fb8-fd46-fadcc3a07929",
+					"name": "headColor",
+					"parent": "e3fbd5e8-3bfa-4e6e-b375-7b0bbf27dfdc",
+					"description": "",
+					"objectType": "object",
+					"objectName": "headColor",
+					"isParent": true,
+					"children": []
+				},
+				{
+					"id": "07360c78-64d9-4ed7-8c7d-a704b5cae014",
+					"name": "headTxtClr",
+					"parent": "e3fbd5e8-3bfa-4e6e-b375-7b0bbf27dfdc",
+					"description": "",
+					"objectType": "object",
+					"objectName": "headTxtClr",
+					"isParent": true,
+					"children": []
+				},
+				{
+					"id": "53b9f388-4c5a-4b2b-ff33-5e5761b632de",
+					"name": "subheadTxtClr",
+					"parent": "e3fbd5e8-3bfa-4e6e-b375-7b0bbf27dfdc",
+					"description": "",
+					"objectType": "object",
+					"objectName": "subheadTxtClr",
+					"isParent": true,
+					"children": []
+				},
+				{
+					"id": "caf44829-f693-45f7-e713-4e36703cf3e2",
+					"name": "headBorderClr",
+					"parent": "e3fbd5e8-3bfa-4e6e-b375-7b0bbf27dfdc",
+					"description": "",
+					"objectType": "object",
+					"objectName": "headBorderClr",
+					"isParent": true,
+					"children": []
+				},
+				{
+					"id": "74c6ad09-1b5c-4b80-a6c2-05b856e6f596",
+					"name": "headBorderWidth",
+					"parent": "e3fbd5e8-3bfa-4e6e-b375-7b0bbf27dfdc",
+					"description": "",
+					"objectType": "object",
+					"objectName": "headBorderWidth",
+					"isParent": true,
+					"children": []
+				},
+				{
+					"id": "59ad6113-f9d3-4fda-a2b2-1d19a0789bc9",
+					"name": "imageTablet",
+					"parent": "e3fbd5e8-3bfa-4e6e-b375-7b0bbf27dfdc",
+					"description": "",
+					"objectType": "object",
+					"objectName": "imageTablet",
+					"isParent": true,
+					"children": []
+				},
+				{
+					"id": "9e4ed90e-5190-4b83-bf5a-cd8afc88f99e",
+					"name": "imageMobile",
+					"parent": "e3fbd5e8-3bfa-4e6e-b375-7b0bbf27dfdc",
+					"description": "",
+					"objectType": "object",
+					"objectName": "imageMobile",
+					"isParent": true,
+					"children": []
+				},
+				{
+					"id": "40dd0f50-cadd-4c57-e76d-c8670c3db681",
+					"name": "imageCover",
+					"parent": "e3fbd5e8-3bfa-4e6e-b375-7b0bbf27dfdc",
+					"description": "",
+					"objectType": "boolean",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "cda48a72-1f86-4c68-b9eb-ffff57c7caf6",
+					"name": "imageTabletCover",
+					"parent": "e3fbd5e8-3bfa-4e6e-b375-7b0bbf27dfdc",
+					"description": "",
+					"objectType": "boolean",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "a8dc278f-3ed4-48f2-d2be-61f2f261dea5",
+					"name": "imageMobileCover",
+					"parent": "e3fbd5e8-3bfa-4e6e-b375-7b0bbf27dfdc",
+					"description": "",
+					"objectType": "boolean",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "83b3472d-eee8-45d3-a071-71f6006ddf0d",
+					"name": "imageMobileHeight",
+					"parent": "e3fbd5e8-3bfa-4e6e-b375-7b0bbf27dfdc",
+					"description": "",
+					"objectType": "object",
+					"objectName": "imageMobileHeight",
+					"isParent": true,
+					"children": []
+				},
+				{
+					"id": "94440900-a294-49cf-97e6-3d8980c79ec9",
+					"name": "imageTabletHeight",
+					"parent": "e3fbd5e8-3bfa-4e6e-b375-7b0bbf27dfdc",
+					"description": "",
+					"objectType": "object",
+					"objectName": "imageTabletHeight",
+					"isParent": true,
+					"children": []
+				},
+				{
+					"id": "78350441-a17b-4f7b-c9c1-49e9bad95fd2",
+					"name": "imageHeight",
+					"parent": "e3fbd5e8-3bfa-4e6e-b375-7b0bbf27dfdc",
+					"description": "",
+					"objectType": "object",
+					"objectName": "imageHeight",
+					"isParent": true,
+					"children": []
+				},
+				{
+					"id": "e3fbd5e8-3bfa-4e6e-b375-7b0bbf27dfdc",
+					"name": "tilegroups",
+					"parent": "1b7125a7-e371-45ab-f873-d0aa9af614d7",
+					"description": "",
+					"objectType": "array",
+					"objectName": "tilegroups",
+					"isParent": true,
+					"children": [
+						{
+							"id": "91053596-2574-4c4f-b69a-e7476dcff08b",
+							"name": "id",
+							"parent": "e3fbd5e8-3bfa-4e6e-b375-7b0bbf27dfdc",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "0dc213b0-6cb3-4e5d-9022-e7fea7e34409",
+							"name": "createdAt",
+							"parent": "e3fbd5e8-3bfa-4e6e-b375-7b0bbf27dfdc",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "6f2a2b72-79d3-4f10-bbcf-833e6043eb77",
+							"name": "updatedAt",
+							"parent": "e3fbd5e8-3bfa-4e6e-b375-7b0bbf27dfdc",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "2a430777-70b9-4a31-8be1-bec21147d491",
+							"name": "createdBy",
+							"parent": "e3fbd5e8-3bfa-4e6e-b375-7b0bbf27dfdc",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "a32bb7f2-527e-48e4-c0ca-052ca4b93356",
+							"name": "changedBy",
+							"parent": "e3fbd5e8-3bfa-4e6e-b375-7b0bbf27dfdc",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "f48e92a0-b32d-4ba4-a809-7ca143f8e534",
+							"name": "translation",
+							"parent": "e3fbd5e8-3bfa-4e6e-b375-7b0bbf27dfdc",
+							"description": "",
+							"objectType": "array",
+							"objectName": "translation",
+							"isParent": true,
+							"children": [
+								{
+									"id": "c4e5552a-5f11-4e60-c1a1-92a72fa30b98",
+									"name": "undefineditem",
+									"parent": "f48e92a0-b32d-4ba4-a809-7ca143f8e534",
+									"description": "",
+									"objectType": "undefined",
+									"isParent": false,
+									"children": []
+								}
+							]
+						},
+						{
+							"id": "df78883c-e09d-4fa8-e395-da2320a75537",
+							"name": "tilesOrder",
+							"parent": "e3fbd5e8-3bfa-4e6e-b375-7b0bbf27dfdc",
+							"description": "",
+							"objectType": "array",
+							"objectName": "tilesOrder",
+							"isParent": true,
+							"children": [
+								{
+									"id": "8f9929b8-3fac-47c1-8b9a-bb25f6861b0d",
+									"name": "stringitem",
+									"parent": "df78883c-e09d-4fa8-e395-da2320a75537",
+									"description": "",
+									"objectType": "string",
+									"isParent": false,
+									"children": []
+								}
+							]
+						},
+						{
+							"id": "d4035bf1-e69a-4d2d-d0c0-5169a51db94d",
+							"name": "tilegroupsOrder",
+							"parent": "e3fbd5e8-3bfa-4e6e-b375-7b0bbf27dfdc",
+							"description": "",
+							"objectType": "array",
+							"objectName": "tilegroupsOrder",
+							"isParent": true,
+							"children": [
+								{
+									"id": "630998da-de1e-4fa5-a6dd-65fe03bad6c4",
+									"name": "stringitem",
+									"parent": "d4035bf1-e69a-4d2d-d0c0-5169a51db94d",
+									"description": "",
+									"objectType": "string",
+									"isParent": false,
+									"children": []
+								}
+							]
+						},
+						{
+							"id": "fa5e2fbe-ae2b-47fa-c8c6-1c6ea3232306",
+							"name": "configMessage",
+							"parent": "e3fbd5e8-3bfa-4e6e-b375-7b0bbf27dfdc",
+							"description": "",
+							"objectType": "object",
+							"objectName": "configMessage",
+							"isParent": true,
+							"children": []
+						},
+						{
+							"id": "32b676fd-c2cb-4ad8-8f3f-b71219398577",
+							"name": "title",
+							"parent": "e3fbd5e8-3bfa-4e6e-b375-7b0bbf27dfdc",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "8975ee53-c90d-4a9b-d9d0-ad5cb809e352",
+							"name": "subTitle",
+							"parent": "e3fbd5e8-3bfa-4e6e-b375-7b0bbf27dfdc",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "d422f748-008f-4bc1-e348-bd839b8cbaaf",
+							"name": "description",
+							"parent": "e3fbd5e8-3bfa-4e6e-b375-7b0bbf27dfdc",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "7aeb4e74-1111-4fd7-aa22-368376a615f6",
+							"name": "titleAlignment",
+							"parent": "e3fbd5e8-3bfa-4e6e-b375-7b0bbf27dfdc",
+							"description": "",
+							"objectType": "object",
+							"objectName": "titleAlignment",
+							"isParent": true,
+							"children": []
+						},
+						{
+							"id": "3135cfc7-a695-4d3b-d469-b0eaaa24baa7",
+							"name": "enableFullScreen",
+							"parent": "e3fbd5e8-3bfa-4e6e-b375-7b0bbf27dfdc",
+							"description": "",
+							"objectType": "object",
+							"objectName": "enableFullScreen",
+							"isParent": true,
+							"children": []
+						},
+						{
+							"id": "e03322d0-7f68-45bd-991f-8094b6f5825b",
+							"name": "hideHeader",
+							"parent": "e3fbd5e8-3bfa-4e6e-b375-7b0bbf27dfdc",
+							"description": "",
+							"objectType": "object",
+							"objectName": "hideHeader",
+							"isParent": true,
+							"children": []
+						},
+						{
+							"id": "4fb9291a-7a2f-43c2-9b6d-71c2a44eca19",
+							"name": "backgroundType",
+							"parent": "e3fbd5e8-3bfa-4e6e-b375-7b0bbf27dfdc",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "8395b646-92aa-4f3e-992c-5319f41ad919",
+							"name": "backgroundColor",
+							"parent": "e3fbd5e8-3bfa-4e6e-b375-7b0bbf27dfdc",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "35ff6b2d-337c-43f5-a662-16380cfe69bb",
+							"name": "backgroundShade",
+							"parent": "e3fbd5e8-3bfa-4e6e-b375-7b0bbf27dfdc",
+							"description": "",
+							"objectType": "object",
+							"objectName": "backgroundShade",
+							"isParent": true,
+							"children": []
+						},
+						{
+							"id": "73678dd9-4454-41d6-d70d-d8318d4bf7cd",
+							"name": "type",
+							"parent": "e3fbd5e8-3bfa-4e6e-b375-7b0bbf27dfdc",
+							"description": "",
+							"objectType": "object",
+							"objectName": "type",
+							"isParent": true,
+							"children": []
+						},
+						{
+							"id": "59a67614-bad9-4115-e7ed-dc7765fe014f",
+							"name": "image",
+							"parent": "e3fbd5e8-3bfa-4e6e-b375-7b0bbf27dfdc",
+							"description": "",
+							"objectType": "object",
+							"objectName": "image",
+							"isParent": true,
+							"children": []
+						},
+						{
+							"id": "3afdfd7a-2957-4e75-95fa-fef17eeeb438",
+							"name": "icon",
+							"parent": "e3fbd5e8-3bfa-4e6e-b375-7b0bbf27dfdc",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "be5f2404-0c2c-4853-bea4-e06b64105f17",
+							"name": "sort",
+							"parent": "e3fbd5e8-3bfa-4e6e-b375-7b0bbf27dfdc",
+							"description": "",
+							"objectType": "object",
+							"objectName": "sort",
+							"isParent": true,
+							"children": []
+						},
+						{
+							"id": "01bc7702-1749-4106-a7a7-97398f429c1a",
+							"name": "inclFav",
+							"parent": "e3fbd5e8-3bfa-4e6e-b375-7b0bbf27dfdc",
+							"description": "",
+							"objectType": "boolean",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "b9e58f70-51f5-4224-b1f1-84bd86d478e6",
+							"name": "styleClass",
+							"parent": "e3fbd5e8-3bfa-4e6e-b375-7b0bbf27dfdc",
+							"description": "",
+							"objectType": "object",
+							"objectName": "styleClass",
+							"isParent": true,
+							"children": []
+						},
+						{
+							"id": "48a3ad38-887c-4b4d-945c-60238b4cd603",
+							"name": "enableScroll",
+							"parent": "e3fbd5e8-3bfa-4e6e-b375-7b0bbf27dfdc",
+							"description": "",
+							"objectType": "boolean",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "45e963d6-7595-497a-cf1c-58f9fa062f32",
+							"name": "enableShadeCalc",
+							"parent": "e3fbd5e8-3bfa-4e6e-b375-7b0bbf27dfdc",
+							"description": "",
+							"objectType": "boolean",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "e8450d45-9995-4d74-b957-212ad872d786",
+							"name": "numTiles",
+							"parent": "e3fbd5e8-3bfa-4e6e-b375-7b0bbf27dfdc",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "99ae5d8a-1a95-4eac-e11f-2f9198d5afc0",
+							"name": "enableMessage",
+							"parent": "e3fbd5e8-3bfa-4e6e-b375-7b0bbf27dfdc",
+							"description": "",
+							"objectType": "boolean",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "2bfc2aa9-882f-44dc-ef58-dff9a0e10bb8",
+							"name": "ver",
+							"parent": "e3fbd5e8-3bfa-4e6e-b375-7b0bbf27dfdc",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "403fe22f-529f-4fb8-fd46-fadcc3a07929",
+							"name": "headColor",
+							"parent": "e3fbd5e8-3bfa-4e6e-b375-7b0bbf27dfdc",
+							"description": "",
+							"objectType": "object",
+							"objectName": "headColor",
+							"isParent": true,
+							"children": []
+						},
+						{
+							"id": "07360c78-64d9-4ed7-8c7d-a704b5cae014",
+							"name": "headTxtClr",
+							"parent": "e3fbd5e8-3bfa-4e6e-b375-7b0bbf27dfdc",
+							"description": "",
+							"objectType": "object",
+							"objectName": "headTxtClr",
+							"isParent": true,
+							"children": []
+						},
+						{
+							"id": "53b9f388-4c5a-4b2b-ff33-5e5761b632de",
+							"name": "subheadTxtClr",
+							"parent": "e3fbd5e8-3bfa-4e6e-b375-7b0bbf27dfdc",
+							"description": "",
+							"objectType": "object",
+							"objectName": "subheadTxtClr",
+							"isParent": true,
+							"children": []
+						},
+						{
+							"id": "caf44829-f693-45f7-e713-4e36703cf3e2",
+							"name": "headBorderClr",
+							"parent": "e3fbd5e8-3bfa-4e6e-b375-7b0bbf27dfdc",
+							"description": "",
+							"objectType": "object",
+							"objectName": "headBorderClr",
+							"isParent": true,
+							"children": []
+						},
+						{
+							"id": "74c6ad09-1b5c-4b80-a6c2-05b856e6f596",
+							"name": "headBorderWidth",
+							"parent": "e3fbd5e8-3bfa-4e6e-b375-7b0bbf27dfdc",
+							"description": "",
+							"objectType": "object",
+							"objectName": "headBorderWidth",
+							"isParent": true,
+							"children": []
+						},
+						{
+							"id": "59ad6113-f9d3-4fda-a2b2-1d19a0789bc9",
+							"name": "imageTablet",
+							"parent": "e3fbd5e8-3bfa-4e6e-b375-7b0bbf27dfdc",
+							"description": "",
+							"objectType": "object",
+							"objectName": "imageTablet",
+							"isParent": true,
+							"children": []
+						},
+						{
+							"id": "9e4ed90e-5190-4b83-bf5a-cd8afc88f99e",
+							"name": "imageMobile",
+							"parent": "e3fbd5e8-3bfa-4e6e-b375-7b0bbf27dfdc",
+							"description": "",
+							"objectType": "object",
+							"objectName": "imageMobile",
+							"isParent": true,
+							"children": []
+						},
+						{
+							"id": "40dd0f50-cadd-4c57-e76d-c8670c3db681",
+							"name": "imageCover",
+							"parent": "e3fbd5e8-3bfa-4e6e-b375-7b0bbf27dfdc",
+							"description": "",
+							"objectType": "boolean",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "cda48a72-1f86-4c68-b9eb-ffff57c7caf6",
+							"name": "imageTabletCover",
+							"parent": "e3fbd5e8-3bfa-4e6e-b375-7b0bbf27dfdc",
+							"description": "",
+							"objectType": "boolean",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "a8dc278f-3ed4-48f2-d2be-61f2f261dea5",
+							"name": "imageMobileCover",
+							"parent": "e3fbd5e8-3bfa-4e6e-b375-7b0bbf27dfdc",
+							"description": "",
+							"objectType": "boolean",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "83b3472d-eee8-45d3-a071-71f6006ddf0d",
+							"name": "imageMobileHeight",
+							"parent": "e3fbd5e8-3bfa-4e6e-b375-7b0bbf27dfdc",
+							"description": "",
+							"objectType": "object",
+							"objectName": "imageMobileHeight",
+							"isParent": true,
+							"children": []
+						},
+						{
+							"id": "94440900-a294-49cf-97e6-3d8980c79ec9",
+							"name": "imageTabletHeight",
+							"parent": "e3fbd5e8-3bfa-4e6e-b375-7b0bbf27dfdc",
+							"description": "",
+							"objectType": "object",
+							"objectName": "imageTabletHeight",
+							"isParent": true,
+							"children": []
+						},
+						{
+							"id": "78350441-a17b-4f7b-c9c1-49e9bad95fd2",
+							"name": "imageHeight",
+							"parent": "e3fbd5e8-3bfa-4e6e-b375-7b0bbf27dfdc",
+							"description": "",
+							"objectType": "object",
+							"objectName": "imageHeight",
+							"isParent": true,
+							"children": []
+						}
+					]
+				},
+				{
+					"id": "1b7125a7-e371-45ab-f873-d0aa9af614d7",
+					"name": "tile",
+					"parent": "",
+					"description": "",
+					"objectType": "object",
+					"objectName": "tile",
+					"isParent": true,
+					"children": [
+						{
+							"id": "379c9ef6-9ef3-4233-8ca3-b72778827d46",
+							"name": "id",
+							"parent": "1b7125a7-e371-45ab-f873-d0aa9af614d7",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "755c9f6f-7d97-4a44-b5fc-977b10eed61c",
+							"name": "createdAt",
+							"parent": "1b7125a7-e371-45ab-f873-d0aa9af614d7",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "74bb4f61-1932-424b-c699-7f48336c03d9",
+							"name": "updatedAt",
+							"parent": "1b7125a7-e371-45ab-f873-d0aa9af614d7",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "b2c11358-d66c-4165-ed68-6735b7cc6989",
+							"name": "createdBy",
+							"parent": "1b7125a7-e371-45ab-f873-d0aa9af614d7",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "23047b89-7f27-4a86-c2f4-3256a4854283",
+							"name": "changedBy",
+							"parent": "1b7125a7-e371-45ab-f873-d0aa9af614d7",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "42584c97-7d6c-456f-9bf4-c246380ea823",
+							"name": "translation",
+							"parent": "1b7125a7-e371-45ab-f873-d0aa9af614d7",
+							"description": "",
+							"objectType": "array",
+							"objectName": "translation",
+							"isParent": true,
+							"children": [
+								{
+									"id": "7836d132-11aa-48bc-f779-ec74b13e1e34",
+									"name": "undefineditem",
+									"parent": "42584c97-7d6c-456f-9bf4-c246380ea823",
+									"description": "",
+									"objectType": "array",
+									"isParent": true,
+									"children": []
+								}
+							]
+						},
+						{
+							"id": "1d035ebd-c598-4066-a07e-3a3ed4ecd633",
+							"name": "storeItem",
+							"parent": "1b7125a7-e371-45ab-f873-d0aa9af614d7",
+							"description": "",
+							"objectType": "object",
+							"objectName": "storeItem",
+							"isParent": true,
+							"children": []
+						},
+						{
+							"id": "8e6c2a11-48ac-4c34-eb34-37d3d6afbd7d",
+							"name": "title",
+							"parent": "1b7125a7-e371-45ab-f873-d0aa9af614d7",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "68e7351c-186e-452e-da28-f4fc1a8e5923",
+							"name": "subTitle",
+							"parent": "1b7125a7-e371-45ab-f873-d0aa9af614d7",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "5707449f-bd22-4c8c-a4c0-e791760eaa9e",
+							"name": "description",
+							"parent": "1b7125a7-e371-45ab-f873-d0aa9af614d7",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "fb976f04-c7c0-428e-95f4-65ba94438078",
+							"name": "categoryID",
+							"parent": "1b7125a7-e371-45ab-f873-d0aa9af614d7",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "a0ded65d-68bb-489b-d2a6-1923586caae9",
+							"name": "sort",
+							"parent": "1b7125a7-e371-45ab-f873-d0aa9af614d7",
+							"description": "",
+							"objectType": "object",
+							"objectName": "sort",
+							"isParent": true,
+							"children": []
+						},
+						{
+							"id": "6086d1d5-c7e0-42dd-d292-e01489def71a",
+							"name": "urlApplication",
+							"parent": "1b7125a7-e371-45ab-f873-d0aa9af614d7",
+							"description": "",
+							"objectType": "object",
+							"objectName": "urlApplication",
+							"isParent": true,
+							"children": []
+						},
+						{
+							"id": "31fcc813-01a9-438f-d67e-5a65e9187a1f",
+							"name": "actionApplication",
+							"parent": "1b7125a7-e371-45ab-f873-d0aa9af614d7",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "f272dfab-f497-485d-9db2-84baf4f1fdb3",
+							"name": "actionParameters",
+							"parent": "1b7125a7-e371-45ab-f873-d0aa9af614d7",
+							"description": "",
+							"objectType": "object",
+							"objectName": "actionParameters",
+							"isParent": true,
+							"children": []
+						},
+						{
+							"id": "4f7fde84-8b14-48d1-df75-077452c13c0a",
+							"name": "actionURL",
+							"parent": "1b7125a7-e371-45ab-f873-d0aa9af614d7",
+							"description": "",
+							"objectType": "object",
+							"objectName": "actionURL",
+							"isParent": true,
+							"children": []
+						},
+						{
+							"id": "59798cbb-28b3-4ddd-f672-734a5fb94f8e",
+							"name": "openDialog",
+							"parent": "1b7125a7-e371-45ab-f873-d0aa9af614d7",
+							"description": "",
+							"objectType": "boolean",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "50f5e2f9-a19c-426c-8939-144dca60863c",
+							"name": "openWindow",
+							"parent": "1b7125a7-e371-45ab-f873-d0aa9af614d7",
+							"description": "",
+							"objectType": "boolean",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "2041123c-698b-4a66-822f-ff3484f98882",
+							"name": "openFullscreen",
+							"parent": "1b7125a7-e371-45ab-f873-d0aa9af614d7",
+							"description": "",
+							"objectType": "boolean",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "3fbca689-3b1f-46b2-8dd2-ca4504521876",
+							"name": "forceRow",
+							"parent": "1b7125a7-e371-45ab-f873-d0aa9af614d7",
+							"description": "",
+							"objectType": "boolean",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "486f8809-4ef1-4cfe-f03b-83a52ff23662",
+							"name": "frameType",
+							"parent": "1b7125a7-e371-45ab-f873-d0aa9af614d7",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "59263d23-40fe-4032-e64b-885043942cac",
+							"name": "type",
+							"parent": "1b7125a7-e371-45ab-f873-d0aa9af614d7",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "9e25ef8b-0693-472c-97c2-264a60e73ef3",
+							"name": "image",
+							"parent": "1b7125a7-e371-45ab-f873-d0aa9af614d7",
+							"description": "",
+							"objectType": "object",
+							"objectName": "image",
+							"isParent": true,
+							"children": []
+						},
+						{
+							"id": "8251492b-4b5b-4863-e2a4-a365ed05201e",
+							"name": "icon",
+							"parent": "1b7125a7-e371-45ab-f873-d0aa9af614d7",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "e42f8123-dce9-43be-d885-ef8d4535c5b5",
+							"name": "backgroundType",
+							"parent": "1b7125a7-e371-45ab-f873-d0aa9af614d7",
+							"description": "",
+							"objectType": "object",
+							"objectName": "backgroundType",
+							"isParent": true,
+							"children": []
+						},
+						{
+							"id": "87bc51c1-27c0-46c5-f7e8-54f46d3faa86",
+							"name": "backgroundColor",
+							"parent": "1b7125a7-e371-45ab-f873-d0aa9af614d7",
+							"description": "",
+							"objectType": "object",
+							"objectName": "backgroundColor",
+							"isParent": true,
+							"children": []
+						},
+						{
+							"id": "d7c88c06-18b2-452f-f4b2-31f9f77a57c5",
+							"name": "backgroundShade",
+							"parent": "1b7125a7-e371-45ab-f873-d0aa9af614d7",
+							"description": "",
+							"objectType": "object",
+							"objectName": "backgroundShade",
+							"isParent": true,
+							"children": []
+						},
+						{
+							"id": "c8d8ce88-e6dd-40e4-ac15-3395f940a0c0",
+							"name": "tileApplication",
+							"parent": "1b7125a7-e371-45ab-f873-d0aa9af614d7",
+							"description": "",
+							"objectType": "object",
+							"objectName": "tileApplication",
+							"isParent": true,
+							"children": []
+						},
+						{
+							"id": "cfb62799-71cd-49a2-8b7e-076b2f8eb27d",
+							"name": "hideHeaderL",
+							"parent": "1b7125a7-e371-45ab-f873-d0aa9af614d7",
+							"description": "",
+							"objectType": "boolean",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "38f74e7a-a5f0-43a8-eca6-30d2b7a65a1f",
+							"name": "hideHeaderM",
+							"parent": "1b7125a7-e371-45ab-f873-d0aa9af614d7",
+							"description": "",
+							"objectType": "boolean",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "f414aa7b-2915-4edd-f9eb-4ba73d05b028",
+							"name": "hideHeaderS",
+							"parent": "1b7125a7-e371-45ab-f873-d0aa9af614d7",
+							"description": "",
+							"objectType": "boolean",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "a461dc13-b177-460a-db5c-a019a557f320",
+							"name": "hideTileDesktop",
+							"parent": "1b7125a7-e371-45ab-f873-d0aa9af614d7",
+							"description": "",
+							"objectType": "boolean",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "db3b481d-b949-4c68-c849-68cf04ea62e8",
+							"name": "hideTileMobile",
+							"parent": "1b7125a7-e371-45ab-f873-d0aa9af614d7",
+							"description": "",
+							"objectType": "boolean",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "d39ea2d8-daca-42ba-bff6-0010c3341bad",
+							"name": "hideTileTablet",
+							"parent": "1b7125a7-e371-45ab-f873-d0aa9af614d7",
+							"description": "",
+							"objectType": "boolean",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "fd55a086-f7db-4f1f-8493-30c3ef97123a",
+							"name": "enableDocumentation",
+							"parent": "1b7125a7-e371-45ab-f873-d0aa9af614d7",
+							"description": "",
+							"objectType": "boolean",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "613c49c2-b8fc-4af3-bd70-084a5cebb61f",
+							"name": "navObject",
+							"parent": "1b7125a7-e371-45ab-f873-d0aa9af614d7",
+							"description": "",
+							"objectType": "object",
+							"objectName": "navObject",
+							"isParent": true,
+							"children": []
+						},
+						{
+							"id": "ea1c0e3b-8a60-42fd-8ba5-c56c992045e7",
+							"name": "navAction",
+							"parent": "1b7125a7-e371-45ab-f873-d0aa9af614d7",
+							"description": "",
+							"objectType": "object",
+							"objectName": "navAction",
+							"isParent": true,
+							"children": []
+						},
+						{
+							"id": "165aface-fcf0-4eb9-a94d-a48cb61677b3",
+							"name": "dialogWidth",
+							"parent": "1b7125a7-e371-45ab-f873-d0aa9af614d7",
+							"description": "",
+							"objectType": "object",
+							"objectName": "dialogWidth",
+							"isParent": true,
+							"children": []
+						},
+						{
+							"id": "c127d494-87af-48e8-e90c-1cffe0e7c20e",
+							"name": "dialogHeight",
+							"parent": "1b7125a7-e371-45ab-f873-d0aa9af614d7",
+							"description": "",
+							"objectType": "object",
+							"objectName": "dialogHeight",
+							"isParent": true,
+							"children": []
+						},
+						{
+							"id": "a7c9d6a4-1d43-4030-f22c-7579d18d7506",
+							"name": "tileApplicationStyleClass",
+							"parent": "1b7125a7-e371-45ab-f873-d0aa9af614d7",
+							"description": "",
+							"objectType": "object",
+							"objectName": "tileApplicationStyleClass",
+							"isParent": true,
+							"children": []
+						},
+						{
+							"id": "4691a935-299b-4a40-fa84-e1ba4ade3ea6",
+							"name": "sidepanelApp",
+							"parent": "1b7125a7-e371-45ab-f873-d0aa9af614d7",
+							"description": "",
+							"objectType": "object",
+							"objectName": "sidepanelApp",
+							"isParent": true,
+							"children": []
+						},
+						{
+							"id": "391fb725-f845-4184-a076-112022dcc465",
+							"name": "sidepanelTitle",
+							"parent": "1b7125a7-e371-45ab-f873-d0aa9af614d7",
+							"description": "",
+							"objectType": "object",
+							"objectName": "sidepanelTitle",
+							"isParent": true,
+							"children": []
+						},
+						{
+							"id": "4bf64e81-358e-4ac8-c33f-abe47715dcf9",
+							"name": "tags",
+							"parent": "1b7125a7-e371-45ab-f873-d0aa9af614d7",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "70faffcc-1417-49a5-fa22-18a936900370",
+							"name": "actiongroup",
+							"parent": "1b7125a7-e371-45ab-f873-d0aa9af614d7",
+							"description": "",
+							"objectType": "object",
+							"objectName": "actiongroup",
+							"isParent": true,
+							"children": []
+						},
+						{
+							"id": "e701be26-4d28-417d-d92c-445af81db826",
+							"name": "styleClass",
+							"parent": "1b7125a7-e371-45ab-f873-d0aa9af614d7",
+							"description": "",
+							"objectType": "object",
+							"objectName": "styleClass",
+							"isParent": true,
+							"children": []
+						},
+						{
+							"id": "73cc361d-045f-47c3-ef64-51465e106f26",
+							"name": "titleAlignment",
+							"parent": "1b7125a7-e371-45ab-f873-d0aa9af614d7",
+							"description": "",
+							"objectType": "object",
+							"objectName": "titleAlignment",
+							"isParent": true,
+							"children": []
+						},
+						{
+							"id": "9e9c5c04-558e-4cde-fd40-b4619fd9cda7",
+							"name": "titleLevel",
+							"parent": "1b7125a7-e371-45ab-f873-d0aa9af614d7",
+							"description": "",
+							"objectType": "object",
+							"objectName": "titleLevel",
+							"isParent": true,
+							"children": []
+						},
+						{
+							"id": "aeb7799d-ef4b-4e2d-93b3-715a2e2b87c5",
+							"name": "dataUrl",
+							"parent": "1b7125a7-e371-45ab-f873-d0aa9af614d7",
+							"description": "",
+							"objectType": "object",
+							"objectName": "dataUrl",
+							"isParent": true,
+							"children": []
+						},
+						{
+							"id": "c1dd3dd4-4c43-4279-f598-f215720989c8",
+							"name": "dataInterval",
+							"parent": "1b7125a7-e371-45ab-f873-d0aa9af614d7",
+							"description": "",
+							"objectType": "object",
+							"objectName": "dataInterval",
+							"isParent": true,
+							"children": []
+						},
+						{
+							"id": "8f9a6ff8-21e2-4b5d-9f10-9d29187af6e6",
+							"name": "footer",
+							"parent": "1b7125a7-e371-45ab-f873-d0aa9af614d7",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "4c0b13e0-932a-42bd-dd38-0feaae4c1168",
+							"name": "browserBlockWin",
+							"parent": "1b7125a7-e371-45ab-f873-d0aa9af614d7",
+							"description": "",
+							"objectType": "object",
+							"objectName": "browserBlockWin",
+							"isParent": true,
+							"children": []
+						},
+						{
+							"id": "fc5544eb-ed96-4605-a0e4-c07ec00f30a0",
+							"name": "browserBlockMac",
+							"parent": "1b7125a7-e371-45ab-f873-d0aa9af614d7",
+							"description": "",
+							"objectType": "object",
+							"objectName": "browserBlockMac",
+							"isParent": true,
+							"children": []
+						},
+						{
+							"id": "e1b6cbd1-7f8c-4dfc-be20-124c63062475",
+							"name": "blackoutEnabled",
+							"parent": "1b7125a7-e371-45ab-f873-d0aa9af614d7",
+							"description": "",
+							"objectType": "boolean",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "76b7361e-3324-4131-99e8-f8b5a7946b94",
+							"name": "blackoutText",
+							"parent": "1b7125a7-e371-45ab-f873-d0aa9af614d7",
+							"description": "",
+							"objectType": "object",
+							"objectName": "blackoutText",
+							"isParent": true,
+							"children": []
+						},
+						{
+							"id": "fbc23a55-dcf0-4bf2-8417-2f243531e8af",
+							"name": "blackoutDescription",
+							"parent": "1b7125a7-e371-45ab-f873-d0aa9af614d7",
+							"description": "",
+							"objectType": "object",
+							"objectName": "blackoutDescription",
+							"isParent": true,
+							"children": []
+						},
+						{
+							"id": "f6be6c00-956e-4eea-835b-416e097273d3",
+							"name": "helpText",
+							"parent": "1b7125a7-e371-45ab-f873-d0aa9af614d7",
+							"description": "",
+							"objectType": "object",
+							"objectName": "helpText",
+							"isParent": true,
+							"children": []
+						},
+						{
+							"id": "8d50012b-2ceb-4860-b678-171f9d7b3c7f",
+							"name": "helpEnabled",
+							"parent": "1b7125a7-e371-45ab-f873-d0aa9af614d7",
+							"description": "",
+							"objectType": "boolean",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "64f10968-ae09-4103-f218-4fc82ee56960",
+							"name": "openClickTile",
+							"parent": "1b7125a7-e371-45ab-f873-d0aa9af614d7",
+							"description": "",
+							"objectType": "boolean",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "b2e96b23-0f60-4d50-baf8-1ca82837d975",
+							"name": "ver",
+							"parent": "1b7125a7-e371-45ab-f873-d0aa9af614d7",
+							"description": "",
+							"objectType": "object",
+							"objectName": "ver",
+							"isParent": true,
+							"children": []
+						},
+						{
+							"id": "33e93519-198e-4acc-ae58-8ea32525efd1",
+							"name": "actionWebApp",
+							"parent": "1b7125a7-e371-45ab-f873-d0aa9af614d7",
+							"description": "",
+							"objectType": "object",
+							"objectName": "actionWebApp",
+							"isParent": true,
+							"children": []
+						},
+						{
+							"id": "043fad66-135c-4b97-8396-ad000ba61993",
+							"name": "roles",
+							"parent": "1b7125a7-e371-45ab-f873-d0aa9af614d7",
+							"description": "",
+							"objectType": "array",
+							"objectName": "roles",
+							"isParent": true,
+							"children": [
+								{
+									"id": "c40c60c6-b6c7-4eca-f1a4-b5f2a247b4e9",
+									"name": "undefineditem",
+									"parent": "043fad66-135c-4b97-8396-ad000ba61993",
+									"description": "",
+									"objectType": "undefined",
+									"isParent": false,
+									"children": []
+								}
+							]
+						},
+						{
+							"id": "e3fbd5e8-3bfa-4e6e-b375-7b0bbf27dfdc",
+							"name": "tilegroups",
+							"parent": "1b7125a7-e371-45ab-f873-d0aa9af614d7",
+							"description": "",
+							"objectType": "array",
+							"objectName": "tilegroups",
+							"isParent": true,
+							"children": [
+								{
+									"id": "91053596-2574-4c4f-b69a-e7476dcff08b",
+									"name": "id",
+									"parent": "e3fbd5e8-3bfa-4e6e-b375-7b0bbf27dfdc",
+									"description": "",
+									"objectType": "string",
+									"isParent": false,
+									"children": []
+								},
+								{
+									"id": "0dc213b0-6cb3-4e5d-9022-e7fea7e34409",
+									"name": "createdAt",
+									"parent": "e3fbd5e8-3bfa-4e6e-b375-7b0bbf27dfdc",
+									"description": "",
+									"objectType": "string",
+									"isParent": false,
+									"children": []
+								},
+								{
+									"id": "6f2a2b72-79d3-4f10-bbcf-833e6043eb77",
+									"name": "updatedAt",
+									"parent": "e3fbd5e8-3bfa-4e6e-b375-7b0bbf27dfdc",
+									"description": "",
+									"objectType": "string",
+									"isParent": false,
+									"children": []
+								},
+								{
+									"id": "2a430777-70b9-4a31-8be1-bec21147d491",
+									"name": "createdBy",
+									"parent": "e3fbd5e8-3bfa-4e6e-b375-7b0bbf27dfdc",
+									"description": "",
+									"objectType": "string",
+									"isParent": false,
+									"children": []
+								},
+								{
+									"id": "a32bb7f2-527e-48e4-c0ca-052ca4b93356",
+									"name": "changedBy",
+									"parent": "e3fbd5e8-3bfa-4e6e-b375-7b0bbf27dfdc",
+									"description": "",
+									"objectType": "string",
+									"isParent": false,
+									"children": []
+								},
+								{
+									"id": "f48e92a0-b32d-4ba4-a809-7ca143f8e534",
+									"name": "translation",
+									"parent": "e3fbd5e8-3bfa-4e6e-b375-7b0bbf27dfdc",
+									"description": "",
+									"objectType": "array",
+									"objectName": "translation",
+									"isParent": true,
+									"children": [
+										{
+											"id": "c4e5552a-5f11-4e60-c1a1-92a72fa30b98",
+											"name": "undefineditem",
+											"parent": "f48e92a0-b32d-4ba4-a809-7ca143f8e534",
+											"description": "",
+											"objectType": "undefined",
+											"isParent": false,
+											"children": []
+										}
+									]
+								},
+								{
+									"id": "df78883c-e09d-4fa8-e395-da2320a75537",
+									"name": "tilesOrder",
+									"parent": "e3fbd5e8-3bfa-4e6e-b375-7b0bbf27dfdc",
+									"description": "",
+									"objectType": "array",
+									"objectName": "tilesOrder",
+									"isParent": true,
+									"children": [
+										{
+											"id": "8f9929b8-3fac-47c1-8b9a-bb25f6861b0d",
+											"name": "stringitem",
+											"parent": "df78883c-e09d-4fa8-e395-da2320a75537",
+											"description": "",
+											"objectType": "string",
+											"isParent": false,
+											"children": []
+										}
+									]
+								},
+								{
+									"id": "d4035bf1-e69a-4d2d-d0c0-5169a51db94d",
+									"name": "tilegroupsOrder",
+									"parent": "e3fbd5e8-3bfa-4e6e-b375-7b0bbf27dfdc",
+									"description": "",
+									"objectType": "array",
+									"objectName": "tilegroupsOrder",
+									"isParent": true,
+									"children": [
+										{
+											"id": "630998da-de1e-4fa5-a6dd-65fe03bad6c4",
+											"name": "stringitem",
+											"parent": "d4035bf1-e69a-4d2d-d0c0-5169a51db94d",
+											"description": "",
+											"objectType": "string",
+											"isParent": false,
+											"children": []
+										}
+									]
+								},
+								{
+									"id": "fa5e2fbe-ae2b-47fa-c8c6-1c6ea3232306",
+									"name": "configMessage",
+									"parent": "e3fbd5e8-3bfa-4e6e-b375-7b0bbf27dfdc",
+									"description": "",
+									"objectType": "object",
+									"objectName": "configMessage",
+									"isParent": true,
+									"children": []
+								},
+								{
+									"id": "32b676fd-c2cb-4ad8-8f3f-b71219398577",
+									"name": "title",
+									"parent": "e3fbd5e8-3bfa-4e6e-b375-7b0bbf27dfdc",
+									"description": "",
+									"objectType": "string",
+									"isParent": false,
+									"children": []
+								},
+								{
+									"id": "8975ee53-c90d-4a9b-d9d0-ad5cb809e352",
+									"name": "subTitle",
+									"parent": "e3fbd5e8-3bfa-4e6e-b375-7b0bbf27dfdc",
+									"description": "",
+									"objectType": "string",
+									"isParent": false,
+									"children": []
+								},
+								{
+									"id": "d422f748-008f-4bc1-e348-bd839b8cbaaf",
+									"name": "description",
+									"parent": "e3fbd5e8-3bfa-4e6e-b375-7b0bbf27dfdc",
+									"description": "",
+									"objectType": "string",
+									"isParent": false,
+									"children": []
+								},
+								{
+									"id": "7aeb4e74-1111-4fd7-aa22-368376a615f6",
+									"name": "titleAlignment",
+									"parent": "e3fbd5e8-3bfa-4e6e-b375-7b0bbf27dfdc",
+									"description": "",
+									"objectType": "object",
+									"objectName": "titleAlignment",
+									"isParent": true,
+									"children": []
+								},
+								{
+									"id": "3135cfc7-a695-4d3b-d469-b0eaaa24baa7",
+									"name": "enableFullScreen",
+									"parent": "e3fbd5e8-3bfa-4e6e-b375-7b0bbf27dfdc",
+									"description": "",
+									"objectType": "object",
+									"objectName": "enableFullScreen",
+									"isParent": true,
+									"children": []
+								},
+								{
+									"id": "e03322d0-7f68-45bd-991f-8094b6f5825b",
+									"name": "hideHeader",
+									"parent": "e3fbd5e8-3bfa-4e6e-b375-7b0bbf27dfdc",
+									"description": "",
+									"objectType": "object",
+									"objectName": "hideHeader",
+									"isParent": true,
+									"children": []
+								},
+								{
+									"id": "4fb9291a-7a2f-43c2-9b6d-71c2a44eca19",
+									"name": "backgroundType",
+									"parent": "e3fbd5e8-3bfa-4e6e-b375-7b0bbf27dfdc",
+									"description": "",
+									"objectType": "string",
+									"isParent": false,
+									"children": []
+								},
+								{
+									"id": "8395b646-92aa-4f3e-992c-5319f41ad919",
+									"name": "backgroundColor",
+									"parent": "e3fbd5e8-3bfa-4e6e-b375-7b0bbf27dfdc",
+									"description": "",
+									"objectType": "string",
+									"isParent": false,
+									"children": []
+								},
+								{
+									"id": "35ff6b2d-337c-43f5-a662-16380cfe69bb",
+									"name": "backgroundShade",
+									"parent": "e3fbd5e8-3bfa-4e6e-b375-7b0bbf27dfdc",
+									"description": "",
+									"objectType": "object",
+									"objectName": "backgroundShade",
+									"isParent": true,
+									"children": []
+								},
+								{
+									"id": "73678dd9-4454-41d6-d70d-d8318d4bf7cd",
+									"name": "type",
+									"parent": "e3fbd5e8-3bfa-4e6e-b375-7b0bbf27dfdc",
+									"description": "",
+									"objectType": "object",
+									"objectName": "type",
+									"isParent": true,
+									"children": []
+								},
+								{
+									"id": "59a67614-bad9-4115-e7ed-dc7765fe014f",
+									"name": "image",
+									"parent": "e3fbd5e8-3bfa-4e6e-b375-7b0bbf27dfdc",
+									"description": "",
+									"objectType": "object",
+									"objectName": "image",
+									"isParent": true,
+									"children": []
+								},
+								{
+									"id": "3afdfd7a-2957-4e75-95fa-fef17eeeb438",
+									"name": "icon",
+									"parent": "e3fbd5e8-3bfa-4e6e-b375-7b0bbf27dfdc",
+									"description": "",
+									"objectType": "string",
+									"isParent": false,
+									"children": []
+								},
+								{
+									"id": "be5f2404-0c2c-4853-bea4-e06b64105f17",
+									"name": "sort",
+									"parent": "e3fbd5e8-3bfa-4e6e-b375-7b0bbf27dfdc",
+									"description": "",
+									"objectType": "object",
+									"objectName": "sort",
+									"isParent": true,
+									"children": []
+								},
+								{
+									"id": "01bc7702-1749-4106-a7a7-97398f429c1a",
+									"name": "inclFav",
+									"parent": "e3fbd5e8-3bfa-4e6e-b375-7b0bbf27dfdc",
+									"description": "",
+									"objectType": "boolean",
+									"isParent": false,
+									"children": []
+								},
+								{
+									"id": "b9e58f70-51f5-4224-b1f1-84bd86d478e6",
+									"name": "styleClass",
+									"parent": "e3fbd5e8-3bfa-4e6e-b375-7b0bbf27dfdc",
+									"description": "",
+									"objectType": "object",
+									"objectName": "styleClass",
+									"isParent": true,
+									"children": []
+								},
+								{
+									"id": "48a3ad38-887c-4b4d-945c-60238b4cd603",
+									"name": "enableScroll",
+									"parent": "e3fbd5e8-3bfa-4e6e-b375-7b0bbf27dfdc",
+									"description": "",
+									"objectType": "boolean",
+									"isParent": false,
+									"children": []
+								},
+								{
+									"id": "45e963d6-7595-497a-cf1c-58f9fa062f32",
+									"name": "enableShadeCalc",
+									"parent": "e3fbd5e8-3bfa-4e6e-b375-7b0bbf27dfdc",
+									"description": "",
+									"objectType": "boolean",
+									"isParent": false,
+									"children": []
+								},
+								{
+									"id": "e8450d45-9995-4d74-b957-212ad872d786",
+									"name": "numTiles",
+									"parent": "e3fbd5e8-3bfa-4e6e-b375-7b0bbf27dfdc",
+									"description": "",
+									"objectType": "string",
+									"isParent": false,
+									"children": []
+								},
+								{
+									"id": "99ae5d8a-1a95-4eac-e11f-2f9198d5afc0",
+									"name": "enableMessage",
+									"parent": "e3fbd5e8-3bfa-4e6e-b375-7b0bbf27dfdc",
+									"description": "",
+									"objectType": "boolean",
+									"isParent": false,
+									"children": []
+								},
+								{
+									"id": "2bfc2aa9-882f-44dc-ef58-dff9a0e10bb8",
+									"name": "ver",
+									"parent": "e3fbd5e8-3bfa-4e6e-b375-7b0bbf27dfdc",
+									"description": "",
+									"objectType": "string",
+									"isParent": false,
+									"children": []
+								},
+								{
+									"id": "403fe22f-529f-4fb8-fd46-fadcc3a07929",
+									"name": "headColor",
+									"parent": "e3fbd5e8-3bfa-4e6e-b375-7b0bbf27dfdc",
+									"description": "",
+									"objectType": "object",
+									"objectName": "headColor",
+									"isParent": true,
+									"children": []
+								},
+								{
+									"id": "07360c78-64d9-4ed7-8c7d-a704b5cae014",
+									"name": "headTxtClr",
+									"parent": "e3fbd5e8-3bfa-4e6e-b375-7b0bbf27dfdc",
+									"description": "",
+									"objectType": "object",
+									"objectName": "headTxtClr",
+									"isParent": true,
+									"children": []
+								},
+								{
+									"id": "53b9f388-4c5a-4b2b-ff33-5e5761b632de",
+									"name": "subheadTxtClr",
+									"parent": "e3fbd5e8-3bfa-4e6e-b375-7b0bbf27dfdc",
+									"description": "",
+									"objectType": "object",
+									"objectName": "subheadTxtClr",
+									"isParent": true,
+									"children": []
+								},
+								{
+									"id": "caf44829-f693-45f7-e713-4e36703cf3e2",
+									"name": "headBorderClr",
+									"parent": "e3fbd5e8-3bfa-4e6e-b375-7b0bbf27dfdc",
+									"description": "",
+									"objectType": "object",
+									"objectName": "headBorderClr",
+									"isParent": true,
+									"children": []
+								},
+								{
+									"id": "74c6ad09-1b5c-4b80-a6c2-05b856e6f596",
+									"name": "headBorderWidth",
+									"parent": "e3fbd5e8-3bfa-4e6e-b375-7b0bbf27dfdc",
+									"description": "",
+									"objectType": "object",
+									"objectName": "headBorderWidth",
+									"isParent": true,
+									"children": []
+								},
+								{
+									"id": "59ad6113-f9d3-4fda-a2b2-1d19a0789bc9",
+									"name": "imageTablet",
+									"parent": "e3fbd5e8-3bfa-4e6e-b375-7b0bbf27dfdc",
+									"description": "",
+									"objectType": "object",
+									"objectName": "imageTablet",
+									"isParent": true,
+									"children": []
+								},
+								{
+									"id": "9e4ed90e-5190-4b83-bf5a-cd8afc88f99e",
+									"name": "imageMobile",
+									"parent": "e3fbd5e8-3bfa-4e6e-b375-7b0bbf27dfdc",
+									"description": "",
+									"objectType": "object",
+									"objectName": "imageMobile",
+									"isParent": true,
+									"children": []
+								},
+								{
+									"id": "40dd0f50-cadd-4c57-e76d-c8670c3db681",
+									"name": "imageCover",
+									"parent": "e3fbd5e8-3bfa-4e6e-b375-7b0bbf27dfdc",
+									"description": "",
+									"objectType": "boolean",
+									"isParent": false,
+									"children": []
+								},
+								{
+									"id": "cda48a72-1f86-4c68-b9eb-ffff57c7caf6",
+									"name": "imageTabletCover",
+									"parent": "e3fbd5e8-3bfa-4e6e-b375-7b0bbf27dfdc",
+									"description": "",
+									"objectType": "boolean",
+									"isParent": false,
+									"children": []
+								},
+								{
+									"id": "a8dc278f-3ed4-48f2-d2be-61f2f261dea5",
+									"name": "imageMobileCover",
+									"parent": "e3fbd5e8-3bfa-4e6e-b375-7b0bbf27dfdc",
+									"description": "",
+									"objectType": "boolean",
+									"isParent": false,
+									"children": []
+								},
+								{
+									"id": "83b3472d-eee8-45d3-a071-71f6006ddf0d",
+									"name": "imageMobileHeight",
+									"parent": "e3fbd5e8-3bfa-4e6e-b375-7b0bbf27dfdc",
+									"description": "",
+									"objectType": "object",
+									"objectName": "imageMobileHeight",
+									"isParent": true,
+									"children": []
+								},
+								{
+									"id": "94440900-a294-49cf-97e6-3d8980c79ec9",
+									"name": "imageTabletHeight",
+									"parent": "e3fbd5e8-3bfa-4e6e-b375-7b0bbf27dfdc",
+									"description": "",
+									"objectType": "object",
+									"objectName": "imageTabletHeight",
+									"isParent": true,
+									"children": []
+								},
+								{
+									"id": "78350441-a17b-4f7b-c9c1-49e9bad95fd2",
+									"name": "imageHeight",
+									"parent": "e3fbd5e8-3bfa-4e6e-b375-7b0bbf27dfdc",
+									"description": "",
+									"objectType": "object",
+									"objectName": "imageHeight",
+									"isParent": true,
+									"children": []
+								}
+							]
+						}
+					]
+				},
+				{
+					"id": "d7694842-eec8-4018-d345-94f5af4e3e0a",
+					"name": "id",
+					"parent": "d765d650-8b1b-4bb0-90a8-0390230674ce",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "d0cb5445-2860-4f53-e6fa-15bd31bf29ca",
+					"name": "createdAt",
+					"parent": "d765d650-8b1b-4bb0-90a8-0390230674ce",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "69b32493-b1d5-4181-b8a2-cec69429920c",
+					"name": "updatedAt",
+					"parent": "d765d650-8b1b-4bb0-90a8-0390230674ce",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "86f501c3-7c2e-4796-9d58-d445f0bfa53b",
+					"name": "createdBy",
+					"parent": "d765d650-8b1b-4bb0-90a8-0390230674ce",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "aac7f6ed-05ee-4be0-f46a-e404024a04f1",
+					"name": "changedBy",
+					"parent": "d765d650-8b1b-4bb0-90a8-0390230674ce",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "654b1aa0-6dcc-40f8-aaeb-bebc786954af",
+					"name": "language",
+					"parent": "38039dd5-485d-4433-ecef-8648961baa78",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "09046457-4fe3-45e8-ba40-020206521935",
+					"name": "title",
+					"parent": "38039dd5-485d-4433-ecef-8648961baa78",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "38039dd5-485d-4433-ecef-8648961baa78",
+					"name": "translation",
+					"parent": "d765d650-8b1b-4bb0-90a8-0390230674ce",
+					"description": "",
+					"objectType": "array",
+					"objectName": "translation",
+					"isParent": true,
+					"children": [
+						{
+							"id": "654b1aa0-6dcc-40f8-aaeb-bebc786954af",
+							"name": "language",
+							"parent": "38039dd5-485d-4433-ecef-8648961baa78",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "09046457-4fe3-45e8-ba40-020206521935",
+							"name": "title",
+							"parent": "38039dd5-485d-4433-ecef-8648961baa78",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						}
+					]
+				},
+				{
+					"id": "5115edab-622a-45b1-8eee-9ddc76ec6ece",
+					"name": "stringitem",
+					"parent": "4b066405-e143-4e52-e9ba-95db50f43be5",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "4b066405-e143-4e52-e9ba-95db50f43be5",
+					"name": "tilesOrder",
+					"parent": "d765d650-8b1b-4bb0-90a8-0390230674ce",
+					"description": "",
+					"objectType": "array",
+					"objectName": "tilesOrder",
+					"isParent": true,
+					"children": [
+						{
+							"id": "5115edab-622a-45b1-8eee-9ddc76ec6ece",
+							"name": "stringitem",
+							"parent": "4b066405-e143-4e52-e9ba-95db50f43be5",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						}
+					]
+				},
+				{
+					"id": "15d72429-1325-409d-a133-86ad94b6b453",
+					"name": "stringitem",
+					"parent": "5d070e93-0dd3-4e7f-b55f-e23da61a9b5f",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "5d070e93-0dd3-4e7f-b55f-e23da61a9b5f",
+					"name": "tilegroupsOrder",
+					"parent": "d765d650-8b1b-4bb0-90a8-0390230674ce",
+					"description": "",
+					"objectType": "array",
+					"objectName": "tilegroupsOrder",
+					"isParent": true,
+					"children": [
+						{
+							"id": "15d72429-1325-409d-a133-86ad94b6b453",
+							"name": "stringitem",
+							"parent": "5d070e93-0dd3-4e7f-b55f-e23da61a9b5f",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						}
+					]
+				},
+				{
+					"id": "5af2989e-3ae8-409b-fc7e-dd99bd7ab018",
+					"name": "configMessage",
+					"parent": "d765d650-8b1b-4bb0-90a8-0390230674ce",
+					"description": "",
+					"objectType": "object",
+					"objectName": "configMessage",
+					"isParent": true,
+					"children": []
+				},
+				{
+					"id": "f5f04b8a-fb2d-43ad-d7e3-645b1c1577af",
+					"name": "title",
+					"parent": "d765d650-8b1b-4bb0-90a8-0390230674ce",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "4088e223-ee4a-4e80-f9a6-0fcfc0c95ee9",
+					"name": "subTitle",
+					"parent": "d765d650-8b1b-4bb0-90a8-0390230674ce",
+					"description": "",
+					"objectType": "object",
+					"objectName": "subTitle",
+					"isParent": true,
+					"children": []
+				},
+				{
+					"id": "081d292d-1164-40f9-e461-88f3f9bb4279",
+					"name": "description",
+					"parent": "d765d650-8b1b-4bb0-90a8-0390230674ce",
+					"description": "",
+					"objectType": "object",
+					"objectName": "description",
+					"isParent": true,
+					"children": []
+				},
+				{
+					"id": "22b1d0da-bcb4-4055-df48-100ad79f1df3",
+					"name": "titleAlignment",
+					"parent": "d765d650-8b1b-4bb0-90a8-0390230674ce",
+					"description": "",
+					"objectType": "object",
+					"objectName": "titleAlignment",
+					"isParent": true,
+					"children": []
+				},
+				{
+					"id": "b7aaba76-8d26-4756-af43-8c9eaa91d078",
+					"name": "enableFullScreen",
+					"parent": "d765d650-8b1b-4bb0-90a8-0390230674ce",
+					"description": "",
+					"objectType": "object",
+					"objectName": "enableFullScreen",
+					"isParent": true,
+					"children": []
+				},
+				{
+					"id": "d01060fd-8d5f-4ef3-ff38-3edffe8ebfc6",
+					"name": "hideHeader",
+					"parent": "d765d650-8b1b-4bb0-90a8-0390230674ce",
+					"description": "",
+					"objectType": "object",
+					"objectName": "hideHeader",
+					"isParent": true,
+					"children": []
+				},
+				{
+					"id": "db52bf52-5e44-4125-f9ed-f62686cab28f",
+					"name": "backgroundType",
+					"parent": "d765d650-8b1b-4bb0-90a8-0390230674ce",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "d3664dd6-8405-4b2b-b18b-b0a71cc5bd56",
+					"name": "backgroundColor",
+					"parent": "d765d650-8b1b-4bb0-90a8-0390230674ce",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "0ea15e9a-578f-48d4-c92f-3d2391e2999a",
+					"name": "backgroundShade",
+					"parent": "d765d650-8b1b-4bb0-90a8-0390230674ce",
+					"description": "",
+					"objectType": "object",
+					"objectName": "backgroundShade",
+					"isParent": true,
+					"children": []
+				},
+				{
+					"id": "4e6df428-6f0b-47aa-c4a2-c5c33191bdab",
+					"name": "type",
+					"parent": "d765d650-8b1b-4bb0-90a8-0390230674ce",
+					"description": "",
+					"objectType": "object",
+					"objectName": "type",
+					"isParent": true,
+					"children": []
+				},
+				{
+					"id": "6b764957-6ef6-4fa5-b441-3cf96bd5045c",
+					"name": "image",
+					"parent": "d765d650-8b1b-4bb0-90a8-0390230674ce",
+					"description": "",
+					"objectType": "object",
+					"objectName": "image",
+					"isParent": true,
+					"children": []
+				},
+				{
+					"id": "764aa4d8-0026-44e5-fa3d-29adad9b2562",
+					"name": "icon",
+					"parent": "d765d650-8b1b-4bb0-90a8-0390230674ce",
+					"description": "",
+					"objectType": "object",
+					"objectName": "icon",
+					"isParent": true,
+					"children": []
+				},
+				{
+					"id": "ee4486f2-7378-4502-b026-f617a3826d39",
+					"name": "sort",
+					"parent": "d765d650-8b1b-4bb0-90a8-0390230674ce",
+					"description": "",
+					"objectType": "object",
+					"objectName": "sort",
+					"isParent": true,
+					"children": []
+				},
+				{
+					"id": "06722690-b4fb-4e4a-d740-7c3af71cd1b9",
+					"name": "inclFav",
+					"parent": "d765d650-8b1b-4bb0-90a8-0390230674ce",
+					"description": "",
+					"objectType": "boolean",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "30b51171-ed76-40ea-c9d7-97c39e9d3a39",
+					"name": "styleClass",
+					"parent": "d765d650-8b1b-4bb0-90a8-0390230674ce",
+					"description": "",
+					"objectType": "object",
+					"objectName": "styleClass",
+					"isParent": true,
+					"children": []
+				},
+				{
+					"id": "47931463-b0b9-43ad-b323-d8477218dfb3",
+					"name": "enableScroll",
+					"parent": "d765d650-8b1b-4bb0-90a8-0390230674ce",
+					"description": "",
+					"objectType": "boolean",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "29556e14-ecad-4a36-cd1c-4020f51961a0",
+					"name": "enableShadeCalc",
+					"parent": "d765d650-8b1b-4bb0-90a8-0390230674ce",
+					"description": "",
+					"objectType": "boolean",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "7bbea711-04a3-485d-9fc4-8c8b69118744",
+					"name": "numTiles",
+					"parent": "d765d650-8b1b-4bb0-90a8-0390230674ce",
+					"description": "",
+					"objectType": "object",
+					"objectName": "numTiles",
+					"isParent": true,
+					"children": []
+				},
+				{
+					"id": "97157845-5a88-4742-d58d-d3b0a0fec2f6",
+					"name": "enableMessage",
+					"parent": "d765d650-8b1b-4bb0-90a8-0390230674ce",
+					"description": "",
+					"objectType": "boolean",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "251fce8b-e6a1-447c-a6a6-e71bb416868b",
+					"name": "ver",
+					"parent": "d765d650-8b1b-4bb0-90a8-0390230674ce",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "6c648d76-443e-42ac-983f-8f8b73d08f54",
+					"name": "headColor",
+					"parent": "d765d650-8b1b-4bb0-90a8-0390230674ce",
+					"description": "",
+					"objectType": "object",
+					"objectName": "headColor",
+					"isParent": true,
+					"children": []
+				},
+				{
+					"id": "42852580-cba2-46fa-d238-2723d4a860e8",
+					"name": "headTxtClr",
+					"parent": "d765d650-8b1b-4bb0-90a8-0390230674ce",
+					"description": "",
+					"objectType": "object",
+					"objectName": "headTxtClr",
+					"isParent": true,
+					"children": []
+				},
+				{
+					"id": "65519c3d-4737-4451-aca3-ddbf25ded0a9",
+					"name": "subheadTxtClr",
+					"parent": "d765d650-8b1b-4bb0-90a8-0390230674ce",
+					"description": "",
+					"objectType": "object",
+					"objectName": "subheadTxtClr",
+					"isParent": true,
+					"children": []
+				},
+				{
+					"id": "2647a5ea-0b10-4cb3-fa21-e2d0cb95988d",
+					"name": "headBorderClr",
+					"parent": "d765d650-8b1b-4bb0-90a8-0390230674ce",
+					"description": "",
+					"objectType": "object",
+					"objectName": "headBorderClr",
+					"isParent": true,
+					"children": []
+				},
+				{
+					"id": "f8e592f0-d621-48a0-fff2-74fc2d95159a",
+					"name": "headBorderWidth",
+					"parent": "d765d650-8b1b-4bb0-90a8-0390230674ce",
+					"description": "",
+					"objectType": "object",
+					"objectName": "headBorderWidth",
+					"isParent": true,
+					"children": []
+				},
+				{
+					"id": "0e8aab84-32ad-432a-8827-f4d4c48050a6",
+					"name": "imageTablet",
+					"parent": "d765d650-8b1b-4bb0-90a8-0390230674ce",
+					"description": "",
+					"objectType": "object",
+					"objectName": "imageTablet",
+					"isParent": true,
+					"children": []
+				},
+				{
+					"id": "365e05e1-0627-4509-9289-027777c704fd",
+					"name": "imageMobile",
+					"parent": "d765d650-8b1b-4bb0-90a8-0390230674ce",
+					"description": "",
+					"objectType": "object",
+					"objectName": "imageMobile",
+					"isParent": true,
+					"children": []
+				},
+				{
+					"id": "bfe678ad-65ba-4996-a871-48bcc9562578",
+					"name": "imageCover",
+					"parent": "d765d650-8b1b-4bb0-90a8-0390230674ce",
+					"description": "",
+					"objectType": "boolean",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "8297e335-1c10-4777-d648-432ba0963737",
+					"name": "imageTabletCover",
+					"parent": "d765d650-8b1b-4bb0-90a8-0390230674ce",
+					"description": "",
+					"objectType": "boolean",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "cefe0cfa-224d-426e-8d7c-e1958d8535d6",
+					"name": "imageMobileCover",
+					"parent": "d765d650-8b1b-4bb0-90a8-0390230674ce",
+					"description": "",
+					"objectType": "boolean",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "2bdd8192-a37a-400a-bc2d-6763998a6ab3",
+					"name": "imageMobileHeight",
+					"parent": "d765d650-8b1b-4bb0-90a8-0390230674ce",
+					"description": "",
+					"objectType": "object",
+					"objectName": "imageMobileHeight",
+					"isParent": true,
+					"children": []
+				},
+				{
+					"id": "68f4ba64-fcb8-471c-8fe1-04c556a81a54",
+					"name": "imageTabletHeight",
+					"parent": "d765d650-8b1b-4bb0-90a8-0390230674ce",
+					"description": "",
+					"objectType": "object",
+					"objectName": "imageTabletHeight",
+					"isParent": true,
+					"children": []
+				},
+				{
+					"id": "c6c140ce-86c7-47a9-bc0b-4b4fc49ef1df",
+					"name": "imageHeight",
+					"parent": "d765d650-8b1b-4bb0-90a8-0390230674ce",
+					"description": "",
+					"objectType": "object",
+					"objectName": "imageHeight",
+					"isParent": true,
+					"children": []
+				},
+				{
+					"id": "d765d650-8b1b-4bb0-90a8-0390230674ce",
+					"name": "category",
+					"parent": "",
+					"description": "",
+					"objectType": "array",
+					"objectName": "category",
+					"isParent": true,
+					"children": [
+						{
+							"id": "d7694842-eec8-4018-d345-94f5af4e3e0a",
+							"name": "id",
+							"parent": "d765d650-8b1b-4bb0-90a8-0390230674ce",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "d0cb5445-2860-4f53-e6fa-15bd31bf29ca",
+							"name": "createdAt",
+							"parent": "d765d650-8b1b-4bb0-90a8-0390230674ce",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "69b32493-b1d5-4181-b8a2-cec69429920c",
+							"name": "updatedAt",
+							"parent": "d765d650-8b1b-4bb0-90a8-0390230674ce",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "86f501c3-7c2e-4796-9d58-d445f0bfa53b",
+							"name": "createdBy",
+							"parent": "d765d650-8b1b-4bb0-90a8-0390230674ce",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "aac7f6ed-05ee-4be0-f46a-e404024a04f1",
+							"name": "changedBy",
+							"parent": "d765d650-8b1b-4bb0-90a8-0390230674ce",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "38039dd5-485d-4433-ecef-8648961baa78",
+							"name": "translation",
+							"parent": "d765d650-8b1b-4bb0-90a8-0390230674ce",
+							"description": "",
+							"objectType": "array",
+							"objectName": "translation",
+							"isParent": true,
+							"children": [
+								{
+									"id": "654b1aa0-6dcc-40f8-aaeb-bebc786954af",
+									"name": "language",
+									"parent": "38039dd5-485d-4433-ecef-8648961baa78",
+									"description": "",
+									"objectType": "string",
+									"isParent": false,
+									"children": []
+								},
+								{
+									"id": "09046457-4fe3-45e8-ba40-020206521935",
+									"name": "title",
+									"parent": "38039dd5-485d-4433-ecef-8648961baa78",
+									"description": "",
+									"objectType": "string",
+									"isParent": false,
+									"children": []
+								}
+							]
+						},
+						{
+							"id": "4b066405-e143-4e52-e9ba-95db50f43be5",
+							"name": "tilesOrder",
+							"parent": "d765d650-8b1b-4bb0-90a8-0390230674ce",
+							"description": "",
+							"objectType": "array",
+							"objectName": "tilesOrder",
+							"isParent": true,
+							"children": [
+								{
+									"id": "5115edab-622a-45b1-8eee-9ddc76ec6ece",
+									"name": "stringitem",
+									"parent": "4b066405-e143-4e52-e9ba-95db50f43be5",
+									"description": "",
+									"objectType": "string",
+									"isParent": false,
+									"children": []
+								}
+							]
+						},
+						{
+							"id": "5d070e93-0dd3-4e7f-b55f-e23da61a9b5f",
+							"name": "tilegroupsOrder",
+							"parent": "d765d650-8b1b-4bb0-90a8-0390230674ce",
+							"description": "",
+							"objectType": "array",
+							"objectName": "tilegroupsOrder",
+							"isParent": true,
+							"children": [
+								{
+									"id": "15d72429-1325-409d-a133-86ad94b6b453",
+									"name": "stringitem",
+									"parent": "5d070e93-0dd3-4e7f-b55f-e23da61a9b5f",
+									"description": "",
+									"objectType": "string",
+									"isParent": false,
+									"children": []
+								}
+							]
+						},
+						{
+							"id": "5af2989e-3ae8-409b-fc7e-dd99bd7ab018",
+							"name": "configMessage",
+							"parent": "d765d650-8b1b-4bb0-90a8-0390230674ce",
+							"description": "",
+							"objectType": "object",
+							"objectName": "configMessage",
+							"isParent": true,
+							"children": []
+						},
+						{
+							"id": "f5f04b8a-fb2d-43ad-d7e3-645b1c1577af",
+							"name": "title",
+							"parent": "d765d650-8b1b-4bb0-90a8-0390230674ce",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "4088e223-ee4a-4e80-f9a6-0fcfc0c95ee9",
+							"name": "subTitle",
+							"parent": "d765d650-8b1b-4bb0-90a8-0390230674ce",
+							"description": "",
+							"objectType": "object",
+							"objectName": "subTitle",
+							"isParent": true,
+							"children": []
+						},
+						{
+							"id": "081d292d-1164-40f9-e461-88f3f9bb4279",
+							"name": "description",
+							"parent": "d765d650-8b1b-4bb0-90a8-0390230674ce",
+							"description": "",
+							"objectType": "object",
+							"objectName": "description",
+							"isParent": true,
+							"children": []
+						},
+						{
+							"id": "22b1d0da-bcb4-4055-df48-100ad79f1df3",
+							"name": "titleAlignment",
+							"parent": "d765d650-8b1b-4bb0-90a8-0390230674ce",
+							"description": "",
+							"objectType": "object",
+							"objectName": "titleAlignment",
+							"isParent": true,
+							"children": []
+						},
+						{
+							"id": "b7aaba76-8d26-4756-af43-8c9eaa91d078",
+							"name": "enableFullScreen",
+							"parent": "d765d650-8b1b-4bb0-90a8-0390230674ce",
+							"description": "",
+							"objectType": "object",
+							"objectName": "enableFullScreen",
+							"isParent": true,
+							"children": []
+						},
+						{
+							"id": "d01060fd-8d5f-4ef3-ff38-3edffe8ebfc6",
+							"name": "hideHeader",
+							"parent": "d765d650-8b1b-4bb0-90a8-0390230674ce",
+							"description": "",
+							"objectType": "object",
+							"objectName": "hideHeader",
+							"isParent": true,
+							"children": []
+						},
+						{
+							"id": "db52bf52-5e44-4125-f9ed-f62686cab28f",
+							"name": "backgroundType",
+							"parent": "d765d650-8b1b-4bb0-90a8-0390230674ce",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "d3664dd6-8405-4b2b-b18b-b0a71cc5bd56",
+							"name": "backgroundColor",
+							"parent": "d765d650-8b1b-4bb0-90a8-0390230674ce",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "0ea15e9a-578f-48d4-c92f-3d2391e2999a",
+							"name": "backgroundShade",
+							"parent": "d765d650-8b1b-4bb0-90a8-0390230674ce",
+							"description": "",
+							"objectType": "object",
+							"objectName": "backgroundShade",
+							"isParent": true,
+							"children": []
+						},
+						{
+							"id": "4e6df428-6f0b-47aa-c4a2-c5c33191bdab",
+							"name": "type",
+							"parent": "d765d650-8b1b-4bb0-90a8-0390230674ce",
+							"description": "",
+							"objectType": "object",
+							"objectName": "type",
+							"isParent": true,
+							"children": []
+						},
+						{
+							"id": "6b764957-6ef6-4fa5-b441-3cf96bd5045c",
+							"name": "image",
+							"parent": "d765d650-8b1b-4bb0-90a8-0390230674ce",
+							"description": "",
+							"objectType": "object",
+							"objectName": "image",
+							"isParent": true,
+							"children": []
+						},
+						{
+							"id": "764aa4d8-0026-44e5-fa3d-29adad9b2562",
+							"name": "icon",
+							"parent": "d765d650-8b1b-4bb0-90a8-0390230674ce",
+							"description": "",
+							"objectType": "object",
+							"objectName": "icon",
+							"isParent": true,
+							"children": []
+						},
+						{
+							"id": "ee4486f2-7378-4502-b026-f617a3826d39",
+							"name": "sort",
+							"parent": "d765d650-8b1b-4bb0-90a8-0390230674ce",
+							"description": "",
+							"objectType": "object",
+							"objectName": "sort",
+							"isParent": true,
+							"children": []
+						},
+						{
+							"id": "06722690-b4fb-4e4a-d740-7c3af71cd1b9",
+							"name": "inclFav",
+							"parent": "d765d650-8b1b-4bb0-90a8-0390230674ce",
+							"description": "",
+							"objectType": "boolean",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "30b51171-ed76-40ea-c9d7-97c39e9d3a39",
+							"name": "styleClass",
+							"parent": "d765d650-8b1b-4bb0-90a8-0390230674ce",
+							"description": "",
+							"objectType": "object",
+							"objectName": "styleClass",
+							"isParent": true,
+							"children": []
+						},
+						{
+							"id": "47931463-b0b9-43ad-b323-d8477218dfb3",
+							"name": "enableScroll",
+							"parent": "d765d650-8b1b-4bb0-90a8-0390230674ce",
+							"description": "",
+							"objectType": "boolean",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "29556e14-ecad-4a36-cd1c-4020f51961a0",
+							"name": "enableShadeCalc",
+							"parent": "d765d650-8b1b-4bb0-90a8-0390230674ce",
+							"description": "",
+							"objectType": "boolean",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "7bbea711-04a3-485d-9fc4-8c8b69118744",
+							"name": "numTiles",
+							"parent": "d765d650-8b1b-4bb0-90a8-0390230674ce",
+							"description": "",
+							"objectType": "object",
+							"objectName": "numTiles",
+							"isParent": true,
+							"children": []
+						},
+						{
+							"id": "97157845-5a88-4742-d58d-d3b0a0fec2f6",
+							"name": "enableMessage",
+							"parent": "d765d650-8b1b-4bb0-90a8-0390230674ce",
+							"description": "",
+							"objectType": "boolean",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "251fce8b-e6a1-447c-a6a6-e71bb416868b",
+							"name": "ver",
+							"parent": "d765d650-8b1b-4bb0-90a8-0390230674ce",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "6c648d76-443e-42ac-983f-8f8b73d08f54",
+							"name": "headColor",
+							"parent": "d765d650-8b1b-4bb0-90a8-0390230674ce",
+							"description": "",
+							"objectType": "object",
+							"objectName": "headColor",
+							"isParent": true,
+							"children": []
+						},
+						{
+							"id": "42852580-cba2-46fa-d238-2723d4a860e8",
+							"name": "headTxtClr",
+							"parent": "d765d650-8b1b-4bb0-90a8-0390230674ce",
+							"description": "",
+							"objectType": "object",
+							"objectName": "headTxtClr",
+							"isParent": true,
+							"children": []
+						},
+						{
+							"id": "65519c3d-4737-4451-aca3-ddbf25ded0a9",
+							"name": "subheadTxtClr",
+							"parent": "d765d650-8b1b-4bb0-90a8-0390230674ce",
+							"description": "",
+							"objectType": "object",
+							"objectName": "subheadTxtClr",
+							"isParent": true,
+							"children": []
+						},
+						{
+							"id": "2647a5ea-0b10-4cb3-fa21-e2d0cb95988d",
+							"name": "headBorderClr",
+							"parent": "d765d650-8b1b-4bb0-90a8-0390230674ce",
+							"description": "",
+							"objectType": "object",
+							"objectName": "headBorderClr",
+							"isParent": true,
+							"children": []
+						},
+						{
+							"id": "f8e592f0-d621-48a0-fff2-74fc2d95159a",
+							"name": "headBorderWidth",
+							"parent": "d765d650-8b1b-4bb0-90a8-0390230674ce",
+							"description": "",
+							"objectType": "object",
+							"objectName": "headBorderWidth",
+							"isParent": true,
+							"children": []
+						},
+						{
+							"id": "0e8aab84-32ad-432a-8827-f4d4c48050a6",
+							"name": "imageTablet",
+							"parent": "d765d650-8b1b-4bb0-90a8-0390230674ce",
+							"description": "",
+							"objectType": "object",
+							"objectName": "imageTablet",
+							"isParent": true,
+							"children": []
+						},
+						{
+							"id": "365e05e1-0627-4509-9289-027777c704fd",
+							"name": "imageMobile",
+							"parent": "d765d650-8b1b-4bb0-90a8-0390230674ce",
+							"description": "",
+							"objectType": "object",
+							"objectName": "imageMobile",
+							"isParent": true,
+							"children": []
+						},
+						{
+							"id": "bfe678ad-65ba-4996-a871-48bcc9562578",
+							"name": "imageCover",
+							"parent": "d765d650-8b1b-4bb0-90a8-0390230674ce",
+							"description": "",
+							"objectType": "boolean",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "8297e335-1c10-4777-d648-432ba0963737",
+							"name": "imageTabletCover",
+							"parent": "d765d650-8b1b-4bb0-90a8-0390230674ce",
+							"description": "",
+							"objectType": "boolean",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "cefe0cfa-224d-426e-8d7c-e1958d8535d6",
+							"name": "imageMobileCover",
+							"parent": "d765d650-8b1b-4bb0-90a8-0390230674ce",
+							"description": "",
+							"objectType": "boolean",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "2bdd8192-a37a-400a-bc2d-6763998a6ab3",
+							"name": "imageMobileHeight",
+							"parent": "d765d650-8b1b-4bb0-90a8-0390230674ce",
+							"description": "",
+							"objectType": "object",
+							"objectName": "imageMobileHeight",
+							"isParent": true,
+							"children": []
+						},
+						{
+							"id": "68f4ba64-fcb8-471c-8fe1-04c556a81a54",
+							"name": "imageTabletHeight",
+							"parent": "d765d650-8b1b-4bb0-90a8-0390230674ce",
+							"description": "",
+							"objectType": "object",
+							"objectName": "imageTabletHeight",
+							"isParent": true,
+							"children": []
+						},
+						{
+							"id": "c6c140ce-86c7-47a9-bc0b-4b4fc49ef1df",
+							"name": "imageHeight",
+							"parent": "d765d650-8b1b-4bb0-90a8-0390230674ce",
+							"description": "",
+							"objectType": "object",
+							"objectName": "imageHeight",
+							"isParent": true,
+							"children": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "485f9dd1-dd6e-41e7-c25f-dab3002c48b1",
+			"name": "ID",
+			"description": "ID",
+			"isInclude": false,
+			"properties": [
+				{
+					"id": "ce751176-12bf-44c4-f4b4-b75ad120fcd4",
+					"name": "id",
+					"objectType": "string",
+					"description": "",
+					"required": false,
+					"value": "",
+					"minLength": "",
+					"maxLength": "",
+					"default": "",
+					"example": "",
+					"isParent": false,
+					"children": []
+				}
+			]
+		},
+		{
+			"id": "5cec37a6-536f-4009-da63-88f448ed2687",
+			"name": "Error",
+			"description": "Error",
+			"isInclude": false,
+			"properties": [
+				{
+					"id": "0dae769f-b272-48d8-8645-3f92f8d8ded1",
+					"name": "status",
+					"objectType": "string",
+					"description": "",
+					"required": false,
+					"value": "",
+					"minLength": "",
+					"maxLength": "",
+					"default": "",
+					"example": "",
+					"isParent": false,
+					"children": []
+				}
+			]
+		},
+		{
+			"id": "7d9a2cd4-2598-4891-b78f-e3ad50034319",
+			"name": "Save",
+			"description": "",
+			"isInclude": false,
+			"properties": [
+				{
+					"id": "4be6f538-fdc4-4175-e9bb-3a3257ef03c8",
+					"name": "id",
+					"parent": "",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "38f365ba-a462-431a-e61d-1ee11c5123d5",
+					"name": "createdAt",
+					"parent": "",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "d5e6c9d7-8aae-4d64-9f6f-00afdc1c569f",
+					"name": "updatedAt",
+					"parent": "",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "d6f47032-a993-4f9a-c5e3-51a1f75b4411",
+					"name": "createdBy",
+					"parent": "",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "22252872-878a-4e3f-acc0-fc99cbe9db28",
+					"name": "changedBy",
+					"parent": "",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "9a1d6b35-9964-4fe7-9b0c-565b037fb3e8",
+					"name": "language",
+					"parent": "128ebf66-0a1c-4c2e-f961-c02822a05094",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "ed9ab690-60b2-4596-c8cc-b17e35b9ed34",
+					"name": "title",
+					"parent": "128ebf66-0a1c-4c2e-f961-c02822a05094",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "128ebf66-0a1c-4c2e-f961-c02822a05094",
+					"name": "translation",
+					"parent": "",
+					"description": "",
+					"objectType": "array",
+					"objectName": "translation",
+					"isParent": true,
+					"children": [
+						{
+							"id": "9a1d6b35-9964-4fe7-9b0c-565b037fb3e8",
+							"name": "language",
+							"parent": "128ebf66-0a1c-4c2e-f961-c02822a05094",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "ed9ab690-60b2-4596-c8cc-b17e35b9ed34",
+							"name": "title",
+							"parent": "128ebf66-0a1c-4c2e-f961-c02822a05094",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						}
+					]
+				},
+				{
+					"id": "ce5061b3-dd4f-4c25-c4cc-66d13af58549",
+					"name": "storeItem",
+					"parent": "",
+					"description": "",
+					"objectType": "object",
+					"objectName": "storeItem",
+					"isParent": true,
+					"children": []
+				},
+				{
+					"id": "d9b1d801-5202-4ccf-fe6b-5b51f0939ead",
+					"name": "title",
+					"parent": "",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "a97ab3e7-c077-4ece-bd7c-4f94d4e45ace",
+					"name": "subTitle",
+					"parent": "",
+					"description": "",
+					"objectType": "object",
+					"objectName": "subTitle",
+					"isParent": true,
+					"children": []
+				},
+				{
+					"id": "045f4391-4420-42d9-9110-d46aa6a30511",
+					"name": "description",
+					"parent": "",
+					"description": "",
+					"objectType": "object",
+					"objectName": "description",
+					"isParent": true,
+					"children": []
+				},
+				{
+					"id": "047e5697-919e-4a1d-f05e-ad39e025c3e9",
+					"name": "categoryID",
+					"parent": "",
+					"description": "",
+					"objectType": "object",
+					"objectName": "categoryID",
+					"isParent": true,
+					"children": []
+				},
+				{
+					"id": "1b7f5c04-7e14-44d9-a2d1-8ed9b4dcc4df",
+					"name": "sort",
+					"parent": "",
+					"description": "",
+					"objectType": "object",
+					"objectName": "sort",
+					"isParent": true,
+					"children": []
+				},
+				{
+					"id": "ed05c873-f165-49d5-f782-729259a09d0c",
+					"name": "urlApplication",
+					"parent": "",
+					"description": "",
+					"objectType": "object",
+					"objectName": "urlApplication",
+					"isParent": true,
+					"children": []
+				},
+				{
+					"id": "cb536556-0fe5-4196-beb6-97141398213f",
+					"name": "actionApplication",
+					"parent": "",
+					"description": "",
+					"objectType": "object",
+					"objectName": "actionApplication",
+					"isParent": true,
+					"children": []
+				},
+				{
+					"id": "b4f412e6-cbf2-4fb2-b0c0-f6c70ecd1ed3",
+					"name": "actionParameters",
+					"parent": "",
+					"description": "",
+					"objectType": "object",
+					"objectName": "actionParameters",
+					"isParent": true,
+					"children": []
+				},
+				{
+					"id": "8025e38f-aa9c-406d-913b-269862fa6c9f",
+					"name": "actionURL",
+					"parent": "",
+					"description": "",
+					"objectType": "object",
+					"objectName": "actionURL",
+					"isParent": true,
+					"children": []
+				},
+				{
+					"id": "678218af-d2fa-4a73-94f8-c2b526f1a75c",
+					"name": "openDialog",
+					"parent": "",
+					"description": "",
+					"objectType": "boolean",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "cc5c542f-976c-4d75-d519-89f990d7bddc",
+					"name": "openWindow",
+					"parent": "",
+					"description": "",
+					"objectType": "boolean",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "1d2ff4cd-10cb-4ac9-f7da-650681b4f807",
+					"name": "openFullscreen",
+					"parent": "",
+					"description": "",
+					"objectType": "boolean",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "a7d63f4a-d896-46ce-9411-8031717ffed5",
+					"name": "forceRow",
+					"parent": "",
+					"description": "",
+					"objectType": "boolean",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "03210542-8b53-40ec-f280-ad6abe28e6a5",
+					"name": "frameType",
+					"parent": "",
+					"description": "",
+					"objectType": "object",
+					"objectName": "frameType",
+					"isParent": true,
+					"children": []
+				},
+				{
+					"id": "ae706725-c19f-4f10-c586-82d9454b4fa1",
+					"name": "type",
+					"parent": "",
+					"description": "",
+					"objectType": "object",
+					"objectName": "type",
+					"isParent": true,
+					"children": []
+				},
+				{
+					"id": "78839fe5-2f01-4922-934c-bca448616d0c",
+					"name": "image",
+					"parent": "",
+					"description": "",
+					"objectType": "object",
+					"objectName": "image",
+					"isParent": true,
+					"children": []
+				},
+				{
+					"id": "d08d462f-0221-46e4-983a-3972de129bff",
+					"name": "icon",
+					"parent": "",
+					"description": "",
+					"objectType": "object",
+					"objectName": "icon",
+					"isParent": true,
+					"children": []
+				},
+				{
+					"id": "4ec2e696-8497-45be-8940-65b17d86c703",
+					"name": "backgroundType",
+					"parent": "",
+					"description": "",
+					"objectType": "object",
+					"objectName": "backgroundType",
+					"isParent": true,
+					"children": []
+				},
+				{
+					"id": "7e71019d-ae67-4b60-c472-423c8075d122",
+					"name": "backgroundColor",
+					"parent": "",
+					"description": "",
+					"objectType": "object",
+					"objectName": "backgroundColor",
+					"isParent": true,
+					"children": []
+				},
+				{
+					"id": "566d5755-0ca4-4587-ccdf-dcbaf24f8c0c",
+					"name": "backgroundShade",
+					"parent": "",
+					"description": "",
+					"objectType": "object",
+					"objectName": "backgroundShade",
+					"isParent": true,
+					"children": []
+				},
+				{
+					"id": "f3448396-a598-450b-bd4e-21136242bb55",
+					"name": "tileApplication",
+					"parent": "",
+					"description": "",
+					"objectType": "object",
+					"objectName": "tileApplication",
+					"isParent": true,
+					"children": []
+				},
+				{
+					"id": "750392e8-e816-4de1-c354-505ae626c725",
+					"name": "hideHeaderL",
+					"parent": "",
+					"description": "",
+					"objectType": "object",
+					"objectName": "hideHeaderL",
+					"isParent": true,
+					"children": []
+				},
+				{
+					"id": "b4ca30ea-f34f-459b-b46c-3bd1a08d33e0",
+					"name": "hideHeaderM",
+					"parent": "",
+					"description": "",
+					"objectType": "boolean",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "c73129bc-2b14-4777-e14d-ed00b7f49c37",
+					"name": "hideHeaderS",
+					"parent": "",
+					"description": "",
+					"objectType": "boolean",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "594c038f-6f8c-41c0-dca9-5e2dd41a6711",
+					"name": "hideTileDesktop",
+					"parent": "",
+					"description": "",
+					"objectType": "boolean",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "47cb9a1e-7efc-46c1-ebf0-dda067e75703",
+					"name": "hideTileMobile",
+					"parent": "",
+					"description": "",
+					"objectType": "boolean",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "1a8cf683-b49d-4532-e8d8-36890b84c045",
+					"name": "hideTileTablet",
+					"parent": "",
+					"description": "",
+					"objectType": "boolean",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "25bcd6f4-41b6-44f5-ff92-763b6c1d4e92",
+					"name": "enableDocumentation",
+					"parent": "",
+					"description": "",
+					"objectType": "boolean",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "1a673ffa-3b4d-48cf-a316-dafb7217caef",
+					"name": "navObject",
+					"parent": "",
+					"description": "",
+					"objectType": "object",
+					"objectName": "navObject",
+					"isParent": true,
+					"children": []
+				},
+				{
+					"id": "dd8db9c5-02ce-40f8-c73d-3e7c40e773d3",
+					"name": "navAction",
+					"parent": "",
+					"description": "",
+					"objectType": "object",
+					"objectName": "navAction",
+					"isParent": true,
+					"children": []
+				},
+				{
+					"id": "5bce5ae3-3505-4d84-de72-2db7552556f1",
+					"name": "dialogWidth",
+					"parent": "",
+					"description": "",
+					"objectType": "object",
+					"objectName": "dialogWidth",
+					"isParent": true,
+					"children": []
+				},
+				{
+					"id": "b56adeed-3524-41c2-a697-8a1dc189b8b6",
+					"name": "dialogHeight",
+					"parent": "",
+					"description": "",
+					"objectType": "object",
+					"objectName": "dialogHeight",
+					"isParent": true,
+					"children": []
+				},
+				{
+					"id": "4e28e11c-f148-4325-aaaa-bb2cebda8162",
+					"name": "tileApplicationStyleClass",
+					"parent": "",
+					"description": "",
+					"objectType": "object",
+					"objectName": "tileApplicationStyleClass",
+					"isParent": true,
+					"children": []
+				},
+				{
+					"id": "118eec87-4276-4ce3-afad-52d961a57825",
+					"name": "sidepanelApp",
+					"parent": "",
+					"description": "",
+					"objectType": "object",
+					"objectName": "sidepanelApp",
+					"isParent": true,
+					"children": []
+				},
+				{
+					"id": "bf02cca5-6612-4a45-a028-af89a6d45951",
+					"name": "sidepanelTitle",
+					"parent": "",
+					"description": "",
+					"objectType": "object",
+					"objectName": "sidepanelTitle",
+					"isParent": true,
+					"children": []
+				},
+				{
+					"id": "c4b347a1-4c33-4c3c-8a62-46e8e39316f7",
+					"name": "tags",
+					"parent": "",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "4b4c8027-ae72-463c-9066-f9b0fc2d99ef",
+					"name": "actiongroup",
+					"parent": "",
+					"description": "",
+					"objectType": "object",
+					"objectName": "actiongroup",
+					"isParent": true,
+					"children": []
+				},
+				{
+					"id": "11070df2-ab2a-41c7-ae78-d23d26e5e8b7",
+					"name": "styleClass",
+					"parent": "",
+					"description": "",
+					"objectType": "object",
+					"objectName": "styleClass",
+					"isParent": true,
+					"children": []
+				},
+				{
+					"id": "4f06df33-7dfe-4b7c-ed66-5fa975a079cf",
+					"name": "titleAlignment",
+					"parent": "",
+					"description": "",
+					"objectType": "object",
+					"objectName": "titleAlignment",
+					"isParent": true,
+					"children": []
+				},
+				{
+					"id": "7dcc195a-19ee-442b-e7e5-b4833fb0f3cc",
+					"name": "titleLevel",
+					"parent": "",
+					"description": "",
+					"objectType": "object",
+					"objectName": "titleLevel",
+					"isParent": true,
+					"children": []
+				},
+				{
+					"id": "134a3473-c7c4-4403-ba41-dab985015b65",
+					"name": "dataUrl",
+					"parent": "",
+					"description": "",
+					"objectType": "object",
+					"objectName": "dataUrl",
+					"isParent": true,
+					"children": []
+				},
+				{
+					"id": "1c95ede7-3de1-499f-cb2a-c38aabc95567",
+					"name": "dataInterval",
+					"parent": "",
+					"description": "",
+					"objectType": "object",
+					"objectName": "dataInterval",
+					"isParent": true,
+					"children": []
+				},
+				{
+					"id": "351deb23-ec7d-41e0-f6b2-a41263ad556d",
+					"name": "footer",
+					"parent": "",
+					"description": "",
+					"objectType": "object",
+					"objectName": "footer",
+					"isParent": true,
+					"children": []
+				},
+				{
+					"id": "27fcbed5-0666-4d5e-b9b1-19a39d5129cf",
+					"name": "browserBlockWin",
+					"parent": "",
+					"description": "",
+					"objectType": "object",
+					"objectName": "browserBlockWin",
+					"isParent": true,
+					"children": []
+				},
+				{
+					"id": "0a7e6153-c11d-4916-ae9c-9e8a4eaa41ec",
+					"name": "browserBlockMac",
+					"parent": "",
+					"description": "",
+					"objectType": "object",
+					"objectName": "browserBlockMac",
+					"isParent": true,
+					"children": []
+				},
+				{
+					"id": "aa2211b4-9064-4e9c-cd60-994230dd82d8",
+					"name": "blackoutEnabled",
+					"parent": "",
+					"description": "",
+					"objectType": "boolean",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "4587c1cf-ce44-4e67-d241-5869315c361c",
+					"name": "blackoutText",
+					"parent": "",
+					"description": "",
+					"objectType": "object",
+					"objectName": "blackoutText",
+					"isParent": true,
+					"children": []
+				},
+				{
+					"id": "89ee2e79-f61f-4813-e7bc-0b0151d9a278",
+					"name": "blackoutDescription",
+					"parent": "",
+					"description": "",
+					"objectType": "object",
+					"objectName": "blackoutDescription",
+					"isParent": true,
+					"children": []
+				},
+				{
+					"id": "06366006-3136-4d63-e083-73cf2a6175fc",
+					"name": "helpText",
+					"parent": "",
+					"description": "",
+					"objectType": "object",
+					"objectName": "helpText",
+					"isParent": true,
+					"children": []
+				},
+				{
+					"id": "5ede5450-1c00-433a-8835-f2501d2cba51",
+					"name": "helpEnabled",
+					"parent": "",
+					"description": "",
+					"objectType": "boolean",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "e1e42737-2c9c-4f7a-9f69-7550008384af",
+					"name": "openClickTile",
+					"parent": "",
+					"description": "",
+					"objectType": "boolean",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "5569fa5d-457c-4bc8-a2e3-4c3a56674915",
+					"name": "ver",
+					"parent": "",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "09dce577-11fa-4409-b21d-d3f0b566db24",
+					"name": "actionWebApp",
+					"parent": "",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "2c402fc6-d6c9-4c6a-d2ca-5bf3dcf58f71",
+					"name": "id",
+					"parent": "4e623c02-15cc-4c14-fccf-004c809d7a9c",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "b4851739-055b-4a67-af42-fe841e87906b",
+					"name": "createdAt",
+					"parent": "4e623c02-15cc-4c14-fccf-004c809d7a9c",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "463da55e-3f9e-4c88-dc9f-a9e04e49fe64",
+					"name": "updatedAt",
+					"parent": "4e623c02-15cc-4c14-fccf-004c809d7a9c",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "c96c8940-9ea5-45d3-ef78-7438a8e51573",
+					"name": "createdBy",
+					"parent": "4e623c02-15cc-4c14-fccf-004c809d7a9c",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "360213d4-3dba-45d4-8841-4f0d1643f6fd",
+					"name": "changedBy",
+					"parent": "4e623c02-15cc-4c14-fccf-004c809d7a9c",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "e8be9963-4e13-4191-8bb6-5484ac714038",
+					"name": "name",
+					"parent": "4e623c02-15cc-4c14-fccf-004c809d7a9c",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "aba4adb6-f69c-46e9-a8b0-8f9caa4920b9",
+					"name": "description",
+					"parent": "4e623c02-15cc-4c14-fccf-004c809d7a9c",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "c6eeca90-a175-4a3e-f23d-93dde7b51bf7",
+					"name": "ver",
+					"parent": "4e623c02-15cc-4c14-fccf-004c809d7a9c",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "4e623c02-15cc-4c14-fccf-004c809d7a9c",
+					"name": "roles",
+					"parent": "",
+					"description": "",
+					"objectType": "array",
+					"objectName": "roles",
+					"isParent": true,
+					"children": [
+						{
+							"id": "2c402fc6-d6c9-4c6a-d2ca-5bf3dcf58f71",
+							"name": "id",
+							"parent": "4e623c02-15cc-4c14-fccf-004c809d7a9c",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "b4851739-055b-4a67-af42-fe841e87906b",
+							"name": "createdAt",
+							"parent": "4e623c02-15cc-4c14-fccf-004c809d7a9c",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "463da55e-3f9e-4c88-dc9f-a9e04e49fe64",
+							"name": "updatedAt",
+							"parent": "4e623c02-15cc-4c14-fccf-004c809d7a9c",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "c96c8940-9ea5-45d3-ef78-7438a8e51573",
+							"name": "createdBy",
+							"parent": "4e623c02-15cc-4c14-fccf-004c809d7a9c",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "360213d4-3dba-45d4-8841-4f0d1643f6fd",
+							"name": "changedBy",
+							"parent": "4e623c02-15cc-4c14-fccf-004c809d7a9c",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "e8be9963-4e13-4191-8bb6-5484ac714038",
+							"name": "name",
+							"parent": "4e623c02-15cc-4c14-fccf-004c809d7a9c",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "aba4adb6-f69c-46e9-a8b0-8f9caa4920b9",
+							"name": "description",
+							"parent": "4e623c02-15cc-4c14-fccf-004c809d7a9c",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "c6eeca90-a175-4a3e-f23d-93dde7b51bf7",
+							"name": "ver",
+							"parent": "4e623c02-15cc-4c14-fccf-004c809d7a9c",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						}
+					]
+				}
+			]
+		}
+	],
+	"documentation": [],
+	"name": "CoreAPI Run_Tile",
+	"endpoint": "https://explored.neptune-software.com/api/functions/Tile",
+	"ver": "22.7.27.724",
+	"version": "2.2.0",
+	"description": "API to access results of Planet 9 Run_Tile Details",
+	"mediaType": null,
+	"securitySchemes": null,
+	"swaggerURI": null,
+	"swaggerSystem": null,
+	"apiType": "",
+	"about": "<p><strong style=\"white-space: unset; font-size: 1rem;\">Description</strong><br></p><p>Planet 9-Run_Tile manages the list of the planet 9 Application tiles and the corresponding applications.</p><p>API Run_Tile is the API to access the Planet 9 application tiles, and the operations performed on tiles.</p><p>You can use API Run_Tile into your app to add, delete, or update the tile content.&nbsp;</p><p>Every app must have the right roles (permissions) and authentication that enables access to the API Run_Tile.</p><p><strong>Operations Performed</strong></p><p><strong>Get</strong></p><p>Get the selected tile</p><table class=\"table\" style=\"width: 730px;\"><tbody><tr><td>Request</td><td>ID</td></tr><tr><td>Response</td><td>Get- Definition&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</td></tr></tbody></table><p><strong style=\"white-space: unset; font-size: 1rem;\">List</strong><br></p><p>Get the list of the tiles</p><table class=\"table\" style=\"width: 730px;\"><tbody><tr><td>Response</td><td>List(array)- Definition&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</td></tr></tbody></table><p><strong style=\"white-space: unset; font-size: 1rem;\">Save</strong><br></p><p>Save the tile</p><table class=\"table\" style=\"width: 730px;\"><tbody><tr><td>Request</td><td>Save- Definition&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</td></tr></tbody></table><p><strong style=\"white-space: unset; font-size: 1rem;\">Delete</strong><br></p><p>Delete the tile</p><table class=\"table\" style=\"width: 730px;\"><tbody><tr><td>Request</td><td>ID&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</td></tr></tbody></table><p><br></p>",
+	"enableProxy": true,
+	"restrictAccess": false,
+	"enableTrace": false,
+	"enableIDE": false,
+	"internalAPI": false,
+	"isPublic": false,
+	"tlsAllowUntrusted": true,
+	"useOwnProcess": false,
+	"package": "25602b27-7c0d-ed11-b47a-000d3ab2359f",
+	"apiGroup": null,
+	"apiFormat": 0,
+	"roles": []
+}

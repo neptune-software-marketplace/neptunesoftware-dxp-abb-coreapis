@@ -1,0 +1,252 @@
+{
+	"id": "5f38617f-ca5d-43a7-a9c1-fbd9551bc7ae",
+	"createdAt": "2022-02-04T15:44:46.863Z",
+	"createdBy": "lloyd",
+	"auth": [],
+	"endpoints": [],
+	"paths": [
+		{
+			"id": "FF77695A-C21D-49C2-F4C0-CB1B991CBADD",
+			"method": "POST",
+			"path": "/List",
+			"description": "",
+			"parameters": [],
+			"headers": [],
+			"responses": [
+				{
+					"status": "200",
+					"description": "OK",
+					"headers": [],
+					"body": [],
+					"content": [
+						{
+							"id": "3bb32a17-a4c7-47c3-c95d-3c09707f2412",
+							"name": "List",
+							"objectType": "array"
+						}
+					]
+				},
+				{
+					"status": "500",
+					"description": "OK",
+					"headers": [],
+					"body": [],
+					"content": [
+						{
+							"id": "dd0213a2-b844-4141-cd0a-dce7478b09da",
+							"name": "Error",
+							"objectType": "object"
+						}
+					]
+				}
+			],
+			"summary": "Get the apps list deleted from App Designer",
+			"example": [
+				"==OBJECT STRING==",
+				"[{",
+				"    \"id\": \"fb6484cd-791c-42ab-bf18-95e5b1e1027f\",",
+				"    \"updatedAt\": \"2020-04-23T11:35:37.493Z\",",
+				"    \"changedBy\": \"branislav\",",
+				"    \"application\": \"festival2020\",",
+				"    \"description\": \"\"",
+				"}, {",
+				"    \"id\": \"ee06bc96-808e-4037-a0b8-ba9c85bb25f5\",",
+				"    \"updatedAt\": \"2020-04-16T09:18:01.096Z\",",
+				"    \"changedBy\": \"nils2\",",
+				"    \"application\": \"communitygamification\",",
+				"    \"description\": \"\"",
+				"}, {",
+				"    \"id\": \"7b639b91-2b52-4171-86c2-3760d7625523\",",
+				"    \"updatedAt\": \"2020-04-16T09:06:17.891Z\",",
+				"    \"changedBy\": \"oah\",",
+				"    \"application\": \"demovolvo333\",",
+				"    \"description\": \"\"",
+				"}]"
+			],
+			"content": []
+		},
+		{
+			"id": "B7E48675-F4F8-4BE3-E4DA-8979353912B3",
+			"method": "POST",
+			"path": "/Delete",
+			"description": "",
+			"parameters": [],
+			"headers": [],
+			"responses": [
+				{
+					"status": "200",
+					"description": "OK",
+					"headers": [],
+					"body": []
+				},
+				{
+					"status": "500",
+					"description": "OK",
+					"headers": [],
+					"body": [],
+					"content": [
+						{
+							"id": "c57ff13e-d672-4f39-cd07-d683bef946db",
+							"name": "Error",
+							"objectType": "object"
+						}
+					]
+				}
+			],
+			"content": [
+				{
+					"name": "ID",
+					"objectType": "object"
+				}
+			],
+			"summary": "Permanently delete the App from the System"
+		},
+		{
+			"id": "03AF681E-B6C0-4848-F839-FCFF0E4FB118",
+			"method": "POST",
+			"path": "/Restore",
+			"description": "",
+			"parameters": [],
+			"headers": [],
+			"responses": [
+				{
+					"status": "200",
+					"description": "OK",
+					"headers": [],
+					"body": [],
+					"content": []
+				}
+			],
+			"content": [
+				{
+					"name": "ID",
+					"objectType": "object"
+				}
+			],
+			"summary": "Restore the application and make it available in App Designer"
+		}
+	],
+	"definitions": [
+		{
+			"id": "f70dc33a-8593-4c56-8584-e24e16007a33",
+			"name": "List",
+			"description": "",
+			"isInclude": false,
+			"properties": [
+				{
+					"id": "a4a7c706-0fd1-43c2-f979-aba27ab2ddc6",
+					"name": "id",
+					"parent": "",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "ee906425-c365-42da-faed-5eff9228bf3b",
+					"name": "updatedAt",
+					"parent": "",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "487c2057-ca3d-42cb-9174-960462da7196",
+					"name": "changedBy",
+					"parent": "",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "324f1c58-4ec8-433e-a143-860c5881e22f",
+					"name": "application",
+					"parent": "",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "6e8956e8-181d-41d6-dbc0-ae86b0e6bb9b",
+					"name": "description",
+					"parent": "",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				}
+			]
+		},
+		{
+			"id": "8ac064a7-026c-47e1-985a-98d97feeaa36",
+			"name": "Error",
+			"description": "",
+			"isInclude": false,
+			"properties": [
+				{
+					"id": "4b2c591e-6ee1-43e3-c32c-54bd1e5da629",
+					"name": "status",
+					"objectType": "string",
+					"description": "",
+					"required": false,
+					"value": "",
+					"minLength": "",
+					"maxLength": "",
+					"default": "",
+					"example": "",
+					"isParent": false,
+					"children": []
+				}
+			]
+		},
+		{
+			"id": "5ae81998-1f68-48dd-9875-f8cca1549350",
+			"name": "ID",
+			"description": "",
+			"isInclude": false,
+			"properties": [
+				{
+					"id": "7b426c66-0a02-4179-d84e-06abe03bc860",
+					"name": "id",
+					"objectType": "string",
+					"description": "",
+					"required": true,
+					"value": "",
+					"minLength": "",
+					"maxLength": "",
+					"default": "",
+					"example": "",
+					"isParent": false,
+					"children": []
+				}
+			]
+		}
+	],
+	"documentation": [],
+	"name": "CoreAPI Tools_RestoreApplication",
+	"endpoint": "https://explored.neptune-software.com/api/functions/ToolsRestore",
+	"ver": "22.7.27.727",
+	"version": "2.2.0",
+	"description": "API to access results of Planet 9 Tools Housekeeping API",
+	"mediaType": null,
+	"securitySchemes": null,
+	"swaggerURI": null,
+	"swaggerSystem": null,
+	"apiType": "",
+	"about": "<p><strong style=\"white-space: unset; font-size: 1rem;\">Description</strong><br></p><p>Planet 9-API Tools_RestoreApplication maintains the Planet 9 deleted applications list.</p><p>API Tools_RestoreApplication is the API to access the Planet 9 housekeeping apps. You can perform REST operations on Planet 9 Restore Application component&nbsp;<span style=\"white-space: unset; font-size: 1rem;\">using this API from your app.</span></p><p><strong>Operations Performed</strong></p><p><strong style=\"white-space: unset; font-size: 1rem;\">List</strong><br></p><p>Get the Housekeeping application list.<span style=\"white-space: unset; font-size: 1rem;\">&nbsp;</span></p><table class=\"table\" style=\"width: 730px;\"><tbody><tr><td>Response</td><td>List(array)- Definition&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<br></td></tr></tbody></table><br><p><strong>Delete</strong></p><p>Permanent delete the application corresponding to the ID</p><p><strong></strong></p><table class=\"table\"><tbody><tr><td><span style=\"font-weight: normal;\">Request</span></td><td><span style=\"font-weight: normal;\">ID&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</span></td></tr></tbody></table><p><strong><br></strong></p><p><strong>Restore</strong></p><p>Restore the deleted application</p><p><strong></strong></p><table class=\"table\" style=\"width: 730px;\"><tbody><tr><td>Request</td><td>ID&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</td></tr></tbody></table>",
+	"enableProxy": true,
+	"restrictAccess": false,
+	"enableTrace": false,
+	"enableIDE": false,
+	"internalAPI": false,
+	"isPublic": false,
+	"tlsAllowUntrusted": true,
+	"useOwnProcess": false,
+	"package": "25602b27-7c0d-ed11-b47a-000d3ab2359f",
+	"apiGroup": null,
+	"apiFormat": 0,
+	"roles": []
+}

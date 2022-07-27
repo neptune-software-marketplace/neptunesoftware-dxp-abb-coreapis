@@ -1,0 +1,291 @@
+{
+	"id": "7b5f0099-c178-4802-82c2-e90105133548",
+	"createdAt": "2022-02-04T15:44:46.846Z",
+	"createdBy": "lloyd",
+	"auth": [],
+	"endpoints": [],
+	"paths": [
+		{
+			"id": "B999305D-AE00-4C03-CCD1-6BBB208A5761",
+			"method": "POST",
+			"path": "/List",
+			"description": "",
+			"parameters": [],
+			"headers": [],
+			"responses": [
+				{
+					"status": "200",
+					"description": "OK",
+					"headers": [],
+					"body": [],
+					"content": [
+						{
+							"id": "789b3280-8271-4f90-ba9c-d6d6988ffcad",
+							"name": "List",
+							"objectType": "array"
+						}
+					]
+				},
+				{
+					"status": "500",
+					"description": "OK",
+					"headers": [],
+					"body": [],
+					"content": [
+						{
+							"id": "692cc468-914b-40db-b0cf-c1b5f2fb3554",
+							"name": "Error",
+							"objectType": "object"
+						}
+					]
+				}
+			],
+			"summary": "Get the list of locked entries",
+			"example": [
+				"==OBJECT STRING==",
+				"[{",
+				"    \"id\": \"004f42b1-68c5-49cf-9057-e208189d166a\",",
+				"    \"createdAt\": \"2020-05-05T07:49:45.834Z\",",
+				"    \"updatedAt\": \"2020-05-05T07:49:45.834Z\",",
+				"    \"createdBy\": \"ole-andre.haugen@neptune-software.com\",",
+				"    \"objectType\": \"Launchpad\",",
+				"    \"objectKey\": \"new_standard\",",
+				"    \"objectID\": \"245155c2-4a37-4276-bfa6-767d9dc66e7c\"",
+				"}, {",
+				"    \"id\": \"aac47743-ca4c-4f9f-8e40-f16c8120dfe9\",",
+				"    \"createdAt\": \"2020-04-27T12:53:28.476Z\",",
+				"    \"updatedAt\": \"2020-04-27T12:53:28.476Z\",",
+				"    \"createdBy\": \"branislav\",",
+				"    \"objectType\": \"App Editor\",",
+				"    \"objectKey\": \"ticket_12213_bug\",",
+				"    \"objectID\": \"9608c3f4-df30-429a-b0de-8c76867ade6e\"",
+				"}, {",
+				"    \"id\": \"96658db1-af1e-423c-8fbe-400e917db6bf\",",
+				"    \"createdAt\": \"2020-04-27T14:28:30.112Z\",",
+				"    \"updatedAt\": \"2020-04-27T14:28:30.112Z\",",
+				"    \"createdBy\": \"branislav\",",
+				"    \"objectType\": \"App Editor\",",
+				"    \"objectKey\": \"vjuuuu\",",
+				"    \"objectID\": \"6e60e1be-c4e4-4955-8022-04a41e0776cf\"",
+				"}, {",
+				"    \"id\": \"ba2dd96a-5bca-4863-af71-3be0b1762a16\",",
+				"    \"createdAt\": \"2020-04-24T17:37:56.182Z\",",
+				"    \"updatedAt\": \"2020-04-24T17:37:56.182Z\",",
+				"    \"createdBy\": \"ole-andre.haugen@neptune-software.com\",",
+				"    \"objectType\": \"Application\",",
+				"    \"objectKey\": \"test\",",
+				"    \"objectID\": \"2165e2c1-591d-4c46-9ada-a9ace5b2c83e\"",
+				"}, {",
+				"    \"id\": \"e41c34cc-c9b9-4868-9e4d-9dd7439e6920\",",
+				"    \"createdAt\": \"2020-04-26T16:51:09.935Z\",",
+				"    \"updatedAt\": \"2020-04-26T16:51:09.935Z\",",
+				"    \"createdBy\": \"ole-andre.haugen@neptune-software.com\",",
+				"    \"objectType\": \"Application\",",
+				"    \"objectKey\": \"demo_login_azure\",",
+				"    \"objectID\": \"805f4f98-5108-43c4-a9cf-ab9f90a678ae\"",
+				"}, {",
+				"    \"id\": \"67f5b29d-f56d-4c7c-a3c1-2402cc3ada91\",",
+				"    \"createdAt\": \"2020-05-05T13:25:01.410Z\",",
+				"    \"updatedAt\": \"2020-05-05T13:25:01.410Z\",",
+				"    \"createdBy\": \"tsb\",",
+				"    \"objectType\": \"Application\",",
+				"    \"objectKey\": \"invoice_sap\",",
+				"    \"objectID\": \"6fab32e4-59ae-422a-ae93-ea760cfc04f3\"",
+				"}, {",
+				"    \"id\": \"2201c86f-2688-418e-9809-df78e413009a\",",
+				"    \"createdAt\": \"2020-05-01T09:25:16.730Z\",",
+				"    \"updatedAt\": \"2020-05-01T09:25:16.730Z\",",
+				"    \"createdBy\": \"ole-andre.haugen@neptune-software.com\",",
+				"    \"objectType\": \"MobileClient\",",
+				"    \"objectKey\": \"Planet 9 Mobile Client\",",
+				"    \"objectID\": \"e007af94-54b1-4012-820c-3f63f1e3bbba\"",
+				"}, {",
+				"    \"id\": \"a6749c9e-cf4e-423f-af96-ee2559eea845\",",
+				"    \"createdAt\": \"2020-05-05T16:03:11.266Z\",",
+				"    \"updatedAt\": \"2020-05-05T16:03:11.266Z\",",
+				"    \"createdBy\": \"branislav\",",
+				"    \"objectType\": \"App Editor\",",
+				"    \"objectKey\": \"12213BUGv2\",",
+				"    \"objectID\": \"b4d5e1a8-16ea-4ee5-94d8-46527e5e09fa\"",
+				"}]"
+			]
+		},
+		{
+			"id": "5DE34180-9F24-4812-DE35-37F8AA1DE70E",
+			"method": "POST",
+			"path": "/DeleteList",
+			"description": "",
+			"parameters": [],
+			"headers": [],
+			"responses": [
+				{
+					"status": "200",
+					"description": "OK",
+					"headers": [],
+					"body": []
+				},
+				{
+					"status": "500",
+					"description": "OK",
+					"headers": [],
+					"body": [],
+					"content": [
+						{
+							"id": "a50ee3d9-4e14-459b-ce0d-c7df460e4490",
+							"name": "Error",
+							"objectType": "object"
+						}
+					]
+				}
+			],
+			"summary": "Delete the lock from the item",
+			"content": [
+				{
+					"name": "ID",
+					"objectType": "object"
+				}
+			]
+		}
+	],
+	"definitions": [
+		{
+			"id": "5e712a57-d7aa-4ce7-d9ea-c6540bae2b56",
+			"name": "List",
+			"description": "",
+			"isInclude": false,
+			"properties": [
+				{
+					"id": "8324fc14-7aee-47a0-ae81-59c3f074b4ea",
+					"name": "id",
+					"parent": "",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "ab313b91-eafc-4f5b-9fb0-40f4f980a7cb",
+					"name": "createdAt",
+					"parent": "",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "e927269b-8301-4eee-d261-5c303b1f9d4f",
+					"name": "updatedAt",
+					"parent": "",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "e1565716-7b79-4301-9c01-b78a0487e4f6",
+					"name": "createdBy",
+					"parent": "",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "29524371-b2b4-4bc0-827e-00e87de6c59f",
+					"name": "objectType",
+					"parent": "",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "d6930936-b590-41fd-d14e-f72b0b288331",
+					"name": "objectKey",
+					"parent": "",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "69752dc8-54c1-4e36-f747-12e72763718b",
+					"name": "objectID",
+					"parent": "",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				}
+			]
+		},
+		{
+			"id": "e3a1d381-432d-43c4-e499-cc211bd6b32d",
+			"name": "Error",
+			"description": "",
+			"isInclude": false,
+			"properties": [
+				{
+					"id": "484ac436-541a-4cac-eac2-25438c0175de",
+					"name": "status",
+					"objectType": "string",
+					"description": "",
+					"required": false,
+					"value": "",
+					"minLength": "",
+					"maxLength": "",
+					"default": "",
+					"example": "",
+					"isParent": false,
+					"children": []
+				}
+			]
+		},
+		{
+			"id": "7b28f61d-5e69-4ac3-cb71-87dad80560ee",
+			"name": "ID",
+			"description": "",
+			"isInclude": false,
+			"properties": [
+				{
+					"id": "3623113e-e74b-4bff-e945-9257536fa473",
+					"name": "id",
+					"objectType": "string",
+					"description": "",
+					"required": true,
+					"value": "",
+					"minLength": "",
+					"maxLength": "",
+					"default": "",
+					"example": "",
+					"isParent": false,
+					"children": []
+				}
+			]
+		}
+	],
+	"documentation": [],
+	"name": "CoreAPI Monitor_LockEntries",
+	"endpoint": "https://explored.neptune-software.com/api/functions/Locking",
+	"ver": "22.7.27.722",
+	"version": "2.2.0",
+	"description": "API to access results of Planet 9 Monitor LockEntries API",
+	"mediaType": null,
+	"securitySchemes": null,
+	"swaggerURI": null,
+	"swaggerSystem": null,
+	"apiType": "",
+	"about": "<p><strong style=\"white-space: unset; font-size: 1rem;\">Description</strong><br></p><p>Planet 9-API Monitor_LockEntries maintains the list Planet 9 Locked entries or artifacts.</p><p>API Monitor_LockEntries&nbsp;is the Planet 9 API to access the API of Planet 9 locked artifacts and the operations performed on them.</p><p><strong>Operations Performed</strong></p><p><strong style=\"white-space: unset; font-size: 1rem;\">List</strong><br></p><p>Get the Locked entries list</p><table class=\"table\" style=\"width: 730px;\"><tbody><tr><td>Response</td><td>List(array)- Definition&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<br></td></tr></tbody></table><br><p><strong>Delete</strong></p><p>Remove the lock from the artifacts</p><p><strong></strong></p><table class=\"table\" style=\"width: 730px;\"><tbody><tr><td>Request</td><td>ID&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</td></tr></tbody></table>",
+	"enableProxy": true,
+	"restrictAccess": false,
+	"enableTrace": false,
+	"enableIDE": false,
+	"internalAPI": false,
+	"isPublic": false,
+	"tlsAllowUntrusted": true,
+	"useOwnProcess": false,
+	"package": "25602b27-7c0d-ed11-b47a-000d3ab2359f",
+	"apiGroup": null,
+	"apiFormat": 0,
+	"roles": []
+}

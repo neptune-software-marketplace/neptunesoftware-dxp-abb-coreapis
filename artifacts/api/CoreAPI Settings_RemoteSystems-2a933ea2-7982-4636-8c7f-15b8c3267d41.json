@@ -1,0 +1,826 @@
+{
+	"id": "2a933ea2-7982-4636-8c7f-15b8c3267d41",
+	"createdAt": "2022-02-04T15:44:48.460Z",
+	"createdBy": "lloyd",
+	"auth": [],
+	"endpoints": [],
+	"paths": [
+		{
+			"id": "BE27E573-922D-468E-CEF5-C9EFAF50F9CC",
+			"method": "POST",
+			"path": "/List",
+			"description": "",
+			"parameters": [],
+			"headers": [],
+			"responses": [
+				{
+					"status": "200",
+					"description": "OK",
+					"headers": [],
+					"body": [],
+					"content": [
+						{
+							"id": "8dc99ba3-a523-44b9-a669-8d9926fa525b",
+							"name": "List",
+							"objectType": "array"
+						}
+					]
+				},
+				{
+					"status": "500",
+					"description": "OK",
+					"headers": [],
+					"body": [],
+					"content": [
+						{
+							"id": "1134c968-4aea-4d75-ce5a-e840ebcce5c3",
+							"name": "Error",
+							"objectType": "object"
+						}
+					]
+				}
+			],
+			"summary": "Get the defined Remote systems list",
+			"example": [
+				"==OBJECT STRING==",
+				"[{",
+				"    \"id\": \"fd2783b4-e04a-40fd-b476-3a0b00aabede\",",
+				"    \"createdAt\": \"2018-04-19T11:30:57.000Z\",",
+				"    \"updatedAt\": \"2019-01-02T08:35:42.000Z\",",
+				"    \"createdBy\": \"oah\",",
+				"    \"changedBy\": \"oah\",",
+				"    \"url\": \"\",",
+				"    \"name\": \"POS9\",",
+				"    \"description\": \"Development\",",
+				"    \"role\": \"DEV\",",
+				"    \"username\": \"oah\",",
+				"    \"password\": \"\",",
+				"    \"type\": \"\",",
+				"    \"sapClient\": null,",
+				"    \"token\": \"\",",
+				"    \"monitoringName\": null,",
+				"    \"monitoringEnabled\": false",
+				"}, {",
+				"    \"id\": \"4954656d-ccec-437c-ac44-9a7d4e69b9cc\",",
+				"    \"createdAt\": \"2019-11-25T14:34:45.000Z\",",
+				"    \"updatedAt\": \"2019-11-25T14:34:45.000Z\",",
+				"    \"createdBy\": \"arne\",",
+				"    \"changedBy\": \"arne\",",
+				"    \"url\": \"http://localhost:8080\",",
+				"    \"name\": \"Planet 9\",",
+				"    \"description\": \"Arne\",",
+				"    \"role\": \"LOC\",",
+				"    \"username\": \"\",",
+				"    \"password\": \"\",",
+				"    \"type\": \"\",",
+				"    \"sapClient\": null,",
+				"    \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjUwOTRkNDVhLTY5ZWEtNGFhOS1hYmUwLTYyNDU2YzU0MjY4MSIsInV1aWQiOiJjYjc4N2IyOC1jOWRkLTQ0MTEtODVkMC0xN2YwOTU0Y2Q4MWUiLCJpYXQiOjE1NzQ2OTIzNjIsImV4cCI6MTY2MTA5MjM2Mn0.jysBcpcyLL-55WeOVm58M3t5ohtJ29i9O_DokpuyR2M\",",
+				"    \"monitoringName\": null,",
+				"    \"monitoringEnabled\": false",
+				"},  {",
+				"    \"id\": \"80f437b2-4d5b-4135-96e4-d649b6fa0a7b\",",
+				"    \"createdAt\": \"2018-05-31T14:06:14.000Z\",",
+				"    \"updatedAt\": \"2019-09-05T08:55:39.000Z\",",
+				"    \"createdBy\": \"oah\",",
+				"    \"changedBy\": \"ole-andre.haugen@neptune-software.com\",",
+				"    \"url\": \"https://explored.neptune-software.com\",",
+				"    \"name\": \"Neptune DX Platform\",",
+				"    \"description\": \"Planet 9\",",
+				"    \"role\": \"\",",
+				"    \"username\": \"\",",
+				"    \"password\": \"\",",
+				"    \"type\": \"\",",
+				"    \"sapClient\": null,",
+				"    \"token\": \"eyJhbGciOiJIU9.eyxMS0zODA2LTQ1YjctOGQyZCNzMyNX0.a_djq9ia7YQxT3jaFms_yA\",",
+				"    \"monitoringName\": \"Planet 9 (Explored)\",",
+				"    \"monitoringEnabled\": true",
+				"}, {",
+				"    \"id\": \"0397e1a3-2839-4bb7-937c-46091a3aedb1\",",
+				"    \"createdAt\": \"2019-12-17T09:40:16.000Z\",",
+				"    \"updatedAt\": \"2019-12-17T09:42:00.000Z\",",
+				"    \"createdBy\": \"rommel\",",
+				"    \"changedBy\": \"rommel\",",
+				"    \"url\": \"http://localhost:8080\",",
+				"    \"name\": \"Planet 9 - Oslo\",",
+				"    \"description\": \"Installation\",",
+				"    \"role\": \"QUA\",",
+				"    \"username\": \"admin\",",
+				"    \"password\": \"\",",
+				"    \"type\": \"\",",
+				"    \"sapClient\": null,",
+				"    \"token\": null,",
+				"    \"monitoringName\": \"P9 Oslo\",",
+				"    \"monitoringEnabled\": false",
+				"}, {",
+				"    \"id\": \"1f0124bb-ada5-4578-980c-3cd5b7a1f284\",",
+				"    \"createdAt\": \"2019-11-07T21:38:29.000Z\",",
+				"    \"updatedAt\": \"2019-11-07T21:38:29.000Z\",",
+				"    \"createdBy\": \"rommel\",",
+				"    \"changedBy\": \"rommel\",",
+				"    \"url\": \"http://localhost:8080\",",
+				"    \"name\": \"Planet 9 Drammen\",",
+				"    \"description\": \"Installation\",",
+				"    \"role\": \"LOC\",",
+				"    \"username\": \"admin\",",
+				"    \"password\": \"\",",
+				"    \"type\": \"\",",
+				"    \"sapClient\": null,",
+				"    \"token\": null,",
+				"    \"monitoringName\": null,",
+				"    \"monitoringEnabled\": false",
+				"}",
+				"]",
+				"",
+				"",
+				""
+			]
+		},
+		{
+			"id": "B17EDD55-DD5F-4B20-C529-A35ED25BCAE7",
+			"method": "POST",
+			"path": "/Get",
+			"description": "",
+			"parameters": [],
+			"headers": [],
+			"responses": [
+				{
+					"status": "200",
+					"description": "OK",
+					"headers": [],
+					"body": [],
+					"content": [
+						{
+							"id": "9b871e88-df97-41e6-e3bc-07560f8fe51c",
+							"name": "Get",
+							"objectType": "object"
+						}
+					]
+				},
+				{
+					"status": "500",
+					"description": "OK",
+					"headers": [],
+					"body": [],
+					"content": [
+						{
+							"id": "f4df9055-5552-4409-c5e4-ba0bdb19f3e3",
+							"name": "Error",
+							"objectType": "object"
+						}
+					]
+				}
+			],
+			"content": [
+				{
+					"name": "ID",
+					"objectType": "object"
+				}
+			],
+			"example": [
+				"==OBJECT STRING==",
+				"{",
+				"    \"id\": \"0397e1a3-2839-4bb7-937c-46091a3aedb1\",",
+				"    \"createdAt\": \"2019-12-17T09:40:16.000Z\",",
+				"    \"updatedAt\": \"2019-12-17T09:42:00.000Z\",",
+				"    \"createdBy\": \"rommel\",",
+				"    \"changedBy\": \"rommel\",",
+				"    \"url\": \"http://localhost:8080\",",
+				"    \"name\": \"Planet 9 - Oslo\",",
+				"    \"description\": \"Installation\",",
+				"    \"role\": \"QUA\",",
+				"    \"username\": \"admin\",",
+				"    \"password\": \"\",",
+				"    \"type\": \"\",",
+				"    \"sapClient\": null,",
+				"    \"token\": null,",
+				"    \"monitoringName\": \"P9 Oslo\",",
+				"    \"monitoringEnabled\": false",
+				"}"
+			]
+		},
+		{
+			"id": "16B80E63-243D-4882-8517-71E95925FD22",
+			"method": "PUT",
+			"path": "/Save",
+			"description": "",
+			"parameters": [],
+			"headers": [],
+			"responses": [
+				{
+					"status": "200",
+					"description": "OK",
+					"headers": [],
+					"body": []
+				},
+				{
+					"status": "500",
+					"description": "OK",
+					"headers": [],
+					"body": [],
+					"content": [
+						{
+							"id": "e4ae3f2b-54f4-454b-9d36-2e4975f0119f",
+							"name": "Error",
+							"objectType": "object"
+						}
+					]
+				}
+			],
+			"content": [
+				{
+					"name": "Save",
+					"objectType": "object"
+				}
+			],
+			"example": [
+				"==OBJECT STRING==",
+				"{\"id\":\"88817110-b361-4e0c-8059-b92d79d0b606\",",
+				"\"createdAt\":\"2018-07-30T11:48:24.000Z\",",
+				"\"updatedAt\":\"2020-03-02T11:43:45.811Z\",",
+				"\"createdBy\":\"priyanka\",",
+				"\"changedBy\":\"priyanka\",",
+				"\"url\":\"http://localhost:8080\",",
+				"\"name\":\"Priyanka-local\",",
+				"\"description\":\"Installation\",",
+				"\"role\":\"\",",
+				"\"username\":\"priyanka\",",
+				"\"password\":\"\",",
+				"\"type\":\"\",",
+				"\"sapClient\":null,",
+				"\"token\":null,",
+				"\"monitoringName\":\"Priyanka Jain\",",
+				"\"monitoringEnabled\":false",
+				"}"
+			]
+		},
+		{
+			"id": "A95F37E1-9ECC-40C8-F52D-718B10EE7DD5",
+			"method": "POST",
+			"path": "/Delete",
+			"description": "",
+			"parameters": [],
+			"headers": [],
+			"responses": [
+				{
+					"status": "200",
+					"description": "OK",
+					"headers": [],
+					"body": []
+				},
+				{
+					"status": "500",
+					"description": "OK",
+					"headers": [],
+					"body": [],
+					"content": [
+						{
+							"id": "6802016d-42aa-41ae-98e5-4f2dc58da1bf",
+							"name": "Error",
+							"objectType": "object"
+						}
+					]
+				}
+			],
+			"content": [
+				{
+					"name": "ID",
+					"objectType": "object"
+				}
+			]
+		}
+	],
+	"definitions": [
+		{
+			"id": "c69994f1-a2e6-4324-c253-d0b2f537dac3",
+			"name": "List",
+			"description": "",
+			"isInclude": false,
+			"properties": [
+				{
+					"id": "60c71129-85fd-4261-cb9c-4122ac94db57",
+					"name": "id",
+					"parent": "",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "66649232-d784-4220-c007-a8442df792c2",
+					"name": "createdAt",
+					"parent": "",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "1bc2667c-fd39-4267-bd5b-ea4101ab4ad8",
+					"name": "updatedAt",
+					"parent": "",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "ae6eb2e8-b3af-40ff-f6d6-5d369b520a4e",
+					"name": "createdBy",
+					"parent": "",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "22fd3acb-87ca-402b-d4de-63e0f8d058be",
+					"name": "changedBy",
+					"parent": "",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "21862cb8-daf1-4f5b-f773-0f31f75f8a18",
+					"name": "url",
+					"parent": "",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "e1be4dfc-9ecd-48b2-a2a8-ef36cfe04089",
+					"name": "name",
+					"parent": "",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "6705ebe9-94cd-48dc-ff8f-45693997f4a7",
+					"name": "description",
+					"parent": "",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "a6f7bc15-ea35-4f42-d092-ae61dd106c2b",
+					"name": "role",
+					"parent": "",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "bb091716-6129-4c9f-eead-51f55b3b4bf1",
+					"name": "username",
+					"parent": "",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "dfddaea2-c8f5-424d-b8b0-6f1e531e0aec",
+					"name": "password",
+					"parent": "",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "30c5bddf-8fc8-4794-db2f-d646a559f90b",
+					"name": "type",
+					"parent": "",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "fc7a3881-fed1-4616-efc9-bcdbace832fa",
+					"name": "sapClient",
+					"parent": "",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "bb261617-a8e6-4536-c4ea-042578d05719",
+					"name": "token",
+					"parent": "",
+					"description": "",
+					"objectType": "object",
+					"objectName": "token",
+					"isParent": true,
+					"children": []
+				},
+				{
+					"id": "4d44bd77-be1b-44aa-df8e-78bc8ace07e9",
+					"name": "monitoringName",
+					"parent": "",
+					"description": "",
+					"objectType": "object",
+					"objectName": "monitoringName",
+					"isParent": true,
+					"children": []
+				},
+				{
+					"id": "4511b3ab-3708-4326-fc41-a66c0ab7e1be",
+					"name": "monitoringEnabled",
+					"parent": "",
+					"description": "",
+					"objectType": "boolean",
+					"isParent": false,
+					"children": []
+				}
+			]
+		},
+		{
+			"id": "72ea7dd8-330b-48d0-fb2d-37c4d8aab26c",
+			"name": "Error",
+			"description": "",
+			"isInclude": false,
+			"properties": [
+				{
+					"id": "625950d7-b8c6-468f-b172-f21c8b388d28",
+					"name": "status",
+					"objectType": "string",
+					"description": "",
+					"required": false,
+					"value": "",
+					"minLength": "",
+					"maxLength": "",
+					"default": "",
+					"example": "",
+					"isParent": false,
+					"children": []
+				}
+			]
+		},
+		{
+			"id": "314a121c-22b2-4726-9616-3b2f3ac63d06",
+			"name": "ID",
+			"description": "",
+			"isInclude": false,
+			"properties": [
+				{
+					"id": "afe30981-c45f-480d-b635-80c70141926a",
+					"name": "id",
+					"objectType": "string",
+					"description": "",
+					"required": true,
+					"value": "",
+					"minLength": "",
+					"maxLength": "",
+					"default": "",
+					"example": "",
+					"isParent": false,
+					"children": []
+				}
+			]
+		},
+		{
+			"id": "8855ec80-4775-41c7-d530-d5d50128ee25",
+			"name": "Get",
+			"description": "",
+			"isInclude": false,
+			"properties": [
+				{
+					"id": "d270cb61-b4b0-4887-9531-2df25d90608f",
+					"name": "id",
+					"parent": "",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "c90d8141-babb-42b3-f2be-12566c756b48",
+					"name": "createdAt",
+					"parent": "",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "409220ed-1342-484e-feb5-adfaeefd89ce",
+					"name": "updatedAt",
+					"parent": "",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "31c79472-3479-4f7a-d350-84c7e4423996",
+					"name": "createdBy",
+					"parent": "",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "498ea992-ac99-4978-f026-18d6bd6f056e",
+					"name": "changedBy",
+					"parent": "",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "9a1d38c2-c0c7-4945-8b5e-79b70e20f6f1",
+					"name": "url",
+					"parent": "",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "c1e1c023-b872-4fd5-cd35-8b4a51ead640",
+					"name": "name",
+					"parent": "",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "d0f727a2-286e-4b17-ab75-6a78fb9aa652",
+					"name": "description",
+					"parent": "",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "995244d3-7a36-4109-cb17-14b237e88a35",
+					"name": "role",
+					"parent": "",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "d412cc99-65f9-4ff7-fe22-5e8449054ae5",
+					"name": "username",
+					"parent": "",
+					"description": "",
+					"objectType": "object",
+					"objectName": "username",
+					"isParent": true,
+					"children": []
+				},
+				{
+					"id": "7343515c-0877-4001-8846-fe54da4f4671",
+					"name": "password",
+					"parent": "",
+					"description": "",
+					"objectType": "object",
+					"objectName": "password",
+					"isParent": true,
+					"children": []
+				},
+				{
+					"id": "6192ee7c-a513-41ef-a7da-6a4cfbf4ee3f",
+					"name": "type",
+					"parent": "",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "8c8b60c1-53d8-47f2-d045-0e34f8117e45",
+					"name": "sapClient",
+					"parent": "",
+					"description": "",
+					"objectType": "object",
+					"objectName": "sapClient",
+					"isParent": true,
+					"children": []
+				},
+				{
+					"id": "fee0bbc3-dc77-451a-ebe0-d810162d6e88",
+					"name": "token",
+					"parent": "",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "20d11fac-5e25-42d2-8a9d-dc64e82acb99",
+					"name": "monitoringName",
+					"parent": "",
+					"description": "",
+					"objectType": "object",
+					"objectName": "monitoringName",
+					"isParent": true,
+					"children": []
+				},
+				{
+					"id": "94558994-5005-4d63-c6af-d444428f4eab",
+					"name": "monitoringEnabled",
+					"parent": "",
+					"description": "",
+					"objectType": "boolean",
+					"isParent": false,
+					"children": []
+				}
+			]
+		},
+		{
+			"id": "a90ee560-76ff-4783-f1b7-089164b1933a",
+			"name": "Save",
+			"description": "",
+			"isInclude": false,
+			"properties": [
+				{
+					"id": "7b46c187-e627-4663-e769-9718e633e174",
+					"name": "id",
+					"parent": "",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "5b7d7fcd-a1bf-4025-a8c5-cd1457830ea5",
+					"name": "createdAt",
+					"parent": "",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "534afe55-30ea-4dd8-dee1-4eff86c9e99c",
+					"name": "updatedAt",
+					"parent": "",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "f55520ad-835d-4d49-f1b5-a2d705837cd0",
+					"name": "createdBy",
+					"parent": "",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "cb1ac742-bb80-4b0b-fa44-2943244b260f",
+					"name": "changedBy",
+					"parent": "",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "aec3761e-fbee-421f-e597-a12c6b326ab3",
+					"name": "url",
+					"parent": "",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "66c57309-8efe-4c6e-8257-3e51beba4312",
+					"name": "name",
+					"parent": "",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "af20b741-fd58-4aae-8416-c17b4e2d9339",
+					"name": "description",
+					"parent": "",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "74b6bd05-b8f9-4917-8f7e-c05488c813a0",
+					"name": "role",
+					"parent": "",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "bc846aaf-dd72-40e1-c00a-0200761931cb",
+					"name": "username",
+					"parent": "",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "9352a252-82e6-42c0-b8a5-866870768194",
+					"name": "password",
+					"parent": "",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "2291924e-b148-4249-c180-1376abe78460",
+					"name": "type",
+					"parent": "",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "d811eb46-be1c-4821-9527-5b1797c59572",
+					"name": "sapClient",
+					"parent": "",
+					"description": "",
+					"objectType": "object",
+					"objectName": "sapClient",
+					"isParent": true,
+					"children": []
+				},
+				{
+					"id": "fc1b45b0-15fd-483c-e73c-7928464670c7",
+					"name": "token",
+					"parent": "",
+					"description": "",
+					"objectType": "object",
+					"objectName": "token",
+					"isParent": true,
+					"children": []
+				},
+				{
+					"id": "3b2a3934-6a46-41cf-fc9b-360b3f15b7b8",
+					"name": "monitoringName",
+					"parent": "",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "ae42b337-ad2a-4852-fabd-3c2b1b98eeb1",
+					"name": "monitoringEnabled",
+					"parent": "",
+					"description": "",
+					"objectType": "boolean",
+					"isParent": false,
+					"children": []
+				}
+			]
+		}
+	],
+	"documentation": [],
+	"name": "CoreAPI Settings_RemoteSystems",
+	"endpoint": "https://explored.neptune-software.com/api/functions/Systems",
+	"ver": "22.7.27.728",
+	"version": "2.2.0",
+	"description": "API to access results of Planet 9 Remote Systems",
+	"mediaType": null,
+	"securitySchemes": null,
+	"swaggerURI": null,
+	"swaggerSystem": null,
+	"apiType": "",
+	"about": "<p>Planet 9 Settings_RemoteSystems lets to connect to other Planet 9/API systems. i.e Remote Systems</p><p>API Settings_RemoteSystems&nbsp;is the API to access the Planet 9 Remote Systems&nbsp;list and to perform the REST operations from the app.</p><p>Every app must have the right roles (permissions) that enable access to the Remote Systems.</p><p><strong>Operations Performed</strong></p><p><strong style=\"white-space: unset; font-size: 1rem;\">List</strong><br></p><p>Get the Remote Systems<span style=\"white-space: nowrap; font-size: 1rem;\">&nbsp;list.</span></p><p><span style=\"white-space: nowrap; font-size: 1rem;\"></span></p><table class=\"table\" style=\"width: 588px;\"><tbody><tr><td>Response</td><td>List(array)-Definition</td></tr></tbody></table><br><p><span style=\"white-space: nowrap; font-size: 1rem;\"><strong>Get</strong></span></p><p><span style=\"white-space: nowrap; font-size: 1rem;\">Get the</span>Remote System<span style=\"white-space: nowrap; font-size: 1rem;\">&nbsp;details</span></p><p><span style=\"white-space: nowrap; font-size: 1rem;\"></span></p><table class=\"table\" style=\"width: 588px;\"><tbody><tr><td>Request</td><td>ID</td></tr><tr><td>Response</td><td>Get(object)-Definition&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<br></td></tr></tbody></table><br><p><strong>Save</strong></p><p><span style=\"white-space: nowrap; font-size: 1rem;\">Save the new&nbsp;</span><span style=\"white-space: unset; font-size: 1rem;\">Remote System.</span></p><p><span style=\"white-space: nowrap; font-size: 1rem;\"></span></p><table class=\"table\" style=\"width: 588px;\"><tbody><tr><td>Request</td><td>Save(object)-Definition</td></tr></tbody></table><br><p><span style=\"white-space: nowrap; font-size: 1rem;\"><strong>Delete</strong></span></p><p><span style=\"white-space: nowrap; font-size: 1rem;\">Delete the selected&nbsp;</span><span style=\"white-space: unset; font-size: 1rem;\">Remote System</span></p><p><span style=\"white-space: nowrap; font-size: 1rem;\"></span></p><table class=\"table\" style=\"width: 588px;\"><tbody><tr><td>Request</td><td>ID&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</td></tr></tbody></table><h4><br></h4>",
+	"enableProxy": true,
+	"restrictAccess": false,
+	"enableTrace": false,
+	"enableIDE": false,
+	"internalAPI": false,
+	"isPublic": false,
+	"tlsAllowUntrusted": true,
+	"useOwnProcess": false,
+	"package": "25602b27-7c0d-ed11-b47a-000d3ab2359f",
+	"apiGroup": null,
+	"apiFormat": 0,
+	"roles": []
+}

@@ -1,0 +1,610 @@
+{
+	"id": "15da836a-9db0-414c-b740-b75e8abce6e8",
+	"createdAt": "2022-02-04T15:44:50.700Z",
+	"createdBy": "lloyd",
+	"auth": [],
+	"endpoints": [],
+	"paths": [
+		{
+			"id": "3BF77EF4-16CA-4F7E-EACF-D6893BC9D570",
+			"method": "POST",
+			"path": "/List",
+			"description": "",
+			"parameters": [],
+			"headers": [],
+			"responses": [
+				{
+					"status": "200",
+					"description": "OK",
+					"headers": [],
+					"body": [],
+					"content": [
+						{
+							"id": "08ba7203-5a9f-4498-bca9-8c508c8e1f09",
+							"name": "Get",
+							"objectType": "array"
+						}
+					]
+				},
+				{
+					"status": "500",
+					"description": "OK",
+					"headers": [],
+					"body": [],
+					"content": [
+						{
+							"id": "9a10de91-f2e4-4acc-d933-ab24f6b3fd88",
+							"name": "Error",
+							"objectType": "object"
+						}
+					]
+				}
+			],
+			"summary": "Get the Mobile debug list",
+			"example": [
+				"==OBJECT STRING==",
+				"[ {",
+				"    \"id\": \"fc6655a4-d46a-4118-b078-0dff18c2ff53\",",
+				"    \"createdAt\": \"2018-07-25T16:32:20.000Z\",",
+				"    \"updatedAt\": \"2018-08-24T08:38:12.000Z\",",
+				"    \"createdBy\": \"oah\",",
+				"    \"changedBy\": \"oah\",",
+				"    \"application\": \"planet9_monitor_db\",",
+				"    \"users\": \"[\\\"oah\\\"]\",",
+				"    \"disabled\": true",
+				"}, {",
+				"    \"id\": \"b86b78f7-4057-4229-b7a4-86b6535421db\",",
+				"    \"createdAt\": \"2019-06-24T19:44:31.000Z\",",
+				"    \"updatedAt\": \"2019-06-24T19:44:31.000Z\",",
+				"    \"createdBy\": \"rommel\",",
+				"    \"changedBy\": \"rommel\",",
+				"    \"application\": \"hello_world\",",
+				"    \"users\": \"[\\\"jdelacruz\\\"]\",",
+				"    \"disabled\": false",
+				"}, {",
+				"    \"id\": \"0051d494-5bf1-47ab-bd11-66551610853d\",",
+				"    \"createdAt\": \"2018-01-18T10:01:07.000Z\",",
+				"    \"updatedAt\": \"2018-10-11T11:49:12.000Z\",",
+				"    \"createdBy\": \"oah\",",
+				"    \"changedBy\": \"oah\",",
+				"    \"application\": \"mark_employees\",",
+				"    \"users\": \"[\\\"oah\\\",\\\"thomas\\\"]\",",
+				"    \"disabled\": true",
+				"}, {",
+				"    \"id\": \"b4f2d276-6852-4933-b0cd-195ff625a161\",",
+				"    \"createdAt\": \"2019-03-21T14:21:47.000Z\",",
+				"    \"updatedAt\": \"2019-03-21T14:21:47.000Z\",",
+				"    \"createdBy\": \"oah\",",
+				"    \"changedBy\": \"oah\",",
+				"    \"application\": \"demo_calendar_tree\",",
+				"    \"users\": \"[]\",",
+				"    \"disabled\": false",
+				"},  {",
+				"    \"id\": \"fa98b4fb-1803-450e-9d02-e9b5076e8a07\",",
+				"    \"createdAt\": \"2019-05-06T13:58:52.000Z\",",
+				"    \"updatedAt\": \"2019-05-06T13:59:30.000Z\",",
+				"    \"createdBy\": \"tsb\",",
+				"    \"changedBy\": \"tsb\",",
+				"    \"application\": \"planet9_admin\",",
+				"    \"users\": \"[]\",",
+				"    \"disabled\": false",
+				"}, {",
+				"    \"id\": \"d89ad6ca-567b-4f99-94a7-a491416a2bb8\",",
+				"    \"createdAt\": \"2019-05-21T19:33:59.000Z\",",
+				"    \"updatedAt\": \"2019-05-21T19:41:05.000Z\",",
+				"    \"createdBy\": \"rommel\",",
+				"    \"changedBy\": \"rommel\",",
+				"    \"application\": \"events\",",
+				"    \"users\": \"[]\",",
+				"    \"disabled\": false",
+				"}]"
+			]
+		},
+		{
+			"id": "1C2FEE86-37C1-4278-EF15-ECF694C3B4E3",
+			"method": "POST",
+			"path": "/Get",
+			"description": "",
+			"parameters": [],
+			"headers": [],
+			"responses": [
+				{
+					"status": "200",
+					"description": "OK",
+					"headers": [],
+					"body": [],
+					"content": [
+						{
+							"id": "679393b6-916b-469f-ad33-78ea330a8bf6",
+							"name": "Get",
+							"objectType": "object"
+						}
+					]
+				},
+				{
+					"status": "500",
+					"description": "OK",
+					"headers": [],
+					"body": [],
+					"content": [
+						{
+							"id": "9a722a3e-e232-4c7b-8973-b891166365c4",
+							"name": "Error",
+							"objectType": "object"
+						}
+					]
+				}
+			],
+			"content": [
+				{
+					"name": "ID",
+					"objectType": "object"
+				}
+			],
+			"example": [
+				"==OBJECT STRING==",
+				"{",
+				"    \"id\": \"fa98b4fb-1803-450e-9d02-e9b5076e8a07\",",
+				"    \"createdAt\": \"2019-05-06T13:58:52.000Z\",",
+				"    \"updatedAt\": \"2019-05-06T13:59:30.000Z\",",
+				"    \"createdBy\": \"tsb\",",
+				"    \"changedBy\": \"tsb\",",
+				"    \"application\": \"planet9_admin\",",
+				"    \"users\": \"[]\",",
+				"    \"disabled\": false",
+				"}"
+			]
+		},
+		{
+			"id": "7CBCBC52-1282-4387-9DAE-10E5CEB600D2",
+			"method": "POST",
+			"path": "/Save",
+			"description": "",
+			"parameters": [],
+			"headers": [],
+			"responses": [
+				{
+					"status": "200",
+					"description": "OK",
+					"headers": [],
+					"body": [],
+					"content": [
+						{
+							"id": "c2599bf2-d800-4dfc-89fc-e730292ee3f9",
+							"name": "Get",
+							"objectType": "object"
+						}
+					]
+				},
+				{
+					"status": "500",
+					"description": "OK",
+					"headers": [],
+					"body": [],
+					"content": [
+						{
+							"id": "9d9284fe-c194-4c21-aa23-9e9d2acfb4ba",
+							"name": "Error",
+							"objectType": "object"
+						}
+					]
+				}
+			],
+			"content": [
+				{
+					"name": "Save",
+					"objectType": "object"
+				}
+			],
+			"example": [
+				"==OBJECT STRING==",
+				"{",
+				"    \"createdBy\": \"priyanka\",",
+				"    \"changedBy\": \"priyanka\",",
+				"    \"application\": \"sample_olist\",",
+				"    \"users\": \"[\\\"priyanka\\\"]\",",
+				"    \"disabled\": false,",
+				"    \"id\": \"4d42aa1c-53b3-4f4b-9f7c-1962cf939bec\",",
+				"    \"createdAt\": \"2020-05-18T09:34:04.446Z\",",
+				"    \"updatedAt\": \"2020-05-18T09:34:04.446Z\"",
+				"}"
+			]
+		},
+		{
+			"id": "77822609-5DC3-4DAB-BFCE-E0BF1BD95D9B",
+			"method": "POST",
+			"path": "/Delete",
+			"description": "",
+			"parameters": [],
+			"headers": [],
+			"responses": [
+				{
+					"status": "200",
+					"description": "OK",
+					"headers": [],
+					"body": []
+				},
+				{
+					"status": "500",
+					"description": "OK",
+					"headers": [],
+					"body": [],
+					"content": [
+						{
+							"id": "a469ff92-d3c3-434e-873b-6edeb93797d8",
+							"name": "Error",
+							"objectType": "object"
+						}
+					]
+				}
+			],
+			"summary": "Delete the Mobile debug instance",
+			"content": [
+				{
+					"name": "ID",
+					"objectType": "object"
+				}
+			]
+		},
+		{
+			"id": "CF42EB6C-308F-408C-BC9F-771BECBF7B99",
+			"method": "POST",
+			"path": "/GetLog",
+			"description": "",
+			"parameters": [],
+			"headers": [],
+			"responses": [
+				{
+					"status": "200",
+					"description": "OK",
+					"headers": [],
+					"body": [],
+					"content": [
+						{
+							"id": "79397233-6809-4642-fcd8-ed6195d32a4a",
+							"name": "Log",
+							"objectType": "array"
+						}
+					]
+				},
+				{
+					"status": "500",
+					"description": "OK",
+					"headers": [],
+					"body": [],
+					"content": [
+						{
+							"id": "21c689db-fc97-47c0-b5b6-9e8fb94b00aa",
+							"name": "Error",
+							"objectType": "object"
+						}
+					]
+				}
+			],
+			"content": [
+				{
+					"name": "Get",
+					"objectType": "object"
+				}
+			],
+			"example": [
+				"==OBJECT STRING==",
+				"[{",
+				"    \"id\": \"28881828-6f0f-4aad-bcc3-32c27d58c560\",",
+				"    \"createdAt\": \"2018-11-24T21:11:08.000Z\",",
+				"    \"createdBy\": \"ulf\",",
+				"    \"application\": \"ufescanandprint\",",
+				"    \"logType\": \"L\",",
+				"    \"logContent\": \"Not able to send log data to Planet9 Server\"",
+				"}, {",
+				"    \"id\": \"27e6036a-a8b6-4427-a2ea-4a7ff7281ffd\",",
+				"    \"createdAt\": \"2018-11-24T21:11:13.000Z\",",
+				"    \"createdBy\": \"ulf\",",
+				"    \"application\": \"ufescanandprint\",",
+				"    \"logType\": \"L\",",
+				"    \"logContent\": \"Cordova not found\"",
+				"}, {",
+				"    \"id\": \"43eb427a-df38-499a-bd00-3130bc23b6df\",",
+				"    \"createdAt\": \"2018-11-24T21:11:35.000Z\",",
+				"    \"createdBy\": \"ulf\",",
+				"    \"application\": \"ufescanandprint\",",
+				"    \"logType\": \"L\",",
+				"    \"logContent\": \"Cordova not found\"",
+				"}]",
+				""
+			]
+		}
+	],
+	"definitions": [
+		{
+			"id": "4af3d6af-0f79-4441-e409-65f6785a35b7",
+			"name": "ID",
+			"description": "",
+			"isInclude": false,
+			"properties": [
+				{
+					"id": "4560fe37-3dc3-4f1c-92e7-424af4742967",
+					"name": "id",
+					"objectType": "string",
+					"description": "",
+					"required": true,
+					"value": "",
+					"minLength": "",
+					"maxLength": "",
+					"default": "",
+					"example": "",
+					"isParent": false,
+					"children": []
+				}
+			]
+		},
+		{
+			"id": "d26cc3f8-4f4d-49b9-d061-9252d806fb44",
+			"name": "Get",
+			"description": "",
+			"isInclude": false,
+			"properties": [
+				{
+					"id": "a410f3c2-b1ae-49f5-e70b-ac2269ea06f5",
+					"name": "id",
+					"parent": "",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "66cbd367-34c7-4d3a-8b6a-ee9f8a83f6c0",
+					"name": "createdAt",
+					"parent": "",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "1452f71c-b977-4a91-9e53-b3c1ce7f078f",
+					"name": "updatedAt",
+					"parent": "",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "cbdeea7f-b3e3-4242-c486-7b9a0b9baf42",
+					"name": "createdBy",
+					"parent": "",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "4bf3fcf9-74e4-4105-ba93-e657e14c0e09",
+					"name": "changedBy",
+					"parent": "",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "328aff30-8003-45cc-fcf8-0f94b0f1f425",
+					"name": "application",
+					"parent": "",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "3a226387-f58b-4cf2-94c2-6b7134be2740",
+					"name": "users",
+					"parent": "",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "0f5f22a8-9a6d-4f16-fbbb-e5c243cbf087",
+					"name": "disabled",
+					"parent": "",
+					"description": "",
+					"objectType": "boolean",
+					"isParent": false,
+					"children": []
+				}
+			]
+		},
+		{
+			"id": "8587b0c2-5b48-4619-9655-434abedc45da",
+			"name": "Save",
+			"description": "",
+			"isInclude": false,
+			"properties": [
+				{
+					"id": "ec66d05c-b8a6-43e2-ea3b-904d8648be27",
+					"name": "id",
+					"parent": "",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "99ef636b-5dc8-4a4b-b535-5c1147f1da79",
+					"name": "createdAt",
+					"parent": "",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "3987c6c3-ac8d-459d-ea0e-126b818ed63c",
+					"name": "updatedAt",
+					"parent": "",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "663059e4-c905-473d-da2f-19c8c85a5339",
+					"name": "createdBy",
+					"parent": "",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "786fe151-a2e0-4a4c-a813-0b551fdbf9e2",
+					"name": "changedBy",
+					"parent": "",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "58ece40f-86d4-4e13-abac-9165275c0bd9",
+					"name": "application",
+					"parent": "",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "e56c05b3-818d-40b7-83d7-75d2cd40f0b8",
+					"name": "users",
+					"parent": "",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "74e9677e-eabb-493d-9eba-020457b5a787",
+					"name": "disabled",
+					"parent": "",
+					"description": "",
+					"objectType": "boolean",
+					"isParent": false,
+					"children": []
+				}
+			]
+		},
+		{
+			"id": "2404151a-404e-4762-8bc3-7d62a5783f1b",
+			"name": "Error",
+			"description": "",
+			"isInclude": false,
+			"properties": [
+				{
+					"id": "bf0fa96d-7843-42ea-f827-1533d3b3c111",
+					"name": "status",
+					"objectType": "string",
+					"description": "",
+					"required": false,
+					"value": "",
+					"minLength": "",
+					"maxLength": "",
+					"default": "",
+					"example": "",
+					"isParent": false,
+					"children": []
+				}
+			]
+		},
+		{
+			"id": "381fa7d3-30f9-477b-db88-d5fb1ee40930",
+			"name": "Log",
+			"description": "",
+			"isInclude": false,
+			"properties": [
+				{
+					"id": "734cf39f-a135-4258-b7b2-e9d8bb89bdbc",
+					"name": "id",
+					"parent": "",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "3076dd65-86d1-435e-e3c7-423fa5e8dc74",
+					"name": "createdAt",
+					"parent": "",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "c2176341-1ca4-4924-ab0c-ae8176041077",
+					"name": "createdBy",
+					"parent": "",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "ee5b4586-6484-404d-ede0-ad163010a129",
+					"name": "application",
+					"parent": "",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "e4fb952e-91cd-42f8-dbc3-ba5c3f6bca8c",
+					"name": "logType",
+					"parent": "",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "d53b1938-827a-4cee-e1da-3c3fcecba69c",
+					"name": "logContent",
+					"parent": "",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				}
+			]
+		}
+	],
+	"documentation": [],
+	"name": "CoreAPI Run_MobileDebug",
+	"endpoint": "https://explored.neptune-software.com/api/functions/MobileDebug",
+	"ver": "22.7.27.724",
+	"version": "2.2.0",
+	"description": "API to access results of Planet 9 Run_Mobile Debug details",
+	"mediaType": null,
+	"securitySchemes": null,
+	"swaggerURI": null,
+	"swaggerSystem": null,
+	"apiType": "",
+	"about": "<p><strong style=\"white-space: unset; font-size: 1rem;\">Description</strong><br></p><p>Planet 9-Run_MobileDebug maintains the activated \"mobile debug instances\" for Planet9 applications and users.</p><p>API Run_MobileDebug is the API to access the Planet 9 mobile debug instances and the operations performed.</p><p><strong>Operations Performed</strong></p><p><strong>Get</strong></p><p>Get the selected&nbsp;<span style=\"white-space: unset; font-size: 1rem;\">mobile debug instance</span></p><table class=\"table\" style=\"width: 730px;\"><tbody><tr><td>Request</td><td>ID</td></tr><tr><td>Response</td><td>Get(Object)- Definition&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</td></tr></tbody></table><br><p><strong>GetLog</strong></p><p>Get the logs while mobile debugging</p><table class=\"table\"><tbody><tr><td>Request</td><td>Get(Object)- Definition</td></tr><tr><td>Response</td><td>Log(Array)-Definition&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</td></tr></tbody></table><br><p><strong style=\"white-space: unset; font-size: 1rem;\">List</strong><br></p><p>Get the list of the&nbsp;<span style=\"white-space: unset; font-size: 1rem;\">mobile debug instances</span></p><table class=\"table\" style=\"width: 730px;\"><tbody><tr><td>Response</td><td>Get(array)- Definition&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</td></tr></tbody></table><p><strong style=\"white-space: unset; font-size: 1rem;\">Save</strong><br></p><p>Save the&nbsp;<span style=\"white-space: unset; font-size: 1rem;\">mobile debug</span></p><table class=\"table\" style=\"width: 730px;\"><tbody><tr><td>Request</td><td>Save- Definition&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</td></tr></tbody></table><p><strong style=\"white-space: unset; font-size: 1rem;\">Delete</strong><br></p><p>Delete the&nbsp;<span style=\"white-space: unset; font-size: 1rem;\">mobile debug</span></p><table class=\"table\" style=\"width: 730px;\"><tbody><tr><td>Request</td><td>ID&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</td></tr></tbody></table><br>",
+	"enableProxy": true,
+	"restrictAccess": false,
+	"enableTrace": false,
+	"enableIDE": false,
+	"internalAPI": false,
+	"isPublic": false,
+	"tlsAllowUntrusted": true,
+	"useOwnProcess": false,
+	"package": "25602b27-7c0d-ed11-b47a-000d3ab2359f",
+	"apiGroup": null,
+	"apiFormat": 0,
+	"roles": []
+}

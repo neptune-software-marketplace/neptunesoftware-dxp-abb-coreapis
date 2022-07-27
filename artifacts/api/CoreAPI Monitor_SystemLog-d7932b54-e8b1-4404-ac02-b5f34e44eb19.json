@@ -1,0 +1,290 @@
+{
+	"id": "d7932b54-e8b1-4404-ac02-b5f34e44eb19",
+	"createdAt": "2022-02-04T15:44:49.576Z",
+	"createdBy": "lloyd",
+	"auth": [],
+	"endpoints": [],
+	"paths": [
+		{
+			"id": "63F3A549-34AD-4296-D7E0-FA98888E72DE",
+			"method": "POST",
+			"path": "/List",
+			"description": "",
+			"parameters": [],
+			"headers": [],
+			"responses": [
+				{
+					"status": "200",
+					"description": "OK",
+					"headers": [],
+					"body": [],
+					"content": [
+						{
+							"id": "cfc6c7a5-8460-4b14-fb41-cc9a1fc4499a",
+							"name": "List",
+							"objectType": "array"
+						}
+					]
+				},
+				{
+					"status": "500",
+					"description": "OK",
+					"headers": [],
+					"body": [],
+					"content": [
+						{
+							"id": "3449ae38-1e90-4778-a3f8-26789a9f2d07",
+							"name": "Error",
+							"objectType": "object"
+						}
+					]
+				}
+			],
+			"summary": "API to access results of Planet 9 System Logs API"
+		},
+		{
+			"id": "49FA7A78-74D0-491C-BE10-84BA38A303B3",
+			"method": "POST",
+			"path": "/Get",
+			"description": "",
+			"parameters": [],
+			"headers": [],
+			"responses": [
+				{
+					"status": "200",
+					"description": "OK",
+					"headers": [],
+					"body": []
+				},
+				{
+					"status": "500",
+					"description": "OK",
+					"headers": [],
+					"body": [],
+					"content": [
+						{
+							"id": "75aed725-f1c9-4fd8-c056-a999fad74a5c",
+							"name": "Error",
+							"objectType": "object"
+						}
+					]
+				}
+			],
+			"content": [
+				{
+					"name": "GetRequest",
+					"objectType": "object"
+				}
+			]
+		}
+	],
+	"definitions": [
+		{
+			"id": "177eb800-be35-4877-fc84-2913750b89b8",
+			"name": "List",
+			"description": "",
+			"isInclude": false,
+			"properties": [
+				{
+					"id": "e4bab932-3775-4fcc-9880-6ccfbf8b71e5",
+					"name": "name",
+					"parent": "19b3ffb1-953d-47f2-99b9-829aaf2892fd",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "19b3ffb1-953d-47f2-99b9-829aaf2892fd",
+					"name": "serverFiles",
+					"parent": "",
+					"description": "",
+					"objectType": "array",
+					"objectName": "serverFiles",
+					"isParent": true,
+					"children": [
+						{
+							"id": "e4bab932-3775-4fcc-9880-6ccfbf8b71e5",
+							"name": "name",
+							"parent": "19b3ffb1-953d-47f2-99b9-829aaf2892fd",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						}
+					]
+				},
+				{
+					"id": "83e47c7f-789f-4359-9726-5cf5e2125b8e",
+					"name": "name",
+					"parent": "c5d1e53d-1739-478d-f4ec-97e330fed424",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "c5d1e53d-1739-478d-f4ec-97e330fed424",
+					"name": "exceptionFiles",
+					"parent": "",
+					"description": "",
+					"objectType": "array",
+					"objectName": "exceptionFiles",
+					"isParent": true,
+					"children": [
+						{
+							"id": "83e47c7f-789f-4359-9726-5cf5e2125b8e",
+							"name": "name",
+							"parent": "c5d1e53d-1739-478d-f4ec-97e330fed424",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						}
+					]
+				},
+				{
+					"id": "5463554b-8791-4a10-dee2-ca01596ce068",
+					"name": "name",
+					"parent": "95de6b82-1300-4cf4-8d94-5c915acb3c7c",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "95de6b82-1300-4cf4-8d94-5c915acb3c7c",
+					"name": "scriptFiles",
+					"parent": "",
+					"description": "",
+					"objectType": "array",
+					"objectName": "scriptFiles",
+					"isParent": true,
+					"children": [
+						{
+							"id": "5463554b-8791-4a10-dee2-ca01596ce068",
+							"name": "name",
+							"parent": "95de6b82-1300-4cf4-8d94-5c915acb3c7c",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "33f879bb-bd16-441c-8afb-f0763a4f2ad1",
+			"name": "Error",
+			"description": "",
+			"isInclude": false,
+			"properties": [
+				{
+					"id": "cea5476e-8c83-4060-ada1-4d56b7bb2333",
+					"name": "status",
+					"objectType": "string",
+					"description": "",
+					"required": false,
+					"value": "",
+					"minLength": "",
+					"maxLength": "",
+					"default": "",
+					"example": "",
+					"isParent": false,
+					"children": []
+				}
+			]
+		},
+		{
+			"id": "ac77a88b-70ac-4840-c6a9-eccb12f13ac0",
+			"name": "ID",
+			"description": "",
+			"isInclude": false,
+			"properties": [
+				{
+					"id": "d30278a7-1c99-427a-d2a0-4388f6196b19",
+					"name": "id",
+					"objectType": "string",
+					"description": "",
+					"required": true,
+					"value": "",
+					"minLength": "",
+					"maxLength": "",
+					"default": "",
+					"example": "",
+					"isParent": false,
+					"children": []
+				}
+			]
+		},
+		{
+			"id": "d11035ea-d79e-40ef-d413-3b2c46ab997b",
+			"name": "GetRequest",
+			"description": "",
+			"isInclude": false,
+			"properties": [
+				{
+					"id": "7cffa2da-09db-4ecc-eef2-7d88bd87b22c",
+					"name": "type",
+					"parent": "",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "c156e9bc-ce08-4f73-f997-ca388af986ee",
+					"name": "name",
+					"parent": "",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "b12390c1-2402-4f80-eca4-09018ae96576",
+					"name": "start",
+					"parent": "",
+					"description": "",
+					"objectType": "number",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "ed1139b9-0672-4407-b295-5f1459eb6462",
+					"name": "end",
+					"parent": "",
+					"description": "",
+					"objectType": "number",
+					"isParent": false,
+					"children": []
+				}
+			]
+		}
+	],
+	"documentation": [],
+	"name": "CoreAPI Monitor_SystemLog",
+	"endpoint": "https://explored.neptune-software.com/api/functions/SysLog",
+	"ver": "22.7.27.723",
+	"version": "2.2.0",
+	"description": "API to access results of Planet 9 System Logs",
+	"mediaType": null,
+	"securitySchemes": null,
+	"swaggerURI": null,
+	"swaggerSystem": null,
+	"apiType": "",
+	"about": "<p><strong style=\"white-space: unset; font-size: 1rem;\">Description</strong><br></p><p>Planet 9-API Monitor_SystemLogs maintains the list Planet 9 System Log entries i.e System, Server script, Exception logs.</p><p>API Monitor_SystemLogs&nbsp;is the Planet 9 API to access the API of Planet 9 System Logs&nbsp;and the operations performed on them.</p><p><strong>Operations Performed</strong></p><p><strong style=\"white-space: unset; font-size: 1rem;\">List</strong><br></p><p>Get the&nbsp;<span style=\"white-space: nowrap; font-size: 1rem;\">System Logs list</span></p><table class=\"table\" style=\"width: 730px;\"><tbody><tr><td>Response</td><td>List(array)- Definition&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<br></td></tr></tbody></table><br><p><strong>Get</strong></p><p>Get the System logs corresponding to the request</p><p></p><table class=\"table\"><tbody><tr><td>Request</td><td>GetRequest(object)-Definition&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</td></tr></tbody></table>",
+	"enableProxy": true,
+	"restrictAccess": false,
+	"enableTrace": false,
+	"enableIDE": false,
+	"internalAPI": false,
+	"isPublic": false,
+	"tlsAllowUntrusted": true,
+	"useOwnProcess": false,
+	"package": "25602b27-7c0d-ed11-b47a-000d3ab2359f",
+	"apiGroup": null,
+	"apiFormat": 0,
+	"roles": []
+}

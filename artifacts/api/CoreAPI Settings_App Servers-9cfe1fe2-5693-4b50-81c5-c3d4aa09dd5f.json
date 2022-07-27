@@ -1,0 +1,440 @@
+{
+	"id": "9cfe1fe2-5693-4b50-81c5-c3d4aa09dd5f",
+	"createdAt": "2022-02-04T15:44:48.963Z",
+	"createdBy": "lloyd",
+	"auth": [],
+	"endpoints": [],
+	"paths": [
+		{
+			"id": "73C99699-AC58-4101-E5E1-DA62384E4656",
+			"method": "POST",
+			"path": "/Delete",
+			"description": "Delete the selected App server",
+			"parameters": [],
+			"headers": [],
+			"responses": [
+				{
+					"status": "200",
+					"description": "OK",
+					"headers": [],
+					"body": []
+				},
+				{
+					"status": "500",
+					"description": "OK",
+					"headers": [],
+					"body": [],
+					"content": [
+						{
+							"id": "1f8b63af-f3a4-42cf-cba3-17e2eb458c55",
+							"name": "Error",
+							"objectType": "object"
+						}
+					]
+				}
+			],
+			"content": [
+				{
+					"name": "ID",
+					"objectType": "object"
+				}
+			]
+		},
+		{
+			"id": "4A9B2E8A-3B60-490C-85B7-7468CDC7667E",
+			"method": "POST",
+			"path": "/Save",
+			"description": "",
+			"parameters": [],
+			"headers": [],
+			"responses": [
+				{
+					"status": "200",
+					"description": "OK",
+					"headers": [],
+					"body": []
+				},
+				{
+					"status": "500",
+					"description": "OK",
+					"headers": [],
+					"body": [],
+					"content": [
+						{
+							"id": "880feaff-82d2-476b-c32b-4050f1697d30",
+							"name": "Error",
+							"objectType": "object"
+						}
+					]
+				}
+			],
+			"content": [
+				{
+					"name": "Save",
+					"objectType": "object"
+				}
+			]
+		},
+		{
+			"id": "B2696831-9848-43AC-95E1-030A57C6147E",
+			"method": "POST",
+			"path": "/Get",
+			"description": "",
+			"parameters": [],
+			"headers": [],
+			"responses": [
+				{
+					"status": "200",
+					"description": "OK",
+					"headers": [],
+					"body": [],
+					"content": [
+						{
+							"id": "7cf63dfe-4458-4ca6-a384-c4af6770cc8e",
+							"name": "Get",
+							"objectType": "object"
+						}
+					]
+				},
+				{
+					"status": "500",
+					"description": "OK",
+					"headers": [],
+					"body": [],
+					"content": [
+						{
+							"id": "dedd62d1-faaa-45bb-b9de-b244e20e2dff",
+							"name": "Error",
+							"objectType": "object"
+						}
+					]
+				}
+			],
+			"content": [
+				{
+					"name": "ID",
+					"objectType": "object"
+				}
+			]
+		},
+		{
+			"id": "22A2417D-D6AF-4D88-B141-5492A7509F3A",
+			"method": "POST",
+			"path": "/List",
+			"description": "",
+			"parameters": [],
+			"headers": [],
+			"responses": [
+				{
+					"status": "200",
+					"description": "OK",
+					"headers": [],
+					"body": [],
+					"content": [
+						{
+							"id": "aabb5425-bb56-4149-acc1-5f26798faf67",
+							"name": "List",
+							"objectType": "array"
+						}
+					]
+				},
+				{
+					"status": "500",
+					"description": "OK",
+					"headers": [],
+					"body": [],
+					"content": [
+						{
+							"id": "26e5f500-0245-435b-f4f0-257131cea71e",
+							"name": "Error",
+							"objectType": "object"
+						}
+					]
+				}
+			]
+		}
+	],
+	"definitions": [
+		{
+			"id": "96a87f78-0106-4cdd-c9f2-123cafb942a6",
+			"name": "Error",
+			"description": "",
+			"isInclude": false,
+			"properties": [
+				{
+					"id": "1b3cc3b5-15b5-42dc-9275-4a66301af335",
+					"name": "status",
+					"objectType": "string",
+					"description": "",
+					"required": false,
+					"value": "",
+					"minLength": "",
+					"maxLength": "",
+					"default": "",
+					"example": "",
+					"isParent": false,
+					"children": []
+				}
+			]
+		},
+		{
+			"id": "05b9a24d-f6c4-42c3-998c-580faeffa6cb",
+			"name": "ID",
+			"description": "",
+			"isInclude": false,
+			"properties": [
+				{
+					"id": "5d6ce250-294f-409e-dc36-cef95739ea05",
+					"name": "id",
+					"objectType": "string",
+					"description": "",
+					"required": false,
+					"value": "",
+					"minLength": "",
+					"maxLength": "",
+					"default": "",
+					"example": "",
+					"isParent": false,
+					"children": []
+				}
+			]
+		},
+		{
+			"id": "4a95a724-a853-4cf2-f73a-85dd25279b34",
+			"name": "List",
+			"description": "",
+			"isInclude": false,
+			"properties": [
+				{
+					"id": "91479dc7-b4de-4207-a954-f83a6288f6ad",
+					"name": "id",
+					"parent": "",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "f0ebdcf2-1fd5-49b5-c742-dc6e680225b3",
+					"name": "createdAt",
+					"parent": "",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "f59044ba-8103-43be-8df3-63d08ed5b39b",
+					"name": "updatedAt",
+					"parent": "",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "bc147047-50b8-4520-9579-0621b6c2fa1a",
+					"name": "createdBy",
+					"parent": "",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "d5f31d73-79bf-4ce3-b5e3-030965e6f6b1",
+					"name": "changedBy",
+					"parent": "",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "3df02234-6ad2-4312-c089-4fc45b67cd4c",
+					"name": "description",
+					"parent": "",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "6852805d-9e6b-42bc-fcbf-81e66b6438f3",
+					"name": "url",
+					"parent": "",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				}
+			]
+		},
+		{
+			"id": "57a35089-00b1-416f-dfaa-e06898c1f360",
+			"name": "Get",
+			"description": "",
+			"isInclude": false,
+			"properties": [
+				{
+					"id": "b422bb2e-19ee-494b-fdaa-a7e7e8cf923d",
+					"name": "id",
+					"parent": "",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "c4b88bef-2fe5-4768-affb-1f695d8bfb00",
+					"name": "createdAt",
+					"parent": "",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "3f80fa88-c8a4-4f12-e8d2-68ce4246090f",
+					"name": "updatedAt",
+					"parent": "",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "54a86580-647c-4896-862c-06accfaf7674",
+					"name": "createdBy",
+					"parent": "",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "59c3962c-b14f-4464-a49b-1c35a1f5124a",
+					"name": "changedBy",
+					"parent": "",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "a9eaae29-b81d-42b8-e264-ec44d74db90b",
+					"name": "description",
+					"parent": "",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "06292af5-edad-4021-d78b-a328ee7c551e",
+					"name": "url",
+					"parent": "",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				}
+			]
+		},
+		{
+			"id": "7ea7da9f-571f-4abf-909a-72704f4e7214",
+			"name": "Save",
+			"description": "",
+			"isInclude": false,
+			"properties": [
+				{
+					"id": "095e1dc7-d677-482b-dfb5-2278ce5e8ef2",
+					"name": "createdBy",
+					"parent": "",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "51dc6af1-9231-46a3-f199-c6a410676ff3",
+					"name": "changedBy",
+					"parent": "",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "b8123de5-a23e-4574-bd1f-039ea159b231",
+					"name": "description",
+					"parent": "",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "90493e1c-6278-498e-a5e9-b9c25b577f09",
+					"name": "url",
+					"parent": "",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "b6da0cf6-2bd8-4119-8404-ab2a07b395bc",
+					"name": "id",
+					"parent": "",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "6dbe46b6-6fb3-406f-ea51-ee1e859fe8f1",
+					"name": "createdAt",
+					"parent": "",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "4921bf4c-2acc-4276-ec71-3a7346f1b49a",
+					"name": "updatedAt",
+					"parent": "",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				}
+			]
+		}
+	],
+	"documentation": [],
+	"name": "CoreAPI Settings_App Servers",
+	"endpoint": "https://explored.neptune-software.com/api/functions/AppServers",
+	"ver": "22.7.27.728",
+	"version": "2.2.0",
+	"description": "API to access results of Planet 9 System App Servers",
+	"mediaType": null,
+	"securitySchemes": null,
+	"swaggerURI": null,
+	"swaggerSystem": null,
+	"apiType": "",
+	"about": "<p>Planet 9 Settings_AppServers lets to add and manage multiple App Servers for load balancing.</p><p>API Settings_AppServers&nbsp;is the API to access the Planet 9 App Servers list&nbsp;and to perform the REST operations from the app.</p><p>Every app must have the right roles (permissions) that enable access to the&nbsp;<span style=\"white-space: unset; font-size: 1rem;\">App Servers.</span></p><p><strong>Operations Performed</strong></p><p><strong style=\"white-space: unset; font-size: 1rem;\">List</strong><br></p><p>Get the App Servers<span style=\"white-space: nowrap; font-size: 1rem;\">&nbsp;list.</span></p><p><span style=\"white-space: nowrap; font-size: 1rem;\"></span></p><table class=\"table\" style=\"width: 588px;\"><tbody><tr><td>Response</td><td>List(array)-Definition</td></tr></tbody></table><br><p><span style=\"white-space: nowrap; font-size: 1rem;\"><strong>Get</strong></span></p><p><span style=\"white-space: nowrap; font-size: 1rem;\">Get the&nbsp;</span>App Servers&nbsp;<span style=\"white-space: nowrap; font-size: 1rem;\">details</span></p><p><span style=\"white-space: nowrap; font-size: 1rem;\"></span></p><table class=\"table\" style=\"width: 588px;\"><tbody><tr><td>Request</td><td>ID</td></tr><tr><td>Response</td><td>Get(object)-Definition&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<br></td></tr></tbody></table><br><p><strong>Save</strong></p><p><span style=\"white-space: nowrap; font-size: 1rem;\">Save the new&nbsp;</span>App Servers<span style=\"white-space: unset; font-size: 1rem;\">.</span></p><p><span style=\"white-space: nowrap; font-size: 1rem;\"></span></p><table class=\"table\" style=\"width: 588px;\"><tbody><tr><td>Request</td><td>Save(object)-Definition</td></tr></tbody></table><br><p><span style=\"white-space: nowrap; font-size: 1rem;\"><strong>Delete</strong></span></p><p><span style=\"white-space: nowrap; font-size: 1rem;\">Delete the selected&nbsp;</span><span style=\"white-space: unset; font-size: 1rem;\">App Server.</span></p><p><span style=\"white-space: nowrap; font-size: 1rem;\"></span></p><table class=\"table\" style=\"width: 588px;\"><tbody><tr><td>Request</td><td>ID&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</td></tr></tbody></table><h4><br></h4>",
+	"enableProxy": true,
+	"restrictAccess": false,
+	"enableTrace": false,
+	"enableIDE": false,
+	"internalAPI": false,
+	"isPublic": false,
+	"tlsAllowUntrusted": true,
+	"useOwnProcess": false,
+	"package": "25602b27-7c0d-ed11-b47a-000d3ab2359f",
+	"apiGroup": null,
+	"apiFormat": 0,
+	"roles": []
+}
