@@ -14,6 +14,13 @@
 	"apps": [],
 	"api": [
 		{
+			"id": "F6B85980-CDF7-4AF9-A976-05B9A784378B",
+			"name": "CoreAPI Connectivity_ODataMockData",
+			"ver": "22.8.2.110",
+			"description": null,
+			"apiGroup": null
+		},
+		{
 			"id": "2A933EA2-7982-4636-8C7F-15B8C3267D41",
 			"name": "CoreAPI Settings_RemoteSystems",
 			"ver": "22.7.27.728",
@@ -105,6 +112,13 @@
 			"apiGroup": null
 		},
 		{
+			"id": "9D6030E4-D5DE-4D34-9771-4B8A2F83879A",
+			"name": "CoreAPI Connectivity_Group",
+			"ver": "22.8.2.110",
+			"description": "API to access results of Planet 9 Connectivity_Group API Details.",
+			"apiGroup": null
+		},
+		{
 			"id": "AA85F007-2FF8-4B1F-8752-4D811E55F432",
 			"name": "CoreAPI WF_Approvers",
 			"ver": "22.7.27.729",
@@ -154,6 +168,20 @@
 			"apiGroup": null
 		},
 		{
+			"id": "A6578FB0-1751-485E-802C-73D234B10353",
+			"name": "CoreAPI Connectivity_APIDesigner",
+			"ver": "22.8.2.110",
+			"description": "API to access results of Planet 9 Connectivity_API Designer details.",
+			"apiGroup": null
+		},
+		{
+			"id": "38F22F7D-029B-42B9-B1D6-7888D7BF8AEF",
+			"name": "CoreAPI Connectivity_Certificates",
+			"ver": "22.8.2.110",
+			"description": "API to access results of Planet 9 Connectivity_Certificates details.",
+			"apiGroup": null
+		},
+		{
 			"id": "CF3F91E6-3DF5-43E5-A656-7A1927A8A112",
 			"name": "CoreAPI Run_Analyze_AppLog",
 			"ver": "22.7.27.724",
@@ -186,6 +214,13 @@
 			"name": "CoreAPI Tools_NPMModules",
 			"ver": "22.7.27.727",
 			"description": "API to access results of Planet 9 Tools_NPMModules",
+			"apiGroup": null
+		},
+		{
+			"id": "6E44EB97-B3F2-4D22-9256-91622B4A2DE4",
+			"name": "CoreAPI Connectivity_Authentication",
+			"ver": "22.8.2.110",
+			"description": null,
 			"apiGroup": null
 		},
 		{
@@ -235,6 +270,13 @@
 			"name": "CoreAPI Testing_Plan",
 			"ver": "22.7.27.730",
 			"description": "API to access results of Planet 9 Testing_Plan API Details.",
+			"apiGroup": null
+		},
+		{
+			"id": "383A43C5-C8E3-4E82-930A-B5892F68D43D",
+			"name": "CoreAPI Connectivity_ODataSource",
+			"ver": "22.8.2.1059",
+			"description": "API to access Planet 9 Connectivity_oData Source Details.",
 			"apiGroup": null
 		},
 		{
@@ -319,6 +361,13 @@
 			"name": "CoreAPI Monitor_LockEntries",
 			"ver": "22.7.27.722",
 			"description": "API to access results of Planet 9 Monitor LockEntries API",
+			"apiGroup": null
+		},
+		{
+			"id": "3A71A594-1BF8-4B96-BD3D-E98CF02C37FD",
+			"name": "CoreAPI Connectivity_APIClient",
+			"ver": "22.8.2.110",
+			"description": "API to access the Planet 9 API Client responses",
 			"apiGroup": null
 		},
 		{
