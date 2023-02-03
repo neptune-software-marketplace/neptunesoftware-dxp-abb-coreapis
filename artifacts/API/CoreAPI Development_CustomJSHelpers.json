@@ -1,0 +1,585 @@
+{
+	"id": "63b27363-1442-4e8e-a8e2-81ee20113863",
+	"createdAt": "2022-02-04T15:44:45.643Z",
+	"createdBy": "lloyd",
+	"auth": [],
+	"endpoints": [],
+	"paths": [
+		{
+			"id": "c44835cb-9c02-4240-b2c2-5dfc4be5c0a7",
+			"method": "POST",
+			"path": "/List",
+			"description": "Get List of Custom JS Helpers",
+			"parameters": [],
+			"headers": [],
+			"responses": [
+				{
+					"status": "200",
+					"description": "OK",
+					"headers": [],
+					"body": [],
+					"content": [
+						{
+							"id": "d62584fe-8ddb-41e5-d85e-d6be58b14330",
+							"name": "List",
+							"objectType": "array"
+						}
+					]
+				}
+			],
+			"summary": "Get List of Custom JS Helpers",
+			"example": [
+				"==OBJECT STRING==",
+				"[{",
+				"    \"id\": \"a12fc3e7-1147-4be0-a634-e567549f679f\",",
+				"    \"createdAt\": \"2018-01-26T15:12:54.000Z\",",
+				"    \"updatedAt\": \"2018-10-15T11:43:03.000Z\",",
+				"    \"createdBy\": \"admin\",",
+				"    \"changedBy\": \"oah\",",
+				"    \"metadata\": [{",
+				"        \"id\": \"5b3c50b9-e778-4f29-b611-5a96aef28067\",",
+				"        \"name\": \"dd\",",
+				"        \"type\": \"\",",
+				"        \"description\": \"ffdf\"",
+				"    }],",
+				"    \"name\": \"tb test2\",",
+				"    \"description\": null,",
+				"    \"group\": \"Server\",",
+				"    \"content\": \"console.log(\\\"demo\\\");\",",
+				"    \"enableIDE\": null,",
+				"    \"enableServerScript\": true",
+				"}, {",
+				"    \"id\": \"4e5075a9-7bc8-43d1-a895-dd948db44d9c\",",
+				"    \"createdAt\": \"2018-02-02T13:47:21.000Z\",",
+				"    \"updatedAt\": \"2018-10-11T11:15:28.000Z\",",
+				"    \"createdBy\": \"rsletta\",",
+				"    \"changedBy\": \"oah\",",
+				"    \"metadata\": [{",
+				"        \"id\": \"c82b7469-1d47-44b4-a2f6-10e22fda4a5e\",",
+				"        \"name\": \"MyMultiModelObject\",",
+				"        \"type\": \"OBJECT\",",
+				"        \"description\": \"name of multimodel object\"",
+				"    }, {",
+				"        \"id\": \"f09a39b9-702f-447d-96e5-427f2eaaa9f9\",",
+				"        \"name\": \"yourField\",",
+				"        \"type\": \"OTHER\",",
+				"        \"description\": \"\"",
+				"    }]",
+				"}]"
+			]
+		},
+		{
+			"id": "f52955a2-1ac5-4e5d-a774-686849af47de",
+			"method": "POST",
+			"path": "/Get",
+			"description": "Get content of selected JS Helper",
+			"parameters": [],
+			"headers": [],
+			"responses": [
+				{
+					"status": "200",
+					"description": "OK",
+					"headers": [],
+					"body": [],
+					"content": [
+						{
+							"id": "4ca9292c-daeb-4d30-d363-4a4a2851714a",
+							"name": "List",
+							"objectType": "object"
+						}
+					]
+				},
+				{
+					"status": "500",
+					"description": "Error",
+					"headers": [],
+					"body": [],
+					"content": [
+						{
+							"id": "e36881b9-04fb-487e-b9fa-38d3cb27dbf6",
+							"name": "Error",
+							"objectType": "object"
+						}
+					]
+				}
+			],
+			"content": [
+				{
+					"name": "Id",
+					"objectType": "object"
+				}
+			],
+			"summary": "Get content of selected JS Helper",
+			"example": [
+				"==OBJECT STRING==",
+				"{",
+				"    \"id\": \"a12fc3e7-1147-4be0-a634-e567549f679f\",",
+				"    \"createdAt\": \"2018-01-26T15:12:54.000Z\",",
+				"    \"updatedAt\": \"2018-10-15T11:43:03.000Z\",",
+				"    \"createdBy\": \"admin\",",
+				"    \"changedBy\": \"oah\",",
+				"    \"metadata\": [{",
+				"        \"id\": \"5b3c50b9-e778-4f29-b611-5a96aef28067\",",
+				"        \"name\": \"dd\",",
+				"        \"type\": \"\",",
+				"        \"description\": \"ffdf\"",
+				"    }],",
+				"    \"name\": \"tb test2\",",
+				"    \"description\": null,",
+				"    \"group\": \"Server\",",
+				"    \"content\": \"console.log(\\\"demo\\\");\",",
+				"    \"enableIDE\": null,",
+				"    \"enableServerScript\": true",
+				"}"
+			]
+		},
+		{
+			"id": "d28b22e4-e9bc-4996-be84-b6370c1a7801",
+			"method": "POST",
+			"path": "/Save",
+			"description": "Save the JS Helper",
+			"parameters": [],
+			"headers": [],
+			"responses": [
+				{
+					"status": "200",
+					"description": "OK",
+					"headers": [],
+					"body": [],
+					"content": []
+				}
+			],
+			"summary": "Save the JS Helper",
+			"content": [
+				{
+					"name": "Save",
+					"objectType": "object"
+				}
+			]
+		},
+		{
+			"id": "ebb09522-f361-4365-f556-60c76f355efc",
+			"method": "POST",
+			"path": "/Delete",
+			"description": "",
+			"parameters": [],
+			"headers": [],
+			"responses": [
+				{
+					"status": "200",
+					"description": "OK",
+					"headers": [],
+					"body": [],
+					"content": []
+				}
+			],
+			"summary": "Delete the selected JSHelper class",
+			"content": [
+				{
+					"name": "Id",
+					"objectType": "object"
+				}
+			]
+		}
+	],
+	"definitions": [
+		{
+			"id": "b2331e27-9d7b-49e8-bff9-73f3e4076b09",
+			"name": "List",
+			"description": "List of custom JSHelpers",
+			"isInclude": false,
+			"properties": [
+				{
+					"id": "b68582d9-9ddc-4aca-b6ab-166e5bd7ccb8",
+					"name": "id",
+					"parent": "",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "6d2e74de-ef94-4bbb-87c7-74e5e839d39d",
+					"name": "createdAt",
+					"parent": "",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "419c0a66-c265-4296-e057-f6260cc7843c",
+					"name": "updatedAt",
+					"parent": "",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "fe3ba34c-1dc2-4550-a671-d4dce309c450",
+					"name": "createdBy",
+					"parent": "",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "6a6e0e47-d47f-4978-80c8-faebaa2e3f05",
+					"name": "changedBy",
+					"parent": "",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "803065e7-7c21-44cf-c261-c0907fb81ea2",
+					"name": "id",
+					"parent": "debe402c-4f20-40e3-83d9-3b055054df7c",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "715fffb3-3d40-41c5-bce0-67dcf17f691a",
+					"name": "name",
+					"parent": "debe402c-4f20-40e3-83d9-3b055054df7c",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "d9ca3c1f-75b3-4cc1-fa9b-85282f7a8602",
+					"name": "type",
+					"parent": "debe402c-4f20-40e3-83d9-3b055054df7c",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "ace1cb89-95b6-473b-948f-ae712323e3ac",
+					"name": "description",
+					"parent": "debe402c-4f20-40e3-83d9-3b055054df7c",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "debe402c-4f20-40e3-83d9-3b055054df7c",
+					"name": "metadata",
+					"parent": "",
+					"description": "",
+					"objectType": "array",
+					"objectName": "metadata",
+					"isParent": true,
+					"children": [
+						{
+							"id": "803065e7-7c21-44cf-c261-c0907fb81ea2",
+							"name": "id",
+							"parent": "debe402c-4f20-40e3-83d9-3b055054df7c",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "715fffb3-3d40-41c5-bce0-67dcf17f691a",
+							"name": "name",
+							"parent": "debe402c-4f20-40e3-83d9-3b055054df7c",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "d9ca3c1f-75b3-4cc1-fa9b-85282f7a8602",
+							"name": "type",
+							"parent": "debe402c-4f20-40e3-83d9-3b055054df7c",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "ace1cb89-95b6-473b-948f-ae712323e3ac",
+							"name": "description",
+							"parent": "debe402c-4f20-40e3-83d9-3b055054df7c",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						}
+					]
+				},
+				{
+					"id": "fe3dea3c-0f07-4bf7-d661-b5945db5951c",
+					"name": "name",
+					"parent": "",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "ad57034f-6e81-42b1-fb30-e19c18c19211",
+					"name": "description",
+					"parent": "",
+					"description": "",
+					"objectType": "object",
+					"objectName": "description",
+					"isParent": true,
+					"children": []
+				},
+				{
+					"id": "6a499a2b-4079-4136-97d9-8cfb462634db",
+					"name": "group",
+					"parent": "",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "73865abb-b9f1-4239-e7c0-9324d20e31c4",
+					"name": "content",
+					"parent": "",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "eae24a17-ad58-4093-88b7-c2c602522f5e",
+					"name": "enableIDE",
+					"parent": "",
+					"description": "",
+					"objectType": "object",
+					"objectName": "enableIDE",
+					"isParent": true,
+					"children": []
+				},
+				{
+					"id": "444abef2-ebdc-49c3-ceef-2be3f283f195",
+					"name": "enableServerScript",
+					"parent": "",
+					"description": "",
+					"objectType": "boolean",
+					"isParent": false,
+					"children": []
+				}
+			]
+		},
+		{
+			"id": "0142b041-44b5-4980-ea92-42cde050b4e0",
+			"name": "Error",
+			"description": "Error",
+			"isInclude": false,
+			"properties": [
+				{
+					"id": "97ad0a86-422d-4cac-ccd1-e6190e964832",
+					"name": "Status",
+					"objectType": "string",
+					"description": "",
+					"required": false,
+					"value": "",
+					"minLength": "",
+					"maxLength": "",
+					"default": "",
+					"example": "",
+					"isParent": false,
+					"children": []
+				}
+			]
+		},
+		{
+			"id": "3f145a41-e89d-4bb6-a32d-319a135e1191",
+			"name": "Id",
+			"description": "ID",
+			"isInclude": false,
+			"properties": [
+				{
+					"id": "c636c167-0776-4768-a4dc-8f6b1575b87f",
+					"name": "id",
+					"objectType": "string",
+					"description": "",
+					"required": true,
+					"value": "",
+					"minLength": "",
+					"maxLength": "",
+					"default": "",
+					"example": "",
+					"isParent": false,
+					"children": []
+				}
+			]
+		},
+		{
+			"id": "ec1810dd-573d-4286-83ad-b3bdcc330ea5",
+			"name": "Save",
+			"description": "Save the JSHeleper",
+			"isInclude": false,
+			"properties": [
+				{
+					"id": "09c8a1f7-8e42-483a-fdc9-365cdf8be3d8",
+					"name": "createdBy",
+					"parent": "",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "a66df8b6-de66-45d4-af58-05c3d5c40b65",
+					"name": "changedBy",
+					"parent": "",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "efead305-ae54-4ce9-9a57-5eef88d6ed1e",
+					"name": "undefineditem",
+					"parent": "096d7568-66ae-42d3-ea78-2833c1f9b523",
+					"description": "",
+					"objectType": "array",
+					"isParent": true,
+					"children": []
+				},
+				{
+					"id": "096d7568-66ae-42d3-ea78-2833c1f9b523",
+					"name": "metadata",
+					"parent": "",
+					"description": "",
+					"objectType": "array",
+					"objectName": "metadata",
+					"isParent": true,
+					"children": [
+						{
+							"id": "efead305-ae54-4ce9-9a57-5eef88d6ed1e",
+							"name": "undefineditem",
+							"parent": "096d7568-66ae-42d3-ea78-2833c1f9b523",
+							"description": "",
+							"objectType": "array",
+							"isParent": true,
+							"children": []
+						}
+					]
+				},
+				{
+					"id": "a5df7dd9-a4d1-453d-8d34-cb21a0e29da6",
+					"name": "name",
+					"parent": "",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "f93d7c69-7259-4766-f57c-c5129a75d96f",
+					"name": "group",
+					"parent": "",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "e7b52a5b-9d8f-42ff-9112-1db47a596846",
+					"name": "description",
+					"parent": "",
+					"description": "",
+					"objectType": "object",
+					"objectName": "description",
+					"isParent": true,
+					"children": []
+				},
+				{
+					"id": "8c688bee-2207-4e30-ade6-08903c9048c0",
+					"name": "content",
+					"parent": "",
+					"description": "",
+					"objectType": "object",
+					"objectName": "content",
+					"isParent": true,
+					"children": []
+				},
+				{
+					"id": "e7bdd19f-f2be-4de8-bfe4-a62a0b799af3",
+					"name": "id",
+					"parent": "",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "2680971a-131d-4999-ad54-49e5e3a1944c",
+					"name": "createdAt",
+					"parent": "",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "9d83c55b-fd5a-445b-8b2c-ccb67015f691",
+					"name": "updatedAt",
+					"parent": "",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "aa27fa1c-ef08-447c-bcbd-69d459be05d2",
+					"name": "enableIDE",
+					"parent": "",
+					"description": "",
+					"objectType": "boolean",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "220625d9-273c-45f4-a969-c987beda2f70",
+					"name": "enableServerScript",
+					"parent": "",
+					"description": "",
+					"objectType": "boolean",
+					"isParent": false,
+					"children": []
+				}
+			]
+		}
+	],
+	"documentation": [],
+	"name": "CoreAPI Development_CustomJSHelpers",
+	"endpoint": "https://[yourDomain].com/api/functions/JSHelpers",
+	"ver": "23.2.3.1817",
+	"version": "2.2.0",
+	"description": "API to access results of Planet 9 Development_Custom JS Helpers.",
+	"mediaType": null,
+	"securitySchemes": null,
+	"swaggerURI": null,
+	"swaggerSystem": null,
+	"apiType": "",
+	"about": "<p><strong style=\"font-size: 1rem; white-space: unset;\">Description</strong><br></p><p>Planet 9-CustomJSHelpers maintains the list of the JS files created in Planet 9.</p><p>API Development_CustomJSHelpers&nbsp;is the Planet 9 API to access the JS Helpers&nbsp; content by performing the REST operations on it.</p><p><strong>Operations Performed</strong></p><p><strong>Get</strong></p><p>Get the selected custom Js Helpers item</p><table class=\"table\" style=\"width: 730px;\"><tbody><tr><td>Request</td><td>ID</td></tr><tr><td>Response</td><td>List(object)- Definition&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</td></tr></tbody></table><p><strong style=\"white-space: unset; font-size: 1rem;\">List</strong><br></p><p>Get the list of the custom Js Helpers&nbsp;files</p><table class=\"table\" style=\"width: 730px;\"><tbody><tr><td>Response</td><td>List(array)- Definition&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<br></td></tr></tbody></table><p><strong>Save</strong></p><p>Save the<strong>&nbsp;</strong><span style=\"white-space: unset; font-size: 1rem;\">custom Js Helper file.</span></p><p></p><table class=\"table\"><tbody><tr><td>Request</td><td>Save(object)-Definition&nbsp; &nbsp; &nbsp;&nbsp;<br></td></tr></tbody></table><p></p><p><strong>Delete</strong></p><p>Delete the&nbsp;<span style=\"white-space: unset; font-size: 1rem;\">custom Js Helper corresponding to the ID</span></p><p></p><table class=\"table\"><tbody><tr><td>Request</td><td>ID&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</td></tr></tbody></table>",
+	"enableProxy": false,
+	"restrictAccess": false,
+	"enableTrace": false,
+	"enableIDE": false,
+	"internalAPI": false,
+	"isPublic": false,
+	"tlsAllowUntrusted": false,
+	"useOwnProcess": false,
+	"package": "25602b27-7c0d-ed11-b47a-000d3ab2359f",
+	"apiGroup": "8fb2ef9e-2652-4821-95e1-2d12ee97640e",
+	"apiFormat": 0,
+	"roles": []
+}

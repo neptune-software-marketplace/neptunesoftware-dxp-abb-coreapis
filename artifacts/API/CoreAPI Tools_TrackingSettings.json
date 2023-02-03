@@ -1,0 +1,593 @@
+{
+	"id": "f4f8c4dc-4fde-4a84-b9aa-926387223460",
+	"createdAt": "2022-02-04T15:44:46.850Z",
+	"createdBy": "lloyd",
+	"auth": [],
+	"endpoints": [],
+	"paths": [
+		{
+			"id": "f73fe626-a56d-44a7-8647-e42017f8f455",
+			"method": "POST",
+			"path": "/List",
+			"description": "",
+			"parameters": [],
+			"headers": [],
+			"responses": [
+				{
+					"status": "200",
+					"description": "OK",
+					"headers": [],
+					"body": [],
+					"content": [
+						{
+							"id": "afad2f95-53c1-41d4-a640-11cfa987f820",
+							"name": "List",
+							"objectType": "array"
+						}
+					]
+				},
+				{
+					"status": "500",
+					"description": "OK",
+					"headers": [],
+					"body": [],
+					"content": [
+						{
+							"id": "5e4ff19d-cba1-43c2-9c8a-6f009bad3248",
+							"name": "Error",
+							"objectType": "object"
+						}
+					]
+				}
+			],
+			"summary": "Get the tracking settings list",
+			"example": [
+				"==OBJECT STRING==",
+				"{",
+				"    \"status\": [{",
+				"        \"id\": \"f33a624f-cb05-4fff-ae86-f19d98f2e472\",",
+				"        \"createdAt\": \"2017-12-07T09:19:00.000Z\",",
+				"        \"updatedAt\": \"2019-06-06T08:07:44.000Z\",",
+				"        \"createdBy\": \"rsletta\",",
+				"        \"changedBy\": \"rommel\",",
+				"        \"name\": \"Feature\",",
+				"        \"icon\": \"sap-icon://fx\",",
+				"        \"iconColor\": \"\",",
+				"        \"sort\": \"30\",",
+				"        \"description\": \"Feature request\"",
+				"    }, {",
+				"        \"id\": \"b616399a-1cfd-4624-a969-7dd3012c6786\",",
+				"        \"createdAt\": \"2019-05-09T10:52:58.000Z\",",
+				"        \"updatedAt\": \"2019-06-06T08:07:56.000Z\",",
+				"        \"createdBy\": \"rommel\",",
+				"        \"changedBy\": \"rommel\",",
+				"        \"name\": \"Re-Opened\",",
+				"        \"icon\": \"sap-icon://fa-solid/box-open\",",
+				"        \"iconColor\": \"\",",
+				"        \"sort\": \"20\",",
+				"        \"description\": \"The bug occurs again\"",
+				"    }, {",
+				"        \"id\": \"6ddcaa4e-2c62-48b4-81af-5d8936b4dc70\",",
+				"        \"createdAt\": \"2019-06-06T08:13:27.000Z\",",
+				"        \"updatedAt\": \"2019-06-06T08:13:27.000Z\",",
+				"        \"createdBy\": \"rommel\",",
+				"        \"changedBy\": \"rommel\",",
+				"        \"name\": \"Limitation\",",
+				"        \"icon\": \"sap-icon://fa-solid/thermometer-half\",",
+				"        \"iconColor\": \"Negative\",",
+				"        \"sort\": \"71\",",
+				"        \"description\": \"The issue is not really on the application but due to plugin or browser for example\"",
+				"    }]",
+				"}",
+				"    "
+			]
+		},
+		{
+			"id": "fd356457-385b-42a3-d610-c9c0d1f9d764",
+			"method": "POST",
+			"path": "/SaveStatus",
+			"description": "",
+			"parameters": [],
+			"headers": [],
+			"responses": [
+				{
+					"status": "200",
+					"description": "OK",
+					"headers": [],
+					"body": [],
+					"content": [
+						{
+							"id": "f6f1b9b5-37e2-4439-d674-5b1da005313d",
+							"name": "List",
+							"objectType": "object"
+						}
+					]
+				},
+				{
+					"status": "500",
+					"description": "OK",
+					"headers": [],
+					"body": [],
+					"content": [
+						{
+							"id": "d0e192e0-6abe-456e-f9ca-9cbabda6f4b5",
+							"name": "Error",
+							"objectType": "object"
+						}
+					]
+				}
+			],
+			"summary": "Save the new tracking category",
+			"content": [
+				{
+					"name": "TrackingCategory",
+					"objectType": "object"
+				}
+			]
+		},
+		{
+			"id": "71967650-859d-4545-9da3-5822c90aba99",
+			"method": "POST",
+			"path": "/DeleteStatus",
+			"description": "",
+			"parameters": [],
+			"headers": [],
+			"responses": [
+				{
+					"status": "200",
+					"description": "OK",
+					"headers": [],
+					"body": [],
+					"content": []
+				},
+				{
+					"status": "500",
+					"description": "OK",
+					"headers": [],
+					"body": [],
+					"content": [
+						{
+							"id": "db6cffab-392e-443a-b331-9cc8d8ba9bfd",
+							"name": "Error",
+							"objectType": "object"
+						}
+					]
+				}
+			],
+			"summary": "Delete the tracking category",
+			"content": [
+				{
+					"name": "ID",
+					"objectType": "object"
+				}
+			]
+		}
+	],
+	"definitions": [
+		{
+			"id": "c0351ec6-90d8-4d6e-d046-a6d0bd744d81",
+			"name": "List",
+			"description": "",
+			"isInclude": false,
+			"properties": [
+				{
+					"id": "1202ed53-4cec-48b9-fa16-5d91644b796f",
+					"name": "id",
+					"parent": "d5a3d741-9159-4d19-e51a-aaa4c7bf947f",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "85dcd916-ae1a-4815-fb7e-6eaad5d86c8f",
+					"name": "createdAt",
+					"parent": "d5a3d741-9159-4d19-e51a-aaa4c7bf947f",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "876a65ed-ec71-45cf-cc11-9d1f6bc2608a",
+					"name": "updatedAt",
+					"parent": "d5a3d741-9159-4d19-e51a-aaa4c7bf947f",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "49c6cc10-f059-4c7b-c336-4e4c85babd65",
+					"name": "createdBy",
+					"parent": "d5a3d741-9159-4d19-e51a-aaa4c7bf947f",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "559b34ac-5c7b-4fab-c8bf-f567ad1ef377",
+					"name": "changedBy",
+					"parent": "d5a3d741-9159-4d19-e51a-aaa4c7bf947f",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "1cf5ff16-93ae-4dbf-e9f0-b310f4bb0ac4",
+					"name": "name",
+					"parent": "d5a3d741-9159-4d19-e51a-aaa4c7bf947f",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "b7afeb9a-c49c-4042-d881-66317a536891",
+					"name": "icon",
+					"parent": "d5a3d741-9159-4d19-e51a-aaa4c7bf947f",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "a38d3b6b-f130-4a3f-a234-2a55b65d1c2b",
+					"name": "iconColor",
+					"parent": "d5a3d741-9159-4d19-e51a-aaa4c7bf947f",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "368130ab-efbc-4cbc-ce16-777ef0a818e4",
+					"name": "sort",
+					"parent": "d5a3d741-9159-4d19-e51a-aaa4c7bf947f",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "f526e036-0b11-4b47-c426-74cee9a55a4b",
+					"name": "description",
+					"parent": "d5a3d741-9159-4d19-e51a-aaa4c7bf947f",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "d5a3d741-9159-4d19-e51a-aaa4c7bf947f",
+					"name": "status",
+					"parent": "",
+					"description": "",
+					"objectType": "array",
+					"objectName": "status",
+					"isParent": true,
+					"children": [
+						{
+							"id": "1202ed53-4cec-48b9-fa16-5d91644b796f",
+							"name": "id",
+							"parent": "d5a3d741-9159-4d19-e51a-aaa4c7bf947f",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "85dcd916-ae1a-4815-fb7e-6eaad5d86c8f",
+							"name": "createdAt",
+							"parent": "d5a3d741-9159-4d19-e51a-aaa4c7bf947f",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "876a65ed-ec71-45cf-cc11-9d1f6bc2608a",
+							"name": "updatedAt",
+							"parent": "d5a3d741-9159-4d19-e51a-aaa4c7bf947f",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "49c6cc10-f059-4c7b-c336-4e4c85babd65",
+							"name": "createdBy",
+							"parent": "d5a3d741-9159-4d19-e51a-aaa4c7bf947f",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "559b34ac-5c7b-4fab-c8bf-f567ad1ef377",
+							"name": "changedBy",
+							"parent": "d5a3d741-9159-4d19-e51a-aaa4c7bf947f",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "1cf5ff16-93ae-4dbf-e9f0-b310f4bb0ac4",
+							"name": "name",
+							"parent": "d5a3d741-9159-4d19-e51a-aaa4c7bf947f",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "b7afeb9a-c49c-4042-d881-66317a536891",
+							"name": "icon",
+							"parent": "d5a3d741-9159-4d19-e51a-aaa4c7bf947f",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "a38d3b6b-f130-4a3f-a234-2a55b65d1c2b",
+							"name": "iconColor",
+							"parent": "d5a3d741-9159-4d19-e51a-aaa4c7bf947f",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "368130ab-efbc-4cbc-ce16-777ef0a818e4",
+							"name": "sort",
+							"parent": "d5a3d741-9159-4d19-e51a-aaa4c7bf947f",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "f526e036-0b11-4b47-c426-74cee9a55a4b",
+							"name": "description",
+							"parent": "d5a3d741-9159-4d19-e51a-aaa4c7bf947f",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						}
+					]
+				},
+				{
+					"id": "2e07c1b4-fb6d-40a7-a5bd-7a8163e3f07a",
+					"name": "id",
+					"parent": "2b1669d8-3e99-4291-a41e-87b102e18285",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "b5db8544-e7c5-486a-8ff3-88ec2bb871a2",
+					"name": "createdAt",
+					"parent": "2b1669d8-3e99-4291-a41e-87b102e18285",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "e0da782f-08f6-44ef-98b6-fcbe85b9a50b",
+					"name": "updatedAt",
+					"parent": "2b1669d8-3e99-4291-a41e-87b102e18285",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "8986e76d-a3f0-48a0-d4b5-1884ea46e8a8",
+					"name": "createdBy",
+					"parent": "2b1669d8-3e99-4291-a41e-87b102e18285",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "af0b9b4c-23cb-4754-9d2d-548b42f6d72e",
+					"name": "changedBy",
+					"parent": "2b1669d8-3e99-4291-a41e-87b102e18285",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "f7c0c951-de89-4f26-c3c3-cdcf0ffd6281",
+					"name": "name",
+					"parent": "2b1669d8-3e99-4291-a41e-87b102e18285",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "4317e0a0-a6d8-44da-f35c-22cec6b42767",
+					"name": "description",
+					"parent": "2b1669d8-3e99-4291-a41e-87b102e18285",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "2b1669d8-3e99-4291-a41e-87b102e18285",
+					"name": "category",
+					"parent": "",
+					"description": "",
+					"objectType": "array",
+					"objectName": "category",
+					"isParent": true,
+					"children": [
+						{
+							"id": "2e07c1b4-fb6d-40a7-a5bd-7a8163e3f07a",
+							"name": "id",
+							"parent": "2b1669d8-3e99-4291-a41e-87b102e18285",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "b5db8544-e7c5-486a-8ff3-88ec2bb871a2",
+							"name": "createdAt",
+							"parent": "2b1669d8-3e99-4291-a41e-87b102e18285",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "e0da782f-08f6-44ef-98b6-fcbe85b9a50b",
+							"name": "updatedAt",
+							"parent": "2b1669d8-3e99-4291-a41e-87b102e18285",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "8986e76d-a3f0-48a0-d4b5-1884ea46e8a8",
+							"name": "createdBy",
+							"parent": "2b1669d8-3e99-4291-a41e-87b102e18285",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "af0b9b4c-23cb-4754-9d2d-548b42f6d72e",
+							"name": "changedBy",
+							"parent": "2b1669d8-3e99-4291-a41e-87b102e18285",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "f7c0c951-de89-4f26-c3c3-cdcf0ffd6281",
+							"name": "name",
+							"parent": "2b1669d8-3e99-4291-a41e-87b102e18285",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "4317e0a0-a6d8-44da-f35c-22cec6b42767",
+							"name": "description",
+							"parent": "2b1669d8-3e99-4291-a41e-87b102e18285",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "f427b4ae-1f74-4ed5-d4a2-c2103fa89958",
+			"name": "Error",
+			"description": "",
+			"isInclude": false,
+			"properties": [
+				{
+					"id": "b6d20129-c285-46ff-ef77-95bed97273da",
+					"name": "status",
+					"objectType": "string",
+					"description": "",
+					"required": false,
+					"value": "",
+					"minLength": "",
+					"maxLength": "",
+					"default": "",
+					"example": "",
+					"isParent": false,
+					"children": [],
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"showNameField": true
+				}
+			]
+		},
+		{
+			"id": "46a21bd6-7b84-411a-d08b-602c029a34cf",
+			"name": "ID",
+			"description": "",
+			"isInclude": false,
+			"properties": [
+				{
+					"id": "8d875d06-3e7b-45a1-ed59-c69ea434211b",
+					"name": "id",
+					"objectType": "string",
+					"description": "",
+					"required": true,
+					"value": "",
+					"minLength": "",
+					"maxLength": "",
+					"default": "",
+					"example": "",
+					"isParent": false,
+					"children": []
+				}
+			]
+		},
+		{
+			"id": "f5db73f1-975c-4c8e-ca8b-511c66df8d43",
+			"name": "TrackingCategory",
+			"description": "",
+			"isInclude": false,
+			"properties": [
+				{
+					"id": "9e483cc5-9319-470c-b4c8-a54fe0f0fbd7",
+					"name": "name",
+					"parent": "",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				}
+			]
+		}
+	],
+	"documentation": [],
+	"name": "CoreAPI Tools_TrackingSettings",
+	"endpoint": "https://[yourDomain].com/api/functions/TrackingSetting",
+	"ver": "23.2.3.1837",
+	"version": "2.2.0",
+	"description": "API to access results of Planet 9 Tracking Customised settings list",
+	"mediaType": null,
+	"securitySchemes": null,
+	"swaggerURI": null,
+	"swaggerSystem": null,
+	"apiType": "",
+	"about": "<p><strong style=\"white-space: unset; font-size: 1rem;\">Description</strong><br></p><p>Planet 9-API Tools_TrackingSettings maintains the list Planet 9 Tracking customized settings.</p><p>API Tools_TrackingSettings is the Planet 9 API to access the API of Planet 9 Tracking settings and the operations performed on them.</p><p><strong>Operations Performed</strong></p><p><strong style=\"white-space: unset; font-size: 1rem;\">List</strong><br></p><p>Get the tracking list.<span style=\"white-space: unset; font-size: 1rem;\">&nbsp;</span></p><table class=\"table\" style=\"width: 730px;\"><tbody><tr><td>Response</td><td>List(array)- Definition&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<br></td></tr></tbody></table><br><p><strong>Save</strong></p><p>Save the tracking category</p><p></p><table class=\"table\"><tbody><tr><td>Request</td><td>TrackingCategory(object)-Definition&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</td></tr><tr><td>Response</td><td>List(object)-Definition</td></tr></tbody></table><br><p></p><p><strong>Delete</strong></p><p>Delete the tracking category</p><p></p><table class=\"table\"><tbody><tr><td>Request</td><td>ID&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</td></tr></tbody></table><br><p></p><p><br></p>",
+	"enableProxy": true,
+	"restrictAccess": false,
+	"enableTrace": false,
+	"enableIDE": false,
+	"internalAPI": false,
+	"isPublic": false,
+	"tlsAllowUntrusted": true,
+	"useOwnProcess": false,
+	"package": "25602b27-7c0d-ed11-b47a-000d3ab2359f",
+	"apiGroup": "3a991f98-214e-428e-811c-1964a5766113",
+	"apiFormat": 0,
+	"roles": []
+}

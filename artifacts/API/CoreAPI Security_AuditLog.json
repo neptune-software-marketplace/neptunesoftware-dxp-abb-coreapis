@@ -1,0 +1,275 @@
+{
+	"id": "887eebe3-bd8d-47cd-b5f4-f07f4fd1d50c",
+	"createdAt": "2022-02-04T15:04:32.966Z",
+	"createdBy": "lloyd",
+	"auth": [],
+	"endpoints": [],
+	"paths": [
+		{
+			"id": "a140de42-2654-470c-e4b6-f386b8755288",
+			"method": "POST",
+			"path": "/List",
+			"description": "Operation to get Audit Log List",
+			"parameters": [],
+			"headers": [],
+			"responses": [
+				{
+					"status": "200",
+					"description": "OK",
+					"headers": [],
+					"body": [],
+					"content": [
+						{
+							"id": "b727a0a3-ee8e-480f-b157-a39aba361ab4",
+							"name": "List",
+							"objectType": "array"
+						}
+					]
+				}
+			],
+			"summary": "Operation to get Audit Log List",
+			"example": [
+				"==OBJECT STRING==",
+				"[{",
+				"    \"id\": \"7ad3a42f-ec56-4cc3-a507-500f1693e203\",",
+				"    \"updatedAt\": \"2020-05-15T10:43:58.212Z\",",
+				"    \"changedBy\": \"priyanka\",",
+				"    \"objectType\": \"API\",",
+				"    \"objectKey\": \"887eebe3-bd8d-47cd-b5f4-f07f4fd1d50c\",",
+				"    \"action\": \"Save\"",
+				"}, {",
+				"    \"id\": \"0a58dabf-fcde-4649-95c4-066919d0c108\",",
+				"    \"updatedAt\": \"2020-05-15T10:41:37.138Z\",",
+				"    \"changedBy\": \"priyanka\",",
+				"    \"objectType\": \"API\",",
+				"    \"objectKey\": \"49d85b6f-5af8-42b4-b9f0-8672aa846352\",",
+				"    \"action\": \"Save\"",
+				"}, {",
+				"    \"id\": \"3077057d-0173-4296-9242-d48b1aa700c5\",",
+				"    \"updatedAt\": \"2020-05-15T10:41:13.863Z\",",
+				"    \"changedBy\": \"priyanka\",",
+				"    \"objectType\": \"API\",",
+				"    \"objectKey\": \"49d85b6f-5af8-42b4-b9f0-8672aa846352\",",
+				"    \"action\": \"Save\"",
+				"}]",
+				""
+			]
+		},
+		{
+			"id": "fdbdf6d2-09ed-42ec-f020-ffd02fd9852e",
+			"method": "POST",
+			"path": "/Get",
+			"description": "Get selected Log details and content",
+			"parameters": [],
+			"headers": [],
+			"responses": [
+				{
+					"status": "200",
+					"description": "OK",
+					"headers": [],
+					"body": [],
+					"content": [
+						{
+							"id": "0e5e4fae-6fa3-4c32-b118-137c58f8570b",
+							"name": "List",
+							"objectType": "object"
+						}
+					]
+				},
+				{
+					"status": "500",
+					"description": "ERROR",
+					"headers": [],
+					"body": [],
+					"content": [
+						{
+							"id": "e0fbce13-6c32-48c2-942d-f00678bb43d4",
+							"name": "Error",
+							"objectType": "object"
+						}
+					]
+				}
+			],
+			"content": [
+				{
+					"name": "ID",
+					"objectType": "object"
+				}
+			],
+			"summary": "Get selected Log details and content",
+			"example": [
+				"==OBJECT STRING==",
+				"{",
+				"    \"id\": \"7ad3a42f-ec56-4cc3-a507-500f1693e203\",",
+				"    \"createdAt\": \"2020-05-15T10:43:58.212Z\",",
+				"    \"updatedAt\": \"2020-05-15T10:43:58.212Z\",",
+				"    \"changedBy\": \"priyanka\",",
+				"    \"objectType\": \"API\",",
+				"    \"objectKey\": \"887eebe3-bd8d-47cd-b5f4-f07f4fd1d50c\",",
+				"    \"action\": \"Save\",",
+				"    \"content\": \"{\\\"id\\\":\\\"887eebe3-bd8d-47cd-b5f4-f07f4fd1d50c\\\",\\\"changedBy\\\":\\\"priyanka\\\",\\\"auth\\\":[],\\\"endpoints\\\":[],\\\"paths\\\":[{\\\"id\\\":\\\"a140de42-2654-470c-e4b6-f386b8755288\\\",\\\"method\\\":\\\"POST\\\",\\\"path\\\":\\\"/List\\\",\\\"description\\\":\\\"Operation to get Audit Log List\\\",\\\"parameters\\\":[],\\\"headers\\\":[],\\\"responses\\\":[{\\\"status\\\":\\\"200\\\",\\\"description\\\":\\\"OK\\\",\\\"headers\\\":[],\\\"body\\\":[],\\\"content\\\":[{\\\"id\\\":\\\"b727a0a3-ee8e-480f-b157-a39aba361ab4\\\",\\\"name\\\":\\\"List\\\",\\\"objectType\\\":\\\"array\\\"}]}],\\\"summary\\\":\\\"Operation to get Audit Log List\\\"},{\\\"id\\\":\\\"fdbdf6d2-09ed-42ec-f020-ffd02fd9852e\\\",\\\"method\\\":\\\"POST\\\",\\\"path\\\":\\\"/Get\\\",\\\"description\\\":\\\"Get selected Log details and content\\\",\\\"parameters\\\":[],\\\"headers\\\":[],\\\"responses\\\":[{\\\"status\\\":\\\"200\\\",\\\"description\\\":\\\"OK\\\",\\\"headers\\\":[],\\\"body\\\":[],\\\"content\\\":[{\\\"id\\\":\\\"0e5e4fae-6fa3-4c32-b118-137c58f8570b\\\",\\\"name\\\":\\\"List\\\",\\\"objectType\\\":\\\"object\\\"}]},{\\\"status\\\":\\\"500\\\",\\\"description\\\":\\\"ERROR\\\",\\\"headers\\\":[],\\\"body\\\":[],\\\"content\\\":[{\\\"id\\\":\\\"e0fbce13-6c32-48c2-942d-f00678bb43d4\\\",\\\"name\\\":\\\"Error\\\",\\\"objectType\\\":\\\"object\\\"}]}],\\\"content\\\":[{\\\"name\\\":\\\"ID\\\",\\\"objectType\\\":\\\"object\\\"}],\\\"summary\\\":\\\"Get selected Log details and content\\\"},{\\\"id\\\":\\\"cc5ba4d6-14b9-43c7-cfb5-e38857f57b86\\\",\\\"method\\\":\\\"POST\\\",\\\"path\\\":\\\"/Delete\\\",\\\"description\\\":\\\"Delete the Audit Log and its content\\\",\\\"parameters\\\":[],\\\"headers\\\":[],\\\"responses\\\":[{\\\"status\\\":\\\"200\\\",\\\"description\\\":\\\"OK\\\",\\\"headers\\\":[],\\\"body\\\":[]}],\\\"content\\\":[{\\\"name\\\":\\\"ID\\\",\\\"objectType\\\":\\\"object\\\"}],\\\"summary\\\":\\\"Delete the Audit Log and its content\\\"}],\\\"definitions\\\":[{\\\"id\\\":\\\"93bcaeec-e53c-4277-d931-9b5b311b6405\\\",\\\"name\\\":\\\"List\\\",\\\"description\\\":\\\"\\\",\\\"isInclude\\\":false,\\\"properties\\\":[{\\\"id\\\":\\\"7c25cfc3-288d-47a1-ff04-ba0cc2ef2fc3\\\",\\\"name\\\":\\\"id\\\",\\\"parent\\\":\\\"\\\",\\\"description\\\":\\\"\\\",\\\"objectType\\\":\\\"string\\\",\\\"isParent\\\":false,\\\"children\\\":[]},{\\\"id\\\":\\\"31fd6624-aa3a-470f-ba4a-dc95c7b42f86\\\",\\\"name\\\":\\\"updatedAt\\\",\\\"parent\\\":\\\"\\\",\\\"description\\\":\\\"\\\",\\\"objectType\\\":\\\"string\\\",\\\"isParent\\\":false,\\\"children\\\":[]},{\\\"id\\\":\\\"e3687c4f-c6fd-445f-dddb-8112483d1679\\\",\\\"name\\\":\\\"changedBy\\\",\\\"parent\\\":\\\"\\\",\\\"description\\\":\\\"\\\",\\\"objectType\\\":\\\"string\\\",\\\"isParent\\\":false,\\\"children\\\":[]},{\\\"id\\\":\\\"e18bcd1f-6b10-4889-feb4-753421b70597\\\",\\\"name\\\":\\\"objectType\\\",\\\"parent\\\":\\\"\\\",\\\"description\\\":\\\"\\\",\\\"objectType\\\":\\\"string\\\",\\\"isParent\\\":false,\\\"children\\\":[]},{\\\"id\\\":\\\"5e4e1ea9-f538-43df-960d-454e110b98e2\\\",\\\"name\\\":\\\"objectKey\\\",\\\"parent\\\":\\\"\\\",\\\"description\\\":\\\"\\\",\\\"objectType\\\":\\\"string\\\",\\\"isParent\\\":false,\\\"children\\\":[]},{\\\"id\\\":\\\"4b0e50b5-450c-4bd5-ce6b-3a60f925a465\\\",\\\"name\\\":\\\"action\\\",\\\"parent\\\":\\\"\\\",\\\"description\\\":\\\"\\\",\\\"objectType\\\":\\\"string\\\",\\\"isParent\\\":false,\\\"children\\\":[]}]},{\\\"id\\\":\\\"b1dfff2a-5871-4565-8e9d-5d441b588346\\\",\\\"name\\\":\\\"ID\\\",\\\"description\\\":\\\"ID\\\",\\\"isInclude\\\":false,\\\"properties\\\":[{\\\"id\\\":\\\"1772c88b-634b-48d4-fd2d-6d194a3441e5\\\",\\\"name\\\":\\\"id\\\",\\\"objectType\\\":\\\"string\\\",\\\"description\\\":\\\"\\\",\\\"required\\\":true,\\\"value\\\":\\\"\\\",\\\"minLength\\\":\\\"\\\",\\\"maxLength\\\":\\\"\\\",\\\"default\\\":\\\"\\\",\\\"example\\\":\\\"\\\",\\\"isParent\\\":false,\\\"children\\\":[]}]},{\\\"id\\\":\\\"ae4e25f1-84df-4c7e-c4a5-c66e4800da24\\\",\\\"name\\\":\\\"Error\\\",\\\"description\\\":\\\"ERROR\\\",\\\"isInclude\\\":false,\\\"properties\\\":[{\\\"id\\\":\\\"6510ca2b-d33f-424d-b203-7030d5b72028\\\",\\\"name\\\":\\\"status\\\",\\\"objectType\\\":\\\"string\\\",\\\"description\\\":\\\"\\\",\\\"required\\\":false,\\\"value\\\":\\\"\\\",\\\"minLength\\\":\\\"\\\",\\\"maxLength\\\":\\\"\\\",\\\"default\\\":\\\"\\\",\\\"example\\\":\\\"\\\",\\\"isParent\\\":false,\\\"children\\\":[]}]}],\\\"documentation\\\":[],\\\"name\\\":\\\"API Security_AuditLog\\\",\\\"endpoint\\\":\\\"https://planet9dev.neptune-software.com:8081/api/functions/AuditLog\\\",\\\"ver\\\":\\\"20.5.15.1243\\\",\\\"version\\\":\\\"1.0.0\\\",\\\"description\\\":\\\"API to access results of Planet 9 Security_AuditLog Details.\\\",\\\"mediaType\\\":null,\\\"securitySchemes\\\":null,\\\"swaggerURI\\\":null,\\\"swaggerSystem\\\":null,\\\"apiType\\\":\\\"\\\",\\\"about\\\":\\\"<p><strong style=\\\\\\\"white-space: unset; font-size: 1rem;\\\\\\\">Description</strong><br></p><p>Planet 9-Security_AuditLogs maintains the list of the planet 9 users logs.</p><p>API Security_AuditLogs is the Planet 9 API to access the Planet 9 \\\\\\\"Users logs\\\\\\\" and the operations performed on them.</p><p>You can use API Security_AuditLogs&nbsp;in your app to capture the logs information dynamically.</p><p>Every app must have the right roles (permissions) and authentication that enables access to the Security_AuditLogs&nbsp;API.</p><p><strong>Operations Performed</strong></p><p><strong>Get</strong></p><p>Get the selected audit log</p><table class=\\\\\\\"table\\\\\\\" style=\\\\\\\"width: 730px;\\\\\\\"><tbody><tr><td>Request</td><td>ID</td></tr><tr><td>Response</td><td>List(object)- Definition&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</td></tr></tbody></table><p><strong style=\\\\\\\"white-space: unset; font-size: 1rem;\\\\\\\">List</strong><br></p><p>Get the list of the audit logs</p><table class=\\\\\\\"table\\\\\\\" style=\\\\\\\"width: 730px;\\\\\\\"><tbody><tr><td>Response</td><td>List(array)- Definition&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</td></tr></tbody></table><p><strong style=\\\\\\\"white-space: unset; font-size: 1rem;\\\\\\\"><br>Delete</strong><br></p><p>Delete the selected log</p><table class=\\\\\\\"table\\\\\\\" style=\\\\\\\"width: 730px;\\\\\\\"><tbody><tr><td>Request</td><td>ID&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</td></tr></tbody></table><br><br><p><strong style=\\\\\\\"white-space: unset; font-size: 1rem;\\\\\\\">Definitions</strong><br></p><p><strong style=\\\\\\\"white-space: unset; font-size: 1rem;\\\\\\\">List</strong></p><p><span class=\\\\\\\"brace-open object\\\\\\\" style=\\\\\\\"box-sizing: inherit; color: rgb(59, 65, 81); font-family: monospace; font-size: 12px; font-weight: 600; background-color: rgba(0, 0, 0, 0.07);\\\\\\\">{</span><span class=\\\\\\\"inner-object\\\\\\\" style=\\\\\\\"box-sizing: inherit; color: rgb(59, 65, 81); font-family: monospace; font-size: 12px; font-weight: 600; background-color: rgba(0, 0, 0, 0.07);\\\\\\\"></span></p><table class=\\\\\\\"model\\\\\\\" style=\\\\\\\"width: 217.778px; padding: 0px 10px; border-collapse: collapse; font-size: 12px; font-family: monospace; font-weight: 600; color: rgb(59, 65, 81);\\\\\\\"><tbody style=\\\\\\\"box-sizing: inherit;\\\\\\\"><tr class=\\\\\\\"false\\\\\\\"><td style=\\\\\\\"padding: 0px 0.2em 0px 2em; vertical-align: top; max-width: 20%; min-width: 6em; width: 174px;\\\\\\\">id</td><td style=\\\\\\\"padding: 0px; vertical-align: top;\\\\\\\"><span class=\\\\\\\"model\\\\\\\" style=\\\\\\\"box-sizing: inherit;\\\\\\\"><span class=\\\\\\\"prop\\\\\\\" style=\\\\\\\"box-sizing: inherit;\\\\\\\"><span class=\\\\\\\"prop-type\\\\\\\" style=\\\\\\\"box-sizing: inherit; color: rgb(85, 85, 170);\\\\\\\">string</span></span></span></td></tr><tr class=\\\\\\\"false\\\\\\\"><td style=\\\\\\\"padding: 0px 0.2em 0px 2em; vertical-align: top; max-width: 20%; min-width: 6em; width: 174px;\\\\\\\">updatedAt</td><td style=\\\\\\\"padding: 0px; vertical-align: top;\\\\\\\"><span class=\\\\\\\"model\\\\\\\" style=\\\\\\\"box-sizing: inherit;\\\\\\\"><span class=\\\\\\\"prop\\\\\\\" style=\\\\\\\"box-sizing: inherit;\\\\\\\"><span class=\\\\\\\"prop-type\\\\\\\" style=\\\\\\\"box-sizing: inherit; color: rgb(85, 85, 170);\\\\\\\">string</span></span></span></td></tr><tr class=\\\\\\\"false\\\\\\\"><td style=\\\\\\\"padding: 0px 0.2em 0px 2em; vertical-align: top; max-width: 20%; min-width: 6em; width: 174px;\\\\\\\">changedBy</td><td style=\\\\\\\"padding: 0px; vertical-align: top;\\\\\\\"><span class=\\\\\\\"model\\\\\\\" style=\\\\\\\"box-sizing: inherit;\\\\\\\"><span class=\\\\\\\"prop\\\\\\\" style=\\\\\\\"box-sizing: inherit;\\\\\\\"><span class=\\\\\\\"prop-type\\\\\\\" style=\\\\\\\"box-sizing: inherit; color: rgb(85, 85, 170);\\\\\\\">string</span></span></span></td></tr><tr class=\\\\\\\"false\\\\\\\"><td style=\\\\\\\"padding: 0px 0.2em 0px 2em; vertical-align: top; max-width: 20%; min-width: 6em; width: 174px;\\\\\\\">objectType</td><td style=\\\\\\\"padding: 0px; vertical-align: top;\\\\\\\"><span class=\\\\\\\"model\\\\\\\" style=\\\\\\\"box-sizing: inherit;\\\\\\\"><span class=\\\\\\\"prop\\\\\\\" style=\\\\\\\"box-sizing: inherit;\\\\\\\"><span class=\\\\\\\"prop-type\\\\\\\" style=\\\\\\\"box-sizing: inherit; color: rgb(85, 85, 170);\\\\\\\">string</span></span></span></td></tr><tr class=\\\\\\\"false\\\\\\\"><td style=\\\\\\\"padding: 0px 0.2em 0px 2em; vertical-align: top; max-width: 20%; min-width: 6em; width: 174px;\\\\\\\">objectKey</td><td style=\\\\\\\"padding: 0px; vertical-align: top;\\\\\\\"><span class=\\\\\\\"model\\\\\\\" style=\\\\\\\"box-sizing: inherit;\\\\\\\"><span class=\\\\\\\"prop\\\\\\\" style=\\\\\\\"box-sizing: inherit;\\\\\\\"><span class=\\\\\\\"prop-type\\\\\\\" style=\\\\\\\"box-sizing: inherit; color: rgb(85, 85, 170);\\\\\\\">string</span></span></span></td></tr><tr class=\\\\\\\"false\\\\\\\"><td style=\\\\\\\"padding: 0px 0.2em 0px 2em; vertical-align: top; max-width: 20%; min-width: 6em; width: 174px;\\\\\\\">action</td><td style=\\\\\\\"padding: 0px; vertical-align: top;\\\\\\\"><span class=\\\\\\\"model\\\\\\\" style=\\\\\\\"box-sizing: inherit;\\\\\\\"><span class=\\\\\\\"prop\\\\\\\" style=\\\\\\\"box-sizing: inherit;\\\\\\\"><span class=\\\\\\\"prop-type\\\\\\\" style=\\\\\\\"box-sizing: inherit; color: rgb(85, 85, 170);\\\\\\\">string</span></span></span></td></tr></tbody></table><p><span class=\\\\\\\"inner-object\\\\\\\" style=\\\\\\\"box-sizing: inherit; color: rgb(59, 65, 81); font-family: monospace; font-size: 12px; font-weight: 600; background-color: rgba(0, 0, 0, 0.07);\\\\\\\"></span><span class=\\\\\\\"brace-close\\\\\\\" style=\\\\\\\"box-sizing: inherit; color: rgb(59, 65, 81); font-family: monospace; font-size: 12px; font-weight: 600; background-color: rgba(0, 0, 0, 0.07);\\\\\\\">}</span><strong style=\\\\\\\"white-space: unset; font-size: 1rem;\\\\\\\"><br></strong></p><p><strong style=\\\\\\\"white-space: unset; font-size: 1rem;\\\\\\\">ID</strong></p><p><span class=\\\\\\\"brace-open object\\\\\\\" style=\\\\\\\"box-sizing: inherit; color: rgb(59, 65, 81); font-family: monospace; font-size: 12px; font-weight: 600; background-color: rgba(0, 0, 0, 0.07);\\\\\\\">{</span><span class=\\\\\\\"inner-object\\\\\\\" style=\\\\\\\"box-sizing: inherit; color: rgb(59, 65, 81); font-family: monospace; font-size: 12px; font-weight: 600; background-color: rgba(0, 0, 0, 0.07);\\\\\\\"></span></p><table class=\\\\\\\"model\\\\\\\" style=\\\\\\\"width: 217.778px; padding: 0px 10px; border-collapse: collapse; font-size: 12px; font-family: monospace; font-weight: 600; color: rgb(59, 65, 81);\\\\\\\"><tbody style=\\\\\\\"box-sizing: inherit;\\\\\\\"><tr class=\\\\\\\"false\\\\\\\"><td style=\\\\\\\"padding: 0px 0.2em 0px 2em; vertical-align: top; max-width: 20%; min-width: 6em; width: 174px;\\\\\\\">id<span style=\\\\\\\"box-sizing: inherit; color: red;\\\\\\\">*</span></td><td style=\\\\\\\"padding: 0px; vertical-align: top;\\\\\\\"><span class=\\\\\\\"model\\\\\\\" style=\\\\\\\"box-sizing: inherit;\\\\\\\"><span class=\\\\\\\"prop\\\\\\\" style=\\\\\\\"box-sizing: inherit;\\\\\\\"><span class=\\\\\\\"prop-type\\\\\\\" style=\\\\\\\"box-sizing: inherit; color: rgb(85, 85, 170);\\\\\\\">string</span></span></span></td></tr></tbody></table><p><span class=\\\\\\\"inner-object\\\\\\\" style=\\\\\\\"box-sizing: inherit; color: rgb(59, 65, 81); font-family: monospace; font-size: 12px; font-weight: 600; background-color: rgba(0, 0, 0, 0.07);\\\\\\\"></span><span class=\\\\\\\"brace-close\\\\\\\" style=\\\\\\\"box-sizing: inherit; color: rgb(59, 65, 81); font-family: monospace; font-size: 12px; font-weight: 600; background-color: rgba(0, 0, 0, 0.07);\\\\\\\">}</span><strong style=\\\\\\\"white-space: unset; font-size: 1rem;\\\\\\\"><br></strong></p><p><strong style=\\\\\\\"white-space: unset; font-size: 1rem;\\\\\\\">Error</strong></p><p><span style=\\\\\\\"box-sizing: inherit; color: rgb(59, 65, 81); font-family: monospace; font-size: 12px; font-weight: 600; background-color: rgba(0, 0, 0, 0.07); cursor: pointer;\\\\\\\"><span class=\\\\\\\"model-toggle\\\\\\\" style=\\\\\\\"box-sizing: inherit; font-size: 10px; position: relative; top: 6px; display: inline-block; margin: auto 0.3em; cursor: pointer; transition: transform 0.15s ease-in 0s, -webkit-transform 0.15s ease-in 0s; transform: rotate(90deg); transform-origin: 50% 50%;\\\\\\\"></span></span><span class=\\\\\\\"brace-open object\\\\\\\" style=\\\\\\\"box-sizing: inherit; color: rgb(59, 65, 81); font-family: monospace; font-size: 12px; font-weight: 600; background-color: rgba(0, 0, 0, 0.07);\\\\\\\">{</span><span class=\\\\\\\"inner-object\\\\\\\" style=\\\\\\\"box-sizing: inherit; color: rgb(59, 65, 81); font-family: monospace; font-size: 12px; font-weight: 600; background-color: rgba(0, 0, 0, 0.07);\\\\\\\"></span></p><table class=\\\\\\\"model\\\\\\\" style=\\\\\\\"width: 217.778px; padding: 0px 10px; border-collapse: collapse; font-size: 12px; font-family: monospace; font-weight: 600; color: rgb(59, 65, 81);\\\\\\\"><tbody style=\\\\\\\"box-sizing: inherit;\\\\\\\"><tr class=\\\\\\\"false\\\\\\\"><td style=\\\\\\\"padding: 0px 0.2em 0px 2em; vertical-align: top; max-width: 20%; min-width: 6em; width: 174px;\\\\\\\">status</td><td style=\\\\\\\"padding: 0px; vertical-align: top;\\\\\\\"><span class=\\\\\\\"model\\\\\\\" style=\\\\\\\"box-sizing: inherit;\\\\\\\"><span class=\\\\\\\"prop\\\\\\\" style=\\\\\\\"box-sizing: inherit;\\\\\\\"><span class=\\\\\\\"prop-type\\\\\\\" style=\\\\\\\"box-sizing: inherit; color: rgb(85, 85, 170);\\\\\\\">string</span></span></span></td></tr></tbody></table><p><span class=\\\\\\\"inner-object\\\\\\\" style=\\\\\\\"box-sizing: inherit; color: rgb(59, 65, 81); font-family: monospace; font-size: 12px; font-weight: 600; background-color: rgba(0, 0, 0, 0.07);\\\\\\\"></span><span class=\\\\\\\"brace-close\\\\\\\" style=\\\\\\\"box-sizing: inherit; color: rgb(59, 65, 81); font-family: monospace; font-size: 12px; font-weight: 600; background-color: rgba(0, 0, 0, 0.07);\\\\\\\">}</span><strong style=\\\\\\\"white-space: unset; font-size: 1rem;\\\\\\\"><br></strong></p>\\\",\\\"enableProxy\\\":false,\\\"enableTrace\\\":false,\\\"enableIDE\\\":false,\\\"internalAPI\\\":false,\\\"isPublic\\\":false,\\\"tlsAllowUntrusted\\\":false,\\\"useOwnProcess\\\":false,\\\"package\\\":null,\\\"apiGroup\\\":\\\"0aec4af7-0b2c-4843-9646-a5606347ef63\\\",\\\"apps\\\":[],\\\"roles\\\":[]}\"",
+				"}"
+			]
+		},
+		{
+			"id": "cc5ba4d6-14b9-43c7-cfb5-e38857f57b86",
+			"method": "POST",
+			"path": "/Delete",
+			"description": "Delete the Audit Log and its content",
+			"parameters": [],
+			"headers": [],
+			"responses": [
+				{
+					"status": "200",
+					"description": "OK",
+					"headers": [],
+					"body": [],
+					"content": []
+				}
+			],
+			"content": [
+				{
+					"name": "ID",
+					"objectType": "object"
+				}
+			],
+			"summary": "Delete the Audit Log and its content"
+		}
+	],
+	"definitions": [
+		{
+			"id": "93bcaeec-e53c-4277-d931-9b5b311b6405",
+			"name": "List",
+			"description": "",
+			"isInclude": false,
+			"properties": [
+				{
+					"id": "7c25cfc3-288d-47a1-ff04-ba0cc2ef2fc3",
+					"name": "id",
+					"parent": "",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "31fd6624-aa3a-470f-ba4a-dc95c7b42f86",
+					"name": "updatedAt",
+					"parent": "",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "e3687c4f-c6fd-445f-dddb-8112483d1679",
+					"name": "changedBy",
+					"parent": "",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "e18bcd1f-6b10-4889-feb4-753421b70597",
+					"name": "objectType",
+					"parent": "",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "5e4e1ea9-f538-43df-960d-454e110b98e2",
+					"name": "objectKey",
+					"parent": "",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "4b0e50b5-450c-4bd5-ce6b-3a60f925a465",
+					"name": "action",
+					"parent": "",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				}
+			]
+		},
+		{
+			"id": "b1dfff2a-5871-4565-8e9d-5d441b588346",
+			"name": "ID",
+			"description": "ID",
+			"isInclude": false,
+			"properties": [
+				{
+					"id": "1772c88b-634b-48d4-fd2d-6d194a3441e5",
+					"name": "id",
+					"objectType": "string",
+					"description": "",
+					"required": true,
+					"value": "",
+					"minLength": "",
+					"maxLength": "",
+					"default": "",
+					"example": "",
+					"isParent": false,
+					"children": [],
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"showNameField": true
+				}
+			]
+		},
+		{
+			"id": "ae4e25f1-84df-4c7e-c4a5-c66e4800da24",
+			"name": "Error",
+			"description": "ERROR",
+			"isInclude": false,
+			"properties": [
+				{
+					"id": "6510ca2b-d33f-424d-b203-7030d5b72028",
+					"name": "status",
+					"objectType": "string",
+					"description": "",
+					"required": false,
+					"value": "",
+					"minLength": "",
+					"maxLength": "",
+					"default": "",
+					"example": "",
+					"isParent": false,
+					"children": []
+				}
+			]
+		}
+	],
+	"documentation": [],
+	"name": "CoreAPI Security_AuditLog",
+	"endpoint": "https://[yourDomain].com/api/functions/AuditLog",
+	"ver": "23.2.3.1833",
+	"version": "2.2.0",
+	"description": "API to access results of Planet 9 Security_AuditLog Details.",
+	"mediaType": null,
+	"securitySchemes": null,
+	"swaggerURI": null,
+	"swaggerSystem": null,
+	"apiType": "",
+	"about": "<p><strong style=\"white-space: unset; font-size: 1rem;\">Description</strong><br></p><p>Planet 9-Security_AuditLogs maintains the list of the planet 9 users logs.</p><p>API Security_AuditLogs is the Planet 9 API to access the Planet 9 \"Users logs\" and the operations performed on them.</p><p>You can use API Security_AuditLogs&nbsp;in your app to capture the logs information dynamically.</p><p>Every app must have the right roles (permissions) and authentication that enables access to the Security_AuditLogs&nbsp;API.</p><p><strong>Operations Performed</strong></p><p><strong>Get</strong></p><p>Get the selected audit log</p><table class=\"table\" style=\"width: 730px;\"><tbody><tr><td>Request</td><td>ID</td></tr><tr><td>Response</td><td>List(object)- Definition&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</td></tr></tbody></table><p><strong style=\"white-space: unset; font-size: 1rem;\">List</strong><br></p><p>Get the list of the audit logs</p><table class=\"table\" style=\"width: 730px;\"><tbody><tr><td>Response</td><td>List(array)- Definition&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</td></tr></tbody></table><p><strong style=\"white-space: unset; font-size: 1rem;\"><br>Delete</strong><br></p><p>Delete the selected log</p><table class=\"table\" style=\"width: 730px;\"><tbody><tr><td>Request</td><td>ID&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</td></tr></tbody></table>",
+	"enableProxy": true,
+	"restrictAccess": false,
+	"enableTrace": false,
+	"enableIDE": false,
+	"internalAPI": false,
+	"isPublic": false,
+	"tlsAllowUntrusted": true,
+	"useOwnProcess": false,
+	"package": "25602b27-7c0d-ed11-b47a-000d3ab2359f",
+	"apiGroup": "2e09ada0-0db5-4f48-b2bf-327f6fa5ffdf",
+	"apiFormat": 0,
+	"roles": []
+}

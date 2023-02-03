@@ -1,0 +1,3927 @@
+{
+	"id": "a6578fb0-1751-485e-802c-73d234b10353",
+	"createdAt": "2022-02-04T15:44:46.153Z",
+	"createdBy": "lloyd",
+	"auth": [],
+	"endpoints": [],
+	"paths": [
+		{
+			"id": "7e12b380-eabb-4638-c0dd-c39e3b5a1ef4",
+			"method": "POST",
+			"path": "/List",
+			"description": "Operation to get API list",
+			"parameters": [],
+			"headers": [],
+			"responses": [
+				{
+					"status": "200",
+					"description": "OK",
+					"headers": [],
+					"body": [],
+					"content": [
+						{
+							"id": "8a93a683-ce1e-44ed-b3fb-4a81cef3b075",
+							"name": "APIList ",
+							"objectType": "array"
+						}
+					]
+				}
+			],
+			"summary": "Operation to get API list",
+			"example": [
+				"==OBJECT STRING==",
+				"[",
+				"    {",
+				"        \"id\": \"e25cbe40-9642-44a0-90f9-22d86e801183\",",
+				"        \"path\": \"/contacts/\",",
+				"        \"description\": \"Adds a Contact\",",
+				"        \"summary\": \"Create a Contact\",",
+				"        \"method\": \"POST\",",
+				"        \"example\": \"{\\n  \\\"id\\\": \\\"0e8dd830-ad98-11e6-bf2e-47644ada7c0f\\\",\\n  \\\"firstName\\\": \\\"John\\\",\\n  \\\"lastName\\\": \\\"Smith\\\",\\n  \\\"birthday\\\": 152755200000,\\n  \\\"active\\\": true,\\n  \\\"rank\\\": 1,\\n  \\\"company\\\": \\\"0e8cedd0-ad98-11e6-bf2e-47644ada7c0f\\\"\\n}\",",
+				"        \"responses\": [",
+				"            {",
+				"                \"status\": \"200\",",
+				"                \"description\": \"Status 200\",",
+				"                \"headers\": [],",
+				"                \"content\": [",
+				"                    {",
+				"                        \"objectType\": \"object\",",
+				"                        \"name\": \"Contact\"",
+				"                    }",
+				"                ]",
+				"            }",
+				"        ],",
+				"        \"headers\": [],",
+				"        \"parameters\": [],",
+				"        \"content\": [",
+				"            {",
+				"                \"objectType\": \"object\",",
+				"                \"required\": true,",
+				"                \"name\": \"Contact\"",
+				"            }",
+				"        ],",
+				"        \"tags\": \"Contacts\"",
+				"    },",
+				"    {",
+				"        \"id\": \"e1b4b193-38c2-49fa-8b1c-62ddba2246cf\",",
+				"        \"path\": \"/contacts/(contactid)\",",
+				"        \"description\": \"Loads a Contact\",",
+				"        \"summary\": \"Load an individual Contact\",",
+				"        \"method\": \"GET\",",
+				"        \"example\": \"{\\n  \\\"id\\\": \\\"0e8dd830-ad98-11e6-bf2e-47644ada7c0f\\\",\\n  \\\"firstName\\\": \\\"John\\\",\\n  \\\"lastName\\\": \\\"Smith\\\",\\n  \\\"birthday\\\": 152755200000,\\n  \\\"active\\\": true,\\n  \\\"rank\\\": 1,\\n  \\\"company\\\": \\\"0e8cedd0-ad98-11e6-bf2e-47644ada7c0f\\\"\\n}\",",
+				"        \"responses\": [",
+				"            {",
+				"                \"status\": \"200\",",
+				"                \"description\": \"Status 200\",",
+				"                \"headers\": [],",
+				"                \"content\": [",
+				"                    {",
+				"                        \"objectType\": \"object\",",
+				"                        \"name\": \"Contact\"",
+				"                    }",
+				"                ]",
+				"            }",
+				"        ]",
+				"    }",
+				"]"
+			]
+		},
+		{
+			"id": "bfe454b1-9b34-4b40-ee02-3d219ad2b7a8",
+			"method": "POST",
+			"path": "/Get",
+			"description": "Operation to get selected API Content",
+			"parameters": [],
+			"headers": [],
+			"responses": [
+				{
+					"status": "200",
+					"description": "OK",
+					"headers": [],
+					"body": [],
+					"content": [
+						{
+							"id": "b7bfdaf8-30f0-4476-ab3f-1603c2235a95",
+							"name": "GetAPI",
+							"objectType": "object"
+						}
+					]
+				},
+				{
+					"status": "500",
+					"description": "ERROR",
+					"headers": [],
+					"body": [],
+					"content": [
+						{
+							"id": "f1c6b22f-b76e-42f2-98db-2274a7c88d8f",
+							"name": "Error",
+							"objectType": "object"
+						}
+					]
+				}
+			],
+			"content": [
+				{
+					"name": "Id",
+					"objectType": "object"
+				}
+			],
+			"summary": "Operation to get selected API Content",
+			"example": [
+				"==OBJECT STRING==",
+				"{",
+				"    \"id\": \"e1b4b193-38c2-49fa-8b1c-62ddba2246cf\",",
+				"    \"path\": \"/contacts/(contactid)\",",
+				"    \"description\": \"Loads a Contact\",",
+				"    \"summary\": \"Load an individual Contact\",",
+				"    \"method\": \"GET\",",
+				"    \"example\": \"{\\n  \\\"id\\\": \\\"0e8dd830-ad98-11e6-bf2e-47644ada7c0f\\\",\\n  \\\"firstName\\\": \\\"John\\\",\\n  \\\"lastName\\\": \\\"Smith\\\",\\n  \\\"birthday\\\": 152755200000,\\n  \\\"active\\\": true,\\n  \\\"rank\\\": 1,\\n  \\\"company\\\": \\\"0e8cedd0-ad98-11e6-bf2e-47644ada7c0f\\\"\\n}\",",
+				"    \"responses\": [",
+				"        {",
+				"            \"status\": \"200\",",
+				"            \"description\": \"Status 200\",",
+				"            \"headers\": [],",
+				"            \"content\": [",
+				"                {",
+				"                    \"objectType\": \"object\",",
+				"                    \"name\": \"Contact\"",
+				"                }",
+				"            ]",
+				"        }",
+				"    ]",
+				"}"
+			]
+		},
+		{
+			"id": "629804ac-0c08-4bfd-b629-d98eb3e89731",
+			"method": "POST",
+			"path": "/Save",
+			"description": "Operation to save API",
+			"parameters": [],
+			"headers": [],
+			"responses": [
+				{
+					"status": "200",
+					"description": "OK",
+					"headers": [],
+					"body": [],
+					"content": [
+						{
+							"id": "9ef81cd8-f498-470c-dc59-9e1e8bd0bf2f",
+							"name": "APIList ",
+							"objectType": "object"
+						}
+					]
+				},
+				{
+					"status": "500",
+					"description": "OK",
+					"headers": [],
+					"body": [],
+					"content": [
+						{
+							"id": "feaaba87-6074-4a30-b41b-95f7e1e77ae5",
+							"name": "Error",
+							"objectType": "object"
+						}
+					]
+				}
+			],
+			"content": [
+				{
+					"name": "Save",
+					"objectType": "object"
+				}
+			],
+			"summary": "Operation to save API"
+		},
+		{
+			"id": "78d0d4aa-cd52-442b-dc58-0b78f6800e5a",
+			"method": "POST",
+			"path": "/Delete",
+			"description": "Operation to delete selected API",
+			"parameters": [],
+			"headers": [],
+			"responses": [
+				{
+					"status": "200",
+					"description": "OK",
+					"headers": [],
+					"body": [],
+					"content": []
+				}
+			],
+			"content": [
+				{
+					"name": "Id",
+					"objectType": "object"
+				}
+			],
+			"summary": "Operation to delete selected API",
+			"example": ""
+		}
+	],
+	"definitions": [
+		{
+			"id": "392c8d4d-b2d7-42ef-8c85-f04ab6ed4137",
+			"name": "APIList ",
+			"description": "Get List of APIs",
+			"isInclude": false,
+			"properties": [
+				{
+					"id": "583ecd37-a889-453d-cb7c-1734c9743b36",
+					"name": "id",
+					"parent": "",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "0326898e-a750-4034-d571-e4fa53fefe7c",
+					"name": "createdAt",
+					"parent": "",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "91563d5a-e3d8-4b2f-f0d3-579870e275f6",
+					"name": "updatedAt",
+					"parent": "",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "162a8537-e40b-4986-a904-2a29ba007271",
+					"name": "createdBy",
+					"parent": "",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "afd7ff1c-a6c9-46c1-9132-3f9aef054f7d",
+					"name": "changedBy",
+					"parent": "",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "0591f9c4-d816-42c3-8dde-1f7f8c56c5c6",
+					"name": "auth",
+					"parent": "",
+					"description": "",
+					"objectType": "array",
+					"objectName": "auth",
+					"isParent": true,
+					"children": []
+				},
+				{
+					"id": "11d6ee0f-c6c8-4948-a29a-cf773887054a",
+					"name": "endpoints",
+					"parent": "",
+					"description": "",
+					"objectType": "array",
+					"objectName": "endpoints",
+					"isParent": true,
+					"children": []
+				},
+				{
+					"id": "3576054b-5173-4be7-c162-0fb905ecc52b",
+					"name": "id",
+					"parent": "231886ca-2e75-40b0-e131-211f55d738f9",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "0cfe0034-0644-4915-f2dc-01f889ee3456",
+					"name": "path",
+					"parent": "231886ca-2e75-40b0-e131-211f55d738f9",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "4c816003-03e1-4f01-dc47-a84c40932071",
+					"name": "method",
+					"parent": "231886ca-2e75-40b0-e131-211f55d738f9",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "d22b7ac8-ecff-4f81-cb9b-dd8265f5da3a",
+					"name": "headers",
+					"parent": "231886ca-2e75-40b0-e131-211f55d738f9",
+					"description": "",
+					"objectType": "array",
+					"objectName": "headers",
+					"isParent": true,
+					"children": []
+				},
+				{
+					"id": "64225a7e-39d9-4d07-9491-c258990a4e5f",
+					"name": "name",
+					"parent": "19502d7b-b582-44d8-fedc-bde8379b6c4b",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "41fa6176-047c-4d7f-d6a1-62faa9b5eab4",
+					"name": "example",
+					"parent": "19502d7b-b582-44d8-fedc-bde8379b6c4b",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "19502d7b-b582-44d8-fedc-bde8379b6c4b",
+					"name": "parameters",
+					"parent": "231886ca-2e75-40b0-e131-211f55d738f9",
+					"description": "",
+					"objectType": "array",
+					"objectName": "parameters",
+					"isParent": true,
+					"children": [
+						{
+							"id": "64225a7e-39d9-4d07-9491-c258990a4e5f",
+							"name": "name",
+							"parent": "19502d7b-b582-44d8-fedc-bde8379b6c4b",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "41fa6176-047c-4d7f-d6a1-62faa9b5eab4",
+							"name": "example",
+							"parent": "19502d7b-b582-44d8-fedc-bde8379b6c4b",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						}
+					]
+				},
+				{
+					"id": "49d5b63a-e83f-457c-b01a-99529ef71bac",
+					"name": "name",
+					"parent": "ee865068-4cb6-42a0-dc2c-5eab0fee7ebb",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "9ad2124b-d078-411c-ad8a-4d70817fa36e",
+					"name": "example",
+					"parent": "ee865068-4cb6-42a0-dc2c-5eab0fee7ebb",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "ee865068-4cb6-42a0-dc2c-5eab0fee7ebb",
+					"name": "content",
+					"parent": "231886ca-2e75-40b0-e131-211f55d738f9",
+					"description": "",
+					"objectType": "array",
+					"objectName": "content",
+					"isParent": true,
+					"children": [
+						{
+							"id": "49d5b63a-e83f-457c-b01a-99529ef71bac",
+							"name": "name",
+							"parent": "ee865068-4cb6-42a0-dc2c-5eab0fee7ebb",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "9ad2124b-d078-411c-ad8a-4d70817fa36e",
+							"name": "example",
+							"parent": "ee865068-4cb6-42a0-dc2c-5eab0fee7ebb",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						}
+					]
+				},
+				{
+					"id": "69a9ab4a-caee-4f71-a013-4cc99014f9ec",
+					"name": "status",
+					"parent": "a6a095b5-d922-4ece-8a95-9f457708911e",
+					"description": "",
+					"objectType": "number",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "56e863ed-d19a-46c7-bfc0-7175cb1debb7",
+					"name": "headers",
+					"parent": "a6a095b5-d922-4ece-8a95-9f457708911e",
+					"description": "",
+					"objectType": "array",
+					"objectName": "headers",
+					"isParent": true,
+					"children": []
+				},
+				{
+					"id": "81131d91-f8c9-4afe-9d56-32e09691cde4",
+					"name": "objectType",
+					"parent": "4be4abf0-9f78-4880-8638-998240c180b7",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "63378429-55d6-4cf1-9eea-6dd6fa9e8999",
+					"name": "name",
+					"parent": "4be4abf0-9f78-4880-8638-998240c180b7",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "4be4abf0-9f78-4880-8638-998240c180b7",
+					"name": "content",
+					"parent": "a6a095b5-d922-4ece-8a95-9f457708911e",
+					"description": "",
+					"objectType": "array",
+					"objectName": "content",
+					"isParent": true,
+					"children": [
+						{
+							"id": "81131d91-f8c9-4afe-9d56-32e09691cde4",
+							"name": "objectType",
+							"parent": "4be4abf0-9f78-4880-8638-998240c180b7",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "63378429-55d6-4cf1-9eea-6dd6fa9e8999",
+							"name": "name",
+							"parent": "4be4abf0-9f78-4880-8638-998240c180b7",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						}
+					]
+				},
+				{
+					"id": "a6a095b5-d922-4ece-8a95-9f457708911e",
+					"name": "responses",
+					"parent": "231886ca-2e75-40b0-e131-211f55d738f9",
+					"description": "",
+					"objectType": "array",
+					"objectName": "responses",
+					"isParent": true,
+					"children": [
+						{
+							"id": "69a9ab4a-caee-4f71-a013-4cc99014f9ec",
+							"name": "status",
+							"parent": "a6a095b5-d922-4ece-8a95-9f457708911e",
+							"description": "",
+							"objectType": "number",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "56e863ed-d19a-46c7-bfc0-7175cb1debb7",
+							"name": "headers",
+							"parent": "a6a095b5-d922-4ece-8a95-9f457708911e",
+							"description": "",
+							"objectType": "array",
+							"objectName": "headers",
+							"isParent": true,
+							"children": []
+						},
+						{
+							"id": "4be4abf0-9f78-4880-8638-998240c180b7",
+							"name": "content",
+							"parent": "a6a095b5-d922-4ece-8a95-9f457708911e",
+							"description": "",
+							"objectType": "array",
+							"objectName": "content",
+							"isParent": true,
+							"children": [
+								{
+									"id": "81131d91-f8c9-4afe-9d56-32e09691cde4",
+									"name": "objectType",
+									"parent": "4be4abf0-9f78-4880-8638-998240c180b7",
+									"description": "",
+									"objectType": "string",
+									"isParent": false,
+									"children": []
+								},
+								{
+									"id": "63378429-55d6-4cf1-9eea-6dd6fa9e8999",
+									"name": "name",
+									"parent": "4be4abf0-9f78-4880-8638-998240c180b7",
+									"description": "",
+									"objectType": "string",
+									"isParent": false,
+									"children": []
+								}
+							]
+						}
+					]
+				},
+				{
+					"id": "231886ca-2e75-40b0-e131-211f55d738f9",
+					"name": "paths",
+					"parent": "",
+					"description": "",
+					"objectType": "array",
+					"objectName": "paths",
+					"isParent": true,
+					"children": [
+						{
+							"id": "3576054b-5173-4be7-c162-0fb905ecc52b",
+							"name": "id",
+							"parent": "231886ca-2e75-40b0-e131-211f55d738f9",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "0cfe0034-0644-4915-f2dc-01f889ee3456",
+							"name": "path",
+							"parent": "231886ca-2e75-40b0-e131-211f55d738f9",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "4c816003-03e1-4f01-dc47-a84c40932071",
+							"name": "method",
+							"parent": "231886ca-2e75-40b0-e131-211f55d738f9",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "d22b7ac8-ecff-4f81-cb9b-dd8265f5da3a",
+							"name": "headers",
+							"parent": "231886ca-2e75-40b0-e131-211f55d738f9",
+							"description": "",
+							"objectType": "array",
+							"objectName": "headers",
+							"isParent": true,
+							"children": []
+						},
+						{
+							"id": "19502d7b-b582-44d8-fedc-bde8379b6c4b",
+							"name": "parameters",
+							"parent": "231886ca-2e75-40b0-e131-211f55d738f9",
+							"description": "",
+							"objectType": "array",
+							"objectName": "parameters",
+							"isParent": true,
+							"children": [
+								{
+									"id": "64225a7e-39d9-4d07-9491-c258990a4e5f",
+									"name": "name",
+									"parent": "19502d7b-b582-44d8-fedc-bde8379b6c4b",
+									"description": "",
+									"objectType": "string",
+									"isParent": false,
+									"children": []
+								},
+								{
+									"id": "41fa6176-047c-4d7f-d6a1-62faa9b5eab4",
+									"name": "example",
+									"parent": "19502d7b-b582-44d8-fedc-bde8379b6c4b",
+									"description": "",
+									"objectType": "string",
+									"isParent": false,
+									"children": []
+								}
+							]
+						},
+						{
+							"id": "ee865068-4cb6-42a0-dc2c-5eab0fee7ebb",
+							"name": "content",
+							"parent": "231886ca-2e75-40b0-e131-211f55d738f9",
+							"description": "",
+							"objectType": "array",
+							"objectName": "content",
+							"isParent": true,
+							"children": [
+								{
+									"id": "49d5b63a-e83f-457c-b01a-99529ef71bac",
+									"name": "name",
+									"parent": "ee865068-4cb6-42a0-dc2c-5eab0fee7ebb",
+									"description": "",
+									"objectType": "string",
+									"isParent": false,
+									"children": []
+								},
+								{
+									"id": "9ad2124b-d078-411c-ad8a-4d70817fa36e",
+									"name": "example",
+									"parent": "ee865068-4cb6-42a0-dc2c-5eab0fee7ebb",
+									"description": "",
+									"objectType": "string",
+									"isParent": false,
+									"children": []
+								}
+							]
+						},
+						{
+							"id": "a6a095b5-d922-4ece-8a95-9f457708911e",
+							"name": "responses",
+							"parent": "231886ca-2e75-40b0-e131-211f55d738f9",
+							"description": "",
+							"objectType": "array",
+							"objectName": "responses",
+							"isParent": true,
+							"children": [
+								{
+									"id": "69a9ab4a-caee-4f71-a013-4cc99014f9ec",
+									"name": "status",
+									"parent": "a6a095b5-d922-4ece-8a95-9f457708911e",
+									"description": "",
+									"objectType": "number",
+									"isParent": false,
+									"children": []
+								},
+								{
+									"id": "56e863ed-d19a-46c7-bfc0-7175cb1debb7",
+									"name": "headers",
+									"parent": "a6a095b5-d922-4ece-8a95-9f457708911e",
+									"description": "",
+									"objectType": "array",
+									"objectName": "headers",
+									"isParent": true,
+									"children": []
+								},
+								{
+									"id": "4be4abf0-9f78-4880-8638-998240c180b7",
+									"name": "content",
+									"parent": "a6a095b5-d922-4ece-8a95-9f457708911e",
+									"description": "",
+									"objectType": "array",
+									"objectName": "content",
+									"isParent": true,
+									"children": [
+										{
+											"id": "81131d91-f8c9-4afe-9d56-32e09691cde4",
+											"name": "objectType",
+											"parent": "4be4abf0-9f78-4880-8638-998240c180b7",
+											"description": "",
+											"objectType": "string",
+											"isParent": false,
+											"children": []
+										},
+										{
+											"id": "63378429-55d6-4cf1-9eea-6dd6fa9e8999",
+											"name": "name",
+											"parent": "4be4abf0-9f78-4880-8638-998240c180b7",
+											"description": "",
+											"objectType": "string",
+											"isParent": false,
+											"children": []
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"id": "a4ec7abc-53c5-41fa-f34b-7e95c86ffc8a",
+					"name": "id",
+					"parent": "f7669153-0541-464b-f151-046ff9dc54f3",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "6d9985e6-d6c9-45e5-afa9-f6025fe9c396",
+					"name": "name",
+					"parent": "f7669153-0541-464b-f151-046ff9dc54f3",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "60ff8a99-e560-4e36-fa24-9930676bac12",
+					"name": "id",
+					"parent": "e865796b-1f7c-4b65-8162-2387f94bbf8e",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "b3237e59-779a-4430-b54a-db03c38b8949",
+					"name": "parent",
+					"parent": "e865796b-1f7c-4b65-8162-2387f94bbf8e",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "ac14be4e-da34-4f25-f5ed-a29ca0d30f28",
+					"name": "name",
+					"parent": "e865796b-1f7c-4b65-8162-2387f94bbf8e",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "9d8af281-9045-4f52-b8b7-75a532046dca",
+					"name": "objectType",
+					"parent": "e865796b-1f7c-4b65-8162-2387f94bbf8e",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "e865796b-1f7c-4b65-8162-2387f94bbf8e",
+					"name": "properties",
+					"parent": "f7669153-0541-464b-f151-046ff9dc54f3",
+					"description": "",
+					"objectType": "array",
+					"objectName": "properties",
+					"isParent": true,
+					"children": [
+						{
+							"id": "60ff8a99-e560-4e36-fa24-9930676bac12",
+							"name": "id",
+							"parent": "e865796b-1f7c-4b65-8162-2387f94bbf8e",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "b3237e59-779a-4430-b54a-db03c38b8949",
+							"name": "parent",
+							"parent": "e865796b-1f7c-4b65-8162-2387f94bbf8e",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "ac14be4e-da34-4f25-f5ed-a29ca0d30f28",
+							"name": "name",
+							"parent": "e865796b-1f7c-4b65-8162-2387f94bbf8e",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "9d8af281-9045-4f52-b8b7-75a532046dca",
+							"name": "objectType",
+							"parent": "e865796b-1f7c-4b65-8162-2387f94bbf8e",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						}
+					]
+				},
+				{
+					"id": "f7669153-0541-464b-f151-046ff9dc54f3",
+					"name": "definitions",
+					"parent": "",
+					"description": "",
+					"objectType": "array",
+					"objectName": "definitions",
+					"isParent": true,
+					"children": [
+						{
+							"id": "a4ec7abc-53c5-41fa-f34b-7e95c86ffc8a",
+							"name": "id",
+							"parent": "f7669153-0541-464b-f151-046ff9dc54f3",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "6d9985e6-d6c9-45e5-afa9-f6025fe9c396",
+							"name": "name",
+							"parent": "f7669153-0541-464b-f151-046ff9dc54f3",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "e865796b-1f7c-4b65-8162-2387f94bbf8e",
+							"name": "properties",
+							"parent": "f7669153-0541-464b-f151-046ff9dc54f3",
+							"description": "",
+							"objectType": "array",
+							"objectName": "properties",
+							"isParent": true,
+							"children": [
+								{
+									"id": "60ff8a99-e560-4e36-fa24-9930676bac12",
+									"name": "id",
+									"parent": "e865796b-1f7c-4b65-8162-2387f94bbf8e",
+									"description": "",
+									"objectType": "string",
+									"isParent": false,
+									"children": []
+								},
+								{
+									"id": "b3237e59-779a-4430-b54a-db03c38b8949",
+									"name": "parent",
+									"parent": "e865796b-1f7c-4b65-8162-2387f94bbf8e",
+									"description": "",
+									"objectType": "string",
+									"isParent": false,
+									"children": []
+								},
+								{
+									"id": "ac14be4e-da34-4f25-f5ed-a29ca0d30f28",
+									"name": "name",
+									"parent": "e865796b-1f7c-4b65-8162-2387f94bbf8e",
+									"description": "",
+									"objectType": "string",
+									"isParent": false,
+									"children": []
+								},
+								{
+									"id": "9d8af281-9045-4f52-b8b7-75a532046dca",
+									"name": "objectType",
+									"parent": "e865796b-1f7c-4b65-8162-2387f94bbf8e",
+									"description": "",
+									"objectType": "string",
+									"isParent": false,
+									"children": []
+								}
+							]
+						}
+					]
+				},
+				{
+					"id": "3a50a4e5-f234-4145-b59d-71ef919a6412",
+					"name": "id",
+					"parent": "24527df7-06cf-4f85-99cf-66c87f35a63b",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "7fcf26dd-8734-4201-e847-7ae134145a49",
+					"name": "name",
+					"parent": "24527df7-06cf-4f85-99cf-66c87f35a63b",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "6c3badea-205f-4861-8b92-80b2f5b4b99d",
+					"name": "id",
+					"parent": "64a9d2cf-36b7-4594-8bfd-57db11c4145b",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "ff2f7481-6418-48ec-d980-ca366a019366",
+					"name": "parent",
+					"parent": "64a9d2cf-36b7-4594-8bfd-57db11c4145b",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "b1607995-fc98-4a37-c0c2-2575dbc369c5",
+					"name": "name",
+					"parent": "64a9d2cf-36b7-4594-8bfd-57db11c4145b",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "2d6c18b8-7899-4824-c23f-e66eb73d041a",
+					"name": "objectType",
+					"parent": "64a9d2cf-36b7-4594-8bfd-57db11c4145b",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "64a9d2cf-36b7-4594-8bfd-57db11c4145b",
+					"name": "properties",
+					"parent": "24527df7-06cf-4f85-99cf-66c87f35a63b",
+					"description": "",
+					"objectType": "array",
+					"objectName": "properties",
+					"isParent": true,
+					"children": [
+						{
+							"id": "6c3badea-205f-4861-8b92-80b2f5b4b99d",
+							"name": "id",
+							"parent": "64a9d2cf-36b7-4594-8bfd-57db11c4145b",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "ff2f7481-6418-48ec-d980-ca366a019366",
+							"name": "parent",
+							"parent": "64a9d2cf-36b7-4594-8bfd-57db11c4145b",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "b1607995-fc98-4a37-c0c2-2575dbc369c5",
+							"name": "name",
+							"parent": "64a9d2cf-36b7-4594-8bfd-57db11c4145b",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "2d6c18b8-7899-4824-c23f-e66eb73d041a",
+							"name": "objectType",
+							"parent": "64a9d2cf-36b7-4594-8bfd-57db11c4145b",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						}
+					]
+				},
+				{
+					"id": "24527df7-06cf-4f85-99cf-66c87f35a63b",
+					"name": "documentation",
+					"parent": "",
+					"description": "",
+					"objectType": "array",
+					"objectName": "documentation",
+					"isParent": true,
+					"children": [
+						{
+							"id": "3a50a4e5-f234-4145-b59d-71ef919a6412",
+							"name": "id",
+							"parent": "24527df7-06cf-4f85-99cf-66c87f35a63b",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "7fcf26dd-8734-4201-e847-7ae134145a49",
+							"name": "name",
+							"parent": "24527df7-06cf-4f85-99cf-66c87f35a63b",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "64a9d2cf-36b7-4594-8bfd-57db11c4145b",
+							"name": "properties",
+							"parent": "24527df7-06cf-4f85-99cf-66c87f35a63b",
+							"description": "",
+							"objectType": "array",
+							"objectName": "properties",
+							"isParent": true,
+							"children": [
+								{
+									"id": "6c3badea-205f-4861-8b92-80b2f5b4b99d",
+									"name": "id",
+									"parent": "64a9d2cf-36b7-4594-8bfd-57db11c4145b",
+									"description": "",
+									"objectType": "string",
+									"isParent": false,
+									"children": []
+								},
+								{
+									"id": "ff2f7481-6418-48ec-d980-ca366a019366",
+									"name": "parent",
+									"parent": "64a9d2cf-36b7-4594-8bfd-57db11c4145b",
+									"description": "",
+									"objectType": "string",
+									"isParent": false,
+									"children": []
+								},
+								{
+									"id": "b1607995-fc98-4a37-c0c2-2575dbc369c5",
+									"name": "name",
+									"parent": "64a9d2cf-36b7-4594-8bfd-57db11c4145b",
+									"description": "",
+									"objectType": "string",
+									"isParent": false,
+									"children": []
+								},
+								{
+									"id": "2d6c18b8-7899-4824-c23f-e66eb73d041a",
+									"name": "objectType",
+									"parent": "64a9d2cf-36b7-4594-8bfd-57db11c4145b",
+									"description": "",
+									"objectType": "string",
+									"isParent": false,
+									"children": []
+								}
+							]
+						}
+					]
+				},
+				{
+					"id": "25a259d2-fe71-4476-f0e9-23a269dc3e00",
+					"name": "name",
+					"parent": "",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "434c186b-d69d-48c9-f2df-5c3ef92543d3",
+					"name": "endpoint",
+					"parent": "",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "275f35a8-e856-4698-b082-0ae427e836d8",
+					"name": "ver",
+					"parent": "",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "6b89858b-ea15-4b8f-9843-343472344eb3",
+					"name": "version",
+					"parent": "",
+					"description": "",
+					"objectType": "string",
+					"objectName": "version",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "138cae2e-bd01-45ec-b092-66bbe9ae1085",
+					"name": "description",
+					"parent": "",
+					"description": "",
+					"objectType": "string",
+					"objectName": "description",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "49b1bc56-11bb-48ef-dca7-5c9419ce5eb2",
+					"name": "mediaType",
+					"parent": "",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "01b45563-0c62-47c0-8aed-a28f5d307c82",
+					"name": "securitySchemes",
+					"parent": "",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "c3f22b5d-9a56-43b6-81ca-4910996eefcf",
+					"name": "swaggerURI",
+					"parent": "",
+					"description": "",
+					"objectType": "object",
+					"objectName": "swaggerURI",
+					"isParent": true,
+					"children": []
+				},
+				{
+					"id": "48435543-9d0d-42c4-9782-5eaac4122f7b",
+					"name": "swaggerSystem",
+					"parent": "",
+					"description": "",
+					"objectType": "object",
+					"objectName": "swaggerSystem",
+					"isParent": true,
+					"children": []
+				},
+				{
+					"id": "4246cb1e-fbe7-4a7f-c886-e3576891f05c",
+					"name": "apiType",
+					"parent": "",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "2ef7fd14-711f-4b96-ab2d-ebf0f94d69ca",
+					"name": "about",
+					"parent": "",
+					"description": "",
+					"objectType": "string",
+					"objectName": "about",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "e230a433-df06-44e8-81d2-c489c9b907fc",
+					"name": "enableProxy",
+					"parent": "",
+					"description": "",
+					"objectType": "boolean",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "d80e0117-288e-428f-e68a-b671c5461811",
+					"name": "enableTrace",
+					"parent": "",
+					"description": "",
+					"objectType": "boolean",
+					"objectName": "enableTrace",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "53f7c192-1475-4936-9f68-86e108c3c481",
+					"name": "enableIDE",
+					"parent": "",
+					"description": "",
+					"objectType": "boolean",
+					"objectName": "enableIDE",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "f7ebb41e-f895-4fa2-d5a4-4a30e7316948",
+					"name": "internalAPI",
+					"parent": "",
+					"description": "",
+					"objectType": "boolean",
+					"objectName": "internalAPI",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "d1cd64f7-0be2-4e18-a0c9-4a4fb38fb682",
+					"name": "isPublic",
+					"parent": "",
+					"description": "",
+					"objectType": "boolean",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "86b3ddb7-6aa5-469b-94f5-651326345c28",
+					"name": "tlsAllowUntrusted",
+					"parent": "",
+					"description": "",
+					"objectType": "boolean",
+					"objectName": "tlsAllowUntrusted",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "6708d689-fe07-42d5-fccb-de0ed6f61522",
+					"name": "useOwnProcess",
+					"parent": "",
+					"description": "",
+					"objectType": "boolean",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "bf852943-cc62-4e99-a99c-9050a87408fb",
+					"name": "package",
+					"parent": "",
+					"description": "",
+					"objectType": "string",
+					"objectName": "package",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "b4ef23d3-e2b3-492a-8196-7f3232ef1455",
+					"name": "apiGroup",
+					"parent": "",
+					"description": "",
+					"objectType": "string",
+					"objectName": "apiGroup",
+					"isParent": false,
+					"children": []
+				}
+			]
+		},
+		{
+			"id": "00e047ba-865f-4bca-bcf2-19fd85ebf199",
+			"name": "Error",
+			"description": "Error",
+			"isInclude": false,
+			"properties": [
+				{
+					"id": "f9f6691c-f02a-4ee0-d525-82f08b47c47f",
+					"name": "status",
+					"objectType": "string",
+					"description": "",
+					"required": false,
+					"value": "",
+					"minLength": "",
+					"maxLength": "",
+					"default": "",
+					"example": "",
+					"isParent": false,
+					"children": []
+				}
+			]
+		},
+		{
+			"id": "4a04d6e7-8766-4494-bbfa-d5952703b0d9",
+			"name": "Id",
+			"description": "ID",
+			"isInclude": false,
+			"properties": [
+				{
+					"id": "c2c6cb62-ff48-4669-ada6-93e6ca9ad473",
+					"name": "id",
+					"parent": "",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": [],
+					"required": true
+				}
+			]
+		},
+		{
+			"id": "d46f5e69-c623-4aa9-9f65-c2a6eb5865a5",
+			"name": "GetAPI",
+			"description": "Single API details",
+			"isInclude": false,
+			"properties": [
+				{
+					"id": "5754a4ec-5c07-4b38-9f31-234ecfa0a2e6",
+					"name": "id",
+					"parent": "99c1384a-7527-4e94-c796-a7e9a6dbe39d",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "4997b021-92a7-43ee-8e79-279aaf384946",
+					"name": "createdAt",
+					"parent": "99c1384a-7527-4e94-c796-a7e9a6dbe39d",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "74017bc2-7ea7-464c-ea19-853abeb5d140",
+					"name": "updatedAt",
+					"parent": "99c1384a-7527-4e94-c796-a7e9a6dbe39d",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "f801dbb8-7bc1-4d98-ae94-f3878c3f020d",
+					"name": "createdBy",
+					"parent": "99c1384a-7527-4e94-c796-a7e9a6dbe39d",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "494a437f-3614-4361-d091-8801aab5bcb6",
+					"name": "changedBy",
+					"parent": "99c1384a-7527-4e94-c796-a7e9a6dbe39d",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "2c3ded9c-aeb2-4940-c69b-1b560cb70f10",
+					"name": "undefineditem",
+					"parent": "2422392a-0f72-4f01-ee2c-0f1d367fc42b",
+					"description": "",
+					"objectType": "array",
+					"isParent": true,
+					"children": []
+				},
+				{
+					"id": "2422392a-0f72-4f01-ee2c-0f1d367fc42b",
+					"name": "auth",
+					"parent": "99c1384a-7527-4e94-c796-a7e9a6dbe39d",
+					"description": "",
+					"objectType": "array",
+					"objectName": "auth",
+					"isParent": true,
+					"children": [
+						{
+							"id": "2c3ded9c-aeb2-4940-c69b-1b560cb70f10",
+							"name": "undefineditem",
+							"parent": "2422392a-0f72-4f01-ee2c-0f1d367fc42b",
+							"description": "",
+							"objectType": "array",
+							"isParent": true,
+							"children": []
+						}
+					]
+				},
+				{
+					"id": "2a806903-4795-4ace-9fe5-17f753e2e41d",
+					"name": "undefineditem",
+					"parent": "36bb1e7b-163b-4f38-dfcd-0ab0de02dacd",
+					"description": "",
+					"objectType": "array",
+					"isParent": true,
+					"children": []
+				},
+				{
+					"id": "36bb1e7b-163b-4f38-dfcd-0ab0de02dacd",
+					"name": "endpoints",
+					"parent": "99c1384a-7527-4e94-c796-a7e9a6dbe39d",
+					"description": "",
+					"objectType": "array",
+					"objectName": "endpoints",
+					"isParent": true,
+					"children": [
+						{
+							"id": "2a806903-4795-4ace-9fe5-17f753e2e41d",
+							"name": "undefineditem",
+							"parent": "36bb1e7b-163b-4f38-dfcd-0ab0de02dacd",
+							"description": "",
+							"objectType": "array",
+							"isParent": true,
+							"children": []
+						}
+					]
+				},
+				{
+					"id": "60957172-4e99-4a5f-b301-7a0815fcff63",
+					"name": "id",
+					"parent": "77887077-a238-414f-d956-6ceb59d156e6",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "feb9f04f-0368-4096-b4fb-a7503f7bbeab",
+					"name": "path",
+					"parent": "77887077-a238-414f-d956-6ceb59d156e6",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "5b784937-b406-4ce1-dc23-1721fdd3e2b4",
+					"name": "method",
+					"parent": "77887077-a238-414f-d956-6ceb59d156e6",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "03f8ad28-ff59-42e8-be7b-3d732c898fe5",
+					"name": "undefineditem",
+					"parent": "a7e86fbf-21e4-426c-c5ac-019c0a26a3db",
+					"description": "",
+					"objectType": "array",
+					"isParent": true,
+					"children": []
+				},
+				{
+					"id": "a7e86fbf-21e4-426c-c5ac-019c0a26a3db",
+					"name": "headers",
+					"parent": "77887077-a238-414f-d956-6ceb59d156e6",
+					"description": "",
+					"objectType": "array",
+					"objectName": "headers",
+					"isParent": true,
+					"children": [
+						{
+							"id": "03f8ad28-ff59-42e8-be7b-3d732c898fe5",
+							"name": "undefineditem",
+							"parent": "a7e86fbf-21e4-426c-c5ac-019c0a26a3db",
+							"description": "",
+							"objectType": "array",
+							"isParent": true,
+							"children": []
+						}
+					]
+				},
+				{
+					"id": "39d5d474-c77e-4b4d-a8fb-4405144441c8",
+					"name": "name",
+					"parent": "750d9638-5cb3-4012-c4c6-f56fbcbd1004",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "921295d1-695b-4dc5-c168-4155060f3338",
+					"name": "example",
+					"parent": "750d9638-5cb3-4012-c4c6-f56fbcbd1004",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "750d9638-5cb3-4012-c4c6-f56fbcbd1004",
+					"name": "parameters",
+					"parent": "77887077-a238-414f-d956-6ceb59d156e6",
+					"description": "",
+					"objectType": "array",
+					"objectName": "parameters",
+					"isParent": true,
+					"children": [
+						{
+							"id": "39d5d474-c77e-4b4d-a8fb-4405144441c8",
+							"name": "name",
+							"parent": "750d9638-5cb3-4012-c4c6-f56fbcbd1004",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "921295d1-695b-4dc5-c168-4155060f3338",
+							"name": "example",
+							"parent": "750d9638-5cb3-4012-c4c6-f56fbcbd1004",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						}
+					]
+				},
+				{
+					"id": "6d7b5447-afda-49bc-d3ed-e6f46a81ff08",
+					"name": "name",
+					"parent": "c05cdcbd-1716-4f9c-c638-7386dd40b3b0",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "a7b078cf-6a9a-41eb-83ec-5bdb7a212753",
+					"name": "example",
+					"parent": "c05cdcbd-1716-4f9c-c638-7386dd40b3b0",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "c05cdcbd-1716-4f9c-c638-7386dd40b3b0",
+					"name": "content",
+					"parent": "77887077-a238-414f-d956-6ceb59d156e6",
+					"description": "",
+					"objectType": "array",
+					"objectName": "content",
+					"isParent": true,
+					"children": [
+						{
+							"id": "6d7b5447-afda-49bc-d3ed-e6f46a81ff08",
+							"name": "name",
+							"parent": "c05cdcbd-1716-4f9c-c638-7386dd40b3b0",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "a7b078cf-6a9a-41eb-83ec-5bdb7a212753",
+							"name": "example",
+							"parent": "c05cdcbd-1716-4f9c-c638-7386dd40b3b0",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						}
+					]
+				},
+				{
+					"id": "a14e4977-83fa-44f3-ea83-cc29628ffdca",
+					"name": "status",
+					"parent": "8042ba2b-3eaf-4faa-9489-646e38cbf05c",
+					"description": "",
+					"objectType": "number",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "8863f43f-a968-4fc9-9f61-4499b427a71b",
+					"name": "undefineditem",
+					"parent": "c99363b6-8473-408c-b574-ae924a36b7e7",
+					"description": "",
+					"objectType": "array",
+					"isParent": true,
+					"children": []
+				},
+				{
+					"id": "c99363b6-8473-408c-b574-ae924a36b7e7",
+					"name": "headers",
+					"parent": "8042ba2b-3eaf-4faa-9489-646e38cbf05c",
+					"description": "",
+					"objectType": "array",
+					"objectName": "headers",
+					"isParent": true,
+					"children": [
+						{
+							"id": "8863f43f-a968-4fc9-9f61-4499b427a71b",
+							"name": "undefineditem",
+							"parent": "c99363b6-8473-408c-b574-ae924a36b7e7",
+							"description": "",
+							"objectType": "array",
+							"isParent": true,
+							"children": []
+						}
+					]
+				},
+				{
+					"id": "4bcc534e-5b5e-43bd-ac6a-20790dee3c2c",
+					"name": "objectType",
+					"parent": "2ce00adb-e81d-4912-9845-a2fbf9845536",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "5ce4246c-3302-42ea-9b30-21847b050fa1",
+					"name": "name",
+					"parent": "2ce00adb-e81d-4912-9845-a2fbf9845536",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "2ce00adb-e81d-4912-9845-a2fbf9845536",
+					"name": "content",
+					"parent": "8042ba2b-3eaf-4faa-9489-646e38cbf05c",
+					"description": "",
+					"objectType": "array",
+					"objectName": "content",
+					"isParent": true,
+					"children": [
+						{
+							"id": "4bcc534e-5b5e-43bd-ac6a-20790dee3c2c",
+							"name": "objectType",
+							"parent": "2ce00adb-e81d-4912-9845-a2fbf9845536",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "5ce4246c-3302-42ea-9b30-21847b050fa1",
+							"name": "name",
+							"parent": "2ce00adb-e81d-4912-9845-a2fbf9845536",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						}
+					]
+				},
+				{
+					"id": "8042ba2b-3eaf-4faa-9489-646e38cbf05c",
+					"name": "responses",
+					"parent": "77887077-a238-414f-d956-6ceb59d156e6",
+					"description": "",
+					"objectType": "array",
+					"objectName": "responses",
+					"isParent": true,
+					"children": [
+						{
+							"id": "a14e4977-83fa-44f3-ea83-cc29628ffdca",
+							"name": "status",
+							"parent": "8042ba2b-3eaf-4faa-9489-646e38cbf05c",
+							"description": "",
+							"objectType": "number",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "c99363b6-8473-408c-b574-ae924a36b7e7",
+							"name": "headers",
+							"parent": "8042ba2b-3eaf-4faa-9489-646e38cbf05c",
+							"description": "",
+							"objectType": "array",
+							"objectName": "headers",
+							"isParent": true,
+							"children": [
+								{
+									"id": "8863f43f-a968-4fc9-9f61-4499b427a71b",
+									"name": "undefineditem",
+									"parent": "c99363b6-8473-408c-b574-ae924a36b7e7",
+									"description": "",
+									"objectType": "array",
+									"isParent": true,
+									"children": []
+								}
+							]
+						},
+						{
+							"id": "2ce00adb-e81d-4912-9845-a2fbf9845536",
+							"name": "content",
+							"parent": "8042ba2b-3eaf-4faa-9489-646e38cbf05c",
+							"description": "",
+							"objectType": "array",
+							"objectName": "content",
+							"isParent": true,
+							"children": [
+								{
+									"id": "4bcc534e-5b5e-43bd-ac6a-20790dee3c2c",
+									"name": "objectType",
+									"parent": "2ce00adb-e81d-4912-9845-a2fbf9845536",
+									"description": "",
+									"objectType": "string",
+									"isParent": false,
+									"children": []
+								},
+								{
+									"id": "5ce4246c-3302-42ea-9b30-21847b050fa1",
+									"name": "name",
+									"parent": "2ce00adb-e81d-4912-9845-a2fbf9845536",
+									"description": "",
+									"objectType": "string",
+									"isParent": false,
+									"children": []
+								}
+							]
+						}
+					]
+				},
+				{
+					"id": "77887077-a238-414f-d956-6ceb59d156e6",
+					"name": "paths",
+					"parent": "99c1384a-7527-4e94-c796-a7e9a6dbe39d",
+					"description": "",
+					"objectType": "array",
+					"objectName": "paths",
+					"isParent": true,
+					"children": [
+						{
+							"id": "60957172-4e99-4a5f-b301-7a0815fcff63",
+							"name": "id",
+							"parent": "77887077-a238-414f-d956-6ceb59d156e6",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "feb9f04f-0368-4096-b4fb-a7503f7bbeab",
+							"name": "path",
+							"parent": "77887077-a238-414f-d956-6ceb59d156e6",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "5b784937-b406-4ce1-dc23-1721fdd3e2b4",
+							"name": "method",
+							"parent": "77887077-a238-414f-d956-6ceb59d156e6",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "a7e86fbf-21e4-426c-c5ac-019c0a26a3db",
+							"name": "headers",
+							"parent": "77887077-a238-414f-d956-6ceb59d156e6",
+							"description": "",
+							"objectType": "array",
+							"objectName": "headers",
+							"isParent": true,
+							"children": [
+								{
+									"id": "03f8ad28-ff59-42e8-be7b-3d732c898fe5",
+									"name": "undefineditem",
+									"parent": "a7e86fbf-21e4-426c-c5ac-019c0a26a3db",
+									"description": "",
+									"objectType": "array",
+									"isParent": true,
+									"children": []
+								}
+							]
+						},
+						{
+							"id": "750d9638-5cb3-4012-c4c6-f56fbcbd1004",
+							"name": "parameters",
+							"parent": "77887077-a238-414f-d956-6ceb59d156e6",
+							"description": "",
+							"objectType": "array",
+							"objectName": "parameters",
+							"isParent": true,
+							"children": [
+								{
+									"id": "39d5d474-c77e-4b4d-a8fb-4405144441c8",
+									"name": "name",
+									"parent": "750d9638-5cb3-4012-c4c6-f56fbcbd1004",
+									"description": "",
+									"objectType": "string",
+									"isParent": false,
+									"children": []
+								},
+								{
+									"id": "921295d1-695b-4dc5-c168-4155060f3338",
+									"name": "example",
+									"parent": "750d9638-5cb3-4012-c4c6-f56fbcbd1004",
+									"description": "",
+									"objectType": "string",
+									"isParent": false,
+									"children": []
+								}
+							]
+						},
+						{
+							"id": "c05cdcbd-1716-4f9c-c638-7386dd40b3b0",
+							"name": "content",
+							"parent": "77887077-a238-414f-d956-6ceb59d156e6",
+							"description": "",
+							"objectType": "array",
+							"objectName": "content",
+							"isParent": true,
+							"children": [
+								{
+									"id": "6d7b5447-afda-49bc-d3ed-e6f46a81ff08",
+									"name": "name",
+									"parent": "c05cdcbd-1716-4f9c-c638-7386dd40b3b0",
+									"description": "",
+									"objectType": "string",
+									"isParent": false,
+									"children": []
+								},
+								{
+									"id": "a7b078cf-6a9a-41eb-83ec-5bdb7a212753",
+									"name": "example",
+									"parent": "c05cdcbd-1716-4f9c-c638-7386dd40b3b0",
+									"description": "",
+									"objectType": "string",
+									"isParent": false,
+									"children": []
+								}
+							]
+						},
+						{
+							"id": "8042ba2b-3eaf-4faa-9489-646e38cbf05c",
+							"name": "responses",
+							"parent": "77887077-a238-414f-d956-6ceb59d156e6",
+							"description": "",
+							"objectType": "array",
+							"objectName": "responses",
+							"isParent": true,
+							"children": [
+								{
+									"id": "a14e4977-83fa-44f3-ea83-cc29628ffdca",
+									"name": "status",
+									"parent": "8042ba2b-3eaf-4faa-9489-646e38cbf05c",
+									"description": "",
+									"objectType": "number",
+									"isParent": false,
+									"children": []
+								},
+								{
+									"id": "c99363b6-8473-408c-b574-ae924a36b7e7",
+									"name": "headers",
+									"parent": "8042ba2b-3eaf-4faa-9489-646e38cbf05c",
+									"description": "",
+									"objectType": "array",
+									"objectName": "headers",
+									"isParent": true,
+									"children": [
+										{
+											"id": "8863f43f-a968-4fc9-9f61-4499b427a71b",
+											"name": "undefineditem",
+											"parent": "c99363b6-8473-408c-b574-ae924a36b7e7",
+											"description": "",
+											"objectType": "array",
+											"isParent": true,
+											"children": []
+										}
+									]
+								},
+								{
+									"id": "2ce00adb-e81d-4912-9845-a2fbf9845536",
+									"name": "content",
+									"parent": "8042ba2b-3eaf-4faa-9489-646e38cbf05c",
+									"description": "",
+									"objectType": "array",
+									"objectName": "content",
+									"isParent": true,
+									"children": [
+										{
+											"id": "4bcc534e-5b5e-43bd-ac6a-20790dee3c2c",
+											"name": "objectType",
+											"parent": "2ce00adb-e81d-4912-9845-a2fbf9845536",
+											"description": "",
+											"objectType": "string",
+											"isParent": false,
+											"children": []
+										},
+										{
+											"id": "5ce4246c-3302-42ea-9b30-21847b050fa1",
+											"name": "name",
+											"parent": "2ce00adb-e81d-4912-9845-a2fbf9845536",
+											"description": "",
+											"objectType": "string",
+											"isParent": false,
+											"children": []
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"id": "27840f67-35bb-4baf-9857-cb9e9a687cd7",
+					"name": "id",
+					"parent": "2e41d00c-30a2-47e7-f8f2-ad67e4540929",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "10c8042d-c509-4da7-cb16-a0e9db409da0",
+					"name": "name",
+					"parent": "2e41d00c-30a2-47e7-f8f2-ad67e4540929",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "1320921b-3159-4956-b16f-92170f743854",
+					"name": "id",
+					"parent": "4874a2ba-60ea-4788-af56-89c91d997a72",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "aedf1075-a14f-4cf0-8bb0-4ba932031766",
+					"name": "parent",
+					"parent": "4874a2ba-60ea-4788-af56-89c91d997a72",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "56aa1946-bcb7-404d-dd8a-3fe411629cff",
+					"name": "name",
+					"parent": "4874a2ba-60ea-4788-af56-89c91d997a72",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "6cab6cfa-3438-4915-9a27-2633eb36e670",
+					"name": "objectType",
+					"parent": "4874a2ba-60ea-4788-af56-89c91d997a72",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "4874a2ba-60ea-4788-af56-89c91d997a72",
+					"name": "properties",
+					"parent": "2e41d00c-30a2-47e7-f8f2-ad67e4540929",
+					"description": "",
+					"objectType": "array",
+					"objectName": "properties",
+					"isParent": true,
+					"children": [
+						{
+							"id": "1320921b-3159-4956-b16f-92170f743854",
+							"name": "id",
+							"parent": "4874a2ba-60ea-4788-af56-89c91d997a72",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "aedf1075-a14f-4cf0-8bb0-4ba932031766",
+							"name": "parent",
+							"parent": "4874a2ba-60ea-4788-af56-89c91d997a72",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "56aa1946-bcb7-404d-dd8a-3fe411629cff",
+							"name": "name",
+							"parent": "4874a2ba-60ea-4788-af56-89c91d997a72",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "6cab6cfa-3438-4915-9a27-2633eb36e670",
+							"name": "objectType",
+							"parent": "4874a2ba-60ea-4788-af56-89c91d997a72",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						}
+					]
+				},
+				{
+					"id": "2e41d00c-30a2-47e7-f8f2-ad67e4540929",
+					"name": "definitions",
+					"parent": "99c1384a-7527-4e94-c796-a7e9a6dbe39d",
+					"description": "",
+					"objectType": "array",
+					"objectName": "definitions",
+					"isParent": true,
+					"children": [
+						{
+							"id": "27840f67-35bb-4baf-9857-cb9e9a687cd7",
+							"name": "id",
+							"parent": "2e41d00c-30a2-47e7-f8f2-ad67e4540929",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "10c8042d-c509-4da7-cb16-a0e9db409da0",
+							"name": "name",
+							"parent": "2e41d00c-30a2-47e7-f8f2-ad67e4540929",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "4874a2ba-60ea-4788-af56-89c91d997a72",
+							"name": "properties",
+							"parent": "2e41d00c-30a2-47e7-f8f2-ad67e4540929",
+							"description": "",
+							"objectType": "array",
+							"objectName": "properties",
+							"isParent": true,
+							"children": [
+								{
+									"id": "1320921b-3159-4956-b16f-92170f743854",
+									"name": "id",
+									"parent": "4874a2ba-60ea-4788-af56-89c91d997a72",
+									"description": "",
+									"objectType": "string",
+									"isParent": false,
+									"children": []
+								},
+								{
+									"id": "aedf1075-a14f-4cf0-8bb0-4ba932031766",
+									"name": "parent",
+									"parent": "4874a2ba-60ea-4788-af56-89c91d997a72",
+									"description": "",
+									"objectType": "string",
+									"isParent": false,
+									"children": []
+								},
+								{
+									"id": "56aa1946-bcb7-404d-dd8a-3fe411629cff",
+									"name": "name",
+									"parent": "4874a2ba-60ea-4788-af56-89c91d997a72",
+									"description": "",
+									"objectType": "string",
+									"isParent": false,
+									"children": []
+								},
+								{
+									"id": "6cab6cfa-3438-4915-9a27-2633eb36e670",
+									"name": "objectType",
+									"parent": "4874a2ba-60ea-4788-af56-89c91d997a72",
+									"description": "",
+									"objectType": "string",
+									"isParent": false,
+									"children": []
+								}
+							]
+						}
+					]
+				},
+				{
+					"id": "47023bc7-2b2d-4063-c06b-111ac36ae6f5",
+					"name": "documentation",
+					"parent": "99c1384a-7527-4e94-c796-a7e9a6dbe39d",
+					"description": "",
+					"objectType": "object",
+					"objectName": "documentation",
+					"isParent": true,
+					"children": []
+				},
+				{
+					"id": "43e23710-5b0b-403b-f0a1-c3b396cb6ddd",
+					"name": "name",
+					"parent": "99c1384a-7527-4e94-c796-a7e9a6dbe39d",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "346f3807-2f3f-438a-ac6d-a42d82786c20",
+					"name": "endpoint",
+					"parent": "99c1384a-7527-4e94-c796-a7e9a6dbe39d",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "90b30c4d-afd5-4701-f8ea-480ff913d0de",
+					"name": "ver",
+					"parent": "99c1384a-7527-4e94-c796-a7e9a6dbe39d",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "e663de4e-a906-46b6-8bd2-3a1056ae1665",
+					"name": "version",
+					"parent": "99c1384a-7527-4e94-c796-a7e9a6dbe39d",
+					"description": "",
+					"objectType": "object",
+					"objectName": "version",
+					"isParent": true,
+					"children": []
+				},
+				{
+					"id": "21d4974b-49b5-48de-c5df-75a9adec77ba",
+					"name": "description",
+					"parent": "99c1384a-7527-4e94-c796-a7e9a6dbe39d",
+					"description": "",
+					"objectType": "object",
+					"objectName": "description",
+					"isParent": true,
+					"children": []
+				},
+				{
+					"id": "87ed9ce2-05a7-4a69-d069-0c41bb05bae8",
+					"name": "mediaType",
+					"parent": "99c1384a-7527-4e94-c796-a7e9a6dbe39d",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "9759ff89-bdc3-41f9-c37b-5ccfe5f5498e",
+					"name": "securitySchemes",
+					"parent": "99c1384a-7527-4e94-c796-a7e9a6dbe39d",
+					"description": "",
+					"objectType": "object",
+					"objectName": "securitySchemes",
+					"isParent": true,
+					"children": []
+				},
+				{
+					"id": "401ed7a3-cd95-49d4-d1ac-b8f005c8038c",
+					"name": "swaggerURI",
+					"parent": "99c1384a-7527-4e94-c796-a7e9a6dbe39d",
+					"description": "",
+					"objectType": "object",
+					"objectName": "swaggerURI",
+					"isParent": true,
+					"children": []
+				},
+				{
+					"id": "589b104d-448a-49d5-f4e2-1a2ab0343707",
+					"name": "swaggerSystem",
+					"parent": "99c1384a-7527-4e94-c796-a7e9a6dbe39d",
+					"description": "",
+					"objectType": "object",
+					"objectName": "swaggerSystem",
+					"isParent": true,
+					"children": []
+				},
+				{
+					"id": "e1818efe-6684-41b6-c062-83662b140334",
+					"name": "apiType",
+					"parent": "99c1384a-7527-4e94-c796-a7e9a6dbe39d",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "add52a09-22cc-4e77-fbc3-8fb06be97004",
+					"name": "about",
+					"parent": "99c1384a-7527-4e94-c796-a7e9a6dbe39d",
+					"description": "",
+					"objectType": "object",
+					"objectName": "about",
+					"isParent": true,
+					"children": []
+				},
+				{
+					"id": "ecbe25db-6a14-403e-9f75-d98d79f66a17",
+					"name": "enableProxy",
+					"parent": "99c1384a-7527-4e94-c796-a7e9a6dbe39d",
+					"description": "",
+					"objectType": "boolean",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "0aaf2f8f-53f5-45d0-c1d1-a1c4101e3961",
+					"name": "enableTrace",
+					"parent": "99c1384a-7527-4e94-c796-a7e9a6dbe39d",
+					"description": "",
+					"objectType": "boolean",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "ea954570-7442-42b2-c7a8-14f1a61ca1d3",
+					"name": "enableIDE",
+					"parent": "99c1384a-7527-4e94-c796-a7e9a6dbe39d",
+					"description": "",
+					"objectType": "boolean",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "1a04c6a1-7296-4cb7-d660-341700a8b041",
+					"name": "internalAPI",
+					"parent": "99c1384a-7527-4e94-c796-a7e9a6dbe39d",
+					"description": "",
+					"objectType": "object",
+					"objectName": "internalAPI",
+					"isParent": true,
+					"children": []
+				},
+				{
+					"id": "a96828e3-b53c-4b45-86dc-3ec14f52e2f3",
+					"name": "isPublic",
+					"parent": "99c1384a-7527-4e94-c796-a7e9a6dbe39d",
+					"description": "",
+					"objectType": "boolean",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "334204ca-c63a-4ac5-f8d0-5326c2f1e449",
+					"name": "tlsAllowUntrusted",
+					"parent": "99c1384a-7527-4e94-c796-a7e9a6dbe39d",
+					"description": "",
+					"objectType": "boolean",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "f74a213f-3723-4f2e-842d-1a183078577f",
+					"name": "useOwnProcess",
+					"parent": "99c1384a-7527-4e94-c796-a7e9a6dbe39d",
+					"description": "",
+					"objectType": "boolean",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "8751ae03-2e64-4297-ab49-0f27d06332d6",
+					"name": "package",
+					"parent": "99c1384a-7527-4e94-c796-a7e9a6dbe39d",
+					"description": "",
+					"objectType": "object",
+					"objectName": "package",
+					"isParent": true,
+					"children": []
+				},
+				{
+					"id": "fce2b6e9-a731-4715-ad95-aefc2bb6118c",
+					"name": "apiGroup",
+					"parent": "99c1384a-7527-4e94-c796-a7e9a6dbe39d",
+					"description": "",
+					"objectType": "object",
+					"objectName": "apiGroup",
+					"isParent": true,
+					"children": []
+				},
+				{
+					"id": "0a5ddebd-1fb9-466d-9495-a922e461b772",
+					"name": "id",
+					"parent": "d74916cb-54f1-4619-a759-0336136f575a",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "28ac71eb-4bee-4d8b-e450-38e304779de8",
+					"name": "name",
+					"parent": "d74916cb-54f1-4619-a759-0336136f575a",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "27a0bc1e-1204-421b-aaba-bb846eb5071b",
+					"name": "id",
+					"parent": "40c0736f-c7e2-4eb7-abb8-bfd57e94bfa3",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "c54de16b-4fc8-4f25-901d-71157c364eb9",
+					"name": "parent",
+					"parent": "40c0736f-c7e2-4eb7-abb8-bfd57e94bfa3",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "6909eb12-258b-46a6-826c-29db76e91d14",
+					"name": "name",
+					"parent": "40c0736f-c7e2-4eb7-abb8-bfd57e94bfa3",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "634ae372-d700-47cf-da6d-983b59e25c5f",
+					"name": "objectType",
+					"parent": "40c0736f-c7e2-4eb7-abb8-bfd57e94bfa3",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "40c0736f-c7e2-4eb7-abb8-bfd57e94bfa3",
+					"name": "properties",
+					"parent": "d74916cb-54f1-4619-a759-0336136f575a",
+					"description": "",
+					"objectType": "array",
+					"objectName": "properties",
+					"isParent": true,
+					"children": [
+						{
+							"id": "27a0bc1e-1204-421b-aaba-bb846eb5071b",
+							"name": "id",
+							"parent": "40c0736f-c7e2-4eb7-abb8-bfd57e94bfa3",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "c54de16b-4fc8-4f25-901d-71157c364eb9",
+							"name": "parent",
+							"parent": "40c0736f-c7e2-4eb7-abb8-bfd57e94bfa3",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "6909eb12-258b-46a6-826c-29db76e91d14",
+							"name": "name",
+							"parent": "40c0736f-c7e2-4eb7-abb8-bfd57e94bfa3",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "634ae372-d700-47cf-da6d-983b59e25c5f",
+							"name": "objectType",
+							"parent": "40c0736f-c7e2-4eb7-abb8-bfd57e94bfa3",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						}
+					]
+				},
+				{
+					"id": "d74916cb-54f1-4619-a759-0336136f575a",
+					"name": "apps",
+					"parent": "99c1384a-7527-4e94-c796-a7e9a6dbe39d",
+					"description": "",
+					"objectType": "array",
+					"objectName": "apps",
+					"isParent": true,
+					"children": [
+						{
+							"id": "0a5ddebd-1fb9-466d-9495-a922e461b772",
+							"name": "id",
+							"parent": "d74916cb-54f1-4619-a759-0336136f575a",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "28ac71eb-4bee-4d8b-e450-38e304779de8",
+							"name": "name",
+							"parent": "d74916cb-54f1-4619-a759-0336136f575a",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "40c0736f-c7e2-4eb7-abb8-bfd57e94bfa3",
+							"name": "properties",
+							"parent": "d74916cb-54f1-4619-a759-0336136f575a",
+							"description": "",
+							"objectType": "array",
+							"objectName": "properties",
+							"isParent": true,
+							"children": [
+								{
+									"id": "27a0bc1e-1204-421b-aaba-bb846eb5071b",
+									"name": "id",
+									"parent": "40c0736f-c7e2-4eb7-abb8-bfd57e94bfa3",
+									"description": "",
+									"objectType": "string",
+									"isParent": false,
+									"children": []
+								},
+								{
+									"id": "c54de16b-4fc8-4f25-901d-71157c364eb9",
+									"name": "parent",
+									"parent": "40c0736f-c7e2-4eb7-abb8-bfd57e94bfa3",
+									"description": "",
+									"objectType": "string",
+									"isParent": false,
+									"children": []
+								},
+								{
+									"id": "6909eb12-258b-46a6-826c-29db76e91d14",
+									"name": "name",
+									"parent": "40c0736f-c7e2-4eb7-abb8-bfd57e94bfa3",
+									"description": "",
+									"objectType": "string",
+									"isParent": false,
+									"children": []
+								},
+								{
+									"id": "634ae372-d700-47cf-da6d-983b59e25c5f",
+									"name": "objectType",
+									"parent": "40c0736f-c7e2-4eb7-abb8-bfd57e94bfa3",
+									"description": "",
+									"objectType": "string",
+									"isParent": false,
+									"children": []
+								}
+							]
+						}
+					]
+				},
+				{
+					"id": "9633d27d-92fb-43c8-f78d-58c1313fee84",
+					"name": "id",
+					"parent": "76906819-c5b2-4e2d-949c-5f79890b993a",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "54ed2476-b39e-48dc-be6b-28270b3ed314",
+					"name": "name",
+					"parent": "76906819-c5b2-4e2d-949c-5f79890b993a",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "06f126c3-7e7e-4fb7-f415-29af22492ff0",
+					"name": "id",
+					"parent": "4ee75e69-ba3d-411c-8b07-a1581b36e813",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "0f1285e8-3fd6-48bc-903a-022c5ae576fc",
+					"name": "parent",
+					"parent": "4ee75e69-ba3d-411c-8b07-a1581b36e813",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "1d54bc6a-52da-42da-be9f-2d41411bc4d2",
+					"name": "name",
+					"parent": "4ee75e69-ba3d-411c-8b07-a1581b36e813",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "8f06161d-5078-4f1c-b27a-5320962df52e",
+					"name": "objectType",
+					"parent": "4ee75e69-ba3d-411c-8b07-a1581b36e813",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "4ee75e69-ba3d-411c-8b07-a1581b36e813",
+					"name": "properties",
+					"parent": "76906819-c5b2-4e2d-949c-5f79890b993a",
+					"description": "",
+					"objectType": "array",
+					"objectName": "properties",
+					"isParent": true,
+					"children": [
+						{
+							"id": "06f126c3-7e7e-4fb7-f415-29af22492ff0",
+							"name": "id",
+							"parent": "4ee75e69-ba3d-411c-8b07-a1581b36e813",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "0f1285e8-3fd6-48bc-903a-022c5ae576fc",
+							"name": "parent",
+							"parent": "4ee75e69-ba3d-411c-8b07-a1581b36e813",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "1d54bc6a-52da-42da-be9f-2d41411bc4d2",
+							"name": "name",
+							"parent": "4ee75e69-ba3d-411c-8b07-a1581b36e813",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "8f06161d-5078-4f1c-b27a-5320962df52e",
+							"name": "objectType",
+							"parent": "4ee75e69-ba3d-411c-8b07-a1581b36e813",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						}
+					]
+				},
+				{
+					"id": "76906819-c5b2-4e2d-949c-5f79890b993a",
+					"name": "roles",
+					"parent": "99c1384a-7527-4e94-c796-a7e9a6dbe39d",
+					"description": "",
+					"objectType": "array",
+					"objectName": "roles",
+					"isParent": true,
+					"children": [
+						{
+							"id": "9633d27d-92fb-43c8-f78d-58c1313fee84",
+							"name": "id",
+							"parent": "76906819-c5b2-4e2d-949c-5f79890b993a",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "54ed2476-b39e-48dc-be6b-28270b3ed314",
+							"name": "name",
+							"parent": "76906819-c5b2-4e2d-949c-5f79890b993a",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "4ee75e69-ba3d-411c-8b07-a1581b36e813",
+							"name": "properties",
+							"parent": "76906819-c5b2-4e2d-949c-5f79890b993a",
+							"description": "",
+							"objectType": "array",
+							"objectName": "properties",
+							"isParent": true,
+							"children": [
+								{
+									"id": "06f126c3-7e7e-4fb7-f415-29af22492ff0",
+									"name": "id",
+									"parent": "4ee75e69-ba3d-411c-8b07-a1581b36e813",
+									"description": "",
+									"objectType": "string",
+									"isParent": false,
+									"children": []
+								},
+								{
+									"id": "0f1285e8-3fd6-48bc-903a-022c5ae576fc",
+									"name": "parent",
+									"parent": "4ee75e69-ba3d-411c-8b07-a1581b36e813",
+									"description": "",
+									"objectType": "string",
+									"isParent": false,
+									"children": []
+								},
+								{
+									"id": "1d54bc6a-52da-42da-be9f-2d41411bc4d2",
+									"name": "name",
+									"parent": "4ee75e69-ba3d-411c-8b07-a1581b36e813",
+									"description": "",
+									"objectType": "string",
+									"isParent": false,
+									"children": []
+								},
+								{
+									"id": "8f06161d-5078-4f1c-b27a-5320962df52e",
+									"name": "objectType",
+									"parent": "4ee75e69-ba3d-411c-8b07-a1581b36e813",
+									"description": "",
+									"objectType": "string",
+									"isParent": false,
+									"children": []
+								}
+							]
+						}
+					]
+				},
+				{
+					"id": "99c1384a-7527-4e94-c796-a7e9a6dbe39d",
+					"name": "api",
+					"parent": "",
+					"description": "",
+					"objectType": "object",
+					"objectName": "api",
+					"isParent": true,
+					"children": [
+						{
+							"id": "5754a4ec-5c07-4b38-9f31-234ecfa0a2e6",
+							"name": "id",
+							"parent": "99c1384a-7527-4e94-c796-a7e9a6dbe39d",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "4997b021-92a7-43ee-8e79-279aaf384946",
+							"name": "createdAt",
+							"parent": "99c1384a-7527-4e94-c796-a7e9a6dbe39d",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "74017bc2-7ea7-464c-ea19-853abeb5d140",
+							"name": "updatedAt",
+							"parent": "99c1384a-7527-4e94-c796-a7e9a6dbe39d",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "f801dbb8-7bc1-4d98-ae94-f3878c3f020d",
+							"name": "createdBy",
+							"parent": "99c1384a-7527-4e94-c796-a7e9a6dbe39d",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "494a437f-3614-4361-d091-8801aab5bcb6",
+							"name": "changedBy",
+							"parent": "99c1384a-7527-4e94-c796-a7e9a6dbe39d",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "2422392a-0f72-4f01-ee2c-0f1d367fc42b",
+							"name": "auth",
+							"parent": "99c1384a-7527-4e94-c796-a7e9a6dbe39d",
+							"description": "",
+							"objectType": "array",
+							"objectName": "auth",
+							"isParent": true,
+							"children": [
+								{
+									"id": "2c3ded9c-aeb2-4940-c69b-1b560cb70f10",
+									"name": "undefineditem",
+									"parent": "2422392a-0f72-4f01-ee2c-0f1d367fc42b",
+									"description": "",
+									"objectType": "array",
+									"isParent": true,
+									"children": []
+								}
+							]
+						},
+						{
+							"id": "36bb1e7b-163b-4f38-dfcd-0ab0de02dacd",
+							"name": "endpoints",
+							"parent": "99c1384a-7527-4e94-c796-a7e9a6dbe39d",
+							"description": "",
+							"objectType": "array",
+							"objectName": "endpoints",
+							"isParent": true,
+							"children": [
+								{
+									"id": "2a806903-4795-4ace-9fe5-17f753e2e41d",
+									"name": "undefineditem",
+									"parent": "36bb1e7b-163b-4f38-dfcd-0ab0de02dacd",
+									"description": "",
+									"objectType": "array",
+									"isParent": true,
+									"children": []
+								}
+							]
+						},
+						{
+							"id": "77887077-a238-414f-d956-6ceb59d156e6",
+							"name": "paths",
+							"parent": "99c1384a-7527-4e94-c796-a7e9a6dbe39d",
+							"description": "",
+							"objectType": "array",
+							"objectName": "paths",
+							"isParent": true,
+							"children": [
+								{
+									"id": "60957172-4e99-4a5f-b301-7a0815fcff63",
+									"name": "id",
+									"parent": "77887077-a238-414f-d956-6ceb59d156e6",
+									"description": "",
+									"objectType": "string",
+									"isParent": false,
+									"children": []
+								},
+								{
+									"id": "feb9f04f-0368-4096-b4fb-a7503f7bbeab",
+									"name": "path",
+									"parent": "77887077-a238-414f-d956-6ceb59d156e6",
+									"description": "",
+									"objectType": "string",
+									"isParent": false,
+									"children": []
+								},
+								{
+									"id": "5b784937-b406-4ce1-dc23-1721fdd3e2b4",
+									"name": "method",
+									"parent": "77887077-a238-414f-d956-6ceb59d156e6",
+									"description": "",
+									"objectType": "string",
+									"isParent": false,
+									"children": []
+								},
+								{
+									"id": "a7e86fbf-21e4-426c-c5ac-019c0a26a3db",
+									"name": "headers",
+									"parent": "77887077-a238-414f-d956-6ceb59d156e6",
+									"description": "",
+									"objectType": "array",
+									"objectName": "headers",
+									"isParent": true,
+									"children": [
+										{
+											"id": "03f8ad28-ff59-42e8-be7b-3d732c898fe5",
+											"name": "undefineditem",
+											"parent": "a7e86fbf-21e4-426c-c5ac-019c0a26a3db",
+											"description": "",
+											"objectType": "array",
+											"isParent": true,
+											"children": []
+										}
+									]
+								},
+								{
+									"id": "750d9638-5cb3-4012-c4c6-f56fbcbd1004",
+									"name": "parameters",
+									"parent": "77887077-a238-414f-d956-6ceb59d156e6",
+									"description": "",
+									"objectType": "array",
+									"objectName": "parameters",
+									"isParent": true,
+									"children": [
+										{
+											"id": "39d5d474-c77e-4b4d-a8fb-4405144441c8",
+											"name": "name",
+											"parent": "750d9638-5cb3-4012-c4c6-f56fbcbd1004",
+											"description": "",
+											"objectType": "string",
+											"isParent": false,
+											"children": []
+										},
+										{
+											"id": "921295d1-695b-4dc5-c168-4155060f3338",
+											"name": "example",
+											"parent": "750d9638-5cb3-4012-c4c6-f56fbcbd1004",
+											"description": "",
+											"objectType": "string",
+											"isParent": false,
+											"children": []
+										}
+									]
+								},
+								{
+									"id": "c05cdcbd-1716-4f9c-c638-7386dd40b3b0",
+									"name": "content",
+									"parent": "77887077-a238-414f-d956-6ceb59d156e6",
+									"description": "",
+									"objectType": "array",
+									"objectName": "content",
+									"isParent": true,
+									"children": [
+										{
+											"id": "6d7b5447-afda-49bc-d3ed-e6f46a81ff08",
+											"name": "name",
+											"parent": "c05cdcbd-1716-4f9c-c638-7386dd40b3b0",
+											"description": "",
+											"objectType": "string",
+											"isParent": false,
+											"children": []
+										},
+										{
+											"id": "a7b078cf-6a9a-41eb-83ec-5bdb7a212753",
+											"name": "example",
+											"parent": "c05cdcbd-1716-4f9c-c638-7386dd40b3b0",
+											"description": "",
+											"objectType": "string",
+											"isParent": false,
+											"children": []
+										}
+									]
+								},
+								{
+									"id": "8042ba2b-3eaf-4faa-9489-646e38cbf05c",
+									"name": "responses",
+									"parent": "77887077-a238-414f-d956-6ceb59d156e6",
+									"description": "",
+									"objectType": "array",
+									"objectName": "responses",
+									"isParent": true,
+									"children": [
+										{
+											"id": "a14e4977-83fa-44f3-ea83-cc29628ffdca",
+											"name": "status",
+											"parent": "8042ba2b-3eaf-4faa-9489-646e38cbf05c",
+											"description": "",
+											"objectType": "number",
+											"isParent": false,
+											"children": []
+										},
+										{
+											"id": "c99363b6-8473-408c-b574-ae924a36b7e7",
+											"name": "headers",
+											"parent": "8042ba2b-3eaf-4faa-9489-646e38cbf05c",
+											"description": "",
+											"objectType": "array",
+											"objectName": "headers",
+											"isParent": true,
+											"children": [
+												{
+													"id": "8863f43f-a968-4fc9-9f61-4499b427a71b",
+													"name": "undefineditem",
+													"parent": "c99363b6-8473-408c-b574-ae924a36b7e7",
+													"description": "",
+													"objectType": "array",
+													"isParent": true,
+													"children": []
+												}
+											]
+										},
+										{
+											"id": "2ce00adb-e81d-4912-9845-a2fbf9845536",
+											"name": "content",
+											"parent": "8042ba2b-3eaf-4faa-9489-646e38cbf05c",
+											"description": "",
+											"objectType": "array",
+											"objectName": "content",
+											"isParent": true,
+											"children": [
+												{
+													"id": "4bcc534e-5b5e-43bd-ac6a-20790dee3c2c",
+													"name": "objectType",
+													"parent": "2ce00adb-e81d-4912-9845-a2fbf9845536",
+													"description": "",
+													"objectType": "string",
+													"isParent": false,
+													"children": []
+												},
+												{
+													"id": "5ce4246c-3302-42ea-9b30-21847b050fa1",
+													"name": "name",
+													"parent": "2ce00adb-e81d-4912-9845-a2fbf9845536",
+													"description": "",
+													"objectType": "string",
+													"isParent": false,
+													"children": []
+												}
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"id": "2e41d00c-30a2-47e7-f8f2-ad67e4540929",
+							"name": "definitions",
+							"parent": "99c1384a-7527-4e94-c796-a7e9a6dbe39d",
+							"description": "",
+							"objectType": "array",
+							"objectName": "definitions",
+							"isParent": true,
+							"children": [
+								{
+									"id": "27840f67-35bb-4baf-9857-cb9e9a687cd7",
+									"name": "id",
+									"parent": "2e41d00c-30a2-47e7-f8f2-ad67e4540929",
+									"description": "",
+									"objectType": "string",
+									"isParent": false,
+									"children": []
+								},
+								{
+									"id": "10c8042d-c509-4da7-cb16-a0e9db409da0",
+									"name": "name",
+									"parent": "2e41d00c-30a2-47e7-f8f2-ad67e4540929",
+									"description": "",
+									"objectType": "string",
+									"isParent": false,
+									"children": []
+								},
+								{
+									"id": "4874a2ba-60ea-4788-af56-89c91d997a72",
+									"name": "properties",
+									"parent": "2e41d00c-30a2-47e7-f8f2-ad67e4540929",
+									"description": "",
+									"objectType": "array",
+									"objectName": "properties",
+									"isParent": true,
+									"children": [
+										{
+											"id": "1320921b-3159-4956-b16f-92170f743854",
+											"name": "id",
+											"parent": "4874a2ba-60ea-4788-af56-89c91d997a72",
+											"description": "",
+											"objectType": "string",
+											"isParent": false,
+											"children": []
+										},
+										{
+											"id": "aedf1075-a14f-4cf0-8bb0-4ba932031766",
+											"name": "parent",
+											"parent": "4874a2ba-60ea-4788-af56-89c91d997a72",
+											"description": "",
+											"objectType": "string",
+											"isParent": false,
+											"children": []
+										},
+										{
+											"id": "56aa1946-bcb7-404d-dd8a-3fe411629cff",
+											"name": "name",
+											"parent": "4874a2ba-60ea-4788-af56-89c91d997a72",
+											"description": "",
+											"objectType": "string",
+											"isParent": false,
+											"children": []
+										},
+										{
+											"id": "6cab6cfa-3438-4915-9a27-2633eb36e670",
+											"name": "objectType",
+											"parent": "4874a2ba-60ea-4788-af56-89c91d997a72",
+											"description": "",
+											"objectType": "string",
+											"isParent": false,
+											"children": []
+										}
+									]
+								}
+							]
+						},
+						{
+							"id": "47023bc7-2b2d-4063-c06b-111ac36ae6f5",
+							"name": "documentation",
+							"parent": "99c1384a-7527-4e94-c796-a7e9a6dbe39d",
+							"description": "",
+							"objectType": "object",
+							"objectName": "documentation",
+							"isParent": true,
+							"children": []
+						},
+						{
+							"id": "43e23710-5b0b-403b-f0a1-c3b396cb6ddd",
+							"name": "name",
+							"parent": "99c1384a-7527-4e94-c796-a7e9a6dbe39d",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "346f3807-2f3f-438a-ac6d-a42d82786c20",
+							"name": "endpoint",
+							"parent": "99c1384a-7527-4e94-c796-a7e9a6dbe39d",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "90b30c4d-afd5-4701-f8ea-480ff913d0de",
+							"name": "ver",
+							"parent": "99c1384a-7527-4e94-c796-a7e9a6dbe39d",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "e663de4e-a906-46b6-8bd2-3a1056ae1665",
+							"name": "version",
+							"parent": "99c1384a-7527-4e94-c796-a7e9a6dbe39d",
+							"description": "",
+							"objectType": "object",
+							"objectName": "version",
+							"isParent": true,
+							"children": []
+						},
+						{
+							"id": "21d4974b-49b5-48de-c5df-75a9adec77ba",
+							"name": "description",
+							"parent": "99c1384a-7527-4e94-c796-a7e9a6dbe39d",
+							"description": "",
+							"objectType": "object",
+							"objectName": "description",
+							"isParent": true,
+							"children": []
+						},
+						{
+							"id": "87ed9ce2-05a7-4a69-d069-0c41bb05bae8",
+							"name": "mediaType",
+							"parent": "99c1384a-7527-4e94-c796-a7e9a6dbe39d",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "9759ff89-bdc3-41f9-c37b-5ccfe5f5498e",
+							"name": "securitySchemes",
+							"parent": "99c1384a-7527-4e94-c796-a7e9a6dbe39d",
+							"description": "",
+							"objectType": "object",
+							"objectName": "securitySchemes",
+							"isParent": true,
+							"children": []
+						},
+						{
+							"id": "401ed7a3-cd95-49d4-d1ac-b8f005c8038c",
+							"name": "swaggerURI",
+							"parent": "99c1384a-7527-4e94-c796-a7e9a6dbe39d",
+							"description": "",
+							"objectType": "object",
+							"objectName": "swaggerURI",
+							"isParent": true,
+							"children": []
+						},
+						{
+							"id": "589b104d-448a-49d5-f4e2-1a2ab0343707",
+							"name": "swaggerSystem",
+							"parent": "99c1384a-7527-4e94-c796-a7e9a6dbe39d",
+							"description": "",
+							"objectType": "object",
+							"objectName": "swaggerSystem",
+							"isParent": true,
+							"children": []
+						},
+						{
+							"id": "e1818efe-6684-41b6-c062-83662b140334",
+							"name": "apiType",
+							"parent": "99c1384a-7527-4e94-c796-a7e9a6dbe39d",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "add52a09-22cc-4e77-fbc3-8fb06be97004",
+							"name": "about",
+							"parent": "99c1384a-7527-4e94-c796-a7e9a6dbe39d",
+							"description": "",
+							"objectType": "object",
+							"objectName": "about",
+							"isParent": true,
+							"children": []
+						},
+						{
+							"id": "ecbe25db-6a14-403e-9f75-d98d79f66a17",
+							"name": "enableProxy",
+							"parent": "99c1384a-7527-4e94-c796-a7e9a6dbe39d",
+							"description": "",
+							"objectType": "boolean",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "0aaf2f8f-53f5-45d0-c1d1-a1c4101e3961",
+							"name": "enableTrace",
+							"parent": "99c1384a-7527-4e94-c796-a7e9a6dbe39d",
+							"description": "",
+							"objectType": "boolean",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "ea954570-7442-42b2-c7a8-14f1a61ca1d3",
+							"name": "enableIDE",
+							"parent": "99c1384a-7527-4e94-c796-a7e9a6dbe39d",
+							"description": "",
+							"objectType": "boolean",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "1a04c6a1-7296-4cb7-d660-341700a8b041",
+							"name": "internalAPI",
+							"parent": "99c1384a-7527-4e94-c796-a7e9a6dbe39d",
+							"description": "",
+							"objectType": "object",
+							"objectName": "internalAPI",
+							"isParent": true,
+							"children": []
+						},
+						{
+							"id": "a96828e3-b53c-4b45-86dc-3ec14f52e2f3",
+							"name": "isPublic",
+							"parent": "99c1384a-7527-4e94-c796-a7e9a6dbe39d",
+							"description": "",
+							"objectType": "boolean",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "334204ca-c63a-4ac5-f8d0-5326c2f1e449",
+							"name": "tlsAllowUntrusted",
+							"parent": "99c1384a-7527-4e94-c796-a7e9a6dbe39d",
+							"description": "",
+							"objectType": "boolean",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "f74a213f-3723-4f2e-842d-1a183078577f",
+							"name": "useOwnProcess",
+							"parent": "99c1384a-7527-4e94-c796-a7e9a6dbe39d",
+							"description": "",
+							"objectType": "boolean",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "8751ae03-2e64-4297-ab49-0f27d06332d6",
+							"name": "package",
+							"parent": "99c1384a-7527-4e94-c796-a7e9a6dbe39d",
+							"description": "",
+							"objectType": "object",
+							"objectName": "package",
+							"isParent": true,
+							"children": []
+						},
+						{
+							"id": "fce2b6e9-a731-4715-ad95-aefc2bb6118c",
+							"name": "apiGroup",
+							"parent": "99c1384a-7527-4e94-c796-a7e9a6dbe39d",
+							"description": "",
+							"objectType": "object",
+							"objectName": "apiGroup",
+							"isParent": true,
+							"children": []
+						},
+						{
+							"id": "d74916cb-54f1-4619-a759-0336136f575a",
+							"name": "apps",
+							"parent": "99c1384a-7527-4e94-c796-a7e9a6dbe39d",
+							"description": "",
+							"objectType": "array",
+							"objectName": "apps",
+							"isParent": true,
+							"children": [
+								{
+									"id": "0a5ddebd-1fb9-466d-9495-a922e461b772",
+									"name": "id",
+									"parent": "d74916cb-54f1-4619-a759-0336136f575a",
+									"description": "",
+									"objectType": "string",
+									"isParent": false,
+									"children": []
+								},
+								{
+									"id": "28ac71eb-4bee-4d8b-e450-38e304779de8",
+									"name": "name",
+									"parent": "d74916cb-54f1-4619-a759-0336136f575a",
+									"description": "",
+									"objectType": "string",
+									"isParent": false,
+									"children": []
+								},
+								{
+									"id": "40c0736f-c7e2-4eb7-abb8-bfd57e94bfa3",
+									"name": "properties",
+									"parent": "d74916cb-54f1-4619-a759-0336136f575a",
+									"description": "",
+									"objectType": "array",
+									"objectName": "properties",
+									"isParent": true,
+									"children": [
+										{
+											"id": "27a0bc1e-1204-421b-aaba-bb846eb5071b",
+											"name": "id",
+											"parent": "40c0736f-c7e2-4eb7-abb8-bfd57e94bfa3",
+											"description": "",
+											"objectType": "string",
+											"isParent": false,
+											"children": []
+										},
+										{
+											"id": "c54de16b-4fc8-4f25-901d-71157c364eb9",
+											"name": "parent",
+											"parent": "40c0736f-c7e2-4eb7-abb8-bfd57e94bfa3",
+											"description": "",
+											"objectType": "string",
+											"isParent": false,
+											"children": []
+										},
+										{
+											"id": "6909eb12-258b-46a6-826c-29db76e91d14",
+											"name": "name",
+											"parent": "40c0736f-c7e2-4eb7-abb8-bfd57e94bfa3",
+											"description": "",
+											"objectType": "string",
+											"isParent": false,
+											"children": []
+										},
+										{
+											"id": "634ae372-d700-47cf-da6d-983b59e25c5f",
+											"name": "objectType",
+											"parent": "40c0736f-c7e2-4eb7-abb8-bfd57e94bfa3",
+											"description": "",
+											"objectType": "string",
+											"isParent": false,
+											"children": []
+										}
+									]
+								}
+							]
+						},
+						{
+							"id": "76906819-c5b2-4e2d-949c-5f79890b993a",
+							"name": "roles",
+							"parent": "99c1384a-7527-4e94-c796-a7e9a6dbe39d",
+							"description": "",
+							"objectType": "array",
+							"objectName": "roles",
+							"isParent": true,
+							"children": [
+								{
+									"id": "9633d27d-92fb-43c8-f78d-58c1313fee84",
+									"name": "id",
+									"parent": "76906819-c5b2-4e2d-949c-5f79890b993a",
+									"description": "",
+									"objectType": "string",
+									"isParent": false,
+									"children": []
+								},
+								{
+									"id": "54ed2476-b39e-48dc-be6b-28270b3ed314",
+									"name": "name",
+									"parent": "76906819-c5b2-4e2d-949c-5f79890b993a",
+									"description": "",
+									"objectType": "string",
+									"isParent": false,
+									"children": []
+								},
+								{
+									"id": "4ee75e69-ba3d-411c-8b07-a1581b36e813",
+									"name": "properties",
+									"parent": "76906819-c5b2-4e2d-949c-5f79890b993a",
+									"description": "",
+									"objectType": "array",
+									"objectName": "properties",
+									"isParent": true,
+									"children": [
+										{
+											"id": "06f126c3-7e7e-4fb7-f415-29af22492ff0",
+											"name": "id",
+											"parent": "4ee75e69-ba3d-411c-8b07-a1581b36e813",
+											"description": "",
+											"objectType": "string",
+											"isParent": false,
+											"children": []
+										},
+										{
+											"id": "0f1285e8-3fd6-48bc-903a-022c5ae576fc",
+											"name": "parent",
+											"parent": "4ee75e69-ba3d-411c-8b07-a1581b36e813",
+											"description": "",
+											"objectType": "string",
+											"isParent": false,
+											"children": []
+										},
+										{
+											"id": "1d54bc6a-52da-42da-be9f-2d41411bc4d2",
+											"name": "name",
+											"parent": "4ee75e69-ba3d-411c-8b07-a1581b36e813",
+											"description": "",
+											"objectType": "string",
+											"isParent": false,
+											"children": []
+										},
+										{
+											"id": "8f06161d-5078-4f1c-b27a-5320962df52e",
+											"name": "objectType",
+											"parent": "4ee75e69-ba3d-411c-8b07-a1581b36e813",
+											"description": "",
+											"objectType": "string",
+											"isParent": false,
+											"children": []
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"id": "89bb4587-1320-4193-c359-ea680fd5a3fe",
+					"name": "id",
+					"parent": "331e91c0-cdba-476e-ede3-2a092151c836",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "f692a407-7169-4eba-c583-eaa3eb21baa7",
+					"name": "createdAt",
+					"parent": "331e91c0-cdba-476e-ede3-2a092151c836",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "2933be6d-102d-42a1-b656-5b7fe6a387a0",
+					"name": "updatedAt",
+					"parent": "331e91c0-cdba-476e-ede3-2a092151c836",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "6ea5a871-f31c-40eb-b0bb-c192774b2784",
+					"name": "createdBy",
+					"parent": "331e91c0-cdba-476e-ede3-2a092151c836",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "c6b68c1f-a23f-4964-a744-be1f7f9c51d4",
+					"name": "changedBy",
+					"parent": "331e91c0-cdba-476e-ede3-2a092151c836",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "ed167ae6-d28f-4b4d-81dd-6459e4787742",
+					"name": "name",
+					"parent": "331e91c0-cdba-476e-ede3-2a092151c836",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "b24c8e32-6fec-4628-e900-83c17b1a0257",
+					"name": "description",
+					"parent": "331e91c0-cdba-476e-ede3-2a092151c836",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "b7ca426b-a5ec-4025-8d8f-7e853c0c56fa",
+					"name": "ver",
+					"parent": "331e91c0-cdba-476e-ede3-2a092151c836",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "331e91c0-cdba-476e-ede3-2a092151c836",
+					"name": "package",
+					"parent": "",
+					"description": "",
+					"objectType": "array",
+					"objectName": "package",
+					"isParent": true,
+					"children": [
+						{
+							"id": "89bb4587-1320-4193-c359-ea680fd5a3fe",
+							"name": "id",
+							"parent": "331e91c0-cdba-476e-ede3-2a092151c836",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "f692a407-7169-4eba-c583-eaa3eb21baa7",
+							"name": "createdAt",
+							"parent": "331e91c0-cdba-476e-ede3-2a092151c836",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "2933be6d-102d-42a1-b656-5b7fe6a387a0",
+							"name": "updatedAt",
+							"parent": "331e91c0-cdba-476e-ede3-2a092151c836",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "6ea5a871-f31c-40eb-b0bb-c192774b2784",
+							"name": "createdBy",
+							"parent": "331e91c0-cdba-476e-ede3-2a092151c836",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "c6b68c1f-a23f-4964-a744-be1f7f9c51d4",
+							"name": "changedBy",
+							"parent": "331e91c0-cdba-476e-ede3-2a092151c836",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "ed167ae6-d28f-4b4d-81dd-6459e4787742",
+							"name": "name",
+							"parent": "331e91c0-cdba-476e-ede3-2a092151c836",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "b24c8e32-6fec-4628-e900-83c17b1a0257",
+							"name": "description",
+							"parent": "331e91c0-cdba-476e-ede3-2a092151c836",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "b7ca426b-a5ec-4025-8d8f-7e853c0c56fa",
+							"name": "ver",
+							"parent": "331e91c0-cdba-476e-ede3-2a092151c836",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						}
+					]
+				},
+				{
+					"id": "70ddfccc-b1da-431d-e8e3-db53637b67fb",
+					"name": "id",
+					"parent": "5d3e3d57-8c15-4bd2-b9f3-7162cff87479",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "06e9506e-285f-4e97-ddb2-ccca8f208736",
+					"name": "createdAt",
+					"parent": "5d3e3d57-8c15-4bd2-b9f3-7162cff87479",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "c27524a3-2a9e-4106-b6ab-6ea7024e7547",
+					"name": "updatedAt",
+					"parent": "5d3e3d57-8c15-4bd2-b9f3-7162cff87479",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "91a2045d-f85b-404e-c731-1ce9c2f4e490",
+					"name": "createdBy",
+					"parent": "5d3e3d57-8c15-4bd2-b9f3-7162cff87479",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "643df98a-418a-4025-c1fb-1ec85eeca34f",
+					"name": "changedBy",
+					"parent": "5d3e3d57-8c15-4bd2-b9f3-7162cff87479",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "2f02cedd-7cf1-483f-b1a5-6e0d48856c7b",
+					"name": "name",
+					"parent": "5d3e3d57-8c15-4bd2-b9f3-7162cff87479",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "dca454ed-9707-4bfe-eaf3-f542f918cf4c",
+					"name": "description",
+					"parent": "5d3e3d57-8c15-4bd2-b9f3-7162cff87479",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "e4bbeb8e-1b35-42f1-a1af-7105991f40a3",
+					"name": "ver",
+					"parent": "5d3e3d57-8c15-4bd2-b9f3-7162cff87479",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "5d3e3d57-8c15-4bd2-b9f3-7162cff87479",
+					"name": "apigroup",
+					"parent": "",
+					"description": "",
+					"objectType": "array",
+					"objectName": "apigroup",
+					"isParent": true,
+					"children": [
+						{
+							"id": "70ddfccc-b1da-431d-e8e3-db53637b67fb",
+							"name": "id",
+							"parent": "5d3e3d57-8c15-4bd2-b9f3-7162cff87479",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "06e9506e-285f-4e97-ddb2-ccca8f208736",
+							"name": "createdAt",
+							"parent": "5d3e3d57-8c15-4bd2-b9f3-7162cff87479",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "c27524a3-2a9e-4106-b6ab-6ea7024e7547",
+							"name": "updatedAt",
+							"parent": "5d3e3d57-8c15-4bd2-b9f3-7162cff87479",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "91a2045d-f85b-404e-c731-1ce9c2f4e490",
+							"name": "createdBy",
+							"parent": "5d3e3d57-8c15-4bd2-b9f3-7162cff87479",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "643df98a-418a-4025-c1fb-1ec85eeca34f",
+							"name": "changedBy",
+							"parent": "5d3e3d57-8c15-4bd2-b9f3-7162cff87479",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "2f02cedd-7cf1-483f-b1a5-6e0d48856c7b",
+							"name": "name",
+							"parent": "5d3e3d57-8c15-4bd2-b9f3-7162cff87479",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "dca454ed-9707-4bfe-eaf3-f542f918cf4c",
+							"name": "description",
+							"parent": "5d3e3d57-8c15-4bd2-b9f3-7162cff87479",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "e4bbeb8e-1b35-42f1-a1af-7105991f40a3",
+							"name": "ver",
+							"parent": "5d3e3d57-8c15-4bd2-b9f3-7162cff87479",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						}
+					]
+				},
+				{
+					"id": "8097689e-5ccf-4246-d601-dd4c1faf4387",
+					"name": "undefineditem",
+					"parent": "bb7f35de-f8ee-4083-b670-f1ca481c965d",
+					"description": "",
+					"objectType": "array",
+					"isParent": true,
+					"children": []
+				},
+				{
+					"id": "bb7f35de-f8ee-4083-b670-f1ca481c965d",
+					"name": "children",
+					"parent": "36961984-6006-4efa-eae0-cf52612e294a",
+					"description": "",
+					"objectType": "array",
+					"objectName": "children",
+					"isParent": true,
+					"children": [
+						{
+							"id": "8097689e-5ccf-4246-d601-dd4c1faf4387",
+							"name": "undefineditem",
+							"parent": "bb7f35de-f8ee-4083-b670-f1ca481c965d",
+							"description": "",
+							"objectType": "array",
+							"isParent": true,
+							"children": []
+						}
+					]
+				},
+				{
+					"id": "36961984-6006-4efa-eae0-cf52612e294a",
+					"name": "apps",
+					"parent": "",
+					"description": "",
+					"objectType": "object",
+					"objectName": "apps",
+					"isParent": true,
+					"children": [
+						{
+							"id": "bb7f35de-f8ee-4083-b670-f1ca481c965d",
+							"name": "children",
+							"parent": "36961984-6006-4efa-eae0-cf52612e294a",
+							"description": "",
+							"objectType": "array",
+							"objectName": "children",
+							"isParent": true,
+							"children": [
+								{
+									"id": "8097689e-5ccf-4246-d601-dd4c1faf4387",
+									"name": "undefineditem",
+									"parent": "bb7f35de-f8ee-4083-b670-f1ca481c965d",
+									"description": "",
+									"objectType": "array",
+									"isParent": true,
+									"children": []
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "fe693102-459b-4ce3-dabe-bc71254328bb",
+			"name": "Save",
+			"description": "Save API ",
+			"isInclude": false,
+			"properties": [
+				{
+					"id": "9b403e34-508f-47da-9d5b-7b2d21918970",
+					"name": "undefineditem",
+					"parent": "521b4e0c-b3bb-4d57-ee5f-3bdbb618df22",
+					"description": "",
+					"objectType": "array",
+					"isParent": true,
+					"children": []
+				},
+				{
+					"id": "521b4e0c-b3bb-4d57-ee5f-3bdbb618df22",
+					"name": "paths",
+					"parent": "",
+					"description": "",
+					"objectType": "array",
+					"objectName": "paths",
+					"isParent": true,
+					"children": [
+						{
+							"id": "9b403e34-508f-47da-9d5b-7b2d21918970",
+							"name": "undefineditem",
+							"parent": "521b4e0c-b3bb-4d57-ee5f-3bdbb618df22",
+							"description": "",
+							"objectType": "array",
+							"isParent": true,
+							"children": []
+						}
+					]
+				},
+				{
+					"id": "331cc789-f161-449f-b67e-a331d496b8e7",
+					"name": "undefineditem",
+					"parent": "afab2d3e-137f-41e7-bf78-3bb05a20b22d",
+					"description": "",
+					"objectType": "array",
+					"isParent": true,
+					"children": []
+				},
+				{
+					"id": "afab2d3e-137f-41e7-bf78-3bb05a20b22d",
+					"name": "endpoints",
+					"parent": "",
+					"description": "",
+					"objectType": "array",
+					"objectName": "endpoints",
+					"isParent": true,
+					"children": [
+						{
+							"id": "331cc789-f161-449f-b67e-a331d496b8e7",
+							"name": "undefineditem",
+							"parent": "afab2d3e-137f-41e7-bf78-3bb05a20b22d",
+							"description": "",
+							"objectType": "array",
+							"isParent": true,
+							"children": []
+						}
+					]
+				},
+				{
+					"id": "4e7b03e7-fed7-41e5-e987-5caf8cb5c4f3",
+					"name": "undefineditem",
+					"parent": "9e3b983e-7361-4c2f-be80-297706137eee",
+					"description": "",
+					"objectType": "array",
+					"isParent": true,
+					"children": []
+				},
+				{
+					"id": "9e3b983e-7361-4c2f-be80-297706137eee",
+					"name": "auth",
+					"parent": "",
+					"description": "",
+					"objectType": "array",
+					"objectName": "auth",
+					"isParent": true,
+					"children": [
+						{
+							"id": "4e7b03e7-fed7-41e5-e987-5caf8cb5c4f3",
+							"name": "undefineditem",
+							"parent": "9e3b983e-7361-4c2f-be80-297706137eee",
+							"description": "",
+							"objectType": "array",
+							"isParent": true,
+							"children": []
+						}
+					]
+				},
+				{
+					"id": "e6af125f-300f-43dd-cd5c-8e0bb83796a9",
+					"name": "undefineditem",
+					"parent": "b9d9ccf2-079b-4962-8f33-50dcca6cb4c4",
+					"description": "",
+					"objectType": "array",
+					"isParent": true,
+					"children": []
+				},
+				{
+					"id": "b9d9ccf2-079b-4962-8f33-50dcca6cb4c4",
+					"name": "definitions",
+					"parent": "",
+					"description": "",
+					"objectType": "array",
+					"objectName": "definitions",
+					"isParent": true,
+					"children": [
+						{
+							"id": "e6af125f-300f-43dd-cd5c-8e0bb83796a9",
+							"name": "undefineditem",
+							"parent": "b9d9ccf2-079b-4962-8f33-50dcca6cb4c4",
+							"description": "",
+							"objectType": "array",
+							"isParent": true,
+							"children": []
+						}
+					]
+				},
+				{
+					"id": "d210fa35-a0af-408c-f598-9412f87eafb8",
+					"name": "undefineditem",
+					"parent": "70b5e6de-4986-4338-cb99-aa457a568061",
+					"description": "",
+					"objectType": "array",
+					"isParent": true,
+					"children": []
+				},
+				{
+					"id": "70b5e6de-4986-4338-cb99-aa457a568061",
+					"name": "roles",
+					"parent": "",
+					"description": "",
+					"objectType": "array",
+					"objectName": "roles",
+					"isParent": true,
+					"children": [
+						{
+							"id": "d210fa35-a0af-408c-f598-9412f87eafb8",
+							"name": "undefineditem",
+							"parent": "70b5e6de-4986-4338-cb99-aa457a568061",
+							"description": "",
+							"objectType": "array",
+							"isParent": true,
+							"children": []
+						}
+					]
+				},
+				{
+					"id": "4a3d7555-38c2-44b5-f3bf-a1e5feff55dc",
+					"name": "apiType",
+					"parent": "",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "754b319e-3c3a-4d93-8d39-162157d0a3a1",
+					"name": "name",
+					"parent": "",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "09f46665-14c0-43f7-ae1e-382d5ebcff6c",
+					"name": "endpoint",
+					"parent": "",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "7247b093-f4d3-4195-d575-f271560f5fc9",
+					"name": "ver",
+					"parent": "",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				}
+			]
+		}
+	],
+	"documentation": [],
+	"name": "CoreAPI Connectivity_APIDesigner",
+	"endpoint": "https://[yourDomain].com/api/functions/API",
+	"ver": "23.2.3.1812",
+	"version": "2.2.0",
+	"description": "API to access results of Planet 9 Connectivity_API Designer details.",
+	"mediaType": null,
+	"securitySchemes": null,
+	"swaggerURI": null,
+	"swaggerSystem": null,
+	"apiType": "",
+	"about": "<h4><span style=\"white-space: unset; font-size: 1rem;\">Description</span></h4><p>Planet 9-APIDesigner facilitates to design the new API's using table definition or server script and by exporting API from an external system.</p><p>API Designer maintains the list of all API of the system.</p><p>You can use this API Connectivity_APIDesigner in your app if you want to get an API list, API details, delete the existing API, or create the new API.&nbsp;</p><p>Every app must have the right roles (permissions) and authentication that enables access to the API Designer API.</p><h4><strong>Operations Performed&nbsp;</strong></h4><p><strong>List</strong></p><p>Get the list of available API's.&nbsp;</p><table class=\"table\" style=\"width: 588px;\"><tbody><tr><td>Response</td><td>List - Definition<br></td></tr></tbody></table><p><strong>Get</strong></p><p>Get the API details corresponding to the API Id.&nbsp;</p><table class=\"table\" style=\"width: 676px;\"><tbody><tr><td>Request</td><td>ID</td></tr><tr><td>Response</td><td>Get - Definition</td></tr></tbody></table><p><strong><br>Delete</strong></p><p>Delete the API&nbsp;</p><table class=\"table\" style=\"width: 676px;\"><tbody><tr><td>Request</td><td>ID</td></tr><tr><td>Response</td><td>Error / Success&nbsp; Status&nbsp;</td></tr></tbody></table><p><strong><br>Save</strong></p><p>Save the API</p><table class=\"table\" style=\"width: 676px;\"><tbody><tr><td>Request</td><td>Save - Definition</td></tr><tr><td>Response</td><td>Error / Success&nbsp; &nbsp;Status&nbsp;</td></tr></tbody></table><h4><br></h4>",
+	"enableProxy": false,
+	"restrictAccess": false,
+	"enableTrace": false,
+	"enableIDE": false,
+	"internalAPI": false,
+	"isPublic": false,
+	"tlsAllowUntrusted": false,
+	"useOwnProcess": false,
+	"package": "25602b27-7c0d-ed11-b47a-000d3ab2359f",
+	"apiGroup": "6b8835fa-e550-49bc-b9e5-ac3861be43e1",
+	"apiFormat": 0,
+	"roles": []
+}

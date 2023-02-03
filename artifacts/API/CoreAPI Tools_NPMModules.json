@@ -1,0 +1,698 @@
+{
+	"id": "4f2f6e4c-9452-46c8-93f3-8f2dbce057b8",
+	"createdAt": "2022-02-04T15:44:47.643Z",
+	"createdBy": "lloyd",
+	"auth": [],
+	"endpoints": [],
+	"paths": [
+		{
+			"id": "3196af38-fb60-4771-bc73-3f9255baa2f9",
+			"method": "POST",
+			"path": "/List",
+			"description": "",
+			"parameters": [],
+			"headers": [],
+			"responses": [
+				{
+					"status": "200",
+					"description": "OK",
+					"headers": [],
+					"body": [],
+					"content": [
+						{
+							"id": "7b9a8568-85a1-4132-8dfd-60d241fa190c",
+							"name": "Get",
+							"objectType": "array"
+						}
+					]
+				},
+				{
+					"status": "500",
+					"description": "OK",
+					"headers": [],
+					"body": [],
+					"content": [
+						{
+							"id": "d45fd6a3-f5f5-47ca-e0e1-bcbc6c4fa36e",
+							"name": "Error",
+							"objectType": "object"
+						}
+					]
+				}
+			],
+			"content": [
+				{
+					"name": "",
+					"objectType": "object"
+				}
+			],
+			"example": [
+				"==OBJECT STRING==",
+				"[{",
+				"    \"id\": \"77f5cd34-d8a1-4b23-9851-3ea45a5481a2\",",
+				"    \"createdAt\": \"2019-07-12T08:51:54.000Z\",",
+				"    \"updatedAt\": \"2019-07-12T08:51:54.000Z\",",
+				"    \"createdBy\": \"ian\",",
+				"    \"changedBy\": \"ian\",",
+				"    \"contextName\": \"vue-material\",",
+				"    \"path\": \"/home/ec2-user/customnpm/node_modules/vue-material\",",
+				"    \"description\": \"Material Design for Vue.js\",",
+				"    \"version\": \"1.0.0-beta-11\",",
+				"    \"isLocal\": false",
+				"}, {",
+				"    \"id\": \"898e08a4-d058-483a-860b-028b14b2af60\",",
+				"    \"createdAt\": \"2019-07-12T08:52:15.000Z\",",
+				"    \"updatedAt\": \"2019-07-12T08:52:15.000Z\",",
+				"    \"createdBy\": \"ian\",",
+				"    \"changedBy\": \"ian\",",
+				"    \"contextName\": \"vue-router\",",
+				"    \"path\": \"/home/ec2-user/customnpm/node_modules/vue-router\",",
+				"    \"description\": \"Official router for Vue.js 2\",",
+				"    \"version\": \"3.0.6\",",
+				"    \"isLocal\": false",
+				"}, {",
+				"    \"id\": \"b69281f1-f6bf-46f7-9cb6-dead1b3f91d9\",",
+				"    \"createdAt\": \"2019-07-12T08:53:26.000Z\",",
+				"    \"updatedAt\": \"2019-07-12T08:53:26.000Z\",",
+				"    \"createdBy\": \"ian\",",
+				"    \"changedBy\": \"ian\",",
+				"    \"contextName\": \"vuex\",",
+				"    \"path\": \"/home/ec2-user/customnpm/node_modules/vuex\",",
+				"    \"description\": \"state management for Vue.js\",",
+				"    \"version\": \"3.1.1\",",
+				"    \"isLocal\": false",
+				"}]",
+				"",
+				""
+			],
+			"summary": "Get the NPM Module list"
+		},
+		{
+			"id": "e39086e2-6555-4337-c5ef-1913372cc383",
+			"method": "POST",
+			"path": "/Get",
+			"description": "",
+			"parameters": [],
+			"headers": [],
+			"responses": [
+				{
+					"status": "200",
+					"description": "OK",
+					"headers": [],
+					"body": [],
+					"content": [
+						{
+							"id": "5cef2cd7-03b9-4bcd-ceb5-074ef21cccde",
+							"name": "Get",
+							"objectType": "object"
+						}
+					]
+				},
+				{
+					"status": "500",
+					"description": "OK",
+					"headers": [],
+					"body": [],
+					"content": [
+						{
+							"id": "d55e4450-f99e-40a7-c188-3d8ba70c0aaa",
+							"name": "Error",
+							"objectType": "object"
+						}
+					]
+				}
+			],
+			"summary": "Get the selected NPM Module Details",
+			"content": [
+				{
+					"name": "ID",
+					"objectType": "object"
+				}
+			],
+			"example": [
+				"==OBJECT STRING==",
+				"{",
+				"    \"id\": \"898e08a4-d058-483a-860b-028b14b2af60\",",
+				"    \"createdAt\": \"2019-07-12T08:52:15.000Z\",",
+				"    \"updatedAt\": \"2019-07-12T08:52:15.000Z\",",
+				"    \"createdBy\": \"ian\",",
+				"    \"changedBy\": \"ian\",",
+				"    \"contextName\": \"vue-router\",",
+				"    \"path\": \"/home/ec2-user/customnpm/node_modules/vue-router\",",
+				"    \"description\": \"Official router for Vue.js 2\",",
+				"    \"version\": \"3.0.6\",",
+				"    \"isLocal\": false",
+				"}"
+			]
+		},
+		{
+			"id": "ea6d6bab-c298-439e-a2ef-f7ee553e9cd7",
+			"method": "POST",
+			"path": "/Save",
+			"description": "",
+			"parameters": [],
+			"headers": [],
+			"responses": [
+				{
+					"status": "200",
+					"description": "OK",
+					"headers": [],
+					"body": [],
+					"content": []
+				},
+				{
+					"status": "500",
+					"description": "OK",
+					"headers": [],
+					"body": [],
+					"content": [
+						{
+							"id": "07b476c4-ea13-4b43-f6a9-9c726b6a9ab6",
+							"name": "Error",
+							"objectType": "object"
+						}
+					]
+				}
+			],
+			"summary": "Save the installed NPM Module",
+			"content": [
+				{
+					"name": "Save",
+					"objectType": "object"
+				}
+			],
+			"example": [
+				"==OBJECT STRING==",
+				"{",
+				"    \"id\": \"474fd771-9c1e-4ad4-b09b-34ab9ba5c00f\",",
+				"    \"createdAt\": \"2019-08-05T10:19:48.000Z\",",
+				"    \"updatedAt\": \"2019-08-05T10:19:48.000Z\",",
+				"    \"createdBy\": \"priyanka\",",
+				"    \"changedBy\": \"priyanka\",",
+				"    \"contextName\": \"webpack\",",
+				"    \"path\": \"/home/ec2-user/customnpm/node_modules/webpack\",",
+				"    \"description\": \"Packs CommonJs/AMD modules for the browser. Allows to split your codebase into multiple bundles, which can be loaded on demand. Support loaders to preprocess files, i.e. json, jsx, es7, css, less, ... and your custom stuff.\",",
+				"    \"version\": \"4.35.2\",",
+				"    \"isLocal\": false",
+				"}"
+			]
+		},
+		{
+			"id": "d142956a-29a9-45bb-b09b-f402652c75f1",
+			"method": "POST",
+			"path": "/Install",
+			"description": "",
+			"parameters": [],
+			"headers": [],
+			"responses": [
+				{
+					"status": "200",
+					"description": "OK",
+					"headers": [],
+					"body": [],
+					"content": [
+						{
+							"id": "0d72f7e6-bd59-400e-a4f8-136dbd463d6c",
+							"name": "InstallResponse",
+							"objectType": "object"
+						}
+					]
+				},
+				{
+					"status": "500",
+					"description": "OK",
+					"headers": [],
+					"body": [],
+					"content": [
+						{
+							"id": "6a2ce7d3-2b45-490c-9913-9c189494ebe6",
+							"name": "Error",
+							"objectType": "object"
+						}
+					]
+				}
+			],
+			"content": [
+				{
+					"name": "Install",
+					"objectType": "object"
+				}
+			],
+			"summary": "Install the NPM Module",
+			"example": [
+				"==OBJECT STRING==",
+				"{",
+				"    \"module\": \"p-map\",",
+				"    \"folder\": \"/home/ec2-user/customnpm\",",
+				"    \"version\": \"4.0.0\"",
+				"}"
+			]
+		},
+		{
+			"id": "a1e6d765-b119-4a39-ea01-a1c5807e6a72",
+			"method": "POST",
+			"path": "/CheckModules",
+			"description": "",
+			"parameters": [],
+			"headers": [],
+			"responses": [
+				{
+					"status": "200",
+					"description": "OK",
+					"headers": [],
+					"body": [],
+					"content": []
+				},
+				{
+					"status": "500",
+					"description": "OK",
+					"headers": [],
+					"body": [],
+					"content": [
+						{
+							"id": "91f54727-c645-487b-aec2-4d5cb89096b9",
+							"name": "Error",
+							"objectType": "object"
+						}
+					]
+				}
+			],
+			"summary": "Check the existing odule",
+			"content": [
+				{
+					"name": "Save",
+					"objectType": "object"
+				}
+			],
+			"example": [
+				"==OBJECT STRING==",
+				"{",
+				"    \"id\": \"474fd771-9c1e-4ad4-b09b-34ab9ba5c00f\",",
+				"    \"createdAt\": \"2019-08-05T10:19:48.000Z\",",
+				"    \"updatedAt\": \"2019-08-05T10:19:48.000Z\",",
+				"    \"createdBy\": \"priyanka\",",
+				"    \"changedBy\": \"priyanka\",",
+				"    \"contextName\": \"webpack\",",
+				"    \"path\": \"/home/ec2-user/customnpm/node_modules/webpack\",",
+				"    \"description\": \"Packs CommonJs/AMD modules for the browser. Allows to split your codebase into multiple bundles, which can be loaded on demand. Support loaders to preprocess files, i.e. json, jsx, es7, css, less, ... and your custom stuff.\",",
+				"    \"version\": \"4.35.2\",",
+				"    \"isLocal\": false",
+				"}"
+			]
+		},
+		{
+			"id": "e4a5cf18-8ced-4724-b296-460caa247a80",
+			"method": "POST",
+			"path": "/Delete",
+			"description": "",
+			"parameters": [],
+			"headers": [],
+			"responses": [
+				{
+					"status": "200",
+					"description": "OK",
+					"headers": [],
+					"body": [],
+					"content": []
+				},
+				{
+					"status": "500",
+					"description": "OK",
+					"headers": [],
+					"body": [],
+					"content": [
+						{
+							"id": "4902c163-b0fc-44b7-83fe-abf0789340a1",
+							"name": "Error",
+							"objectType": "object"
+						}
+					]
+				}
+			],
+			"content": [
+				{
+					"name": "ID",
+					"objectType": "object"
+				}
+			]
+		}
+	],
+	"definitions": [
+		{
+			"id": "0a6a7938-ef9c-4fd8-f499-7a7292b38a0f",
+			"name": "Error",
+			"description": "",
+			"isInclude": false,
+			"properties": [
+				{
+					"id": "04c000f1-531a-4d7f-8741-981923725c65",
+					"name": "status",
+					"objectType": "string",
+					"description": "",
+					"required": false,
+					"value": "",
+					"minLength": "",
+					"maxLength": "",
+					"default": "",
+					"example": "",
+					"isParent": false,
+					"children": []
+				}
+			]
+		},
+		{
+			"id": "95fb0958-a87d-4bcd-e985-2f9a7b208295",
+			"name": "Get",
+			"description": "",
+			"isInclude": false,
+			"properties": [
+				{
+					"id": "21e4268a-a198-4016-b224-db718bc981df",
+					"name": "id",
+					"parent": "",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": [],
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"showNameField": true
+				},
+				{
+					"id": "28245779-2f2b-4e3b-e050-441e9b931ae5",
+					"name": "createdAt",
+					"parent": "",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": [],
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"showNameField": true
+				},
+				{
+					"id": "537560ef-1f95-4188-e782-7e68653f72f9",
+					"name": "updatedAt",
+					"parent": "",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": [],
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"showNameField": true
+				},
+				{
+					"id": "cd23efe0-aa75-47fe-91c3-2d24df7fb427",
+					"name": "createdBy",
+					"parent": "",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": [],
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"showNameField": true
+				},
+				{
+					"id": "a5e0328e-2080-456f-a29b-9c41cd65a0fe",
+					"name": "changedBy",
+					"parent": "",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": [],
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"showNameField": true
+				},
+				{
+					"id": "9168e92f-6055-4f73-ca22-edf7fe69e930",
+					"name": "contextName",
+					"parent": "",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": [],
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"showNameField": true
+				},
+				{
+					"id": "1d41f0e9-2a25-4402-82c4-aff1b89bf068",
+					"name": "path",
+					"parent": "",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": [],
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"showNameField": true
+				},
+				{
+					"id": "486c65e2-b326-4baa-f15c-c3e1bb10e3f5",
+					"name": "description",
+					"parent": "",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": [],
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"showNameField": true
+				},
+				{
+					"id": "4035fc64-f5c0-4536-8367-dcb0f2ddb97a",
+					"name": "version",
+					"parent": "",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": [],
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"showNameField": true
+				},
+				{
+					"id": "0a202aa7-aae2-48f8-e44e-5c245d342730",
+					"name": "isLocal",
+					"parent": "",
+					"description": "",
+					"objectType": "boolean",
+					"isParent": false,
+					"children": [],
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"showNameField": true
+				}
+			]
+		},
+		{
+			"id": "8a28c38e-181f-4802-ec16-292ae5301aed",
+			"name": "ID",
+			"description": "",
+			"isInclude": false,
+			"properties": [
+				{
+					"id": "bf5959ff-fdfb-497a-ba63-a724506b613d",
+					"name": "id",
+					"objectType": "string",
+					"description": "",
+					"required": true,
+					"value": "",
+					"minLength": "",
+					"maxLength": "",
+					"default": "",
+					"example": "",
+					"isParent": false,
+					"children": []
+				}
+			]
+		},
+		{
+			"id": "7814545b-039c-497b-abb0-283e2a9d16cc",
+			"name": "Save",
+			"description": "",
+			"isInclude": false,
+			"properties": [
+				{
+					"id": "2d41536f-9842-4dce-c06b-b8a6cc062e6e",
+					"name": "id",
+					"parent": "",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "67d0fcf2-2449-4457-cd48-2854fb96f884",
+					"name": "createdAt",
+					"parent": "",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "b3cc6b94-3623-44f2-ced8-100d62575882",
+					"name": "updatedAt",
+					"parent": "",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "d604a030-6141-4130-f0b2-9c3c6b0655ea",
+					"name": "createdBy",
+					"parent": "",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "f724b55d-ce92-4203-95c4-2a78a917002e",
+					"name": "changedBy",
+					"parent": "",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "8d2a69de-fe66-444a-9b13-4f547423f20f",
+					"name": "contextName",
+					"parent": "",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "dd8e98e7-7801-416b-d8d8-8ee822347cfc",
+					"name": "path",
+					"parent": "",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "6a5fa4e0-329e-4978-9164-46bc1b256c53",
+					"name": "description",
+					"parent": "",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "8220cc46-6dd5-4d36-f309-e065f030dd5b",
+					"name": "version",
+					"parent": "",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "cb8793e9-7bce-447e-ca8c-b04cf8e15496",
+					"name": "isLocal",
+					"parent": "",
+					"description": "",
+					"objectType": "boolean",
+					"isParent": false,
+					"children": []
+				}
+			]
+		},
+		{
+			"id": "0a62f978-5351-403c-c6c1-1201339e1835",
+			"name": "Install",
+			"description": "",
+			"isInclude": false,
+			"properties": [
+				{
+					"id": "14e033aa-a177-4ab6-a5f7-da1c4bf68f56",
+					"name": "module",
+					"parent": "",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "cd2d941a-1c25-41cd-9b2e-3a1d72c9412c",
+					"name": "folder",
+					"parent": "",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "b7546d20-3a31-4d1c-9b54-b1933face8eb",
+					"name": "version",
+					"parent": "",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				}
+			]
+		},
+		{
+			"id": "05ad17a4-5384-4040-c300-1aaba79e2a8c",
+			"name": "InstallResponse",
+			"description": "",
+			"isInclude": false,
+			"properties": [
+				{
+					"id": "0fc65a69-0360-4707-c22e-d79b74ba7705",
+					"name": "status",
+					"parent": "",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				}
+			]
+		}
+	],
+	"documentation": [],
+	"name": "CoreAPI Tools_NPMModules",
+	"endpoint": "https://[yourDomain].com/api/functions/NpmModules",
+	"ver": "23.2.3.1836",
+	"version": "2.2.0",
+	"description": "API to access results of Planet 9 Tools_NPMModules",
+	"mediaType": null,
+	"securitySchemes": null,
+	"swaggerURI": null,
+	"swaggerSystem": null,
+	"apiType": "",
+	"about": "<p><strong style=\"white-space: unset; font-size: 1rem;\">Description</strong><br></p><p>Planet 9-Tools_NPMModules manages the installed NPM Modules in Planet 9.</p><p>API Tools_NPMModules is the API to access the Planet 9 NPM Modules and to perform the API operations from your App.</p><p>Planet 9-Tools_NPMModules supports the API Operations like install a new NPM module, get the NPM module details, get the installed modules list, delete and save the NPM Module.</p><p>Every App must have the right roles( permissions) that enable access to the planet 9 Tools_NPMModules.</p><p><strong>Operations Performed</strong></p><p><strong>Get</strong></p><p>Get the selected NPM Module</p><table class=\"table\" style=\"width: 730px;\"><tbody><tr><td>Request</td><td>ID</td></tr><tr><td>Response</td><td>Get- Definition&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</td></tr></tbody></table><p><strong style=\"white-space: unset; font-size: 1rem;\">List</strong><br></p><p>Get the list of the&nbsp;<span style=\"white-space: unset; font-size: 1rem;\">NPM Module</span></p><table class=\"table\" style=\"width: 730px;\"><tbody><tr><td>Response</td><td>List(array)- Definition&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</td></tr></tbody></table><p><strong>Install</strong></p><p>Install the NPM Module</p><table class=\"table\"><tbody><tr><td>Request</td><td>Install(object)-Definition</td></tr><tr><td>Response</td><td>InstallResponse(object)-Definition</td></tr></tbody></table><p><strong>Save</strong></p><p>Save the NPM Module</p><table class=\"table\"><tbody><tr><td>Request</td><td>Save(object)-Definition</td></tr></tbody></table><p><strong>Delete</strong></p><p>Delete the selected NPM Module (ID)</p><table class=\"table\"><tbody><tr><td>Request</td><td>ID&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</td></tr></tbody></table><p><strong style=\"white-space: unset; font-size: 1rem;\">CheckModule</strong><br></p><p>Check the module availability</p><table class=\"table\"><tbody><tr><td>Request</td><td>Save(object)-Definition</td></tr></tbody></table><p><br></p>",
+	"enableProxy": true,
+	"restrictAccess": false,
+	"enableTrace": false,
+	"enableIDE": false,
+	"internalAPI": false,
+	"isPublic": false,
+	"tlsAllowUntrusted": true,
+	"useOwnProcess": false,
+	"package": "25602b27-7c0d-ed11-b47a-000d3ab2359f",
+	"apiGroup": "3a991f98-214e-428e-811c-1964a5766113",
+	"apiFormat": 0,
+	"roles": []
+}

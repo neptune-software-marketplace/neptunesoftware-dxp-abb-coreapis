@@ -1,0 +1,310 @@
+{
+	"id": "0ff036dd-80e3-43c5-8a71-30a5919c1d92",
+	"createdAt": "2022-02-04T15:44:48.476Z",
+	"createdBy": "lloyd",
+	"auth": [],
+	"endpoints": [],
+	"paths": [
+		{
+			"id": "e40d7121-fc27-4ca9-9b7a-652a322ecbe6",
+			"method": "POST",
+			"path": "/Sessions",
+			"description": "",
+			"parameters": [],
+			"headers": [],
+			"responses": [
+				{
+					"status": "200",
+					"description": "OK",
+					"headers": [],
+					"body": [],
+					"content": [
+						{
+							"id": "594f027e-dd31-495d-e960-72c65ec0f2ee",
+							"name": "Sessions",
+							"objectType": "array"
+						}
+					]
+				},
+				{
+					"status": "500",
+					"description": "OK",
+					"headers": [],
+					"body": [],
+					"content": [
+						{
+							"id": "632e2881-9504-44a8-d892-bec286cb9799",
+							"name": "Error",
+							"objectType": "object"
+						}
+					]
+				}
+			],
+			"example": [
+				"==OBJECT STRING==",
+				"{",
+				"    \"users\": [{",
+				"        \"id\": \"0ac8bf46-7a2a-4981-a030-adf971e8d261\",",
+				"        \"username\": \"branislav\"",
+				"    }, {",
+				"        \"id\": \"5f56c147-0741-4d5e-b0f1-1bd6ba405a37\",",
+				"        \"username\": \"ole-andre.haugen@neptune-software.com\"",
+				"    }, {",
+				"        \"id\": \"bfad957d-5aae-4ad3-b4c1-6ccfb06c8b20\",",
+				"        \"username\": \"gunnar\"",
+				"    }, {",
+				"        \"id\": \"897fd179-ae43-4be5-9e10-f503685362be\",",
+				"        \"username\": \"admin\"",
+				"    }, {",
+				"        \"id\": \"351c3593-9ad3-41f7-90d6-9866313ad7cd\",",
+				"        \"username\": \"priyanka\"",
+				"    }, {",
+				"        \"id\": \"2149252b-f425-4d5e-85e9-c1b2f08ac879\",",
+				"        \"username\": \"rommel\"",
+				"    }],",
+				"    \"sessions\": [{",
+				"        \"id\": \"q8B4FLjv_Bw3O6T-XkNYCthCCm61Ux-d\",",
+				"        \"session\": \"{\\\"cookie\\\":{\\\"originalMaxAge\\\":null,\\\"expires\\\":null,\\\"secure\\\":true,\\\"httpOnly\\\":true,\\\"path\\\":\\\"/\\\"},\\\"passport\\\":{\\\"user\\\":\\\"897fd179-ae43-4be5-9e10-f503685362be\\\"}}\",",
+				"        \"expires\": \"2020-05-06T20:28:54.097Z\",",
+				"        \"lastModified\": \"2020-05-06T10:28:54.097Z\",",
+				"        \"userId\": \"897fd179-ae43-4be5-9e10-f503685362be\"",
+				"    }, {",
+				"        \"id\": \"VIxQSVA8x6Zusvb8KRIw7Zl1h5k78-D5\",",
+				"        \"session\": \"{\\\"cookie\\\":{\\\"originalMaxAge\\\":null,\\\"expires\\\":null,\\\"secure\\\":true,\\\"httpOnly\\\":true,\\\"path\\\":\\\"/\\\"},\\\"passport\\\":{\\\"user\\\":\\\"0ac8bf46-7a2a-4981-a030-adf971e8d261\\\"}}\",",
+				"        \"expires\": \"2020-05-06T21:26:17.839Z\",",
+				"        \"lastModified\": \"2020-05-06T11:26:17.839Z\",",
+				"        \"userId\": \"0ac8bf46-7a2a-4981-a030-adf971e8d261\"",
+				"    }, {",
+				"        \"id\": \"fAjCmVC-9ryvaMniv2SJuIGtczs5S2Wx\",",
+				"        \"session\": \"{\\\"cookie\\\":{\\\"originalMaxAge\\\":null,\\\"expires\\\":null,\\\"secure\\\":true,\\\"httpOnly\\\":true,\\\"path\\\":\\\"/\\\"},\\\"passport\\\":{\\\"user\\\":\\\"bfad957d-5aae-4ad3-b4c1-6ccfb06c8b20\\\"}}\",",
+				"        \"expires\": \"2020-05-06T21:27:38.367Z\",",
+				"        \"lastModified\": \"2020-05-06T11:27:38.367Z\",",
+				"        \"userId\": \"bfad957d-5aae-4ad3-b4c1-6ccfb06c8b20\"",
+				"    }, {",
+				"        \"id\": \"K7LHiIPXo0_MWKyhBQ8_P5lYS1BcN4un\",",
+				"        \"session\": \"{\\\"cookie\\\":{\\\"originalMaxAge\\\":null,\\\"expires\\\":null,\\\"secure\\\":true,\\\"httpOnly\\\":true,\\\"path\\\":\\\"/\\\"},\\\"passport\\\":{\\\"user\\\":\\\"2149252b-f425-4d5e-85e9-c1b2f08ac879\\\"}}\",",
+				"        \"expires\": \"2020-05-06T21:19:45.221Z\",",
+				"        \"lastModified\": \"2020-05-06T11:19:45.221Z\",",
+				"        \"userId\": \"2149252b-f425-4d5e-85e9-c1b2f08ac879\"",
+				"    }, {",
+				"        \"id\": \"xF4iQdlUqd2Rahlbr5NDn121G3fA5BMu\",",
+				"        \"session\": \"{\\\"cookie\\\":{\\\"originalMaxAge\\\":null,\\\"expires\\\":null,\\\"secure\\\":true,\\\"httpOnly\\\":true,\\\"path\\\":\\\"/\\\"},\\\"passport\\\":{\\\"user\\\":\\\"351c3593-9ad3-41f7-90d6-9866313ad7cd\\\"}}\",",
+				"        \"expires\": \"2020-05-06T21:43:09.830Z\",",
+				"        \"lastModified\": \"2020-05-06T11:43:09.830Z\",",
+				"        \"userId\": \"351c3593-9ad3-41f7-90d6-9866313ad7cd\"",
+				"    }, {",
+				"        \"id\": \"0XES_BJer66bkPJ73bOuN4mMr-fLDZBQ\",",
+				"        \"session\": \"{\\\"cookie\\\":{\\\"originalMaxAge\\\":null,\\\"expires\\\":null,\\\"secure\\\":true,\\\"httpOnly\\\":true,\\\"path\\\":\\\"/\\\"},\\\"passport\\\":{\\\"user\\\":\\\"5f56c147-0741-4d5e-b0f1-1bd6ba405a37\\\"}}\",",
+				"        \"expires\": \"2020-05-06T21:19:48.130Z\",",
+				"        \"lastModified\": \"2020-05-06T11:19:48.130Z\",",
+				"        \"userId\": \"5f56c147-0741-4d5e-b0f1-1bd6ba405a37\"",
+				"    }]",
+				"}"
+			]
+		}
+	],
+	"definitions": [
+		{
+			"id": "66f8ee86-2322-476d-fdcb-3045cf0d78f7",
+			"name": "Sessions",
+			"description": "",
+			"isInclude": false,
+			"properties": [
+				{
+					"id": "cb92b910-ebad-4ecd-8787-b4df6a2cf749",
+					"name": "id",
+					"parent": "8118afb8-12a2-49e2-b7fb-320395cf5ae2",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "8c7d362c-c573-49c1-99df-db8082102b36",
+					"name": "username",
+					"parent": "8118afb8-12a2-49e2-b7fb-320395cf5ae2",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "8118afb8-12a2-49e2-b7fb-320395cf5ae2",
+					"name": "users",
+					"parent": "",
+					"description": "",
+					"objectType": "array",
+					"objectName": "users",
+					"isParent": true,
+					"children": [
+						{
+							"id": "cb92b910-ebad-4ecd-8787-b4df6a2cf749",
+							"name": "id",
+							"parent": "8118afb8-12a2-49e2-b7fb-320395cf5ae2",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "8c7d362c-c573-49c1-99df-db8082102b36",
+							"name": "username",
+							"parent": "8118afb8-12a2-49e2-b7fb-320395cf5ae2",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						}
+					]
+				},
+				{
+					"id": "fa697307-1c82-4762-f3b9-01b632335578",
+					"name": "id",
+					"parent": "bddac78e-9ba9-4acc-bf9e-012d96a7f571",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "cfb92900-4456-4eb7-b035-b32a81ada3e2",
+					"name": "session",
+					"parent": "bddac78e-9ba9-4acc-bf9e-012d96a7f571",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "008dd534-a82f-4422-968d-0f60a513097a",
+					"name": "expires",
+					"parent": "bddac78e-9ba9-4acc-bf9e-012d96a7f571",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "e57fa253-09d3-4ddf-f021-0c87a4fc4d82",
+					"name": "lastModified",
+					"parent": "bddac78e-9ba9-4acc-bf9e-012d96a7f571",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "ab027dc4-29e2-4c2b-ded7-9f74d2516766",
+					"name": "userId",
+					"parent": "bddac78e-9ba9-4acc-bf9e-012d96a7f571",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "bddac78e-9ba9-4acc-bf9e-012d96a7f571",
+					"name": "sessions",
+					"parent": "",
+					"description": "",
+					"objectType": "array",
+					"objectName": "sessions",
+					"isParent": true,
+					"children": [
+						{
+							"id": "fa697307-1c82-4762-f3b9-01b632335578",
+							"name": "id",
+							"parent": "bddac78e-9ba9-4acc-bf9e-012d96a7f571",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "cfb92900-4456-4eb7-b035-b32a81ada3e2",
+							"name": "session",
+							"parent": "bddac78e-9ba9-4acc-bf9e-012d96a7f571",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "008dd534-a82f-4422-968d-0f60a513097a",
+							"name": "expires",
+							"parent": "bddac78e-9ba9-4acc-bf9e-012d96a7f571",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "e57fa253-09d3-4ddf-f021-0c87a4fc4d82",
+							"name": "lastModified",
+							"parent": "bddac78e-9ba9-4acc-bf9e-012d96a7f571",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "ab027dc4-29e2-4c2b-ded7-9f74d2516766",
+							"name": "userId",
+							"parent": "bddac78e-9ba9-4acc-bf9e-012d96a7f571",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "be7f56b0-4893-4c63-e53d-7014f5c3562e",
+			"name": "Error",
+			"description": "",
+			"isInclude": false,
+			"properties": [
+				{
+					"id": "403aee9b-7a7b-42e5-fd9d-610901da2a1c",
+					"name": "status",
+					"objectType": "string",
+					"description": "",
+					"required": false,
+					"value": "",
+					"minLength": "",
+					"maxLength": "",
+					"default": "",
+					"example": "",
+					"isParent": false,
+					"children": []
+				}
+			]
+		}
+	],
+	"documentation": [],
+	"name": "CoreAPI Monitor_UserSessions",
+	"endpoint": "https://[yourDomain].com/api/functions/Overview",
+	"ver": "23.2.3.1819",
+	"version": "2.2.0",
+	"description": "API to access results of Planet 9 user sessions",
+	"mediaType": null,
+	"securitySchemes": null,
+	"swaggerURI": null,
+	"swaggerSystem": null,
+	"apiType": "",
+	"about": "<p><strong style=\"white-space: unset; font-size: 1rem;\">Description</strong><br></p><p>Planet 9-API Monitor_UserSessions maintains the list Planet 9 active user sessions.</p><p>API Monitor_UserSessions is the Planet 9 API to access the API of Planet 9 active user sessions&nbsp;and the operations performed on them.</p><p><strong>Operations Performed</strong></p><p><strong style=\"white-space: unset; font-size: 1rem;\">List</strong><br></p><p>Get the&nbsp;<span style=\"white-space: nowrap; font-size: 1rem;\">active user sessions list. List holds the users and sessions details.</span></p><table class=\"table\" style=\"width: 730px;\"><tbody><tr><td>Response</td><td>Sessions(array)- Definition&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<br></td></tr></tbody></table>",
+	"enableProxy": true,
+	"restrictAccess": false,
+	"enableTrace": false,
+	"enableIDE": false,
+	"internalAPI": false,
+	"isPublic": false,
+	"tlsAllowUntrusted": true,
+	"useOwnProcess": false,
+	"package": "25602b27-7c0d-ed11-b47a-000d3ab2359f",
+	"apiGroup": "10b1ef43-90cc-49b9-9aea-5fd5e8c48be2",
+	"apiFormat": 0,
+	"roles": []
+}

@@ -1,0 +1,940 @@
+{
+	"id": "0b2f56b6-4e19-42bd-9f05-15d3fdde3e7c",
+	"createdAt": "2022-02-04T15:44:46.940Z",
+	"createdBy": "lloyd",
+	"auth": [],
+	"endpoints": [],
+	"paths": [
+		{
+			"id": "6624c1f9-574c-4aa9-9f32-74803b1a0357",
+			"method": "POST",
+			"path": "/List",
+			"description": "",
+			"parameters": [],
+			"headers": [],
+			"responses": [
+				{
+					"status": "200",
+					"description": "OK",
+					"headers": [],
+					"body": [],
+					"content": [
+						{
+							"id": "8b888b32-227f-4c88-f903-fb951b4bfb3f",
+							"name": "List",
+							"objectType": "array"
+						}
+					]
+				}
+			],
+			"summary": "Get all the imported themes",
+			"example": [
+				"==OBJECT STRING==",
+				"{",
+				"    \"ui5theme\": [{",
+				"        \"id\": \"cb0e32dc-ae55-4193-e9d1-843b21065f21\",",
+				"        \"createdAt\": \"2020-04-13T10:01:31.094Z\",",
+				"        \"updatedAt\": \"2020-04-13T10:01:31.094Z\",",
+				"        \"createdBy\": \"ole-andre.haugen@neptune-software.com\",",
+				"        \"changedBy\": \"ole-andre.haugen@neptune-software.com\",",
+				"        \"theme\": \"demo1\",",
+				"        \"ui5ver\": \"1.76.1\",",
+				"        \"extends\": \"sap_fiori_3\",",
+				"        \"description\": \"my Theme\"",
+				"    }, {",
+				"        \"id\": \"8a088058-4be2-415e-a60d-5eec81bd386a\",",
+				"        \"createdAt\": \"2020-04-14T06:26:50.521Z\",",
+				"        \"updatedAt\": \"2020-04-14T06:26:50.521Z\",",
+				"        \"createdBy\": \"ole-andre.haugen@neptune-software.com\",",
+				"        \"changedBy\": \"ole-andre.haugen@neptune-software.com\",",
+				"        \"theme\": \"nepbelizedemo\",",
+				"        \"ui5ver\": \"1.76.1\",",
+				"        \"extends\": \"sap_belize\",",
+				"        \"description\": \"My Belize\"",
+				"    }, {",
+				"        \"id\": \"9229efea-dc9a-44c9-9fe2-462fc1709cec\",",
+				"        \"createdAt\": \"2020-04-14T10:09:10.404Z\",",
+				"        \"updatedAt\": \"2020-04-14T10:09:10.404Z\",",
+				"        \"createdBy\": \"priyanka\",",
+				"        \"changedBy\": \"priyanka\",",
+				"        \"theme\": \"neptcustombelize\",",
+				"        \"ui5ver\": \"1.76.1\",",
+				"        \"extends\": \"sap_belize\",",
+				"        \"description\": \"Custom Belize\"",
+				"    }]",
+				"}"
+			]
+		},
+		{
+			"id": "cfbfaf76-b7d7-4742-da84-9c893677120b",
+			"method": "POST",
+			"path": "/Save",
+			"description": "",
+			"parameters": [],
+			"headers": [],
+			"responses": [
+				{
+					"status": "200",
+					"description": "OK",
+					"headers": [],
+					"body": [],
+					"content": [
+						{
+							"id": "5a4a96af-8692-4634-bc1b-e165fd055bfd",
+							"name": "Get",
+							"objectType": "object"
+						}
+					]
+				}
+			],
+			"content": [
+				{
+					"name": "SaveRequest",
+					"objectType": "object"
+				}
+			],
+			"summary": "Save the theme"
+		},
+		{
+			"id": "26b217a9-065c-4693-cbc2-4b14658588c6",
+			"method": "POST",
+			"path": "/Del",
+			"description": "",
+			"parameters": [],
+			"headers": [],
+			"responses": [
+				{
+					"status": "200",
+					"description": "OK",
+					"headers": [],
+					"body": [],
+					"content": []
+				}
+			],
+			"content": [
+				{
+					"name": "ID",
+					"objectType": "object"
+				}
+			],
+			"summary": "Delete the selected theme"
+		},
+		{
+			"id": "7b3767d5-2075-4f56-c4a3-6e052cf627c0",
+			"method": "POST",
+			"path": "/Get",
+			"description": "",
+			"parameters": [],
+			"headers": [],
+			"responses": [
+				{
+					"status": "200",
+					"description": "OK",
+					"headers": [],
+					"body": [],
+					"content": [
+						{
+							"id": "723d1988-591d-44ea-c955-b68c937e85c7",
+							"name": "Get",
+							"objectType": "object"
+						}
+					]
+				}
+			],
+			"content": [
+				{
+					"name": "ID",
+					"objectType": "object"
+				}
+			],
+			"summary": "Get the selected Imported Theme ",
+			"example": [
+				"==OBJECT STRING==",
+				"{",
+				"    \"ui5theme\": {",
+				"        \"id\": \"8a088058-4be2-415e-a60d-5eec81bd386a\",",
+				"        \"createdAt\": \"2020-04-14T06:26:50.521Z\",",
+				"        \"updatedAt\": \"2020-04-14T06:26:50.521Z\",",
+				"        \"createdBy\": \"ole-andre.haugen@neptune-software.com\",",
+				"        \"changedBy\": \"ole-andre.haugen@neptune-software.com\",",
+				"        \"theme\": \"nepbelizedemo\",",
+				"        \"ui5ver\": \"1.76.1\",",
+				"        \"extends\": \"sap_belize\",",
+				"        \"description\": \"My Belize\"",
+				"    },",
+				"    \"files\": [{",
+				"        \"filename\": \"/sap/f/themes/nepbelizedemo/.theming\",",
+				"        \"mimetype\": \"application/octet-stream\"",
+				"    }, {",
+				"        \"filename\": \"/sap/f/themes/nepbelizedemo/library.less\",",
+				"        \"mimetype\": \"application/octet-stream\"",
+				"    }, {",
+				"        \"filename\": \"/sap/f/themes/nepbelizedemo--contrast/.theming\",",
+				"        \"mimetype\": \"application/octet-stream\"",
+				"    }, {",
+				"        \"filename\": \"/sap/f/themes/nepbelizedemo--contrast/library.less\",",
+				"        \"mimetype\": \"application/octet-stream\"",
+				"    }, {",
+				"        \"filename\": \"/sap/m/themes/nepbelizedemo/.theming\",",
+				"        \"mimetype\": \"application/octet-stream\"",
+				"    }, {",
+				"        \"filename\": \"/sap/m/themes/nepbelizedemo/library.less\",",
+				"        \"mimetype\": \"application/octet-stream\"",
+				"    }, {",
+				"        \"filename\": \"/sap/m/themes/nepbelizedemo--contrast/.theming\",",
+				"        \"mimetype\": \"application/octet-stream\"",
+				"    }, {",
+				"        \"filename\": \"/sap/m/themes/nepbelizedemo--contrast/library.less\",",
+				"        \"mimetype\": \"application/octet-stream\"",
+				"    }, {",
+				"        \"filename\": \"/sap/tnt/themes/nepbelizedemo/.theming\",",
+				"        \"mimetype\": \"application/octet-stream\"",
+				"    }, {",
+				"        \"filename\": \"/sap/tnt/themes/nepbelizedemo/library.less\",",
+				"        \"mimetype\": \"application/octet-stream\"",
+				"    }, {",
+				"        \"filename\": \"/sap/tnt/themes/nepbelizedemo--contrast/.theming\",",
+				"        \"mimetype\": \"application/octet-stream\"",
+				"    }, {",
+				"        \"filename\": \"/sap/tnt/themes/nepbelizedemo--contrast/library.less\",",
+				"        \"mimetype\": \"application/octet-stream\"",
+				"    }, {",
+				"        \"filename\": \"/sap/ui/core/themes/nepbelizedemo/.theming\",",
+				"        \"mimetype\": \"application/octet-stream\"",
+				"    }, {",
+				"        \"filename\": \"/sap/ui/core/themes/nepbelizedemo/custom.less\",",
+				"        \"mimetype\": \"application/octet-stream\"",
+				"    }, {",
+				"        \"filename\": \"/sap/ui/core/themes/nepbelizedemo/global.less\",",
+				"        \"mimetype\": \"application/octet-stream\"",
+				"    }, {",
+				"        \"filename\": \"/sap/ui/core/themes/nepbelizedemo/library.less\",",
+				"        \"mimetype\": \"application/octet-stream\"",
+				"    }, {",
+				"        \"filename\": \"/sap/ui/core/themes/nepbelizedemo--contrast/.theming\",",
+				"        \"mimetype\": \"application/octet-stream\"",
+				"    }, {",
+				"        \"filename\": \"/sap/ui/core/themes/nepbelizedemo--contrast/custom.less\",",
+				"        \"mimetype\": \"application/octet-stream\"",
+				"    }, {",
+				"        \"filename\": \"/sap/ui/core/themes/nepbelizedemo--contrast/global.less\",",
+				"        \"mimetype\": \"application/octet-stream\"",
+				"    }, {",
+				"        \"filename\": \"/sap/ui/core/themes/nepbelizedemo--contrast/library.less\",",
+				"        \"mimetype\": \"application/octet-stream\"",
+				"    }, {",
+				"        \"filename\": \"/sap/ui/integration/themes/nepbelizedemo/.theming\",",
+				"        \"mimetype\": \"application/octet-stream\"",
+				"    }, {",
+				"        \"filename\": \"/sap/ui/integration/themes/nepbelizedemo/library.less\",",
+				"        \"mimetype\": \"application/octet-stream\"",
+				"    }, {",
+				"        \"filename\": \"/sap/ui/integration/themes/nepbelizedemo--contrast/.theming\",",
+				"        \"mimetype\": \"application/octet-stream\"",
+				"    }, {",
+				"        \"filename\": \"/sap/ui/integration/themes/nepbelizedemo--contrast/library.less\",",
+				"        \"mimetype\": \"application/octet-stream\"",
+				"    }, {",
+				"        \"filename\": \"/sap/ui/layout/themes/nepbelizedemo/.theming\",",
+				"        \"mimetype\": \"application/octet-stream\"",
+				"    }, {",
+				"        \"filename\": \"/sap/ui/layout/themes/nepbelizedemo/library.less\",",
+				"        \"mimetype\": \"application/octet-stream\"",
+				"    }, {",
+				"        \"filename\": \"/sap/ui/layout/themes/nepbelizedemo--contrast/.theming\",",
+				"        \"mimetype\": \"application/octet-stream\"",
+				"    }, {",
+				"        \"filename\": \"/sap/ui/layout/themes/nepbelizedemo--contrast/library.less\",",
+				"        \"mimetype\": \"application/octet-stream\"",
+				"    }, {",
+				"        \"filename\": \"/sap/ui/table/themes/nepbelizedemo/.theming\",",
+				"        \"mimetype\": \"application/octet-stream\"",
+				"    }, {",
+				"        \"filename\": \"/sap/ui/table/themes/nepbelizedemo/library.less\",",
+				"        \"mimetype\": \"application/octet-stream\"",
+				"    }, {",
+				"        \"filename\": \"/sap/ui/table/themes/nepbelizedemo--contrast/.theming\",",
+				"        \"mimetype\": \"application/octet-stream\"",
+				"    }, {",
+				"        \"filename\": \"/sap/ui/table/themes/nepbelizedemo--contrast/library.less\",",
+				"        \"mimetype\": \"application/octet-stream\"",
+				"    }, {",
+				"        \"filename\": \"/sap/ui/unified/themes/nepbelizedemo/.theming\",",
+				"        \"mimetype\": \"application/octet-stream\"",
+				"    }, {",
+				"        \"filename\": \"/sap/ui/unified/themes/nepbelizedemo/library.less\",",
+				"        \"mimetype\": \"application/octet-stream\"",
+				"    }, {",
+				"        \"filename\": \"/sap/ui/unified/themes/nepbelizedemo--contrast/.theming\",",
+				"        \"mimetype\": \"application/octet-stream\"",
+				"    }, {",
+				"        \"filename\": \"/sap/ui/unified/themes/nepbelizedemo--contrast/library.less\",",
+				"        \"mimetype\": \"application/octet-stream\"",
+				"    }, {",
+				"        \"filename\": \"/sap/uxap/themes/nepbelizedemo/.theming\",",
+				"        \"mimetype\": \"application/octet-stream\"",
+				"    }, {",
+				"        \"filename\": \"/sap/uxap/themes/nepbelizedemo/library.less\",",
+				"        \"mimetype\": \"application/octet-stream\"",
+				"    }, {",
+				"        \"filename\": \"/sap/uxap/themes/nepbelizedemo--contrast/.theming\",",
+				"        \"mimetype\": \"application/octet-stream\"",
+				"    }, {",
+				"        \"filename\": \"/sap/uxap/themes/nepbelizedemo--contrast/library.less\",",
+				"        \"mimetype\": \"application/octet-stream\"",
+				"    }, {",
+				"        \"filename\": \"/sap/f/themes/nepbelizedemo/library.css\",",
+				"        \"mimetype\": \"text/css\"",
+				"    }, {",
+				"        \"filename\": \"/sap/m/themes/nepbelizedemo/library.css\",",
+				"        \"mimetype\": \"text/css\"",
+				"    }, {",
+				"        \"filename\": \"/sap/tnt/themes/nepbelizedemo/library.css\",",
+				"        \"mimetype\": \"text/css\"",
+				"    }, {",
+				"        \"filename\": \"/sap/ui/core/themes/nepbelizedemo/custom.css\",",
+				"        \"mimetype\": \"text/css\"",
+				"    }, {",
+				"        \"filename\": \"/sap/ui/core/themes/nepbelizedemo/library.css\",",
+				"        \"mimetype\": \"text/css\"",
+				"    }, {",
+				"        \"filename\": \"/sap/ui/integration/themes/nepbelizedemo/library.css\",",
+				"        \"mimetype\": \"text/css\"",
+				"    }, {",
+				"        \"filename\": \"/sap/ui/layout/themes/nepbelizedemo/library.css\",",
+				"        \"mimetype\": \"text/css\"",
+				"    }, {",
+				"        \"filename\": \"/sap/ui/table/themes/nepbelizedemo/library.css\",",
+				"        \"mimetype\": \"text/css\"",
+				"    }, {",
+				"        \"filename\": \"/sap/ui/unified/themes/nepbelizedemo/library.css\",",
+				"        \"mimetype\": \"text/css\"",
+				"    }, {",
+				"        \"filename\": \"/sap/uxap/themes/nepbelizedemo/library.css\",",
+				"        \"mimetype\": \"text/css\"",
+				"    }, {",
+				"        \"filename\": \"/sap/f/themes/nepbelizedemo/library-parameters.json\",",
+				"        \"mimetype\": \"application/json\"",
+				"    }, {",
+				"        \"filename\": \"/sap/m/themes/nepbelizedemo/library-parameters.json\",",
+				"        \"mimetype\": \"application/json\"",
+				"    }, {",
+				"        \"filename\": \"/sap/tnt/themes/nepbelizedemo/library-parameters.json\",",
+				"        \"mimetype\": \"application/json\"",
+				"    }, {",
+				"        \"filename\": \"/sap/ui/core/themes/nepbelizedemo/library-parameters.json\",",
+				"        \"mimetype\": \"application/json\"",
+				"    }, {",
+				"        \"filename\": \"/sap/ui/integration/themes/nepbelizedemo/library-parameters.json\",",
+				"        \"mimetype\": \"application/json\"",
+				"    }, {",
+				"        \"filename\": \"/sap/ui/layout/themes/nepbelizedemo/library-parameters.json\",",
+				"        \"mimetype\": \"application/json\"",
+				"    }, {",
+				"        \"filename\": \"/sap/ui/table/themes/nepbelizedemo/library-parameters.json\",",
+				"        \"mimetype\": \"application/json\"",
+				"    }, {",
+				"        \"filename\": \"/sap/ui/unified/themes/nepbelizedemo/library-parameters.json\",",
+				"        \"mimetype\": \"application/json\"",
+				"    }, {",
+				"        \"filename\": \"/sap/uxap/themes/nepbelizedemo/library-parameters.json\",",
+				"        \"mimetype\": \"application/json\"",
+				"    }]",
+				"}"
+			]
+		}
+	],
+	"definitions": [
+		{
+			"id": "bfb3f71e-eb70-4116-9b1d-e122c96b03f9",
+			"name": "List",
+			"description": "",
+			"isInclude": false,
+			"properties": [
+				{
+					"id": "aa54fe5f-29e5-410f-b93a-93ade21d5804",
+					"name": "id",
+					"parent": "8b390f87-c18a-4778-a811-ded55363dde6",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "4bb0b449-0489-4ec6-ca78-9e10ca215e73",
+					"name": "createdAt",
+					"parent": "8b390f87-c18a-4778-a811-ded55363dde6",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "a98cbf7b-625e-4ee0-b29d-7b85481dd1cf",
+					"name": "updatedAt",
+					"parent": "8b390f87-c18a-4778-a811-ded55363dde6",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "236e4456-bbe9-4f78-8942-10420639a771",
+					"name": "createdBy",
+					"parent": "8b390f87-c18a-4778-a811-ded55363dde6",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "35f24e4f-b59f-4218-e41d-bb31b83f667a",
+					"name": "changedBy",
+					"parent": "8b390f87-c18a-4778-a811-ded55363dde6",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "b632ff38-227b-4b42-a1d5-3a0c1ec19372",
+					"name": "theme",
+					"parent": "8b390f87-c18a-4778-a811-ded55363dde6",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "1e076555-7a82-4a2b-fae3-6f1a5d875d2f",
+					"name": "ui5ver",
+					"parent": "8b390f87-c18a-4778-a811-ded55363dde6",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "f809a612-4b29-40fe-b2e0-663e74b7ec85",
+					"name": "extends",
+					"parent": "8b390f87-c18a-4778-a811-ded55363dde6",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "d1a41c35-d1eb-48ea-8e3f-a174841a6fd3",
+					"name": "description",
+					"parent": "8b390f87-c18a-4778-a811-ded55363dde6",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "8b390f87-c18a-4778-a811-ded55363dde6",
+					"name": "ui5theme",
+					"parent": "",
+					"description": "",
+					"objectType": "array",
+					"objectName": "ui5theme",
+					"isParent": true,
+					"children": [
+						{
+							"id": "aa54fe5f-29e5-410f-b93a-93ade21d5804",
+							"name": "id",
+							"parent": "8b390f87-c18a-4778-a811-ded55363dde6",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "4bb0b449-0489-4ec6-ca78-9e10ca215e73",
+							"name": "createdAt",
+							"parent": "8b390f87-c18a-4778-a811-ded55363dde6",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "a98cbf7b-625e-4ee0-b29d-7b85481dd1cf",
+							"name": "updatedAt",
+							"parent": "8b390f87-c18a-4778-a811-ded55363dde6",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "236e4456-bbe9-4f78-8942-10420639a771",
+							"name": "createdBy",
+							"parent": "8b390f87-c18a-4778-a811-ded55363dde6",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "35f24e4f-b59f-4218-e41d-bb31b83f667a",
+							"name": "changedBy",
+							"parent": "8b390f87-c18a-4778-a811-ded55363dde6",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "b632ff38-227b-4b42-a1d5-3a0c1ec19372",
+							"name": "theme",
+							"parent": "8b390f87-c18a-4778-a811-ded55363dde6",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "1e076555-7a82-4a2b-fae3-6f1a5d875d2f",
+							"name": "ui5ver",
+							"parent": "8b390f87-c18a-4778-a811-ded55363dde6",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "f809a612-4b29-40fe-b2e0-663e74b7ec85",
+							"name": "extends",
+							"parent": "8b390f87-c18a-4778-a811-ded55363dde6",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "d1a41c35-d1eb-48ea-8e3f-a174841a6fd3",
+							"name": "description",
+							"parent": "8b390f87-c18a-4778-a811-ded55363dde6",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "b6b56a1e-9696-457f-ac50-b026b8444821",
+			"name": "SaveRequest",
+			"description": "",
+			"isInclude": false,
+			"properties": [
+				{
+					"id": "1e49574e-ac39-4706-81c1-113eb89c8ada",
+					"name": "id",
+					"parent": "",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "d844b187-02e0-49f7-a48c-b35ed6ef48ec",
+					"name": "createdAt",
+					"parent": "",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "560fe09d-ee23-499a-d7ba-998db8464d39",
+					"name": "updatedAt",
+					"parent": "",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "10208c23-150c-41c2-d3f4-6e758faa71e2",
+					"name": "createdBy",
+					"parent": "",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "e333dad9-a99c-41b8-a4c0-3a7514aad9a2",
+					"name": "changedBy",
+					"parent": "",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "c71e5ac4-2912-458e-d61a-d2dc2d2fcb33",
+					"name": "theme",
+					"parent": "",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "9dbecbfc-c775-4b83-d11d-1a19dca049b4",
+					"name": "ui5ver",
+					"parent": "",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "4b27b616-35a7-4152-ada8-8e8e48d78ae9",
+					"name": "extends",
+					"parent": "",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "4c3c7797-0e0c-4034-86f9-0520c9783bc6",
+					"name": "description",
+					"parent": "",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "6dd3b54b-db46-4859-b64d-4d3c1c1b04be",
+					"name": "filename",
+					"parent": "b11d0310-850c-4f21-d869-fe601337b974",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "10a66131-3e0f-4189-d554-9cd6c4e06db7",
+					"name": "mimetype",
+					"parent": "b11d0310-850c-4f21-d869-fe601337b974",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "b11d0310-850c-4f21-d869-fe601337b974",
+					"name": "files",
+					"parent": "",
+					"description": "",
+					"objectType": "array",
+					"objectName": "files",
+					"isParent": true,
+					"children": [
+						{
+							"id": "6dd3b54b-db46-4859-b64d-4d3c1c1b04be",
+							"name": "filename",
+							"parent": "b11d0310-850c-4f21-d869-fe601337b974",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "10a66131-3e0f-4189-d554-9cd6c4e06db7",
+							"name": "mimetype",
+							"parent": "b11d0310-850c-4f21-d869-fe601337b974",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "d1f48f40-8a6f-49d1-db2b-89c54c82ef06",
+			"name": "ID",
+			"description": "",
+			"isInclude": false,
+			"properties": [
+				{
+					"id": "a3f36674-70e8-4dd4-85eb-14a414a68e45",
+					"name": "id",
+					"objectType": "string",
+					"description": "",
+					"required": true,
+					"value": "",
+					"minLength": "",
+					"maxLength": "",
+					"default": "",
+					"example": "",
+					"isParent": false,
+					"children": []
+				}
+			]
+		},
+		{
+			"id": "c60fee56-6c70-4adc-982e-a14428f7967e",
+			"name": "Get",
+			"description": "",
+			"isInclude": false,
+			"properties": [
+				{
+					"id": "d13d3e8d-fbb8-4488-aa4e-9b4e704a9c11",
+					"name": "id",
+					"parent": "2548a92b-0b57-42a3-c84d-61c57141988e",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "3277b317-3ff3-4cac-870d-4519de965181",
+					"name": "createdAt",
+					"parent": "2548a92b-0b57-42a3-c84d-61c57141988e",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "012c6d62-cc17-4b8b-b558-aa75148eb86e",
+					"name": "updatedAt",
+					"parent": "2548a92b-0b57-42a3-c84d-61c57141988e",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "26aa869c-e258-40ae-d47b-08ba19af6449",
+					"name": "createdBy",
+					"parent": "2548a92b-0b57-42a3-c84d-61c57141988e",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "a8375605-ce2c-4109-9fce-c7a6509441e1",
+					"name": "changedBy",
+					"parent": "2548a92b-0b57-42a3-c84d-61c57141988e",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "6060a06f-ca2d-4722-c122-2544d72fc0ab",
+					"name": "theme",
+					"parent": "2548a92b-0b57-42a3-c84d-61c57141988e",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "f0fa64f5-fb71-40ca-a9bb-c307384bef50",
+					"name": "ui5ver",
+					"parent": "2548a92b-0b57-42a3-c84d-61c57141988e",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "eae6dce4-3f0c-445b-e894-312aec0349c9",
+					"name": "extends",
+					"parent": "2548a92b-0b57-42a3-c84d-61c57141988e",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "c1039731-ba5a-4026-cb77-c48dd29aeed4",
+					"name": "description",
+					"parent": "2548a92b-0b57-42a3-c84d-61c57141988e",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "2548a92b-0b57-42a3-c84d-61c57141988e",
+					"name": "ui5theme",
+					"parent": "",
+					"description": "",
+					"objectType": "object",
+					"objectName": "ui5theme",
+					"isParent": true,
+					"children": [
+						{
+							"id": "d13d3e8d-fbb8-4488-aa4e-9b4e704a9c11",
+							"name": "id",
+							"parent": "2548a92b-0b57-42a3-c84d-61c57141988e",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "3277b317-3ff3-4cac-870d-4519de965181",
+							"name": "createdAt",
+							"parent": "2548a92b-0b57-42a3-c84d-61c57141988e",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "012c6d62-cc17-4b8b-b558-aa75148eb86e",
+							"name": "updatedAt",
+							"parent": "2548a92b-0b57-42a3-c84d-61c57141988e",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "26aa869c-e258-40ae-d47b-08ba19af6449",
+							"name": "createdBy",
+							"parent": "2548a92b-0b57-42a3-c84d-61c57141988e",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "a8375605-ce2c-4109-9fce-c7a6509441e1",
+							"name": "changedBy",
+							"parent": "2548a92b-0b57-42a3-c84d-61c57141988e",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "6060a06f-ca2d-4722-c122-2544d72fc0ab",
+							"name": "theme",
+							"parent": "2548a92b-0b57-42a3-c84d-61c57141988e",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "f0fa64f5-fb71-40ca-a9bb-c307384bef50",
+							"name": "ui5ver",
+							"parent": "2548a92b-0b57-42a3-c84d-61c57141988e",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "eae6dce4-3f0c-445b-e894-312aec0349c9",
+							"name": "extends",
+							"parent": "2548a92b-0b57-42a3-c84d-61c57141988e",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "c1039731-ba5a-4026-cb77-c48dd29aeed4",
+							"name": "description",
+							"parent": "2548a92b-0b57-42a3-c84d-61c57141988e",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						}
+					]
+				},
+				{
+					"id": "29b03164-fa91-4c82-e1fd-21ff3f7a3485",
+					"name": "filename",
+					"parent": "1e53bb36-8c00-41e7-c937-2188b3dbfa0a",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "3b23e1ee-95b8-470a-8fc7-7f80a3ba195b",
+					"name": "mimetype",
+					"parent": "1e53bb36-8c00-41e7-c937-2188b3dbfa0a",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "1e53bb36-8c00-41e7-c937-2188b3dbfa0a",
+					"name": "files",
+					"parent": "",
+					"description": "",
+					"objectType": "array",
+					"objectName": "files",
+					"isParent": true,
+					"children": [
+						{
+							"id": "29b03164-fa91-4c82-e1fd-21ff3f7a3485",
+							"name": "filename",
+							"parent": "1e53bb36-8c00-41e7-c937-2188b3dbfa0a",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "3b23e1ee-95b8-470a-8fc7-7f80a3ba195b",
+							"name": "mimetype",
+							"parent": "1e53bb36-8c00-41e7-c937-2188b3dbfa0a",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						}
+					]
+				}
+			]
+		}
+	],
+	"documentation": [],
+	"name": "CoreAPI Development_ThemeImport",
+	"endpoint": "https://[yourDomain].com/api/functions/UI5Theme",
+	"ver": "23.2.3.1818",
+	"version": "2.2.0",
+	"description": "API to access results of Planet 9 API Development_ThemeImport.",
+	"mediaType": null,
+	"securitySchemes": null,
+	"swaggerURI": null,
+	"swaggerSystem": null,
+	"apiType": "",
+	"about": "<h4><span style=\"font-size: 1rem; white-space: unset;\">Description</span><br></h4><p>Planet 9-Theme Import is used to import the theme from the SAP Theme Designer.&nbsp;</p><p>You can use this API Development_ThemeImport in your app if you want to get imported themes list, particular theme details, delete the existing theme, or save the imported theme.</p><p>Every app must have the right roles (permissions) and authentication that enables access to the Theme Import API.</p><h4><strong>Operations Performed&nbsp;</strong></h4><p><strong>List</strong></p><p>Get the list of the imported themes</p><table class=\"table\" style=\"width: 730px;\"><tbody><tr><td>Response</td><td>List(array) - Definition&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</td></tr></tbody></table><br><p><strong>Get</strong></p><p>Get the selected theme details</p><table class=\"table\"><tbody><tr><td>Request</td><td>ID</td></tr><tr><td>Response</td><td>Get(object)-Definition</td></tr></tbody></table><br><p><strong>Del</strong></p><p>Delete the selected theme</p><table class=\"table\"><tbody><tr><td>Request</td><td>ID&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</td></tr></tbody></table><br><p><strong>Save</strong></p><p>Save the theme after importing from the SAP Theme designer.</p><table class=\"table\"><tbody><tr><td>Request</td><td>Save Request</td></tr><tr><td>Response</td><td>Get(object)-Definition</td></tr></tbody></table><p><br></p>",
+	"enableProxy": false,
+	"restrictAccess": false,
+	"enableTrace": false,
+	"enableIDE": false,
+	"internalAPI": false,
+	"isPublic": false,
+	"tlsAllowUntrusted": false,
+	"useOwnProcess": false,
+	"package": "25602b27-7c0d-ed11-b47a-000d3ab2359f",
+	"apiGroup": "8fb2ef9e-2652-4821-95e1-2d12ee97640e",
+	"apiFormat": 0,
+	"roles": []
+}

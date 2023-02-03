@@ -1,0 +1,815 @@
+{
+	"id": "96237196-b2ef-4f41-90d7-afb21fb0394a",
+	"createdAt": "2022-02-04T15:25:44.950Z",
+	"createdBy": "lloyd",
+	"auth": [],
+	"endpoints": [],
+	"paths": [
+		{
+			"id": "6c0e99db-26be-43a0-9eb6-3de413c8da39",
+			"method": "POST",
+			"path": "/ListPlan",
+			"description": "",
+			"parameters": [],
+			"headers": [],
+			"responses": [
+				{
+					"status": "200",
+					"description": "OK",
+					"headers": [],
+					"body": [],
+					"content": [
+						{
+							"id": "fd15fa03-708d-40ac-89f7-6a8e3735a8ef",
+							"name": "List",
+							"objectType": "array"
+						}
+					]
+				},
+				{
+					"status": "500",
+					"description": "OK",
+					"headers": [],
+					"body": [],
+					"content": [
+						{
+							"id": "b5d3a07c-0483-49bd-c45a-6067b9286253",
+							"name": "Error",
+							"objectType": "object"
+						}
+					]
+				}
+			],
+			"summary": "Get the list of the test plans",
+			"example": [
+				"==OBJECT STRING==",
+				"{",
+				"    \"plans\": [{",
+				"        \"id\": \"ef0bf6be-5e7a-4b1e-b4e1-85c30647fdbc\",",
+				"        \"updatedAt\": \"2019-04-30T15:17:30.000Z\",",
+				"        \"changedBy\": \"rommel\",",
+				"        \"name\": \"Planet 9 SqLite\",",
+				"        \"description\": \"Typeorm version of Planet 9 — SqLite\"",
+				"    },  {",
+				"        \"id\": \"7b230aa9-c9d1-4693-88bc-e0cc1932ea5b\",",
+				"        \"updatedAt\": \"2019-06-01T08:31:23.000Z\",",
+				"        \"changedBy\": \"oah\",",
+				"        \"name\": \"Sample Test Plan\",",
+				"        \"description\": \"This is a sample description\"",
+				"    }, {",
+				"        \"id\": \"c9cee3e8-c806-488b-863a-ba3d3ef6423a\",",
+				"        \"updatedAt\": \"2019-08-07T08:07:06.000Z\",",
+				"        \"changedBy\": \"rommel\",",
+				"        \"name\": \"Plan X\",",
+				"        \"description\": \"\"",
+				"    }, {",
+				"        \"id\": \"9a9d7c3f-db12-43f2-9c7a-5ab23ec6cfc4\",",
+				"        \"updatedAt\": \"2020-04-27T08:39:46.938Z\",",
+				"        \"changedBy\": \"priyanka\",",
+				"        \"name\": \"Demo Plan\",",
+				"        \"description\": null",
+				"    }],",
+				"    \"units\": [{",
+				"        \"id\": \"1f906d8b-ce65-4784-9965-5580d4c06dcf\",",
+				"        \"updatedAt\": \"2019-08-23T08:48:30.000Z\",",
+				"        \"changedBy\": \"rommel\",",
+				"        \"name\": \"TU-09-1003: Settings ► Customizing\",",
+				"        \"description\": \"All tests related to changing the Planet 9 settings\"",
+				"    }, {",
+				"        \"id\": \"92f69710-359b-4770-8dd2-ea3a33a0e216\",",
+				"        \"updatedAt\": \"2019-08-12T13:34:21.000Z\",",
+				"        \"changedBy\": \"rommel\",",
+				"        \"name\": \"TU-05-1008: Run ► Mobile Debug\",",
+				"        \"description\": \"All tests related to activating mobile debug for applications and users\"",
+				"    }, {",
+				"        \"id\": \"046610b6-0072-458a-ac93-2b937ce6beb0\",",
+				"        \"updatedAt\": \"2019-07-05T08:42:12.000Z\",",
+				"        \"changedBy\": \"rommel\",",
+				"        \"name\": \"TU-05-1010: Run ► Analyze\",",
+				"        \"description\": \"All tests related to analyzing usage of applications, launchpads & tiles and overview of registered users/launchpads\"",
+				"    }, {",
+				"        \"id\": \"fd7df4da-b565-447f-985b-087317d7b405\",",
+				"        \"updatedAt\": \"2019-08-23T09:05:49.000Z\",",
+				"        \"changedBy\": \"rommel\",",
+				"        \"name\": \"TU-09-1001: Settings ► Remote Systems\",",
+				"        \"description\": \"All tests related to connecting to other Planet 9 or API systems\"",
+				"    }, {",
+				"        \"id\": \"84ffbab3-c3e1-426e-bbab-18ee613bee42\",",
+				"        \"updatedAt\": \"2019-08-16T07:30:33.000Z\",",
+				"        \"changedBy\": \"rommel\",",
+				"        \"name\": \"TU-08-1004: Workflow ► Approvers\",",
+				"        \"description\": \"All tests related to defining workflow approvers list\"",
+				"    }, {",
+				"        \"id\": \"edcada99-af57-4872-9c97-1f6fd6d6b4b3\",",
+				"        \"updatedAt\": \"2020-02-04T09:48:18.415Z\",",
+				"        \"changedBy\": \"rommel\",",
+				"        \"name\": \"TU-03-1002: Development ► Theme Designer\",",
+				"        \"description\": \"All tests related to applying the custom CSS\"",
+				"    }, {",
+				"        \"id\": \"ddfa7842-b671-4da8-9377-bb8554bf313d\",",
+				"        \"updatedAt\": \"2020-02-20T12:59:10.260Z\",",
+				"        \"changedBy\": \"rommel\",",
+				"        \"name\": \"TU-06-1001: Tools ► Script Editor\",",
+				"        \"description\": \"All tests related to Script Editor\"",
+				"    }, {",
+				"        \"id\": \"410595be-7699-4446-b973-263835d13a82\",",
+				"        \"updatedAt\": \"2020-02-25T12:00:01.126Z\",",
+				"        \"changedBy\": \"rommel\",",
+				"        \"name\": \"TU-06-1002: Tools ► Server Script\",",
+				"        \"description\": \"All tests related to the creating and maintaining server scripts\"",
+				"    }, {",
+				"        \"id\": \"97971e1f-033e-4d09-9710-279bd435f47b\",",
+				"        \"updatedAt\": \"2020-04-03T12:33:16.060Z\",",
+				"        \"changedBy\": \"rommel\",",
+				"        \"name\": \"TU-07-1000: Monitor ► Overview\",",
+				"        \"description\": \"All tests related to the list of available node processes\"",
+				"    }, {",
+				"        \"id\": \"04a1608a-e554-4562-9f86-036969faa188\",",
+				"        \"updatedAt\": \"2020-04-25T14:55:10.825Z\",",
+				"        \"changedBy\": \"rommel\",",
+				"        \"name\": \"TU-03-1005: Development ► Testing\",",
+				"        \"description\": \"All tests related to Testing module\"",
+				"    }]",
+				"}"
+			]
+		},
+		{
+			"id": "7456c7d1-d471-460d-ddfb-00fca372b673",
+			"method": "POST",
+			"path": "/GetPlan",
+			"description": "",
+			"parameters": [],
+			"headers": [],
+			"responses": [
+				{
+					"status": "200",
+					"description": "OK",
+					"headers": [],
+					"body": [],
+					"content": [
+						{
+							"id": "8ce97a10-d634-4f30-8df0-98ccdc7535b4",
+							"name": "Get",
+							"objectType": "object"
+						}
+					]
+				},
+				{
+					"status": "500",
+					"description": "OK",
+					"headers": [],
+					"body": [],
+					"content": [
+						{
+							"id": "b8416be9-eb1a-476b-ee50-1d821c16f99b",
+							"name": "Error",
+							"objectType": "object"
+						}
+					]
+				}
+			],
+			"summary": "Get the selected test plan details",
+			"content": [
+				{
+					"name": "ID",
+					"objectType": "object"
+				}
+			],
+			"example": [
+				"==OBJECT STRING==",
+				"{",
+				"    \"id\": \"ef0bf6be-5e7a-4b1e-b4e1-85c30647fdbc\",",
+				"    \"createdAt\": \"2019-04-30T15:05:37.000Z\",",
+				"    \"updatedAt\": \"2019-04-30T15:17:30.000Z\",",
+				"    \"createdBy\": \"rommel\",",
+				"    \"changedBy\": \"rommel\",",
+				"    \"items\": [{",
+				"        \"id\": \"453993f8-75f4-42ac-9f35-581e94d75cd0\"",
+				"    }, {",
+				"        \"id\": \"edcada99-af57-4872-9c97-1f6fd6d6b4b3\"",
+				"    }, {",
+				"        \"id\": \"8abc66cf-eca5-4d16-b122-852cf1b8b176\"",
+				"    }, {",
+				"        \"id\": \"04a1608a-e554-4562-9f86-036969faa188\"",
+				"    }, {",
+				"        \"id\": \"9ff9dd77-4af3-46d6-ad28-084df3f46224\"",
+				"    }, {",
+				"        \"id\": \"284b13b3-c74a-4597-bd36-eba62446fd41\"",
+				"    }, {",
+				"        \"id\": \"1ce67d04-eb68-4a78-8a67-ff5191013f67\"",
+				"    }, {",
+				"        \"id\": \"713a0711-8c6f-4208-87d3-ab8c5bdb6bda\"",
+				"    }, {",
+				"        \"id\": \"03d339ac-ef50-430c-8f99-82a759321334\"",
+				"    }, {",
+				"        \"id\": \"0bdd4348-36da-4648-86b3-42d64a267168\"",
+				"    }, {",
+				"        \"id\": \"14c7c5a8-30d5-4b3b-a174-3cbbd330b8b2\"",
+				"    }, {",
+				"        \"id\": \"d22bfdef-366a-442e-b76b-86fa230d5c41\"",
+				"    }, {",
+				"        \"id\": \"06c7b593-3618-4575-bfe0-d9babd1235fb\"",
+				"    }, {",
+				"        \"id\": \"32cdc8dc-5257-4c31-99af-015a8c586ab8\"",
+				"    }, {",
+				"        \"id\": \"38d42768-f147-4b46-b3b5-513f7d86b399\"",
+				"    }, {",
+				"        \"id\": \"2c7a4ef2-b4d9-41fd-b63d-7c0512def742\"",
+				"    }, {",
+				"        \"id\": \"e2f63306-7178-4425-8254-14c3cd95a47e\"",
+				"    }, {",
+				"        \"id\": \"eaf9a55a-00c1-4e60-977b-3da7bbe13a26\"",
+				"    }, {",
+				"        \"id\": \"d1bef6e1-ff16-436e-8ebf-62a3654e6b61\"",
+				"    }, {",
+				"        \"id\": \"92f69710-359b-4770-8dd2-ea3a33a0e216\"",
+				"    }, {",
+				"        \"id\": \"046610b6-0072-458a-ac93-2b937ce6beb0\"",
+				"    }, {",
+				"        \"id\": \"e531f129-e81c-4b66-88ed-7eaeacde72a3\"",
+				"    }, {",
+				"        \"id\": \"ea26f989-74b3-4db0-9f70-dcfe1c7011f8\"",
+				"    }, {",
+				"        \"id\": \"410595be-7699-4446-b973-263835d13a82\"",
+				"    }, {",
+				"        \"id\": \"3f74a905-45c0-43f6-aba7-1dac67ba3f60\"",
+				"    }, {",
+				"        \"id\": \"3399ed85-92cd-404e-9fcb-815881c1e836\"",
+				"    }, {",
+				"        \"id\": \"f412e42f-dcc0-4601-bc5c-4ff01b6bf7d2\"",
+				"    }, {",
+				"        \"id\": \"4782988d-30b9-43f1-96f4-edb085951eba\"",
+				"    }, {",
+				"        \"id\": \"6e6ecd62-7cf1-4018-a903-e837fe4b401d\"",
+				"    }, {",
+				"        \"id\": \"433ffb5d-22eb-4a30-aaf2-44997e7094d2\"",
+				"    }, {",
+				"        \"id\": \"97971e1f-033e-4d09-9710-279bd435f47b\"",
+				"    }, {",
+				"        \"id\": \"1658dcdd-4dd0-45cd-b7af-4630fd66c61d\"",
+				"    }, {",
+				"        \"id\": \"da278e34-110d-4a89-9016-f20447d0be8e\"",
+				"    }, {",
+				"        \"id\": \"1b91915c-9a7c-4184-b13c-5c5c8a5ee514\"",
+				"    }, {",
+				"        \"id\": \"64b484fe-4544-4f23-a296-ab3b70a28379\"",
+				"    }, {",
+				"        \"id\": \"fc9bbcaa-77eb-4e42-873c-71e62e7ed6cf\"",
+				"    }, {",
+				"        \"id\": \"feee79b7-9761-4118-85ec-4b191d25f6fc\"",
+				"    }, {",
+				"        \"id\": \"0d852d14-4ecf-4eeb-b000-220fef79314d\"",
+				"    }],",
+				"    \"name\": \"Planet 9 SqLite\",",
+				"    \"description\": \"Typeorm version of Planet 9 — SqLite\"",
+				"}"
+			]
+		},
+		{
+			"id": "c82b7543-2d34-4416-faa0-9bec2fd8c968",
+			"method": "POST",
+			"path": "/SavePlan",
+			"description": "",
+			"parameters": [],
+			"headers": [],
+			"responses": [
+				{
+					"status": "200",
+					"description": "OK",
+					"headers": [],
+					"body": [],
+					"content": []
+				},
+				{
+					"status": "500",
+					"description": "OK",
+					"headers": [],
+					"body": [],
+					"content": [
+						{
+							"id": "96e0785b-56d6-4a70-991b-10ebdc14c249",
+							"name": "Error",
+							"objectType": "object"
+						}
+					]
+				}
+			],
+			"content": [
+				{
+					"name": "Save",
+					"objectType": "object"
+				}
+			],
+			"summary": "Save the test plan"
+		},
+		{
+			"id": "854b1b69-c258-42b6-f839-d18cc86d3df2",
+			"method": "GET",
+			"path": "/DelPlan",
+			"description": "",
+			"parameters": [],
+			"headers": [],
+			"responses": [
+				{
+					"status": "200",
+					"description": "OK",
+					"headers": [],
+					"body": [],
+					"content": []
+				}
+			],
+			"content": [
+				{
+					"name": "ID",
+					"objectType": "object"
+				}
+			]
+		}
+	],
+	"definitions": [
+		{
+			"id": "07f95db2-def1-4d3c-f837-6a4d3c968959",
+			"name": "List",
+			"description": "",
+			"isInclude": false,
+			"properties": [
+				{
+					"id": "e943afc0-f39e-405a-ddce-4f7324c0ba03",
+					"name": "id",
+					"parent": "b1f9ecf9-b710-4726-c799-fef0032325ab",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "e5691e76-b3f3-46a9-fa40-90da2b763949",
+					"name": "updatedAt",
+					"parent": "b1f9ecf9-b710-4726-c799-fef0032325ab",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "ad8fb93e-8a59-4969-aecc-4eafee5467f9",
+					"name": "changedBy",
+					"parent": "b1f9ecf9-b710-4726-c799-fef0032325ab",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "832bd06e-f466-4f5a-9c27-f9c8973bc8b9",
+					"name": "name",
+					"parent": "b1f9ecf9-b710-4726-c799-fef0032325ab",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "1edf32a9-2d9d-4228-9f53-35b8f1d175fb",
+					"name": "description",
+					"parent": "b1f9ecf9-b710-4726-c799-fef0032325ab",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "b1f9ecf9-b710-4726-c799-fef0032325ab",
+					"name": "plans",
+					"parent": "",
+					"description": "",
+					"objectType": "array",
+					"objectName": "plans",
+					"isParent": true,
+					"children": [
+						{
+							"id": "e943afc0-f39e-405a-ddce-4f7324c0ba03",
+							"name": "id",
+							"parent": "b1f9ecf9-b710-4726-c799-fef0032325ab",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "e5691e76-b3f3-46a9-fa40-90da2b763949",
+							"name": "updatedAt",
+							"parent": "b1f9ecf9-b710-4726-c799-fef0032325ab",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "ad8fb93e-8a59-4969-aecc-4eafee5467f9",
+							"name": "changedBy",
+							"parent": "b1f9ecf9-b710-4726-c799-fef0032325ab",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "832bd06e-f466-4f5a-9c27-f9c8973bc8b9",
+							"name": "name",
+							"parent": "b1f9ecf9-b710-4726-c799-fef0032325ab",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "1edf32a9-2d9d-4228-9f53-35b8f1d175fb",
+							"name": "description",
+							"parent": "b1f9ecf9-b710-4726-c799-fef0032325ab",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						}
+					]
+				},
+				{
+					"id": "5e3a620b-6297-4c03-df08-6d9c6371232b",
+					"name": "id",
+					"parent": "62f12dfc-dc6d-4852-b405-57e927fbec72",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "ba980b2e-73d9-4b0a-b37d-39c8b6ebcfea",
+					"name": "updatedAt",
+					"parent": "62f12dfc-dc6d-4852-b405-57e927fbec72",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "e6cb2bf3-8173-4041-dbe8-11af7cc8ff6b",
+					"name": "changedBy",
+					"parent": "62f12dfc-dc6d-4852-b405-57e927fbec72",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "ebc6df72-c363-43ea-b5d9-c422e3e0c255",
+					"name": "name",
+					"parent": "62f12dfc-dc6d-4852-b405-57e927fbec72",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "7168138e-057b-49f4-ec6b-77b88488b339",
+					"name": "description",
+					"parent": "62f12dfc-dc6d-4852-b405-57e927fbec72",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "62f12dfc-dc6d-4852-b405-57e927fbec72",
+					"name": "units",
+					"parent": "",
+					"description": "",
+					"objectType": "array",
+					"objectName": "units",
+					"isParent": true,
+					"children": [
+						{
+							"id": "5e3a620b-6297-4c03-df08-6d9c6371232b",
+							"name": "id",
+							"parent": "62f12dfc-dc6d-4852-b405-57e927fbec72",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "ba980b2e-73d9-4b0a-b37d-39c8b6ebcfea",
+							"name": "updatedAt",
+							"parent": "62f12dfc-dc6d-4852-b405-57e927fbec72",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "e6cb2bf3-8173-4041-dbe8-11af7cc8ff6b",
+							"name": "changedBy",
+							"parent": "62f12dfc-dc6d-4852-b405-57e927fbec72",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "ebc6df72-c363-43ea-b5d9-c422e3e0c255",
+							"name": "name",
+							"parent": "62f12dfc-dc6d-4852-b405-57e927fbec72",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "7168138e-057b-49f4-ec6b-77b88488b339",
+							"name": "description",
+							"parent": "62f12dfc-dc6d-4852-b405-57e927fbec72",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "4fd7df84-dabd-43c8-aa5d-f3d1a319ab9c",
+			"name": "Error",
+			"description": "",
+			"isInclude": false,
+			"properties": [
+				{
+					"id": "833708bb-351f-453b-9f45-7cd0cc115828",
+					"name": "status",
+					"objectType": "string",
+					"description": "",
+					"required": false,
+					"value": "",
+					"minLength": "",
+					"maxLength": "",
+					"default": "",
+					"example": "",
+					"isParent": false,
+					"children": [],
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"showNameField": true
+				}
+			]
+		},
+		{
+			"id": "35e9543f-5f5f-49a1-ec88-1538aabf4aee",
+			"name": "ID",
+			"description": "",
+			"isInclude": false,
+			"properties": [
+				{
+					"id": "8b08a6cc-5490-4076-f5e9-c9194388d239",
+					"name": "id",
+					"objectType": "string",
+					"description": "",
+					"required": true,
+					"value": "",
+					"minLength": "",
+					"maxLength": "",
+					"default": "",
+					"example": "",
+					"isParent": false,
+					"children": []
+				}
+			]
+		},
+		{
+			"id": "0c3fc2d8-38ed-418d-ac6b-59c700a07ed4",
+			"name": "Get",
+			"description": "",
+			"isInclude": false,
+			"properties": [
+				{
+					"id": "edba83c0-8a94-4922-9fe5-cfacdfa1f14b",
+					"name": "id",
+					"parent": "",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "da0de2f8-30c4-4df5-896f-5820fa6f32e6",
+					"name": "createdAt",
+					"parent": "",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "d938749f-100a-451e-d103-79db7e2c753d",
+					"name": "updatedAt",
+					"parent": "",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "bd266a48-b486-440f-a63e-95443db508fa",
+					"name": "createdBy",
+					"parent": "",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "06926170-aec5-464f-e947-134185b4e7a7",
+					"name": "changedBy",
+					"parent": "",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "deb7c21a-5fa2-4611-f0ba-4323f139a6b1",
+					"name": "id",
+					"parent": "061ef163-0d49-4a7b-a7f6-4ea8d221e69a",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "061ef163-0d49-4a7b-a7f6-4ea8d221e69a",
+					"name": "items",
+					"parent": "",
+					"description": "",
+					"objectType": "array",
+					"objectName": "items",
+					"isParent": true,
+					"children": [
+						{
+							"id": "deb7c21a-5fa2-4611-f0ba-4323f139a6b1",
+							"name": "id",
+							"parent": "061ef163-0d49-4a7b-a7f6-4ea8d221e69a",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						}
+					]
+				},
+				{
+					"id": "55bf09e6-63c5-4337-9c9f-daca16dae38d",
+					"name": "name",
+					"parent": "",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "8fc9f238-c520-4981-aa3f-b2be8632cd3f",
+					"name": "description",
+					"parent": "",
+					"description": "",
+					"objectType": "object",
+					"objectName": "description",
+					"isParent": true,
+					"children": []
+				}
+			]
+		},
+		{
+			"id": "d4d44460-822b-4a41-b0c6-c069b5f9e6cf",
+			"name": "Save",
+			"description": "",
+			"isInclude": false,
+			"properties": [
+				{
+					"id": "eef1558c-0f92-4e83-857e-33fd24c4ba6e",
+					"name": "id",
+					"parent": "",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "cc2deb0f-902b-45bd-e4d3-776b68ae74ce",
+					"name": "createdAt",
+					"parent": "",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "047428f7-a48b-437e-a333-e72466af9748",
+					"name": "updatedAt",
+					"parent": "",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "8f0e11c8-ff1f-4a3a-e2c9-ca23b26dc33b",
+					"name": "createdBy",
+					"parent": "",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "06336c18-c669-4ba4-ad18-99a2e11aa199",
+					"name": "changedBy",
+					"parent": "",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "f49e8622-3492-4215-b35f-9040e0ff09e5",
+					"name": "id",
+					"parent": "a73b614c-8576-4bf5-b9cf-d31ba7bce1d9",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "a73b614c-8576-4bf5-b9cf-d31ba7bce1d9",
+					"name": "items",
+					"parent": "",
+					"description": "",
+					"objectType": "array",
+					"objectName": "items",
+					"isParent": true,
+					"children": [
+						{
+							"id": "f49e8622-3492-4215-b35f-9040e0ff09e5",
+							"name": "id",
+							"parent": "a73b614c-8576-4bf5-b9cf-d31ba7bce1d9",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						}
+					]
+				},
+				{
+					"id": "9bf2e948-caa5-4e26-c552-7dea197ad656",
+					"name": "name",
+					"parent": "",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "5400ac7d-2778-4a24-e7d7-b6be6ef3e5ae",
+					"name": "description",
+					"parent": "",
+					"description": "",
+					"objectType": "object",
+					"objectName": "description",
+					"isParent": true,
+					"children": []
+				}
+			]
+		}
+	],
+	"documentation": [],
+	"name": "CoreAPI Testing_Plan",
+	"endpoint": "https://[yourDomain].com/api/functions/Testing",
+	"ver": "23.2.3.1835",
+	"version": "2.2.0",
+	"description": "API to access results of Planet 9 Testing_Plan API Details.",
+	"mediaType": null,
+	"securitySchemes": null,
+	"swaggerURI": null,
+	"swaggerSystem": null,
+	"apiType": "",
+	"about": "<h4>Description</h4><p>Planet 9-Testing_Plans maintains the overview list of all<span style=\"white-space: unset; font-size: 1rem;\">&nbsp;test plans cases.</span></p><p>API_Testing_Plans&nbsp; is the API to access the test plans cases, and the operations performed on them.</p><h4><strong>Operations Performed&nbsp;</strong></h4><h4><p style=\"font-weight: 400;\"><strong>List</strong></p><p style=\"font-weight: 400;\">Get the list of the test plans</p><table class=\"table\" style=\"width: 730px; font-weight: 400;\"><tbody><tr><td>Response</td><td>List - Definition&nbsp; &nbsp;</td></tr></tbody></table><br style=\"font-weight: 400;\"><p style=\"font-weight: 400;\"><strong>Get</strong></p><p style=\"font-weight: 400;\">Get the selected test plan details</p><table class=\"table\" style=\"width: 730px; font-weight: 400;\"><tbody><tr><td>Request</td><td>ID</td></tr><tr><td>Response</td><td>Get-Definition&nbsp; &nbsp; &nbsp;</td></tr></tbody></table><br style=\"font-weight: 400;\"><strong>Del</strong><p style=\"font-weight: 400;\">Delete the selected test plan</p><table class=\"table\" style=\"width: 730px; font-weight: 400;\"><tbody><tr><td>Request</td><td>ID&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</td></tr></tbody></table><br style=\"font-weight: 400;\"><strong>Save</strong><p style=\"font-weight: 400;\">Save the test plan</p></h4><h4><table class=\"table\" style=\"width: 730px; font-weight: 400;\"><tbody><tr><td>Request</td><td>Save&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</td></tr></tbody></table></h4><h4><br></h4>",
+	"enableProxy": true,
+	"restrictAccess": false,
+	"enableTrace": false,
+	"enableIDE": false,
+	"internalAPI": false,
+	"isPublic": false,
+	"tlsAllowUntrusted": true,
+	"useOwnProcess": false,
+	"package": "25602b27-7c0d-ed11-b47a-000d3ab2359f",
+	"apiGroup": "d13170d2-069b-404f-84dc-4c6e3792958e",
+	"apiFormat": 0,
+	"roles": []
+}
