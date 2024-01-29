@@ -106,72 +106,6 @@
 				"    \"ver\": null",
 				"}"
 			]
-		},
-		{
-			"id": "406183cc-3c3a-4681-da49-4a61825ef77f",
-			"method": "POST",
-			"path": "/Save",
-			"description": "",
-			"parameters": [],
-			"headers": [],
-			"responses": [
-				{
-					"status": "200",
-					"description": "OK",
-					"headers": [],
-					"body": [],
-					"content": [
-						{
-							"id": "baaee4da-48e7-4f42-9bae-3d5ef8b3a9aa",
-							"name": "List",
-							"objectType": "object"
-						}
-					]
-				},
-				{
-					"status": "500",
-					"description": "OK",
-					"headers": [],
-					"body": [],
-					"content": [
-						{
-							"id": "e844f80c-78a3-495f-cbf2-3e197199896a",
-							"name": "Error",
-							"objectType": "object"
-						}
-					]
-				}
-			],
-			"content": [
-				{
-					"name": "Save",
-					"objectType": "object"
-				}
-			],
-			"summary": "Save the group"
-		},
-		{
-			"id": "67e3492a-a29d-412b-875e-1dc5719df0f8",
-			"method": "POST",
-			"path": "/Delete",
-			"description": "",
-			"parameters": [],
-			"headers": [],
-			"responses": [
-				{
-					"status": "200",
-					"description": "OK",
-					"headers": [],
-					"body": [],
-					"content": []
-				}
-			],
-			"content": [
-				{
-					"name": "Id",
-					"objectType": "object"
-				}
-			]
 		}
 	],
 	"definitions": [
@@ -188,7 +122,11 @@
 					"description": "",
 					"objectType": "string",
 					"isParent": false,
-					"children": []
+					"children": [],
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"showNameField": true
 				},
 				{
 					"id": "d25d5db8-ade9-48de-d6c9-74e60421c862",
@@ -197,7 +135,11 @@
 					"description": "",
 					"objectType": "string",
 					"isParent": false,
-					"children": []
+					"children": [],
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"showNameField": true
 				},
 				{
 					"id": "48a401a0-bef6-4f37-e833-dbc1d20406aa",
@@ -206,7 +148,11 @@
 					"description": "",
 					"objectType": "string",
 					"isParent": false,
-					"children": []
+					"children": [],
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"showNameField": true
 				},
 				{
 					"id": "34233d06-9659-45e4-c026-f58b368ae6c2",
@@ -215,7 +161,11 @@
 					"description": "",
 					"objectType": "string",
 					"isParent": false,
-					"children": []
+					"children": [],
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"showNameField": true
 				},
 				{
 					"id": "d117bb2d-738f-4090-d359-d30e5e5e8cfb",
@@ -224,7 +174,11 @@
 					"description": "",
 					"objectType": "string",
 					"isParent": false,
-					"children": []
+					"children": [],
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"showNameField": true
 				},
 				{
 					"id": "366a79c7-67dd-4946-8a50-37ab938f3ccb",
@@ -233,7 +187,11 @@
 					"description": "",
 					"objectType": "string",
 					"isParent": false,
-					"children": []
+					"children": [],
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"showNameField": true
 				},
 				{
 					"id": "df635852-6b90-41de-ac98-961d12fc7249",
@@ -242,7 +200,11 @@
 					"description": "",
 					"objectType": "string",
 					"isParent": false,
-					"children": []
+					"children": [],
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"showNameField": true
 				},
 				{
 					"id": "7f6a2780-1b56-4d78-98dd-0868c8215c83",
@@ -252,7 +214,11 @@
 					"objectType": "object",
 					"objectName": "ver",
 					"isParent": true,
-					"children": []
+					"children": [],
+					"enableValueHelp": false,
+					"canAddSubNode": true,
+					"enabled": true,
+					"showNameField": true
 				}
 			]
 		},
@@ -626,7 +592,7 @@
 	"documentation": [],
 	"name": "CoreAPI Connectivity_Group",
 	"endpoint": "https://[yourDomain].com/api/functions/APIGroup",
-	"ver": "23.2.3.1813",
+	"ver": "24.1.29.179",
 	"version": "2.2.0",
 	"description": "API to access results of Planet 9 Connectivity_Group API Details.",
 	"mediaType": null,

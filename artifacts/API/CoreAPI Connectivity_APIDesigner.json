@@ -152,74 +152,6 @@
 				"    ]",
 				"}"
 			]
-		},
-		{
-			"id": "629804ac-0c08-4bfd-b629-d98eb3e89731",
-			"method": "POST",
-			"path": "/Save",
-			"description": "Operation to save API",
-			"parameters": [],
-			"headers": [],
-			"responses": [
-				{
-					"status": "200",
-					"description": "OK",
-					"headers": [],
-					"body": [],
-					"content": [
-						{
-							"id": "9ef81cd8-f498-470c-dc59-9e1e8bd0bf2f",
-							"name": "APIList ",
-							"objectType": "object"
-						}
-					]
-				},
-				{
-					"status": "500",
-					"description": "OK",
-					"headers": [],
-					"body": [],
-					"content": [
-						{
-							"id": "feaaba87-6074-4a30-b41b-95f7e1e77ae5",
-							"name": "Error",
-							"objectType": "object"
-						}
-					]
-				}
-			],
-			"content": [
-				{
-					"name": "Save",
-					"objectType": "object"
-				}
-			],
-			"summary": "Operation to save API"
-		},
-		{
-			"id": "78d0d4aa-cd52-442b-dc58-0b78f6800e5a",
-			"method": "POST",
-			"path": "/Delete",
-			"description": "Operation to delete selected API",
-			"parameters": [],
-			"headers": [],
-			"responses": [
-				{
-					"status": "200",
-					"description": "OK",
-					"headers": [],
-					"body": [],
-					"content": []
-				}
-			],
-			"content": [
-				{
-					"name": "Id",
-					"objectType": "object"
-				}
-			],
-			"summary": "Operation to delete selected API",
-			"example": ""
 		}
 	],
 	"definitions": [
@@ -236,7 +168,11 @@
 					"description": "",
 					"objectType": "string",
 					"isParent": false,
-					"children": []
+					"children": [],
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"showNameField": true
 				},
 				{
 					"id": "0326898e-a750-4034-d571-e4fa53fefe7c",
@@ -245,7 +181,11 @@
 					"description": "",
 					"objectType": "string",
 					"isParent": false,
-					"children": []
+					"children": [],
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"showNameField": true
 				},
 				{
 					"id": "91563d5a-e3d8-4b2f-f0d3-579870e275f6",
@@ -254,7 +194,11 @@
 					"description": "",
 					"objectType": "string",
 					"isParent": false,
-					"children": []
+					"children": [],
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"showNameField": true
 				},
 				{
 					"id": "162a8537-e40b-4986-a904-2a29ba007271",
@@ -263,7 +207,11 @@
 					"description": "",
 					"objectType": "string",
 					"isParent": false,
-					"children": []
+					"children": [],
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"showNameField": true
 				},
 				{
 					"id": "afd7ff1c-a6c9-46c1-9132-3f9aef054f7d",
@@ -272,7 +220,11 @@
 					"description": "",
 					"objectType": "string",
 					"isParent": false,
-					"children": []
+					"children": [],
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"showNameField": true
 				},
 				{
 					"id": "0591f9c4-d816-42c3-8dde-1f7f8c56c5c6",
@@ -282,7 +234,11 @@
 					"objectType": "array",
 					"objectName": "auth",
 					"isParent": true,
-					"children": []
+					"children": [],
+					"enableValueHelp": false,
+					"canAddSubNode": true,
+					"enabled": true,
+					"showNameField": true
 				},
 				{
 					"id": "11d6ee0f-c6c8-4948-a29a-cf773887054a",
@@ -292,7 +248,11 @@
 					"objectType": "array",
 					"objectName": "endpoints",
 					"isParent": true,
-					"children": []
+					"children": [],
+					"enableValueHelp": false,
+					"canAddSubNode": true,
+					"enabled": true,
+					"showNameField": true
 				},
 				{
 					"id": "3576054b-5173-4be7-c162-0fb905ecc52b",
@@ -301,7 +261,11 @@
 					"description": "",
 					"objectType": "string",
 					"isParent": false,
-					"children": []
+					"children": [],
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"showNameField": true
 				},
 				{
 					"id": "0cfe0034-0644-4915-f2dc-01f889ee3456",
@@ -310,7 +274,11 @@
 					"description": "",
 					"objectType": "string",
 					"isParent": false,
-					"children": []
+					"children": [],
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"showNameField": true
 				},
 				{
 					"id": "4c816003-03e1-4f01-dc47-a84c40932071",
@@ -319,7 +287,11 @@
 					"description": "",
 					"objectType": "string",
 					"isParent": false,
-					"children": []
+					"children": [],
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"showNameField": true
 				},
 				{
 					"id": "d22b7ac8-ecff-4f81-cb9b-dd8265f5da3a",
@@ -329,7 +301,11 @@
 					"objectType": "array",
 					"objectName": "headers",
 					"isParent": true,
-					"children": []
+					"children": [],
+					"enableValueHelp": false,
+					"canAddSubNode": true,
+					"enabled": true,
+					"showNameField": true
 				},
 				{
 					"id": "64225a7e-39d9-4d07-9491-c258990a4e5f",
@@ -338,7 +314,11 @@
 					"description": "",
 					"objectType": "string",
 					"isParent": false,
-					"children": []
+					"children": [],
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"showNameField": true
 				},
 				{
 					"id": "41fa6176-047c-4d7f-d6a1-62faa9b5eab4",
@@ -347,7 +327,11 @@
 					"description": "",
 					"objectType": "string",
 					"isParent": false,
-					"children": []
+					"children": [],
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"showNameField": true
 				},
 				{
 					"id": "19502d7b-b582-44d8-fedc-bde8379b6c4b",
@@ -365,7 +349,11 @@
 							"description": "",
 							"objectType": "string",
 							"isParent": false,
-							"children": []
+							"children": [],
+							"enableValueHelp": false,
+							"canAddSubNode": false,
+							"enabled": true,
+							"showNameField": true
 						},
 						{
 							"id": "41fa6176-047c-4d7f-d6a1-62faa9b5eab4",
@@ -374,9 +362,17 @@
 							"description": "",
 							"objectType": "string",
 							"isParent": false,
-							"children": []
+							"children": [],
+							"enableValueHelp": false,
+							"canAddSubNode": false,
+							"enabled": true,
+							"showNameField": true
 						}
-					]
+					],
+					"enableValueHelp": false,
+					"canAddSubNode": true,
+					"enabled": true,
+					"showNameField": true
 				},
 				{
 					"id": "49d5b63a-e83f-457c-b01a-99529ef71bac",
@@ -385,7 +381,11 @@
 					"description": "",
 					"objectType": "string",
 					"isParent": false,
-					"children": []
+					"children": [],
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"showNameField": true
 				},
 				{
 					"id": "9ad2124b-d078-411c-ad8a-4d70817fa36e",
@@ -394,7 +394,11 @@
 					"description": "",
 					"objectType": "string",
 					"isParent": false,
-					"children": []
+					"children": [],
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"showNameField": true
 				},
 				{
 					"id": "ee865068-4cb6-42a0-dc2c-5eab0fee7ebb",
@@ -412,7 +416,11 @@
 							"description": "",
 							"objectType": "string",
 							"isParent": false,
-							"children": []
+							"children": [],
+							"enableValueHelp": false,
+							"canAddSubNode": false,
+							"enabled": true,
+							"showNameField": true
 						},
 						{
 							"id": "9ad2124b-d078-411c-ad8a-4d70817fa36e",
@@ -421,9 +429,17 @@
 							"description": "",
 							"objectType": "string",
 							"isParent": false,
-							"children": []
+							"children": [],
+							"enableValueHelp": false,
+							"canAddSubNode": false,
+							"enabled": true,
+							"showNameField": true
 						}
-					]
+					],
+					"enableValueHelp": false,
+					"canAddSubNode": true,
+					"enabled": true,
+					"showNameField": true
 				},
 				{
 					"id": "69a9ab4a-caee-4f71-a013-4cc99014f9ec",
@@ -432,7 +448,11 @@
 					"description": "",
 					"objectType": "number",
 					"isParent": false,
-					"children": []
+					"children": [],
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"showNameField": true
 				},
 				{
 					"id": "56e863ed-d19a-46c7-bfc0-7175cb1debb7",
@@ -442,7 +462,11 @@
 					"objectType": "array",
 					"objectName": "headers",
 					"isParent": true,
-					"children": []
+					"children": [],
+					"enableValueHelp": false,
+					"canAddSubNode": true,
+					"enabled": true,
+					"showNameField": true
 				},
 				{
 					"id": "81131d91-f8c9-4afe-9d56-32e09691cde4",
@@ -451,7 +475,11 @@
 					"description": "",
 					"objectType": "string",
 					"isParent": false,
-					"children": []
+					"children": [],
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"showNameField": true
 				},
 				{
 					"id": "63378429-55d6-4cf1-9eea-6dd6fa9e8999",
@@ -460,7 +488,11 @@
 					"description": "",
 					"objectType": "string",
 					"isParent": false,
-					"children": []
+					"children": [],
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"showNameField": true
 				},
 				{
 					"id": "4be4abf0-9f78-4880-8638-998240c180b7",
@@ -478,7 +510,11 @@
 							"description": "",
 							"objectType": "string",
 							"isParent": false,
-							"children": []
+							"children": [],
+							"enableValueHelp": false,
+							"canAddSubNode": false,
+							"enabled": true,
+							"showNameField": true
 						},
 						{
 							"id": "63378429-55d6-4cf1-9eea-6dd6fa9e8999",
@@ -487,9 +523,17 @@
 							"description": "",
 							"objectType": "string",
 							"isParent": false,
-							"children": []
+							"children": [],
+							"enableValueHelp": false,
+							"canAddSubNode": false,
+							"enabled": true,
+							"showNameField": true
 						}
-					]
+					],
+					"enableValueHelp": false,
+					"canAddSubNode": true,
+					"enabled": true,
+					"showNameField": true
 				},
 				{
 					"id": "a6a095b5-d922-4ece-8a95-9f457708911e",
@@ -507,7 +551,11 @@
 							"description": "",
 							"objectType": "number",
 							"isParent": false,
-							"children": []
+							"children": [],
+							"enableValueHelp": false,
+							"canAddSubNode": false,
+							"enabled": true,
+							"showNameField": true
 						},
 						{
 							"id": "56e863ed-d19a-46c7-bfc0-7175cb1debb7",
@@ -517,7 +565,11 @@
 							"objectType": "array",
 							"objectName": "headers",
 							"isParent": true,
-							"children": []
+							"children": [],
+							"enableValueHelp": false,
+							"canAddSubNode": true,
+							"enabled": true,
+							"showNameField": true
 						},
 						{
 							"id": "4be4abf0-9f78-4880-8638-998240c180b7",
@@ -535,7 +587,11 @@
 									"description": "",
 									"objectType": "string",
 									"isParent": false,
-									"children": []
+									"children": [],
+									"enableValueHelp": false,
+									"canAddSubNode": false,
+									"enabled": true,
+									"showNameField": true
 								},
 								{
 									"id": "63378429-55d6-4cf1-9eea-6dd6fa9e8999",
@@ -544,11 +600,23 @@
 									"description": "",
 									"objectType": "string",
 									"isParent": false,
-									"children": []
+									"children": [],
+									"enableValueHelp": false,
+									"canAddSubNode": false,
+									"enabled": true,
+									"showNameField": true
 								}
-							]
+							],
+							"enableValueHelp": false,
+							"canAddSubNode": true,
+							"enabled": true,
+							"showNameField": true
 						}
-					]
+					],
+					"enableValueHelp": false,
+					"canAddSubNode": true,
+					"enabled": true,
+					"showNameField": true
 				},
 				{
 					"id": "231886ca-2e75-40b0-e131-211f55d738f9",
@@ -566,7 +634,11 @@
 							"description": "",
 							"objectType": "string",
 							"isParent": false,
-							"children": []
+							"children": [],
+							"enableValueHelp": false,
+							"canAddSubNode": false,
+							"enabled": true,
+							"showNameField": true
 						},
 						{
 							"id": "0cfe0034-0644-4915-f2dc-01f889ee3456",
@@ -575,7 +647,11 @@
 							"description": "",
 							"objectType": "string",
 							"isParent": false,
-							"children": []
+							"children": [],
+							"enableValueHelp": false,
+							"canAddSubNode": false,
+							"enabled": true,
+							"showNameField": true
 						},
 						{
 							"id": "4c816003-03e1-4f01-dc47-a84c40932071",
@@ -584,7 +660,11 @@
 							"description": "",
 							"objectType": "string",
 							"isParent": false,
-							"children": []
+							"children": [],
+							"enableValueHelp": false,
+							"canAddSubNode": false,
+							"enabled": true,
+							"showNameField": true
 						},
 						{
 							"id": "d22b7ac8-ecff-4f81-cb9b-dd8265f5da3a",
@@ -594,7 +674,11 @@
 							"objectType": "array",
 							"objectName": "headers",
 							"isParent": true,
-							"children": []
+							"children": [],
+							"enableValueHelp": false,
+							"canAddSubNode": true,
+							"enabled": true,
+							"showNameField": true
 						},
 						{
 							"id": "19502d7b-b582-44d8-fedc-bde8379b6c4b",
@@ -612,7 +696,11 @@
 									"description": "",
 									"objectType": "string",
 									"isParent": false,
-									"children": []
+									"children": [],
+									"enableValueHelp": false,
+									"canAddSubNode": false,
+									"enabled": true,
+									"showNameField": true
 								},
 								{
 									"id": "41fa6176-047c-4d7f-d6a1-62faa9b5eab4",
@@ -621,9 +709,17 @@
 									"description": "",
 									"objectType": "string",
 									"isParent": false,
-									"children": []
+									"children": [],
+									"enableValueHelp": false,
+									"canAddSubNode": false,
+									"enabled": true,
+									"showNameField": true
 								}
-							]
+							],
+							"enableValueHelp": false,
+							"canAddSubNode": true,
+							"enabled": true,
+							"showNameField": true
 						},
 						{
 							"id": "ee865068-4cb6-42a0-dc2c-5eab0fee7ebb",
@@ -641,7 +737,11 @@
 									"description": "",
 									"objectType": "string",
 									"isParent": false,
-									"children": []
+									"children": [],
+									"enableValueHelp": false,
+									"canAddSubNode": false,
+									"enabled": true,
+									"showNameField": true
 								},
 								{
 									"id": "9ad2124b-d078-411c-ad8a-4d70817fa36e",
@@ -650,9 +750,17 @@
 									"description": "",
 									"objectType": "string",
 									"isParent": false,
-									"children": []
+									"children": [],
+									"enableValueHelp": false,
+									"canAddSubNode": false,
+									"enabled": true,
+									"showNameField": true
 								}
-							]
+							],
+							"enableValueHelp": false,
+							"canAddSubNode": true,
+							"enabled": true,
+							"showNameField": true
 						},
 						{
 							"id": "a6a095b5-d922-4ece-8a95-9f457708911e",
@@ -670,7 +778,11 @@
 									"description": "",
 									"objectType": "number",
 									"isParent": false,
-									"children": []
+									"children": [],
+									"enableValueHelp": false,
+									"canAddSubNode": false,
+									"enabled": true,
+									"showNameField": true
 								},
 								{
 									"id": "56e863ed-d19a-46c7-bfc0-7175cb1debb7",
@@ -680,7 +792,11 @@
 									"objectType": "array",
 									"objectName": "headers",
 									"isParent": true,
-									"children": []
+									"children": [],
+									"enableValueHelp": false,
+									"canAddSubNode": true,
+									"enabled": true,
+									"showNameField": true
 								},
 								{
 									"id": "4be4abf0-9f78-4880-8638-998240c180b7",
@@ -698,7 +814,11 @@
 											"description": "",
 											"objectType": "string",
 											"isParent": false,
-											"children": []
+											"children": [],
+											"enableValueHelp": false,
+											"canAddSubNode": false,
+											"enabled": true,
+											"showNameField": true
 										},
 										{
 											"id": "63378429-55d6-4cf1-9eea-6dd6fa9e8999",
@@ -707,13 +827,29 @@
 											"description": "",
 											"objectType": "string",
 											"isParent": false,
-											"children": []
+											"children": [],
+											"enableValueHelp": false,
+											"canAddSubNode": false,
+											"enabled": true,
+											"showNameField": true
 										}
-									]
+									],
+									"enableValueHelp": false,
+									"canAddSubNode": true,
+									"enabled": true,
+									"showNameField": true
 								}
-							]
+							],
+							"enableValueHelp": false,
+							"canAddSubNode": true,
+							"enabled": true,
+							"showNameField": true
 						}
-					]
+					],
+					"enableValueHelp": false,
+					"canAddSubNode": true,
+					"enabled": true,
+					"showNameField": true
 				},
 				{
 					"id": "a4ec7abc-53c5-41fa-f34b-7e95c86ffc8a",
@@ -722,7 +858,11 @@
 					"description": "",
 					"objectType": "string",
 					"isParent": false,
-					"children": []
+					"children": [],
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"showNameField": true
 				},
 				{
 					"id": "6d9985e6-d6c9-45e5-afa9-f6025fe9c396",
@@ -731,7 +871,11 @@
 					"description": "",
 					"objectType": "string",
 					"isParent": false,
-					"children": []
+					"children": [],
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"showNameField": true
 				},
 				{
 					"id": "60ff8a99-e560-4e36-fa24-9930676bac12",
@@ -740,7 +884,11 @@
 					"description": "",
 					"objectType": "string",
 					"isParent": false,
-					"children": []
+					"children": [],
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"showNameField": true
 				},
 				{
 					"id": "b3237e59-779a-4430-b54a-db03c38b8949",
@@ -749,7 +897,11 @@
 					"description": "",
 					"objectType": "string",
 					"isParent": false,
-					"children": []
+					"children": [],
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"showNameField": true
 				},
 				{
 					"id": "ac14be4e-da34-4f25-f5ed-a29ca0d30f28",
@@ -758,7 +910,11 @@
 					"description": "",
 					"objectType": "string",
 					"isParent": false,
-					"children": []
+					"children": [],
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"showNameField": true
 				},
 				{
 					"id": "9d8af281-9045-4f52-b8b7-75a532046dca",
@@ -767,7 +923,11 @@
 					"description": "",
 					"objectType": "string",
 					"isParent": false,
-					"children": []
+					"children": [],
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"showNameField": true
 				},
 				{
 					"id": "e865796b-1f7c-4b65-8162-2387f94bbf8e",
@@ -785,7 +945,11 @@
 							"description": "",
 							"objectType": "string",
 							"isParent": false,
-							"children": []
+							"children": [],
+							"enableValueHelp": false,
+							"canAddSubNode": false,
+							"enabled": true,
+							"showNameField": true
 						},
 						{
 							"id": "b3237e59-779a-4430-b54a-db03c38b8949",
@@ -794,7 +958,11 @@
 							"description": "",
 							"objectType": "string",
 							"isParent": false,
-							"children": []
+							"children": [],
+							"enableValueHelp": false,
+							"canAddSubNode": false,
+							"enabled": true,
+							"showNameField": true
 						},
 						{
 							"id": "ac14be4e-da34-4f25-f5ed-a29ca0d30f28",
@@ -803,7 +971,11 @@
 							"description": "",
 							"objectType": "string",
 							"isParent": false,
-							"children": []
+							"children": [],
+							"enableValueHelp": false,
+							"canAddSubNode": false,
+							"enabled": true,
+							"showNameField": true
 						},
 						{
 							"id": "9d8af281-9045-4f52-b8b7-75a532046dca",
@@ -812,9 +984,17 @@
 							"description": "",
 							"objectType": "string",
 							"isParent": false,
-							"children": []
+							"children": [],
+							"enableValueHelp": false,
+							"canAddSubNode": false,
+							"enabled": true,
+							"showNameField": true
 						}
-					]
+					],
+					"enableValueHelp": false,
+					"canAddSubNode": true,
+					"enabled": true,
+					"showNameField": true
 				},
 				{
 					"id": "f7669153-0541-464b-f151-046ff9dc54f3",
@@ -832,7 +1012,11 @@
 							"description": "",
 							"objectType": "string",
 							"isParent": false,
-							"children": []
+							"children": [],
+							"enableValueHelp": false,
+							"canAddSubNode": false,
+							"enabled": true,
+							"showNameField": true
 						},
 						{
 							"id": "6d9985e6-d6c9-45e5-afa9-f6025fe9c396",
@@ -841,7 +1025,11 @@
 							"description": "",
 							"objectType": "string",
 							"isParent": false,
-							"children": []
+							"children": [],
+							"enableValueHelp": false,
+							"canAddSubNode": false,
+							"enabled": true,
+							"showNameField": true
 						},
 						{
 							"id": "e865796b-1f7c-4b65-8162-2387f94bbf8e",
@@ -859,7 +1047,11 @@
 									"description": "",
 									"objectType": "string",
 									"isParent": false,
-									"children": []
+									"children": [],
+									"enableValueHelp": false,
+									"canAddSubNode": false,
+									"enabled": true,
+									"showNameField": true
 								},
 								{
 									"id": "b3237e59-779a-4430-b54a-db03c38b8949",
@@ -868,7 +1060,11 @@
 									"description": "",
 									"objectType": "string",
 									"isParent": false,
-									"children": []
+									"children": [],
+									"enableValueHelp": false,
+									"canAddSubNode": false,
+									"enabled": true,
+									"showNameField": true
 								},
 								{
 									"id": "ac14be4e-da34-4f25-f5ed-a29ca0d30f28",
@@ -877,7 +1073,11 @@
 									"description": "",
 									"objectType": "string",
 									"isParent": false,
-									"children": []
+									"children": [],
+									"enableValueHelp": false,
+									"canAddSubNode": false,
+									"enabled": true,
+									"showNameField": true
 								},
 								{
 									"id": "9d8af281-9045-4f52-b8b7-75a532046dca",
@@ -886,11 +1086,23 @@
 									"description": "",
 									"objectType": "string",
 									"isParent": false,
-									"children": []
+									"children": [],
+									"enableValueHelp": false,
+									"canAddSubNode": false,
+									"enabled": true,
+									"showNameField": true
 								}
-							]
+							],
+							"enableValueHelp": false,
+							"canAddSubNode": true,
+							"enabled": true,
+							"showNameField": true
 						}
-					]
+					],
+					"enableValueHelp": false,
+					"canAddSubNode": true,
+					"enabled": true,
+					"showNameField": true
 				},
 				{
 					"id": "3a50a4e5-f234-4145-b59d-71ef919a6412",
@@ -899,7 +1111,11 @@
 					"description": "",
 					"objectType": "string",
 					"isParent": false,
-					"children": []
+					"children": [],
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"showNameField": true
 				},
 				{
 					"id": "7fcf26dd-8734-4201-e847-7ae134145a49",
@@ -908,7 +1124,11 @@
 					"description": "",
 					"objectType": "string",
 					"isParent": false,
-					"children": []
+					"children": [],
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"showNameField": true
 				},
 				{
 					"id": "6c3badea-205f-4861-8b92-80b2f5b4b99d",
@@ -917,7 +1137,11 @@
 					"description": "",
 					"objectType": "string",
 					"isParent": false,
-					"children": []
+					"children": [],
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"showNameField": true
 				},
 				{
 					"id": "ff2f7481-6418-48ec-d980-ca366a019366",
@@ -926,7 +1150,11 @@
 					"description": "",
 					"objectType": "string",
 					"isParent": false,
-					"children": []
+					"children": [],
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"showNameField": true
 				},
 				{
 					"id": "b1607995-fc98-4a37-c0c2-2575dbc369c5",
@@ -935,7 +1163,11 @@
 					"description": "",
 					"objectType": "string",
 					"isParent": false,
-					"children": []
+					"children": [],
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"showNameField": true
 				},
 				{
 					"id": "2d6c18b8-7899-4824-c23f-e66eb73d041a",
@@ -944,7 +1176,11 @@
 					"description": "",
 					"objectType": "string",
 					"isParent": false,
-					"children": []
+					"children": [],
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"showNameField": true
 				},
 				{
 					"id": "64a9d2cf-36b7-4594-8bfd-57db11c4145b",
@@ -962,7 +1198,11 @@
 							"description": "",
 							"objectType": "string",
 							"isParent": false,
-							"children": []
+							"children": [],
+							"enableValueHelp": false,
+							"canAddSubNode": false,
+							"enabled": true,
+							"showNameField": true
 						},
 						{
 							"id": "ff2f7481-6418-48ec-d980-ca366a019366",
@@ -971,7 +1211,11 @@
 							"description": "",
 							"objectType": "string",
 							"isParent": false,
-							"children": []
+							"children": [],
+							"enableValueHelp": false,
+							"canAddSubNode": false,
+							"enabled": true,
+							"showNameField": true
 						},
 						{
 							"id": "b1607995-fc98-4a37-c0c2-2575dbc369c5",
@@ -980,7 +1224,11 @@
 							"description": "",
 							"objectType": "string",
 							"isParent": false,
-							"children": []
+							"children": [],
+							"enableValueHelp": false,
+							"canAddSubNode": false,
+							"enabled": true,
+							"showNameField": true
 						},
 						{
 							"id": "2d6c18b8-7899-4824-c23f-e66eb73d041a",
@@ -989,9 +1237,17 @@
 							"description": "",
 							"objectType": "string",
 							"isParent": false,
-							"children": []
+							"children": [],
+							"enableValueHelp": false,
+							"canAddSubNode": false,
+							"enabled": true,
+							"showNameField": true
 						}
-					]
+					],
+					"enableValueHelp": false,
+					"canAddSubNode": true,
+					"enabled": true,
+					"showNameField": true
 				},
 				{
 					"id": "24527df7-06cf-4f85-99cf-66c87f35a63b",
@@ -1009,7 +1265,11 @@
 							"description": "",
 							"objectType": "string",
 							"isParent": false,
-							"children": []
+							"children": [],
+							"enableValueHelp": false,
+							"canAddSubNode": false,
+							"enabled": true,
+							"showNameField": true
 						},
 						{
 							"id": "7fcf26dd-8734-4201-e847-7ae134145a49",
@@ -1018,7 +1278,11 @@
 							"description": "",
 							"objectType": "string",
 							"isParent": false,
-							"children": []
+							"children": [],
+							"enableValueHelp": false,
+							"canAddSubNode": false,
+							"enabled": true,
+							"showNameField": true
 						},
 						{
 							"id": "64a9d2cf-36b7-4594-8bfd-57db11c4145b",
@@ -1036,7 +1300,11 @@
 									"description": "",
 									"objectType": "string",
 									"isParent": false,
-									"children": []
+									"children": [],
+									"enableValueHelp": false,
+									"canAddSubNode": false,
+									"enabled": true,
+									"showNameField": true
 								},
 								{
 									"id": "ff2f7481-6418-48ec-d980-ca366a019366",
@@ -1045,7 +1313,11 @@
 									"description": "",
 									"objectType": "string",
 									"isParent": false,
-									"children": []
+									"children": [],
+									"enableValueHelp": false,
+									"canAddSubNode": false,
+									"enabled": true,
+									"showNameField": true
 								},
 								{
 									"id": "b1607995-fc98-4a37-c0c2-2575dbc369c5",
@@ -1054,7 +1326,11 @@
 									"description": "",
 									"objectType": "string",
 									"isParent": false,
-									"children": []
+									"children": [],
+									"enableValueHelp": false,
+									"canAddSubNode": false,
+									"enabled": true,
+									"showNameField": true
 								},
 								{
 									"id": "2d6c18b8-7899-4824-c23f-e66eb73d041a",
@@ -1063,11 +1339,23 @@
 									"description": "",
 									"objectType": "string",
 									"isParent": false,
-									"children": []
+									"children": [],
+									"enableValueHelp": false,
+									"canAddSubNode": false,
+									"enabled": true,
+									"showNameField": true
 								}
-							]
+							],
+							"enableValueHelp": false,
+							"canAddSubNode": true,
+							"enabled": true,
+							"showNameField": true
 						}
-					]
+					],
+					"enableValueHelp": false,
+					"canAddSubNode": true,
+					"enabled": true,
+					"showNameField": true
 				},
 				{
 					"id": "25a259d2-fe71-4476-f0e9-23a269dc3e00",
@@ -1076,7 +1364,11 @@
 					"description": "",
 					"objectType": "string",
 					"isParent": false,
-					"children": []
+					"children": [],
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"showNameField": true
 				},
 				{
 					"id": "434c186b-d69d-48c9-f2df-5c3ef92543d3",
@@ -1085,7 +1377,11 @@
 					"description": "",
 					"objectType": "string",
 					"isParent": false,
-					"children": []
+					"children": [],
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"showNameField": true
 				},
 				{
 					"id": "275f35a8-e856-4698-b082-0ae427e836d8",
@@ -1094,7 +1390,11 @@
 					"description": "",
 					"objectType": "string",
 					"isParent": false,
-					"children": []
+					"children": [],
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"showNameField": true
 				},
 				{
 					"id": "6b89858b-ea15-4b8f-9843-343472344eb3",
@@ -1104,7 +1404,11 @@
 					"objectType": "string",
 					"objectName": "version",
 					"isParent": false,
-					"children": []
+					"children": [],
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"showNameField": true
 				},
 				{
 					"id": "138cae2e-bd01-45ec-b092-66bbe9ae1085",
@@ -1114,7 +1418,11 @@
 					"objectType": "string",
 					"objectName": "description",
 					"isParent": false,
-					"children": []
+					"children": [],
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"showNameField": true
 				},
 				{
 					"id": "49b1bc56-11bb-48ef-dca7-5c9419ce5eb2",
@@ -1123,7 +1431,11 @@
 					"description": "",
 					"objectType": "string",
 					"isParent": false,
-					"children": []
+					"children": [],
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"showNameField": true
 				},
 				{
 					"id": "01b45563-0c62-47c0-8aed-a28f5d307c82",
@@ -1132,7 +1444,11 @@
 					"description": "",
 					"objectType": "string",
 					"isParent": false,
-					"children": []
+					"children": [],
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"showNameField": true
 				},
 				{
 					"id": "c3f22b5d-9a56-43b6-81ca-4910996eefcf",
@@ -1142,7 +1458,11 @@
 					"objectType": "object",
 					"objectName": "swaggerURI",
 					"isParent": true,
-					"children": []
+					"children": [],
+					"enableValueHelp": false,
+					"canAddSubNode": true,
+					"enabled": true,
+					"showNameField": true
 				},
 				{
 					"id": "48435543-9d0d-42c4-9782-5eaac4122f7b",
@@ -1152,7 +1472,11 @@
 					"objectType": "object",
 					"objectName": "swaggerSystem",
 					"isParent": true,
-					"children": []
+					"children": [],
+					"enableValueHelp": false,
+					"canAddSubNode": true,
+					"enabled": true,
+					"showNameField": true
 				},
 				{
 					"id": "4246cb1e-fbe7-4a7f-c886-e3576891f05c",
@@ -1161,7 +1485,11 @@
 					"description": "",
 					"objectType": "string",
 					"isParent": false,
-					"children": []
+					"children": [],
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"showNameField": true
 				},
 				{
 					"id": "2ef7fd14-711f-4b96-ab2d-ebf0f94d69ca",
@@ -1171,7 +1499,11 @@
 					"objectType": "string",
 					"objectName": "about",
 					"isParent": false,
-					"children": []
+					"children": [],
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"showNameField": true
 				},
 				{
 					"id": "e230a433-df06-44e8-81d2-c489c9b907fc",
@@ -1180,7 +1512,11 @@
 					"description": "",
 					"objectType": "boolean",
 					"isParent": false,
-					"children": []
+					"children": [],
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"showNameField": true
 				},
 				{
 					"id": "d80e0117-288e-428f-e68a-b671c5461811",
@@ -1190,7 +1526,11 @@
 					"objectType": "boolean",
 					"objectName": "enableTrace",
 					"isParent": false,
-					"children": []
+					"children": [],
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"showNameField": true
 				},
 				{
 					"id": "53f7c192-1475-4936-9f68-86e108c3c481",
@@ -1200,7 +1540,11 @@
 					"objectType": "boolean",
 					"objectName": "enableIDE",
 					"isParent": false,
-					"children": []
+					"children": [],
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"showNameField": true
 				},
 				{
 					"id": "f7ebb41e-f895-4fa2-d5a4-4a30e7316948",
@@ -1210,7 +1554,11 @@
 					"objectType": "boolean",
 					"objectName": "internalAPI",
 					"isParent": false,
-					"children": []
+					"children": [],
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"showNameField": true
 				},
 				{
 					"id": "d1cd64f7-0be2-4e18-a0c9-4a4fb38fb682",
@@ -1219,7 +1567,11 @@
 					"description": "",
 					"objectType": "boolean",
 					"isParent": false,
-					"children": []
+					"children": [],
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"showNameField": true
 				},
 				{
 					"id": "86b3ddb7-6aa5-469b-94f5-651326345c28",
@@ -1229,7 +1581,11 @@
 					"objectType": "boolean",
 					"objectName": "tlsAllowUntrusted",
 					"isParent": false,
-					"children": []
+					"children": [],
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"showNameField": true
 				},
 				{
 					"id": "6708d689-fe07-42d5-fccb-de0ed6f61522",
@@ -1238,7 +1594,11 @@
 					"description": "",
 					"objectType": "boolean",
 					"isParent": false,
-					"children": []
+					"children": [],
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"showNameField": true
 				},
 				{
 					"id": "bf852943-cc62-4e99-a99c-9050a87408fb",
@@ -1248,7 +1608,11 @@
 					"objectType": "string",
 					"objectName": "package",
 					"isParent": false,
-					"children": []
+					"children": [],
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"showNameField": true
 				},
 				{
 					"id": "b4ef23d3-e2b3-492a-8196-7f3232ef1455",
@@ -1258,7 +1622,11 @@
 					"objectType": "string",
 					"objectName": "apiGroup",
 					"isParent": false,
-					"children": []
+					"children": [],
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"showNameField": true
 				}
 			]
 		},
@@ -3903,7 +4271,7 @@
 	"documentation": [],
 	"name": "CoreAPI Connectivity_APIDesigner",
 	"endpoint": "https://[yourDomain].com/api/functions/API",
-	"ver": "23.2.3.1812",
+	"ver": "24.1.29.175",
 	"version": "2.2.0",
 	"description": "API to access results of Planet 9 Connectivity_API Designer details.",
 	"mediaType": null,

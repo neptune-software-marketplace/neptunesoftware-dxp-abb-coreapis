@@ -156,98 +156,6 @@
 			]
 		},
 		{
-			"id": "7cbcbc52-1282-4387-9dae-10e5ceb600d2",
-			"method": "POST",
-			"path": "/Save",
-			"description": "",
-			"parameters": [],
-			"headers": [],
-			"responses": [
-				{
-					"status": "200",
-					"description": "OK",
-					"headers": [],
-					"body": [],
-					"content": [
-						{
-							"id": "c2599bf2-d800-4dfc-89fc-e730292ee3f9",
-							"name": "Get",
-							"objectType": "object"
-						}
-					]
-				},
-				{
-					"status": "500",
-					"description": "OK",
-					"headers": [],
-					"body": [],
-					"content": [
-						{
-							"id": "9d9284fe-c194-4c21-aa23-9e9d2acfb4ba",
-							"name": "Error",
-							"objectType": "object"
-						}
-					]
-				}
-			],
-			"content": [
-				{
-					"name": "Save",
-					"objectType": "object"
-				}
-			],
-			"example": [
-				"==OBJECT STRING==",
-				"{",
-				"    \"createdBy\": \"priyanka\",",
-				"    \"changedBy\": \"priyanka\",",
-				"    \"application\": \"sample_olist\",",
-				"    \"users\": \"[\\\"priyanka\\\"]\",",
-				"    \"disabled\": false,",
-				"    \"id\": \"4d42aa1c-53b3-4f4b-9f7c-1962cf939bec\",",
-				"    \"createdAt\": \"2020-05-18T09:34:04.446Z\",",
-				"    \"updatedAt\": \"2020-05-18T09:34:04.446Z\"",
-				"}"
-			]
-		},
-		{
-			"id": "77822609-5dc3-4dab-bfce-e0bf1bd95d9b",
-			"method": "POST",
-			"path": "/Delete",
-			"description": "",
-			"parameters": [],
-			"headers": [],
-			"responses": [
-				{
-					"status": "200",
-					"description": "OK",
-					"headers": [],
-					"body": [],
-					"content": []
-				},
-				{
-					"status": "500",
-					"description": "OK",
-					"headers": [],
-					"body": [],
-					"content": [
-						{
-							"id": "a469ff92-d3c3-434e-873b-6edeb93797d8",
-							"name": "Error",
-							"objectType": "object"
-						}
-					]
-				}
-			],
-			"summary": "Delete the Mobile debug instance",
-			"content": [
-				{
-					"name": "ID",
-					"objectType": "object"
-				}
-			]
-		},
-		{
 			"id": "cf42eb6c-308f-408c-bc9f-771becbf7b99",
 			"method": "POST",
 			"path": "/GetLog",
@@ -432,7 +340,11 @@
 					"description": "",
 					"objectType": "string",
 					"isParent": false,
-					"children": []
+					"children": [],
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"showNameField": true
 				},
 				{
 					"id": "99ef636b-5dc8-4a4b-b535-5c1147f1da79",
@@ -441,7 +353,11 @@
 					"description": "",
 					"objectType": "string",
 					"isParent": false,
-					"children": []
+					"children": [],
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"showNameField": true
 				},
 				{
 					"id": "3987c6c3-ac8d-459d-ea0e-126b818ed63c",
@@ -450,7 +366,11 @@
 					"description": "",
 					"objectType": "string",
 					"isParent": false,
-					"children": []
+					"children": [],
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"showNameField": true
 				},
 				{
 					"id": "663059e4-c905-473d-da2f-19c8c85a5339",
@@ -459,7 +379,11 @@
 					"description": "",
 					"objectType": "string",
 					"isParent": false,
-					"children": []
+					"children": [],
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"showNameField": true
 				},
 				{
 					"id": "786fe151-a2e0-4a4c-a813-0b551fdbf9e2",
@@ -468,7 +392,11 @@
 					"description": "",
 					"objectType": "string",
 					"isParent": false,
-					"children": []
+					"children": [],
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"showNameField": true
 				},
 				{
 					"id": "58ece40f-86d4-4e13-abac-9165275c0bd9",
@@ -477,7 +405,11 @@
 					"description": "",
 					"objectType": "string",
 					"isParent": false,
-					"children": []
+					"children": [],
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"showNameField": true
 				},
 				{
 					"id": "e56c05b3-818d-40b7-83d7-75d2cd40f0b8",
@@ -486,7 +418,11 @@
 					"description": "",
 					"objectType": "string",
 					"isParent": false,
-					"children": []
+					"children": [],
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"showNameField": true
 				},
 				{
 					"id": "74e9677e-eabb-493d-9eba-020457b5a787",
@@ -495,7 +431,11 @@
 					"description": "",
 					"objectType": "boolean",
 					"isParent": false,
-					"children": []
+					"children": [],
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"showNameField": true
 				}
 			]
 		},
@@ -587,7 +527,7 @@
 	"documentation": [],
 	"name": "CoreAPI Run_MobileDebug",
 	"endpoint": "https://[yourDomain].com/api/functions/MobileDebug",
-	"ver": "23.2.3.1822",
+	"ver": "24.1.29.1652",
 	"version": "2.2.0",
 	"description": "API to access results of Planet 9 Run_Mobile Debug details",
 	"mediaType": null,

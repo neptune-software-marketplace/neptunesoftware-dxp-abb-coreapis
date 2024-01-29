@@ -197,98 +197,6 @@
 				"    \"monitoringEnabled\": false",
 				"}"
 			]
-		},
-		{
-			"id": "16b80e63-243d-4882-8517-71e95925fd22",
-			"method": "PUT",
-			"path": "/Save",
-			"description": "",
-			"parameters": [],
-			"headers": [],
-			"responses": [
-				{
-					"status": "200",
-					"description": "OK",
-					"headers": [],
-					"body": [],
-					"content": []
-				},
-				{
-					"status": "500",
-					"description": "OK",
-					"headers": [],
-					"body": [],
-					"content": [
-						{
-							"id": "e4ae3f2b-54f4-454b-9d36-2e4975f0119f",
-							"name": "Error",
-							"objectType": "object"
-						}
-					]
-				}
-			],
-			"content": [
-				{
-					"name": "Save",
-					"objectType": "object"
-				}
-			],
-			"example": [
-				"==OBJECT STRING==",
-				"{\"id\":\"88817110-b361-4e0c-8059-b92d79d0b606\",",
-				"\"createdAt\":\"2018-07-30T11:48:24.000Z\",",
-				"\"updatedAt\":\"2020-03-02T11:43:45.811Z\",",
-				"\"createdBy\":\"priyanka\",",
-				"\"changedBy\":\"priyanka\",",
-				"\"url\":\"http://localhost:8080\",",
-				"\"name\":\"Priyanka-local\",",
-				"\"description\":\"Installation\",",
-				"\"role\":\"\",",
-				"\"username\":\"priyanka\",",
-				"\"password\":\"\",",
-				"\"type\":\"\",",
-				"\"sapClient\":null,",
-				"\"token\":null,",
-				"\"monitoringName\":\"Priyanka Jain\",",
-				"\"monitoringEnabled\":false",
-				"}"
-			]
-		},
-		{
-			"id": "a95f37e1-9ecc-40c8-f52d-718b10ee7dd5",
-			"method": "POST",
-			"path": "/Delete",
-			"description": "",
-			"parameters": [],
-			"headers": [],
-			"responses": [
-				{
-					"status": "200",
-					"description": "OK",
-					"headers": [],
-					"body": [],
-					"content": []
-				},
-				{
-					"status": "500",
-					"description": "OK",
-					"headers": [],
-					"body": [],
-					"content": [
-						{
-							"id": "6802016d-42aa-41ae-98e5-4f2dc58da1bf",
-							"name": "Error",
-							"objectType": "object"
-						}
-					]
-				}
-			],
-			"content": [
-				{
-					"name": "ID",
-					"objectType": "object"
-				}
-			]
 		}
 	],
 	"definitions": [
@@ -490,7 +398,11 @@
 					"default": "",
 					"example": "",
 					"isParent": false,
-					"children": []
+					"children": [],
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"showNameField": true
 				}
 			]
 		},
@@ -663,7 +575,11 @@
 					"description": "",
 					"objectType": "string",
 					"isParent": false,
-					"children": []
+					"children": [],
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"showNameField": true
 				},
 				{
 					"id": "5b7d7fcd-a1bf-4025-a8c5-cd1457830ea5",
@@ -672,7 +588,11 @@
 					"description": "",
 					"objectType": "string",
 					"isParent": false,
-					"children": []
+					"children": [],
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"showNameField": true
 				},
 				{
 					"id": "534afe55-30ea-4dd8-dee1-4eff86c9e99c",
@@ -681,7 +601,11 @@
 					"description": "",
 					"objectType": "string",
 					"isParent": false,
-					"children": []
+					"children": [],
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"showNameField": true
 				},
 				{
 					"id": "f55520ad-835d-4d49-f1b5-a2d705837cd0",
@@ -690,7 +614,11 @@
 					"description": "",
 					"objectType": "string",
 					"isParent": false,
-					"children": []
+					"children": [],
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"showNameField": true
 				},
 				{
 					"id": "cb1ac742-bb80-4b0b-fa44-2943244b260f",
@@ -699,7 +627,11 @@
 					"description": "",
 					"objectType": "string",
 					"isParent": false,
-					"children": []
+					"children": [],
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"showNameField": true
 				},
 				{
 					"id": "aec3761e-fbee-421f-e597-a12c6b326ab3",
@@ -708,7 +640,11 @@
 					"description": "",
 					"objectType": "string",
 					"isParent": false,
-					"children": []
+					"children": [],
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"showNameField": true
 				},
 				{
 					"id": "66c57309-8efe-4c6e-8257-3e51beba4312",
@@ -717,7 +653,11 @@
 					"description": "",
 					"objectType": "string",
 					"isParent": false,
-					"children": []
+					"children": [],
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"showNameField": true
 				},
 				{
 					"id": "af20b741-fd58-4aae-8416-c17b4e2d9339",
@@ -726,7 +666,11 @@
 					"description": "",
 					"objectType": "string",
 					"isParent": false,
-					"children": []
+					"children": [],
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"showNameField": true
 				},
 				{
 					"id": "74b6bd05-b8f9-4917-8f7e-c05488c813a0",
@@ -735,7 +679,11 @@
 					"description": "",
 					"objectType": "string",
 					"isParent": false,
-					"children": []
+					"children": [],
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"showNameField": true
 				},
 				{
 					"id": "bc846aaf-dd72-40e1-c00a-0200761931cb",
@@ -744,7 +692,11 @@
 					"description": "",
 					"objectType": "string",
 					"isParent": false,
-					"children": []
+					"children": [],
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"showNameField": true
 				},
 				{
 					"id": "9352a252-82e6-42c0-b8a5-866870768194",
@@ -753,7 +705,11 @@
 					"description": "",
 					"objectType": "string",
 					"isParent": false,
-					"children": []
+					"children": [],
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"showNameField": true
 				},
 				{
 					"id": "2291924e-b148-4249-c180-1376abe78460",
@@ -762,7 +718,11 @@
 					"description": "",
 					"objectType": "string",
 					"isParent": false,
-					"children": []
+					"children": [],
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"showNameField": true
 				},
 				{
 					"id": "d811eb46-be1c-4821-9527-5b1797c59572",
@@ -772,7 +732,11 @@
 					"objectType": "object",
 					"objectName": "sapClient",
 					"isParent": true,
-					"children": []
+					"children": [],
+					"enableValueHelp": false,
+					"canAddSubNode": true,
+					"enabled": true,
+					"showNameField": true
 				},
 				{
 					"id": "fc1b45b0-15fd-483c-e73c-7928464670c7",
@@ -782,7 +746,11 @@
 					"objectType": "object",
 					"objectName": "token",
 					"isParent": true,
-					"children": []
+					"children": [],
+					"enableValueHelp": false,
+					"canAddSubNode": true,
+					"enabled": true,
+					"showNameField": true
 				},
 				{
 					"id": "3b2a3934-6a46-41cf-fc9b-360b3f15b7b8",
@@ -791,7 +759,11 @@
 					"description": "",
 					"objectType": "string",
 					"isParent": false,
-					"children": []
+					"children": [],
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"showNameField": true
 				},
 				{
 					"id": "ae42b337-ad2a-4852-fabd-3c2b1b98eeb1",
@@ -800,7 +772,11 @@
 					"description": "",
 					"objectType": "boolean",
 					"isParent": false,
-					"children": []
+					"children": [],
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"showNameField": true
 				}
 			]
 		}
@@ -808,7 +784,7 @@
 	"documentation": [],
 	"name": "CoreAPI Settings_RemoteSystems",
 	"endpoint": "https://[yourDomain].com/api/functions/Systems",
-	"ver": "23.2.3.1834",
+	"ver": "24.1.29.1658",
 	"version": "2.2.0",
 	"description": "API to access results of Planet 9 Remote Systems",
 	"mediaType": null,

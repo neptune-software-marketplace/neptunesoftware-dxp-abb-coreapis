@@ -20,18 +20,6 @@
 			"apiGroup": "2e09ada0-0db5-4f48-b2bf-327f6fa5ffdf"
 		},
 		{
-			"id": "f6b85980-cdf7-4af9-a976-05b9a784378b",
-			"name": "CoreAPI Connectivity_ODataMockData",
-			"description": null,
-			"apiGroup": "6b8835fa-e550-49bc-b9e5-ac3861be43e1"
-		},
-		{
-			"id": "f4f8c4dc-4fde-4a84-b9aa-926387223460",
-			"name": "CoreAPI Tools_TrackingSettings",
-			"description": "API to access results of Planet 9 Tracking Customised settings list",
-			"apiGroup": "3a991f98-214e-428e-811c-1964a5766113"
-		},
-		{
 			"id": "daf386d4-ab43-4ad0-b6d7-aa1622c436c0",
 			"name": "CoreAPI Run_Analyse_PushNotificationUsers",
 			"description": "API to access results of Planet 9 Push Notification users logs",
@@ -50,30 +38,6 @@
 			"apiGroup": "db785e2d-3715-4d1b-98ce-48ff99d0643f"
 		},
 		{
-			"id": "cb1265d2-359b-4405-b6cc-fb24ff859ffe",
-			"name": "CoreAPI WF_Definition",
-			"description": "API to access results of Planet 9 workflow definitions ",
-			"apiGroup": "81af280b-222a-4725-9c64-93658e7c1524"
-		},
-		{
-			"id": "c6b68cef-3e31-4f5a-aef7-c6abf5b4a4eb",
-			"name": "CoreAPI WF_TaskAction",
-			"description": "API to access results of Planet 9 workflow task actions",
-			"apiGroup": "81af280b-222a-4725-9c64-93658e7c1524"
-		},
-		{
-			"id": "aa85f007-2ff8-4b1f-8752-4d811e55f432",
-			"name": "CoreAPI WF_Approvers",
-			"description": "API to access results of Planet 9 Workflow approvers ",
-			"apiGroup": "81af280b-222a-4725-9c64-93658e7c1524"
-		},
-		{
-			"id": "a848052a-f9b6-47fd-980c-290e2294cc72",
-			"name": "CoreAPI Tools_TrackingList",
-			"description": "API to access results of Planet 9 Tracking List",
-			"apiGroup": "3a991f98-214e-428e-811c-1964a5766113"
-		},
-		{
 			"id": "a6578fb0-1751-485e-802c-73d234b10353",
 			"name": "CoreAPI Connectivity_APIDesigner",
 			"description": "API to access results of Planet 9 Connectivity_API Designer details.",
@@ -84,30 +48,6 @@
 			"name": "CoreAPI Connectivity_Group",
 			"description": "API to access results of Planet 9 Connectivity_Group API Details.",
 			"apiGroup": "6b8835fa-e550-49bc-b9e5-ac3861be43e1"
-		},
-		{
-			"id": "9d196482-c21c-4f38-ba6c-cfa3cd8af402",
-			"name": "CoreAPI Development_Documentation",
-			"description": "API to access results of Planet 9 Development_Documentation API.",
-			"apiGroup": "8fb2ef9e-2652-4821-95e1-2d12ee97640e"
-		},
-		{
-			"id": "9cfe1fe2-5693-4b50-81c5-c3d4aa09dd5f",
-			"name": "CoreAPI Settings_App Servers",
-			"description": "API to access results of Planet 9 System App Servers",
-			"apiGroup": "feddd821-7aaa-406f-a194-869190e4632a"
-		},
-		{
-			"id": "96237196-b2ef-4f41-90d7-afb21fb0394a",
-			"name": "CoreAPI Testing_Plan",
-			"description": "API to access results of Planet 9 Testing_Plan API Details.",
-			"apiGroup": "d13170d2-069b-404f-84dc-4c6e3792958e"
-		},
-		{
-			"id": "94eba214-d83d-47d2-886d-3c86be478993",
-			"name": "CoreAPI Deployment_Create",
-			"description": "API to access the results of Planet 9 Deployment Create",
-			"apiGroup": "fd87d49b-69ec-45e8-b58e-2d5d83581fe9"
 		},
 		{
 			"id": "8ee4a17d-83b3-4b2b-afe2-6a6627341904",
@@ -122,34 +62,10 @@
 			"apiGroup": "db785e2d-3715-4d1b-98ce-48ff99d0643f"
 		},
 		{
-			"id": "8a319c69-0655-ed11-ade6-000d3ab237df",
-			"name": "CoreAPI Records Count",
-			"description": "Table Records Count",
-			"apiGroup": "3a991f98-214e-428e-811c-1964a5766113"
-		},
-		{
 			"id": "887eebe3-bd8d-47cd-b5f4-f07f4fd1d50c",
 			"name": "CoreAPI Security_AuditLog",
 			"description": "API to access results of Planet 9 Security_AuditLog Details.",
 			"apiGroup": "2e09ada0-0db5-4f48-b2bf-327f6fa5ffdf"
-		},
-		{
-			"id": "8806cb6d-3fc8-4c3b-ae85-57a34dd40dac",
-			"name": "CoreAPI Deployment_Approve",
-			"description": "Api for Deployment - Approve",
-			"apiGroup": "fd87d49b-69ec-45e8-b58e-2d5d83581fe9"
-		},
-		{
-			"id": "8659187a-c9d3-4a79-bec1-c5dc554e6545",
-			"name": "CoreAPI Tools_Database_TableDefinition",
-			"description": "API to access results of Planet 9 Tools-Database Definition ",
-			"apiGroup": "3a991f98-214e-428e-811c-1964a5766113"
-		},
-		{
-			"id": "82ade9ad-7a71-42b8-a921-fc57d7bf7d0e",
-			"name": "CoreAPI Development_Package",
-			"description": "API to access results of Planet 9 Development_Package API Details.",
-			"apiGroup": "8fb2ef9e-2652-4821-95e1-2d12ee97640e"
 		},
 		{
 			"id": "7b5f0099-c178-4802-82c2-e90105133548",
@@ -158,64 +74,10 @@
 			"apiGroup": "10b1ef43-90cc-49b9-9aea-5fd5e8c48be2"
 		},
 		{
-			"id": "7a0395eb-5099-464c-964f-2801d4c696ed",
-			"name": "CoreAPI Testing_Automation",
-			"description": "API to access results of Planet 9 Testing_Automation details.",
-			"apiGroup": "d13170d2-069b-404f-84dc-4c6e3792958e"
-		},
-		{
-			"id": "7235cec0-ec01-4d77-ac1f-33d02f18f217",
-			"name": "CoreAPI Run_Translation",
-			"description": "API to access results of Planet 9 Run_Translation Details",
-			"apiGroup": "db785e2d-3715-4d1b-98ce-48ff99d0643f"
-		},
-		{
-			"id": "72103c05-7f19-4b81-b4ec-941b968abef3",
-			"name": "CoreAPI Run_Launchpad",
-			"description": "API to access results of Planet 9 Run_Launchpad",
-			"apiGroup": "db785e2d-3715-4d1b-98ce-48ff99d0643f"
-		},
-		{
-			"id": "70a604fc-0bfc-4353-aa3e-2bdb299bf07a",
-			"name": "CoreAPI WF_Notification",
-			"description": "API to access results of Planet 9 Workflow Notifications",
-			"apiGroup": "81af280b-222a-4725-9c64-93658e7c1524"
-		},
-		{
 			"id": "6e44eb97-b3f2-4d22-9256-91622b4a2de4",
 			"name": "CoreAPI Connectivity_Authentication",
-			"description": null,
+			"description": "API to access results of Planet 9 Connectivity_Authentication details.",
 			"apiGroup": "6b8835fa-e550-49bc-b9e5-ac3861be43e1"
-		},
-		{
-			"id": "682604b0-fe9d-45e6-8192-5100c5dc0e5a",
-			"name": "CoreAPI Development_EmailTemplate",
-			"description": "API to access results of Planet 9 Development_EmailTemplates.",
-			"apiGroup": "8fb2ef9e-2652-4821-95e1-2d12ee97640e"
-		},
-		{
-			"id": "63b27363-1442-4e8e-a8e2-81ee20113863",
-			"name": "CoreAPI Development_CustomJSHelpers",
-			"description": "API to access results of Planet 9 Development_Custom JS Helpers.",
-			"apiGroup": "8fb2ef9e-2652-4821-95e1-2d12ee97640e"
-		},
-		{
-			"id": "5f78a21e-4124-4c86-a2fb-fedfd10fce92",
-			"name": "CoreAPI Testing_Unit",
-			"description": "API to access results of Planet 9 Testing_Unit API Details.",
-			"apiGroup": "d13170d2-069b-404f-84dc-4c6e3792958e"
-		},
-		{
-			"id": "5f38617f-ca5d-43a7-a9c1-fbd9551bc7ae",
-			"name": "CoreAPI Tools_RestoreApplication",
-			"description": "API to access results of Planet 9 Tools Housekeeping API",
-			"apiGroup": "3a991f98-214e-428e-811c-1964a5766113"
-		},
-		{
-			"id": "5ca2c5c9-a152-4149-b209-b58a1ab3f7e2",
-			"name": "CoreAPI Deployment_Transfer",
-			"description": "API to access results of Planet 9 Deployment_Transfer details.",
-			"apiGroup": "fd87d49b-69ec-45e8-b58e-2d5d83581fe9"
 		},
 		{
 			"id": "5ada6f96-edcd-44cc-8fa5-d7737ede7ed9",
@@ -230,18 +92,6 @@
 			"apiGroup": "10b1ef43-90cc-49b9-9aea-5fd5e8c48be2"
 		},
 		{
-			"id": "506f5a69-7f26-43f8-98a9-41ad1ddf5d34",
-			"name": "CoreAPI Run_Tile",
-			"description": "API to access results of Planet 9 Run_Tile Details",
-			"apiGroup": "db785e2d-3715-4d1b-98ce-48ff99d0643f"
-		},
-		{
-			"id": "4f2f6e4c-9452-46c8-93f3-8f2dbce057b8",
-			"name": "CoreAPI Tools_NPMModules",
-			"description": "API to access results of Planet 9 Tools_NPMModules",
-			"apiGroup": "3a991f98-214e-428e-811c-1964a5766113"
-		},
-		{
 			"id": "4a5b6420-544a-449d-87d1-c71136d5c774",
 			"name": "CoreAPI WF_Overview",
 			"description": "API to access results of Planet 9 Workflow overview",
@@ -254,22 +104,10 @@
 			"apiGroup": "2e09ada0-0db5-4f48-b2bf-327f6fa5ffdf"
 		},
 		{
-			"id": "4913f744-701b-400f-a406-60019578fb72",
-			"name": "CoreAPI Testing_Run",
-			"description": "API to access results of Planet 9 Testing_Run API Details.",
-			"apiGroup": "d13170d2-069b-404f-84dc-4c6e3792958e"
-		},
-		{
 			"id": "43f532a0-9802-49e3-ac96-f84c1fdfbbb6",
 			"name": "CoreAPI Monitor_SMTPLog",
 			"description": "API to access results of Planet 9 SMTP Logs",
 			"apiGroup": "10b1ef43-90cc-49b9-9aea-5fd5e8c48be2"
-		},
-		{
-			"id": "4397cf35-d25d-4a69-802d-992338e817a7",
-			"name": "CoreAPI Development_MediaLibrary",
-			"description": "API to access Planet9 Media Library API Details",
-			"apiGroup": "8fb2ef9e-2652-4821-95e1-2d12ee97640e"
 		},
 		{
 			"id": "3d8d991c-d311-4bcb-a4a2-286c931066d3",
@@ -278,34 +116,10 @@
 			"apiGroup": "2e09ada0-0db5-4f48-b2bf-327f6fa5ffdf"
 		},
 		{
-			"id": "3a71a594-1bf8-4b96-bd3d-e98cf02c37fd",
-			"name": "CoreAPI Connectivity_APIClient",
-			"description": "API to access the Planet 9 API Client responses",
-			"apiGroup": "6b8835fa-e550-49bc-b9e5-ac3861be43e1"
-		},
-		{
-			"id": "38f9da5c-91e9-4d10-a69e-1d4fa5f8dffa",
-			"name": "CoreAPI Tools_BG_CreateJob",
-			"description": "API to access results of Planet 9 Tools-Background-Jobs",
-			"apiGroup": "3a991f98-214e-428e-811c-1964a5766113"
-		},
-		{
 			"id": "38f22f7d-029b-42b9-b1d6-7888d7bf8aef",
 			"name": "CoreAPI Connectivity_Certificates",
 			"description": "API to access results of Planet 9 Connectivity_Certificates details.",
 			"apiGroup": "6b8835fa-e550-49bc-b9e5-ac3861be43e1"
-		},
-		{
-			"id": "383a43c5-c8e3-4e82-930a-b5892f68d43d",
-			"name": "CoreAPI Connectivity_ODataSource",
-			"description": "API to access Planet 9 Connectivity_oData Source Details.",
-			"apiGroup": "6b8835fa-e550-49bc-b9e5-ac3861be43e1"
-		},
-		{
-			"id": "2f582d68-4601-4cf1-aca6-cc81a05b30a6",
-			"name": "CoreAPI Run_TileGroup",
-			"description": "API to access results of Planet 9 Run_TileGroup Details.",
-			"apiGroup": "db785e2d-3715-4d1b-98ce-48ff99d0643f"
 		},
 		{
 			"id": "2a933ea2-7982-4636-8c7f-15b8c3267d41",
@@ -314,21 +128,9 @@
 			"apiGroup": "feddd821-7aaa-406f-a194-869190e4632a"
 		},
 		{
-			"id": "22eac693-d40b-4340-a9dc-5859c812c49a",
-			"name": "CoreAPI Development_ThemeDesigner",
-			"description": "API to access results of Planet 9 Development_ThemeDesigner Details.",
-			"apiGroup": "8fb2ef9e-2652-4821-95e1-2d12ee97640e"
-		},
-		{
 			"id": "1b40c1ba-2511-459b-8be3-1d3f71bedabd",
 			"name": "CoreAPI Tools_Housekeeping",
 			"description": "API to delete the system logs entries- Housekeeping",
-			"apiGroup": "3a991f98-214e-428e-811c-1964a5766113"
-		},
-		{
-			"id": "172f3d9e-d8c4-4cd4-9bc5-666e062762f7",
-			"name": "CoreAPI Tools_Database_TableBrowser",
-			"description": "API to access results of Planet 9 Tools-Database TableBrowser",
 			"apiGroup": "3a991f98-214e-428e-811c-1964a5766113"
 		},
 		{
@@ -336,18 +138,6 @@
 			"name": "CoreAPI Run_MobileDebug",
 			"description": "API to access results of Planet 9 Run_Mobile Debug details",
 			"apiGroup": "db785e2d-3715-4d1b-98ce-48ff99d0643f"
-		},
-		{
-			"id": "13bc7643-bc6d-4ead-8f14-e7fdced3ffb4",
-			"name": "CoreAPI Deployment_Routes",
-			"description": "CoreAPI to access the Deployment- Routes",
-			"apiGroup": "fd87d49b-69ec-45e8-b58e-2d5d83581fe9"
-		},
-		{
-			"id": "114aa249-8441-482d-85fe-9c2f7de5d387",
-			"name": "CoreAPI WF_Substitutions",
-			"description": "API to access results of Planet 9 Workflow substitutions",
-			"apiGroup": "81af280b-222a-4725-9c64-93658e7c1524"
 		},
 		{
 			"id": "10ff8541-492c-40a5-acf7-244b8ac845e2",
@@ -366,12 +156,6 @@
 			"name": "CoreAPI Run_TileBlackout",
 			"description": "API to access results of Planet 9 Run_TileBlackout Details.",
 			"apiGroup": "db785e2d-3715-4d1b-98ce-48ff99d0643f"
-		},
-		{
-			"id": "0b2f56b6-4e19-42bd-9f05-15d3fdde3e7c",
-			"name": "CoreAPI Development_ThemeImport",
-			"description": "API to access results of Planet 9 API Development_ThemeImport.",
-			"apiGroup": "8fb2ef9e-2652-4821-95e1-2d12ee97640e"
 		}
 	],
 	"odataSource": [],
@@ -399,16 +183,6 @@
 			"id": "db785e2d-3715-4d1b-98ce-48ff99d0643f",
 			"name": "CoreAPI Run",
 			"description": "CoreAPI Run"
-		},
-		{
-			"id": "d13170d2-069b-404f-84dc-4c6e3792958e",
-			"name": "CoreAPI Testing",
-			"description": "CoreAPI Testing"
-		},
-		{
-			"id": "8fb2ef9e-2652-4821-95e1-2d12ee97640e",
-			"name": "CoreAPI Development",
-			"description": "CoreAPI Development"
 		},
 		{
 			"id": "81af280b-222a-4725-9c64-93658e7c1524",
@@ -449,5 +223,7 @@
 	"wf_definition": [],
 	"connector": [],
 	"events": [],
-	"media_library": []
+	"code_snippets": [],
+	"wf_determination": [],
+	"wf_taskaction": []
 }
