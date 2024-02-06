@@ -9,15 +9,21 @@
 	},
 	"name": "neptunesoftware-dxp-abb-coreapis",
 	"description": null,
-	"ver": "22.7.27.731",
+	"ver": "24.2.6.1655",
 	"enableCICD": true,
 	"apps": [],
 	"api": [
 		{
 			"id": "ff665193-a739-4c9d-a487-fb3da378efbf",
 			"name": "CoreAPI Security_User",
-			"description": "API to access results of Planet 9 Security_User Details.",
+			"description": "API to access manage user information",
 			"apiGroup": "2e09ada0-0db5-4f48-b2bf-327f6fa5ffdf"
+		},
+		{
+			"id": "f4d215d0-c980-4d91-8d1d-68e0666c3d9d",
+			"name": "CoreAPI Server_ReloadGlobalScripts",
+			"description": "API to reload all global scripts",
+			"apiGroup": "d636c206-974f-41fb-b14d-fbd28c64e1c2"
 		},
 		{
 			"id": "daf386d4-ab43-4ad0-b6d7-aa1622c436c0",
@@ -28,31 +34,37 @@
 		{
 			"id": "d7932b54-e8b1-4404-ac02-b5f34e44eb19",
 			"name": "CoreAPI Monitor_SystemLog",
-			"description": "API to access results of Planet 9 System Logs",
+			"description": "API to access all system logs",
 			"apiGroup": "10b1ef43-90cc-49b9-9aea-5fd5e8c48be2"
 		},
 		{
 			"id": "cf3f91e6-3df5-43e5-a656-7a1927a8a112",
 			"name": "CoreAPI Run_Analyze_AppLog",
-			"description": "API to access results of Planet 9 Application Logs",
+			"description": "API to access results from the Application Logs tool",
 			"apiGroup": "db785e2d-3715-4d1b-98ce-48ff99d0643f"
+		},
+		{
+			"id": "ac17aefe-ab9c-403e-8686-3b9d97674794",
+			"name": "CoreAPI Settings_NodeEV",
+			"description": "API to access the system variables",
+			"apiGroup": "feddd821-7aaa-406f-a194-869190e4632a"
 		},
 		{
 			"id": "a6578fb0-1751-485e-802c-73d234b10353",
 			"name": "CoreAPI Connectivity_APIDesigner",
-			"description": "API to access results of Planet 9 Connectivity_API Designer details.",
+			"description": "Access API information that have been defined in the API Designer.",
 			"apiGroup": "6b8835fa-e550-49bc-b9e5-ac3861be43e1"
 		},
 		{
 			"id": "9d6030e4-d5de-4d34-9771-4b8a2f83879a",
 			"name": "CoreAPI Connectivity_Group",
-			"description": "API to access results of Planet 9 Connectivity_Group API Details.",
+			"description": "API to access results of Connectivity_Group API Details.",
 			"apiGroup": "6b8835fa-e550-49bc-b9e5-ac3861be43e1"
 		},
 		{
 			"id": "8ee4a17d-83b3-4b2b-afe2-6a6627341904",
 			"name": "CoreAPI Run_Analyse_LaunchpadTrace",
-			"description": "API to access results of Planet 9 Launchpad Traces",
+			"description": "API to access launchpad traces",
 			"apiGroup": "db785e2d-3715-4d1b-98ce-48ff99d0643f"
 		},
 		{
@@ -64,7 +76,7 @@
 		{
 			"id": "887eebe3-bd8d-47cd-b5f4-f07f4fd1d50c",
 			"name": "CoreAPI Security_AuditLog",
-			"description": "API to access results of Planet 9 Security_AuditLog Details.",
+			"description": "API to access audit logs.",
 			"apiGroup": "2e09ada0-0db5-4f48-b2bf-327f6fa5ffdf"
 		},
 		{
@@ -76,49 +88,49 @@
 		{
 			"id": "6e44eb97-b3f2-4d22-9256-91622b4a2de4",
 			"name": "CoreAPI Connectivity_Authentication",
-			"description": "API to access results of Planet 9 Connectivity_Authentication details.",
+			"description": "API to access proxy authentication for APIs, OData and remote systems.",
 			"apiGroup": "6b8835fa-e550-49bc-b9e5-ac3861be43e1"
+		},
+		{
+			"id": "6789a929-868b-4860-ba34-f1ce90215ca2",
+			"name": "CoreAPI WF_Inbox",
+			"description": "API to trigger workflows and rerun approvers",
+			"apiGroup": "81af280b-222a-4725-9c64-93658e7c1524"
 		},
 		{
 			"id": "5ada6f96-edcd-44cc-8fa5-d7737ede7ed9",
 			"name": "CoreAPI Tools_BG_JobLog",
-			"description": "API to access results of Planet 9 Tools-Background-JobLogs",
+			"description": "API to access job logs",
 			"apiGroup": "3a991f98-214e-428e-811c-1964a5766113"
 		},
 		{
-			"id": "53930838-5548-489c-9d4c-7e68adc9479d",
-			"name": "CoreAPI Monitor_Systems",
-			"description": "API to access results of Planet 9 Monitoring Systems API",
-			"apiGroup": "10b1ef43-90cc-49b9-9aea-5fd5e8c48be2"
-		},
-		{
 			"id": "4a5b6420-544a-449d-87d1-c71136d5c774",
-			"name": "CoreAPI WF_Overview",
-			"description": "API to access results of Planet 9 Workflow overview",
+			"name": "CoreAPI WF_Monitor",
+			"description": "API to view all workflows for all status",
 			"apiGroup": "81af280b-222a-4725-9c64-93658e7c1524"
 		},
 		{
 			"id": "49d85b6f-5af8-42b4-b9f0-8672aa846352",
 			"name": "CoreAPI Security_Role",
-			"description": "API to access results of Planet 9 Security_Roles details.",
+			"description": "API to access roles",
 			"apiGroup": "2e09ada0-0db5-4f48-b2bf-327f6fa5ffdf"
 		},
 		{
 			"id": "43f532a0-9802-49e3-ac96-f84c1fdfbbb6",
 			"name": "CoreAPI Monitor_SMTPLog",
-			"description": "API to access results of Planet 9 SMTP Logs",
+			"description": "API to access results of SMTP Logs",
 			"apiGroup": "10b1ef43-90cc-49b9-9aea-5fd5e8c48be2"
 		},
 		{
 			"id": "3d8d991c-d311-4bcb-a4a2-286c931066d3",
 			"name": "CoreAPI Security_Group",
-			"description": "API to access results of Planet 9 Security_Groups Details.",
+			"description": "API to access results security groups.",
 			"apiGroup": "2e09ada0-0db5-4f48-b2bf-327f6fa5ffdf"
 		},
 		{
 			"id": "38f22f7d-029b-42b9-b1d6-7888d7bf8aef",
 			"name": "CoreAPI Connectivity_Certificates",
-			"description": "API to access results of Planet 9 Connectivity_Certificates details.",
+			"description": "API to access certificates, generate PEM keys and create/save certificates for the Certificates tool.",
 			"apiGroup": "6b8835fa-e550-49bc-b9e5-ac3861be43e1"
 		},
 		{
@@ -130,7 +142,7 @@
 		{
 			"id": "1b40c1ba-2511-459b-8be3-1d3f71bedabd",
 			"name": "CoreAPI Tools_Housekeeping",
-			"description": "API to delete the system logs entries- Housekeeping",
+			"description": "API to delete the system logs entries for housekeeping",
 			"apiGroup": "3a991f98-214e-428e-811c-1964a5766113"
 		},
 		{
@@ -142,13 +154,13 @@
 		{
 			"id": "10ff8541-492c-40a5-acf7-244b8ac845e2",
 			"name": "CoreAPI Deployment_Log",
-			"description": "API to access Planet9 deployment logs API Details",
+			"description": "API to access deployment logs",
 			"apiGroup": "fd87d49b-69ec-45e8-b58e-2d5d83581fe9"
 		},
 		{
 			"id": "0ff036dd-80e3-43c5-8a71-30a5919c1d92",
 			"name": "CoreAPI Monitor_UserSessions",
-			"description": "API to access results of Planet 9 user sessions",
+			"description": "API to access current user sessions",
 			"apiGroup": "10b1ef43-90cc-49b9-9aea-5fd5e8c48be2"
 		},
 		{
@@ -183,6 +195,11 @@
 			"id": "db785e2d-3715-4d1b-98ce-48ff99d0643f",
 			"name": "CoreAPI Run",
 			"description": "CoreAPI Run"
+		},
+		{
+			"id": "d636c206-974f-41fb-b14d-fbd28c64e1c2",
+			"name": "CoreAPI Server",
+			"description": "Contains all APIs related to server operations"
 		},
 		{
 			"id": "81af280b-222a-4725-9c64-93658e7c1524",
