@@ -1,0 +1,288 @@
+{
+	"id": "53930838-5548-489c-9d4c-7e68adc9479d",
+	"createdAt": "2022-02-04T15:44:45.863Z",
+	"createdBy": "lloyd",
+	"auth": [],
+	"endpoints": [],
+	"paths": [
+		{
+			"id": "1c9ff7ca-5a62-4613-fbbe-99dbec33e0b2",
+			"method": "POST",
+			"path": "/List",
+			"description": "",
+			"parameters": [],
+			"headers": [],
+			"responses": [
+				{
+					"status": "200",
+					"description": "OK",
+					"headers": [],
+					"body": [],
+					"content": [
+						{
+							"id": "a25ea95e-4cf5-4909-d003-ed05a026495f",
+							"name": "List",
+							"objectType": "array"
+						}
+					]
+				},
+				{
+					"status": "500",
+					"description": "OK",
+					"headers": [],
+					"body": [],
+					"content": [
+						{
+							"id": "aeea0750-f28e-42e4-d018-3f3b9e976b23",
+							"name": "Error",
+							"objectType": "object"
+						}
+					]
+				}
+			],
+			"example": [
+				"==OBJECT STRING==",
+				"[{",
+				"    \"id\": \"80f437b2-4d5b-4135-96e4-d649b6fa0a7b\",",
+				"    \"createdAt\": \"2018-05-31T14:06:14.000Z\",",
+				"    \"updatedAt\": \"2019-09-05T08:55:39.000Z\",",
+				"    \"createdBy\": \"oah\",",
+				"    \"changedBy\": \"ole-andre.haugen@neptune-software.com\",",
+				"    \"url\": \"https://explored.neptune-software.com\",",
+				"    \"name\": \"Neptune DX Platform\",",
+				"    \"description\": \"Planet 9\",",
+				"    \"role\": \"\",",
+				"    \"username\": \"\",",
+				"    \"password\": \"\",",
+				"    \"type\": \"\",",
+				"    \"sapClient\": null,",
+				"    \"token\": \"eyJhbGciOiJIUzI1NiN2E5YjAxMS0zODA2LTQ1YjctOGQyZC04YTNmODBmNzVlNzIiLCJpYXQiOjE1Njc2NzM3MjUsImV4cCI6MTY1Mzk4NzMyNX0.a_djWVEDpe2RfTEblIQMceT2Jq9ia7YQxT3jaFms_yA\",",
+				"    \"monitoringName\": \"Planet 9 (Explored)\",",
+				"    \"monitoringEnabled\": true",
+				"}, {",
+				"    \"id\": \"bb3294f8-9df0-4ec7-9a52-ffcbf22402d7\",",
+				"    \"createdAt\": \"2017-10-31T14:39:52.000Z\",",
+				"    \"updatedAt\": \"2020-03-20T13:01:28.787Z\",",
+				"    \"createdBy\": \"admin system\",",
+				"    \"changedBy\": \"gunnar\",",
+				"    \"url\": \"https://planet9test.neptune-software.com:8081\",",
+				"    \"name\": \"P9 Test\",",
+				"    \"description\": \"Neptune Software\",",
+				"    \"role\": \"TST\",",
+				"    \"username\": \"\",",
+				"    \"password\": \"\",",
+				"    \"type\": null,",
+				"    \"sapClient\": null,",
+				"    \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpX5N2UyLWI1OTYzMjAzZDFkMSIsInV1aWQiOiJiMWJiMmJiNC0zMzk4LTRlYWUtYmM2NC1iZWU0MmQ4YzBkMjciLCJpYXQiOjE1ODQ3MDkyNTgsImV4cCI6MTYyNzkwOTI1OH0.G08FoV6ZpD8I-z3qBmMYwfx5ZIBLhsLFgVy4dSeAHlo\",",
+				"    \"monitoringName\": \"Planet 9 (Test)\",",
+				"    \"monitoringEnabled\": true",
+				"}]",
+				"",
+				""
+			]
+		}
+	],
+	"definitions": [
+		{
+			"id": "6e2c4f5f-6f29-4793-8de1-4c4b4ef04775",
+			"name": "List",
+			"description": "",
+			"isInclude": false,
+			"properties": [
+				{
+					"id": "f6219fee-8d3d-4051-fc70-728e5687b121",
+					"name": "id",
+					"parent": "",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "3acda59e-c300-4ea5-a311-d8abb08f0be9",
+					"name": "createdAt",
+					"parent": "",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "4ce065eb-b2de-405c-cb78-ab755255d4ca",
+					"name": "updatedAt",
+					"parent": "",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "5132ef00-3777-4183-a136-0f147a564189",
+					"name": "createdBy",
+					"parent": "",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "295f0aab-9adc-4edf-a8a8-561312821321",
+					"name": "changedBy",
+					"parent": "",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "35954ed3-8582-4864-b131-dd3e56cece84",
+					"name": "url",
+					"parent": "",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "f03611c3-d21a-4eb8-d8aa-5c697444d9fb",
+					"name": "name",
+					"parent": "",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "8d433adb-45f4-4ed9-8ab9-3693fc9cd462",
+					"name": "description",
+					"parent": "",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "609c5770-4d03-48b9-f864-4d60df1e8dbd",
+					"name": "role",
+					"parent": "",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "87e3a66f-842c-4982-ade6-4ce530027586",
+					"name": "username",
+					"parent": "",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "67b504c9-cdc9-41fd-f222-54c2fc8212a4",
+					"name": "password",
+					"parent": "",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "9802abed-6e67-430c-c382-fc54d0c576f9",
+					"name": "type",
+					"parent": "",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "ca6fe91b-e2fa-4f2d-9cbd-176ee7a9099b",
+					"name": "sapClient",
+					"parent": "",
+					"description": "",
+					"objectType": "object",
+					"objectName": "sapClient",
+					"isParent": true,
+					"children": []
+				},
+				{
+					"id": "21ec242e-b461-496f-98fc-fa05a1e00f6f",
+					"name": "token",
+					"parent": "",
+					"description": "",
+					"objectType": "object",
+					"objectName": "token",
+					"isParent": true,
+					"children": []
+				},
+				{
+					"id": "d6cfce97-9d7a-40f7-db06-502c7677e27e",
+					"name": "monitoringName",
+					"parent": "",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "ec20143c-cb78-460e-c39f-45f865ec1724",
+					"name": "monitoringEnabled",
+					"parent": "",
+					"description": "",
+					"objectType": "boolean",
+					"isParent": false,
+					"children": []
+				}
+			]
+		},
+		{
+			"id": "8cb774b8-25d0-428d-af4d-afb9396c6203",
+			"name": "Error",
+			"description": "",
+			"isInclude": false,
+			"properties": [
+				{
+					"id": "14bb0006-d9ce-4b89-ff21-0cc88e2e136c",
+					"name": "status",
+					"objectType": "string",
+					"description": "",
+					"required": false,
+					"value": "",
+					"minLength": "",
+					"maxLength": "",
+					"default": "",
+					"example": "",
+					"isParent": false,
+					"children": []
+				}
+			]
+		}
+	],
+	"documentation": [],
+	"name": "CoreAPI Monitor_Systems",
+	"endpoint": "https://[yourDomain].com/api/functions/Monitoring",
+	"ver": "24.02.07.1254",
+	"version": "2.2.0",
+	"description": "API to access results of Monitoring Systems API",
+	"mediaType": null,
+	"securitySchemes": null,
+	"swaggerURI": null,
+	"swaggerSystem": null,
+	"apiType": "",
+	"about": "<p><strong style=\"white-space: unset; font-size: 1rem;\">Description</strong><br></p><p>Planet 9-API Monitor_Systems maintains the list of monitoring systems.</p><p>API Monitor_Systems is the API to access the API of Systems and the operations performed on them.</p><p><strong>Operations Performed</strong></p><p><strong style=\"white-space: unset; font-size: 1rem;\">List</strong><br></p><p>Get the&nbsp;<span style=\"white-space: nowrap; font-size: 1rem;\">systems list for monitoring</span></p><table class=\"table\" style=\"width: 730px;\"><tbody><tr><td><div>Response</div></td><td><div>List(array)- Definition&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<br></div></td></tr></tbody></table>",
+	"enableProxy": true,
+	"forwardProxy": null,
+	"restrictAccess": false,
+	"enableTrace": false,
+	"enableIDE": false,
+	"internalAPI": false,
+	"isPublic": false,
+	"tlsAllowUntrusted": true,
+	"useOwnProcess": false,
+	"package": "25602b27-7c0d-ed11-b47a-000d3ab2359f",
+	"apiGroup": "10b1ef43-90cc-49b9-9aea-5fd5e8c48be2",
+	"apiFormat": 0,
+	"roles": []
+}

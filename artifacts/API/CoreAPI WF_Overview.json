@@ -1,0 +1,916 @@
+{
+	"id": "4a5b6420-544a-449d-87d1-c71136d5c774",
+	"createdAt": "2022-02-04T15:32:03.560Z",
+	"createdBy": "lloyd",
+	"auth": [],
+	"endpoints": [],
+	"paths": [
+		{
+			"id": "747e93c9-a84c-4afe-b4d6-fc9f005fb9fe",
+			"method": "POST",
+			"path": "/List",
+			"description": "",
+			"parameters": [],
+			"headers": [],
+			"responses": [
+				{
+					"status": "200",
+					"description": "OK",
+					"headers": [],
+					"body": [],
+					"content": [
+						{
+							"id": "8e128013-d04b-404d-b26b-2f9ccdca5e9a",
+							"name": "List",
+							"objectType": "array"
+						}
+					]
+				},
+				{
+					"status": "500",
+					"description": "OK",
+					"headers": [],
+					"body": [],
+					"content": [
+						{
+							"id": "546c77ad-3008-4267-9bc7-e2815dae7bee",
+							"name": "Error",
+							"objectType": "object"
+						}
+					]
+				}
+			],
+			"summary": "Get the workflow overview list",
+			"example": [
+				"==OBJECT STRING==",
+				"{",
+				"    \"runtime\": [{",
+				"        \"id\": \"00402792-1751-4d81-9c36-649fc91ea15b\",",
+				"        \"updatedAt\": \"2020-05-07T07:50:33.799Z\",",
+				"        \"changedBy\": \"priyanka\",",
+				"        \"objectKey\": \"any\",",
+				"        \"amount\": \"1234\",",
+				"        \"status\": 2,",
+				"        \"definitionID\": \"37eeefa8-0eeb-45c4-b148-30954ff175ed\",",
+				"        \"title\": \"Leave Approval Demo \",",
+				"        \"subTitle\": \"Employee Leave Approval\",",
+				"        \"icon\": \"sap-icon://customer-history\"",
+				"    }],",
+				"    \"definition\": [{",
+				"        \"id\": \"242e2cb8-1ab1-4e72-81a8-a3676488c6b9\",",
+				"        \"title\": \"ServerScriptCopy\",",
+				"        \"subTitle\": \"testing out server script functionality\",",
+				"        \"icon\": \"sap-icon://process\"",
+				"    }, {",
+				"        \"id\": \"681810cf-dabe-4f35-b7d0-edea3b3b9852\",",
+				"        \"title\": \"Sales Revenue \",",
+				"        \"subTitle\": null,",
+				"        \"icon\": \"sap-icon://sales-document\"",
+				"    }, {",
+				"        \"id\": \"44db53f6-3e2f-449f-a7bf-c84d0f4a691b\",",
+				"        \"title\": \"EmailTest\",",
+				"        \"subTitle\": \"Testing email\",",
+				"        \"icon\": \"sap-icon://accept\"",
+				"    }, {",
+				"        \"id\": \"e2611177-7e1d-4256-bc6a-3091e60758fd\",",
+				"        \"title\": \"Travel Expenses Approval\",",
+				"        \"subTitle\": \"Travel Expenses Demo WF\",",
+				"        \"icon\": \"sap-icon://travel-expense\"",
+				"    }, {",
+				"        \"id\": \"37eeefa8-0eeb-45c4-b148-30954ff175ed\",",
+				"        \"title\": \"Leave Approval Demo \",",
+				"        \"subTitle\": \"Employee Leave Approval\",",
+				"        \"icon\": \"sap-icon://customer-history\"",
+				"    }, {",
+				"        \"id\": \"972522a4-003f-4379-af9a-68025d34c7f9\",",
+				"        \"title\": \"DemoTraining\",",
+				"        \"subTitle\": \"Sub Tiltle Training\",",
+				"        \"icon\": \"sap-icon://activity-individual\"",
+				"    }, {",
+				"        \"id\": \"01d7f500-d9ed-4199-9962-32a0a09c9406\",",
+				"        \"title\": \"Hello Neptune\",",
+				"        \"subTitle\": \"This is a sample sub title\",",
+				"        \"icon\": \"sap-icon://fa-solid/child\"",
+				"    }, {",
+				"        \"id\": \"90cb13a2-a41c-4b27-9267-2cbf7c03536c\",",
+				"        \"title\": \"Employee\",",
+				"        \"subTitle\": null,",
+				"        \"icon\": null",
+				"    }, {",
+				"        \"id\": \"5233ed3b-2f76-40a9-b434-ab789757af64\",",
+				"        \"title\": \"Tracking Issue Workflow\",",
+				"        \"subTitle\": \"A workflow for creating a tracking issue\",",
+				"        \"icon\": \"sap-icon://fa-solid/bug\"",
+				"    }, {",
+				"        \"id\": \"92633de1-344c-43a4-b71a-7397b52e48ce\",",
+				"        \"title\": \"Hello World\",",
+				"        \"subTitle\": \"This is a sample sub title\",",
+				"        \"icon\": \"sap-icon://fa-solid/child\"",
+				"    }, {",
+				"        \"id\": \"2aab1bfa-e715-4d8d-a30d-646064f62b50\",",
+				"        \"title\": \"Test Only\",",
+				"        \"subTitle\": null,",
+				"        \"icon\": null",
+				"    }, {",
+				"        \"id\": \"f9a1034e-62da-4261-beda-3774974014a8\",",
+				"        \"title\": \"approval\",",
+				"        \"subTitle\": null,",
+				"        \"icon\": null",
+				"    }, {",
+				"        \"id\": \"ea4c5dec-f60a-41fa-b7d9-6090830d140c\",",
+				"        \"title\": \"DeleteMe\",",
+				"        \"subTitle\": \"Testing\",",
+				"        \"icon\": \"sap-icon://fa-brands/accessible-icon\"",
+				"    }, {",
+				"        \"id\": \"a7ab19c1-a645-4b3d-8b5f-11f9e69f10c8\",",
+				"        \"title\": \"ServerScript\",",
+				"        \"subTitle\": \"testing out server script functionality\",",
+				"        \"icon\": \"sap-icon://process\"",
+				"    }, {",
+				"        \"id\": \"eb00163f-8069-4702-b85d-19944de120c2\",",
+				"        \"title\": \"inbox_sample_wf\",",
+				"        \"subTitle\": null,",
+				"        \"icon\": null",
+				"    }, {",
+				"        \"id\": \"0d58c45b-7d1c-4302-b151-c388255e19d5\",",
+				"        \"title\": \"test\",",
+				"        \"subTitle\": \"test\",",
+				"        \"icon\": null",
+				"    }]",
+				"}"
+			]
+		},
+		{
+			"id": "fcd3413f-6525-45fd-c925-5a504645d77b",
+			"method": "POST",
+			"path": "/Start",
+			"description": "",
+			"parameters": [],
+			"headers": [],
+			"responses": [
+				{
+					"status": "200",
+					"description": "OK",
+					"headers": [],
+					"body": [],
+					"content": [
+						{
+							"id": "071bf6ba-9d23-4677-cc10-f0326d91f7dc",
+							"name": "StartResponse",
+							"objectType": "object"
+						}
+					]
+				},
+				{
+					"status": "500",
+					"description": "OK",
+					"headers": [],
+					"body": [],
+					"content": [
+						{
+							"id": "5bda294e-9565-4306-b022-e32297e46387",
+							"name": "Error",
+							"objectType": "object"
+						}
+					]
+				}
+			],
+			"content": [
+				{
+					"name": "StartRequest",
+					"objectType": "object"
+				}
+			],
+			"summary": "Start the workflow",
+			"example": [
+				"==OBJECT STRING==",
+				"{",
+				"    \"id\": \"972522a4-003f-4379-af9a-68025d34c7f9\",",
+				"    \"objectType\": \"objType\",",
+				"    \"objectKey\": \"objKey\",",
+				"    \"amount\": \"1000\",",
+				"    \"currency\": \"EUR\",",
+				"    \"approver\": \"\"",
+				"}"
+			]
+		},
+		{
+			"id": "c91c5fe7-07e1-43eb-97a3-a0111e546d7a",
+			"method": "POST",
+			"path": "/Delete",
+			"description": "",
+			"parameters": [],
+			"headers": [],
+			"responses": [
+				{
+					"status": "200",
+					"description": "OK",
+					"headers": [],
+					"body": [],
+					"content": []
+				},
+				{
+					"status": "500",
+					"description": "OK",
+					"headers": [],
+					"body": [],
+					"content": [
+						{
+							"id": "4703b9cd-4b5a-41af-c991-3b74fff0b285",
+							"name": "Error",
+							"objectType": "object"
+						}
+					]
+				}
+			],
+			"content": [
+				{
+					"name": "ID",
+					"objectType": "object"
+				}
+			],
+			"summary": "Delete the workflow "
+		}
+	],
+	"definitions": [
+		{
+			"id": "4bc823d1-ed05-4b89-dad6-656a663e4d83",
+			"name": "List",
+			"description": "",
+			"isInclude": false,
+			"properties": [
+				{
+					"id": "65ab6655-cbab-4a53-f4ec-018abd1d8539",
+					"name": "id",
+					"parent": "82d1c747-def8-43eb-dfad-33e5bc51033b",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "1502c8b5-8e4e-4492-8e5e-dacbf6368f8b",
+					"name": "updatedAt",
+					"parent": "82d1c747-def8-43eb-dfad-33e5bc51033b",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "ad542319-25ee-4d89-8a49-106f3780a889",
+					"name": "changedBy",
+					"parent": "82d1c747-def8-43eb-dfad-33e5bc51033b",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "1bd3896a-1bfe-4e1c-c2c5-dbbc7aac8206",
+					"name": "objectKey",
+					"parent": "82d1c747-def8-43eb-dfad-33e5bc51033b",
+					"description": "",
+					"objectType": "object",
+					"objectName": "objectKey",
+					"isParent": true,
+					"children": []
+				},
+				{
+					"id": "083e8104-a40e-467d-e296-f84e40936a98",
+					"name": "amount",
+					"parent": "82d1c747-def8-43eb-dfad-33e5bc51033b",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "fecf8023-53a1-42f2-d20e-5258b5665a90",
+					"name": "status",
+					"parent": "82d1c747-def8-43eb-dfad-33e5bc51033b",
+					"description": "",
+					"objectType": "number",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "e44ed284-93ff-4783-a87b-a442ebcfce3b",
+					"name": "definitionID",
+					"parent": "82d1c747-def8-43eb-dfad-33e5bc51033b",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "6ed99dff-e3e7-4d9c-adbe-3ab9e5611844",
+					"name": "title",
+					"parent": "82d1c747-def8-43eb-dfad-33e5bc51033b",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "44ce6273-3d5c-48d2-9c05-a143a2af32b6",
+					"name": "subTitle",
+					"parent": "82d1c747-def8-43eb-dfad-33e5bc51033b",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "86d6e619-3e8b-431d-b4ed-0d2854e7e079",
+					"name": "icon",
+					"parent": "82d1c747-def8-43eb-dfad-33e5bc51033b",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "82d1c747-def8-43eb-dfad-33e5bc51033b",
+					"name": "runtime",
+					"parent": "",
+					"description": "",
+					"objectType": "array",
+					"objectName": "runtime",
+					"isParent": true,
+					"children": [
+						{
+							"id": "65ab6655-cbab-4a53-f4ec-018abd1d8539",
+							"name": "id",
+							"parent": "82d1c747-def8-43eb-dfad-33e5bc51033b",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "1502c8b5-8e4e-4492-8e5e-dacbf6368f8b",
+							"name": "updatedAt",
+							"parent": "82d1c747-def8-43eb-dfad-33e5bc51033b",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "ad542319-25ee-4d89-8a49-106f3780a889",
+							"name": "changedBy",
+							"parent": "82d1c747-def8-43eb-dfad-33e5bc51033b",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "1bd3896a-1bfe-4e1c-c2c5-dbbc7aac8206",
+							"name": "objectKey",
+							"parent": "82d1c747-def8-43eb-dfad-33e5bc51033b",
+							"description": "",
+							"objectType": "object",
+							"objectName": "objectKey",
+							"isParent": true,
+							"children": []
+						},
+						{
+							"id": "083e8104-a40e-467d-e296-f84e40936a98",
+							"name": "amount",
+							"parent": "82d1c747-def8-43eb-dfad-33e5bc51033b",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "fecf8023-53a1-42f2-d20e-5258b5665a90",
+							"name": "status",
+							"parent": "82d1c747-def8-43eb-dfad-33e5bc51033b",
+							"description": "",
+							"objectType": "number",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "e44ed284-93ff-4783-a87b-a442ebcfce3b",
+							"name": "definitionID",
+							"parent": "82d1c747-def8-43eb-dfad-33e5bc51033b",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "6ed99dff-e3e7-4d9c-adbe-3ab9e5611844",
+							"name": "title",
+							"parent": "82d1c747-def8-43eb-dfad-33e5bc51033b",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "44ce6273-3d5c-48d2-9c05-a143a2af32b6",
+							"name": "subTitle",
+							"parent": "82d1c747-def8-43eb-dfad-33e5bc51033b",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "86d6e619-3e8b-431d-b4ed-0d2854e7e079",
+							"name": "icon",
+							"parent": "82d1c747-def8-43eb-dfad-33e5bc51033b",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						}
+					]
+				},
+				{
+					"id": "a7b554db-8e09-4496-a68a-4c4b8806a49f",
+					"name": "id",
+					"parent": "ce311640-0703-4d5d-fc9f-43487e325840",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "132dc71a-77ce-4634-b944-9491ee9f4b86",
+					"name": "title",
+					"parent": "ce311640-0703-4d5d-fc9f-43487e325840",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "598ae66b-0967-43a5-8fa4-f38e08280f0d",
+					"name": "subTitle",
+					"parent": "ce311640-0703-4d5d-fc9f-43487e325840",
+					"description": "",
+					"objectType": "object",
+					"objectName": "subTitle",
+					"isParent": true,
+					"children": []
+				},
+				{
+					"id": "39d84287-b268-486f-daff-a985be79add7",
+					"name": "icon",
+					"parent": "ce311640-0703-4d5d-fc9f-43487e325840",
+					"description": "",
+					"objectType": "object",
+					"objectName": "icon",
+					"isParent": true,
+					"children": []
+				},
+				{
+					"id": "ce311640-0703-4d5d-fc9f-43487e325840",
+					"name": "definition",
+					"parent": "",
+					"description": "",
+					"objectType": "array",
+					"objectName": "definition",
+					"isParent": true,
+					"children": [
+						{
+							"id": "a7b554db-8e09-4496-a68a-4c4b8806a49f",
+							"name": "id",
+							"parent": "ce311640-0703-4d5d-fc9f-43487e325840",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "132dc71a-77ce-4634-b944-9491ee9f4b86",
+							"name": "title",
+							"parent": "ce311640-0703-4d5d-fc9f-43487e325840",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "598ae66b-0967-43a5-8fa4-f38e08280f0d",
+							"name": "subTitle",
+							"parent": "ce311640-0703-4d5d-fc9f-43487e325840",
+							"description": "",
+							"objectType": "object",
+							"objectName": "subTitle",
+							"isParent": true,
+							"children": []
+						},
+						{
+							"id": "39d84287-b268-486f-daff-a985be79add7",
+							"name": "icon",
+							"parent": "ce311640-0703-4d5d-fc9f-43487e325840",
+							"description": "",
+							"objectType": "object",
+							"objectName": "icon",
+							"isParent": true,
+							"children": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "c03d2442-baad-4d92-c696-d97771e0dbb7",
+			"name": "Error",
+			"description": "",
+			"isInclude": false,
+			"properties": [
+				{
+					"id": "f383d435-6c0e-41a9-aedc-f1ddf4ef02db",
+					"name": "status",
+					"objectType": "string",
+					"description": "",
+					"required": false,
+					"value": "",
+					"minLength": "",
+					"maxLength": "",
+					"default": "",
+					"example": "",
+					"isParent": false,
+					"children": [],
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"showNameField": true
+				}
+			]
+		},
+		{
+			"id": "1a11ded7-5d87-45b0-a6be-5c6d326ae5bf",
+			"name": "StartRequest",
+			"description": "",
+			"isInclude": false,
+			"properties": [
+				{
+					"id": "ae738bc9-d00a-4c54-b4c6-55a9a7193555",
+					"name": "id",
+					"parent": "",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "c2f41867-10ad-439b-fc32-a54d04923400",
+					"name": "approver",
+					"parent": "",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "c6d0bfc5-efc3-4c1c-9b64-ab6597703c30",
+					"name": "objectType",
+					"parent": "",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "62b514dd-f8f2-47bf-b18e-9d09b70d4fd5",
+					"name": "objectKey",
+					"parent": "",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "c1ca68d2-e1a1-4bfc-d71d-c1a8b8f976e6",
+					"name": "amount",
+					"parent": "",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "4893be58-2eef-42a1-e237-27e09952c4e6",
+					"name": "currency",
+					"parent": "",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				}
+			]
+		},
+		{
+			"id": "4d9c6327-6d0a-4f3e-8196-29409e0da76f",
+			"name": "StartResponse",
+			"description": "",
+			"isInclude": false,
+			"properties": [
+				{
+					"id": "5f8c5d75-1837-44b6-b70a-c62d3a5aecde",
+					"name": "id",
+					"parent": "",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "3fdde46d-e56c-4753-f1c0-7e2ff58f0334",
+					"name": "createdAt",
+					"parent": "",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "d5bda500-c0f6-41a1-b27f-35cd1bd9377a",
+					"name": "updatedAt",
+					"parent": "",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "a8a5e96b-8b71-4b42-f415-100e9baf0a0b",
+					"name": "createdBy",
+					"parent": "",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "39839228-f499-4187-9b4b-040adcdd2ee6",
+					"name": "changedBy",
+					"parent": "",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "f8b0443c-df34-4936-f86f-d9120ca1193a",
+					"name": "sort",
+					"parent": "d3446b24-20c2-4354-8218-cc98a4e10c33",
+					"description": "",
+					"objectType": "number",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "41e1ab9d-ccee-443a-fde6-d696351188f5",
+					"name": "createdAt",
+					"parent": "d3446b24-20c2-4354-8218-cc98a4e10c33",
+					"description": "",
+					"objectType": "number",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "cc64b7a3-9625-4397-ba18-548d1f4124d9",
+					"name": "createdBy",
+					"parent": "d3446b24-20c2-4354-8218-cc98a4e10c33",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "157d6595-8f12-4b9b-a0b4-9e7d7f009119",
+					"name": "action",
+					"parent": "d3446b24-20c2-4354-8218-cc98a4e10c33",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "15632b73-a3c1-4c76-eb45-7ea94567ff44",
+					"name": "showApprovers",
+					"parent": "d3446b24-20c2-4354-8218-cc98a4e10c33",
+					"description": "",
+					"objectType": "boolean",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "d3446b24-20c2-4354-8218-cc98a4e10c33",
+					"name": "log",
+					"parent": "",
+					"description": "",
+					"objectType": "array",
+					"objectName": "log",
+					"isParent": true,
+					"children": [
+						{
+							"id": "f8b0443c-df34-4936-f86f-d9120ca1193a",
+							"name": "sort",
+							"parent": "d3446b24-20c2-4354-8218-cc98a4e10c33",
+							"description": "",
+							"objectType": "number",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "41e1ab9d-ccee-443a-fde6-d696351188f5",
+							"name": "createdAt",
+							"parent": "d3446b24-20c2-4354-8218-cc98a4e10c33",
+							"description": "",
+							"objectType": "number",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "cc64b7a3-9625-4397-ba18-548d1f4124d9",
+							"name": "createdBy",
+							"parent": "d3446b24-20c2-4354-8218-cc98a4e10c33",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "157d6595-8f12-4b9b-a0b4-9e7d7f009119",
+							"name": "action",
+							"parent": "d3446b24-20c2-4354-8218-cc98a4e10c33",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "15632b73-a3c1-4c76-eb45-7ea94567ff44",
+							"name": "showApprovers",
+							"parent": "d3446b24-20c2-4354-8218-cc98a4e10c33",
+							"description": "",
+							"objectType": "boolean",
+							"isParent": false,
+							"children": []
+						}
+					]
+				},
+				{
+					"id": "81b12773-87dd-4063-807b-25a3ddf7b3c0",
+					"name": "objectType",
+					"parent": "",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "0307e7a8-d402-4dd3-f6c0-e6d8e9f17309",
+					"name": "objectKey",
+					"parent": "",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "c4a78b19-f93c-442e-b979-8dd1e36d66ed",
+					"name": "overDueDate",
+					"parent": "",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "1776aa05-7bea-40a1-9cc9-0fb7460f67da",
+					"name": "amount",
+					"parent": "",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "6289a872-9de6-4fd6-fbab-27e36575976b",
+					"name": "currency",
+					"parent": "",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "cdfe2196-89eb-4a7b-c287-89cc90a63900",
+					"name": "status",
+					"parent": "",
+					"description": "",
+					"objectType": "number",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "436a393b-f916-4ea2-9e6e-f1cd3feb48b7",
+					"name": "definitionID",
+					"parent": "",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "c8a60be9-e020-4a03-fe7d-b95b7d465c9f",
+					"name": "taskID",
+					"parent": "",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"children": []
+				},
+				{
+					"id": "3aa60764-5563-47ab-d855-6560fa54b2fd",
+					"name": "approvers",
+					"parent": "",
+					"description": "",
+					"objectType": "object",
+					"objectName": "approvers",
+					"isParent": true,
+					"children": []
+				},
+				{
+					"id": "4904e4df-e87e-4150-97f1-394931bffb23",
+					"name": "notes",
+					"parent": "",
+					"description": "",
+					"objectType": "object",
+					"objectName": "notes",
+					"isParent": true,
+					"children": []
+				},
+				{
+					"id": "2ec52315-e96b-4b84-eb87-77646719acd5",
+					"name": "attachment",
+					"parent": "",
+					"description": "",
+					"objectType": "object",
+					"objectName": "attachment",
+					"isParent": true,
+					"children": []
+				}
+			]
+		},
+		{
+			"id": "37c49fad-702b-4cc0-c257-53e2cf13cd0e",
+			"name": "ID",
+			"description": "",
+			"isInclude": false,
+			"properties": [
+				{
+					"id": "4fd408f9-5fa0-4600-ed71-832990567730",
+					"name": "id",
+					"objectType": "string",
+					"description": "",
+					"required": true,
+					"value": "",
+					"minLength": "",
+					"maxLength": "",
+					"default": "",
+					"example": "",
+					"isParent": false,
+					"children": []
+				}
+			]
+		}
+	],
+	"documentation": [],
+	"name": "CoreAPI WF_Overview",
+	"endpoint": "https://[yourDomain].com/api/functions/WorkflowMonitor",
+	"ver": "24.02.07.1302",
+	"version": "2.2.0",
+	"description": "API to access results of Workflow overview",
+	"mediaType": null,
+	"securitySchemes": null,
+	"swaggerURI": null,
+	"swaggerSystem": null,
+	"apiType": "",
+	"about": "<p><strong style=\"white-space: unset; font-size: 1rem;\">Description</strong><br></p><p>Workflow_Overview facilitates to maintain and start the workflow from the Workflow user interface.</p><p>API WF_Overview&nbsp;is the API to access the workflow list and start the workflow from your app.</p><p>Every user must have the right roles (permissions) that enable access to the Workflow API.</p><p><strong>Operations Performed</strong></p><p><strong style=\"white-space: unset; font-size: 1rem;\">List</strong><br></p><p>Get the <span style=\"white-space: nowrap; font-size: 1rem;\">workflow overview list for monitoring</span></p><table class=\"table\" style=\"width: 730px;\"><tbody><tr><td><div>Response</div></td><td><div>List(array)- Definition&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<em><br></em></div></td></tr></tbody></table><p><strong style=\"font-size: 1rem; white-space: nowrap;\">Start</strong><br></p><p><span style=\"font-size: 1rem; white-space: nowrap;\">Start the workflow&nbsp;</span></p><table class=\"table\"><tbody><tr><td><div>Request</div></td><td><div>StartRequest(object)&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</div></td></tr><tr><td><div>Response</div></td><td><div>StartResponse(object)</div></td></tr></tbody></table><p><br></p><p><span style=\"font-size: 1rem; white-space: nowrap;\"><strong>Delete</strong></span></p><p><span style=\"font-size: 1rem; white-space: nowrap;\">Delete the workflow</span></p><table class=\"table\"><tbody><tr><td><div>Request</div></td><td><div>ID&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</div></td></tr></tbody></table>",
+	"enableProxy": true,
+	"forwardProxy": null,
+	"restrictAccess": false,
+	"enableTrace": false,
+	"enableIDE": false,
+	"internalAPI": false,
+	"isPublic": false,
+	"tlsAllowUntrusted": true,
+	"useOwnProcess": false,
+	"package": "25602b27-7c0d-ed11-b47a-000d3ab2359f",
+	"apiGroup": "81af280b-222a-4725-9c64-93658e7c1524",
+	"apiFormat": 0,
+	"roles": []
+}
